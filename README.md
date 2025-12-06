@@ -46,7 +46,7 @@ Sebelum memulai, pastikan Anda telah menginstall:
 ### 1. Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/drexjgobgt/si-pengduan-warga
 cd pengaduan-warga
 ```
 
