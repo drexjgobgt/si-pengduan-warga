@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Mail, ArrowLeft } from 'lucide-react';
 import { authAPI } from '../../services/api';
-import Button from '../Common/Button';
-import Input from '../Common/Input';
+import { Button } from '../Common/Button';
+import { Input } from '../Common/Input';
 
 export default function ForgotPasswordForm({ onBack, onSuccess }) {
   const [email, setEmail] = useState('');
@@ -52,7 +52,7 @@ export default function ForgotPasswordForm({ onBack, onSuccess }) {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          icon={<Mail className="w-5 h-5" />}
+          icon={Mail}
         />
 
         {message && (
@@ -67,10 +67,10 @@ export default function ForgotPasswordForm({ onBack, onSuccess }) {
 
         <Button
           type="submit"
-          loading={loading}
+          disabled={loading}
           className="w-full"
         >
-          Kirim Link Reset Password
+          {loading ? 'Mengirim...' : 'Kirim Link Reset Password'}
         </Button>
       </form>
     </div>

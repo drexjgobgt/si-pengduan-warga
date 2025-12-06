@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Lock, ArrowLeft } from 'lucide-react';
 import { authAPI } from '../../services/api';
-import Button from '../Common/Button';
-import Input from '../Common/Input';
+import { Button } from '../Common/Button';
+import { Input } from '../Common/Input';
 
 export default function ResetPasswordForm({ token, onBack, onSuccess }) {
   
@@ -94,7 +94,7 @@ export default function ResetPasswordForm({ token, onBack, onSuccess }) {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
-          icon={<Lock className="w-5 h-5" />}
+          icon={Lock}
         />
 
         <Input
@@ -103,7 +103,7 @@ export default function ResetPasswordForm({ token, onBack, onSuccess }) {
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
           required
-          icon={<Lock className="w-5 h-5" />}
+          icon={Lock}
         />
 
         {error && (
@@ -120,10 +120,10 @@ export default function ResetPasswordForm({ token, onBack, onSuccess }) {
 
         <Button
           type="submit"
-          loading={loading}
+          disabled={loading}
           className="w-full"
         >
-          Reset Password
+          {loading ? 'Memproses...' : 'Reset Password'}
         </Button>
       </form>
     </div>
