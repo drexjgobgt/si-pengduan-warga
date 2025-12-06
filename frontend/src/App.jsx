@@ -6,6 +6,8 @@ import { ComplaintFilters } from "./components/Complaints/ComplaintFilters";
 import { ComplaintForm } from "./components/Complaints/ComplaintForm";
 import { LoginForm } from "./components/Auth/LoginForm";
 import { RegisterForm } from "./components/Auth/RegisterForm";
+import ForgotPasswordForm from "./components/Auth/ForgotPasswordForm";
+import ResetPasswordForm from "./components/Auth/ResetPasswordForm";
 import { StatsDashboard } from "./components/Statistics/StatsDashboard";
 import { CategoryChart } from "./components/Statistics/CategoryChart";
 import { StatusChart } from "./components/Statistics/StatusChart";
@@ -19,6 +21,7 @@ function App() {
   const { login, isAuthenticated } = useAuth();
   const [currentView, setCurrentView] = useState("home");
   const [authMode, setAuthMode] = useState("login");
+  const [resetToken, setResetToken] = useState(null);
 
   // State
   const [complaints, setComplaints] = useState([]);
@@ -98,6 +101,46 @@ function App() {
     }
   };
 
+  // Reset Password View
+  if (currentView === "reset-password") {
+    const token =
+      new URLSearchParams(window.location.search).get("token") || resetToken;
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+        <ResetPasswordForm
+          token={token}
+          onBack={() => {
+            setCurrentView("auth");
+            setResetToken(null);
+          }}
+          onSuccess={() => {
+            setCurrentView("auth");
+            setResetToken(null);
+            setAuthMode("login");
+          }}
+        />
+      </div>
+    );
+  }
+
+  // Forgot Password View
+  if (currentView === "forgot-password") {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+        <ForgotPasswordForm
+          onBack={() => {
+            setCurrentView("auth");
+            setAuthMode("login");
+          }}
+          onSuccess={() => {
+            setCurrentView("auth");
+            setAuthMode("login");
+          }}
+        />
+      </div>
+    );
+  }
+
   // Auth View
   if (currentView === "auth") {
     return (
@@ -151,7 +194,11 @@ function App() {
           </div>
 
           {authMode === "login" ? (
-            <LoginForm onSubmit={handleAuth} loading={loading} />
+            <LoginForm
+              onSubmit={handleAuth}
+              loading={loading}
+              onForgotPassword={() => setCurrentView("forgot-password")}
+            />
           ) : (
             <RegisterForm onSubmit={handleAuth} loading={loading} />
           )}

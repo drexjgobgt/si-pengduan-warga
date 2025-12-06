@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 require("dotenv").config();
 
 // Validate required environment variables
@@ -24,6 +25,9 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Serve uploaded files
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
 // Test database connection
 const pool = require("./config/database");
 (async () => {
@@ -43,11 +47,13 @@ const authRoutes = require("./routes/auth");
 const complaintRoutes = require("./routes/complaints");
 const categoryRoutes = require("./routes/categories");
 const statisticsRoutes = require("./routes/statistics");
+const notificationsRoutes = require("./routes/notifications");
 
 app.use("/api/auth", authRoutes);
 app.use("/api/complaints", complaintRoutes);
 app.use("/api/categories", categoryRoutes);
 app.use("/api/statistics", statisticsRoutes);
+app.use("/api/notifications", notificationsRoutes);
 
 // Health check
 app.get("/api/health", (req, res) => {

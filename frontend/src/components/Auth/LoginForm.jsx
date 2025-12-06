@@ -3,7 +3,7 @@ import { Input } from "../Common/Input";
 import { Button } from "../Common/Button";
 import { Mail, Lock, LogIn } from "lucide-react";
 
-export const LoginForm = ({ onSubmit, loading }) => {
+export const LoginForm = ({ onSubmit, loading, onForgotPassword }) => {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -45,6 +45,16 @@ export const LoginForm = ({ onSubmit, loading }) => {
       >
         {loading ? "Memproses..." : "Masuk"}
       </Button>
+
+      {onForgotPassword && (
+        <button
+          type="button"
+          onClick={onForgotPassword}
+          className="w-full text-sm text-blue-600 hover:text-blue-800 mt-2 text-center"
+        >
+          Lupa password?
+        </button>
+      )}
 
       <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
         <p className="text-sm text-blue-800 font-medium mb-2">Demo Login:</p>

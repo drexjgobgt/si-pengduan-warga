@@ -8,6 +8,7 @@ import {
   User,
 } from "lucide-react";
 import { useAuth } from "../../hooks/useAuth";
+import NotificationBell from "../Common/NotificationBell";
 
 export const Header = ({ onNavigate, currentView }) => {
   const { user, logout, isAuthenticated } = useAuth();
@@ -45,6 +46,8 @@ export const Header = ({ onNavigate, currentView }) => {
               <BarChart3 className="w-4 h-4" />
               <span className="hidden sm:inline">Statistik</span>
             </button>
+
+            {isAuthenticated && <NotificationBell />}
 
             {isAuthenticated ? (
               <>

@@ -91,7 +91,46 @@ async function sendWelcomeEmail(userEmail, userName) {
   }
 }
 
+// Send password reset email
+async function sendPasswordResetEmail(userEmail, userName, resetLink) {
+  const mailOptions = {
+    from:
+      process.env.EMAIL_FROM || process.env.EMAIL_USER || process.env.SMTP_USER,
+    to: userEmail,
+    subject: "Reset Password - Sistem Pengaduan Warga",
+    html: `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+        <h2 style="color: #2563eb;">Reset Password</h2>
+        <p>Halo ${userName},</p>
+        <p>Anda telah meminta reset password. Klik link di bawah ini untuk mereset password Anda:</p>
+        <div style="margin: 30px 0;">
+          <a href="${resetLink}" style="background-color: #2563eb; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; display: inline-block;">
+            Reset Password
+          </a>
+        </div>
+        <p>Link ini akan kadaluarsa dalam 1 jam.</p>
+        <p>Jika Anda tidak meminta reset password, abaikan email ini.</p>
+        <p>Salam,<br>Tim Pengaduan Warga</p>
+      </div>
+    `,
+  };
+
+  try {
+    const emailHost = process.env.EMAIL_HOST || process.env.SMTP_HOST;
+    const emailUser = process.env.EMAIL_USER || process.env.SMTP_USER;
+    if (emailHost && emailUser) {
+      await transporter.sendMail(mailOptions);
+      return { success: true };
+    }
+    return { success: false, reason: "not_configured" };
+  } catch (error) {
+    console.error("Error sending password reset email:", error);
+    return { success: false, error: error.message };
+  }
+}
+
 module.exports = {
   sendStatusUpdateEmail,
   sendWelcomeEmail,
+  sendPasswordResetEmail,
 };
