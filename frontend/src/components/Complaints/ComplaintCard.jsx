@@ -5,9 +5,11 @@ import {
   MessageSquare,
   Clock,
   TrendingUp,
+
   CheckCircle,
   XCircle,
   Calendar,
+  User
 } from "lucide-react";
 import { CATEGORY_ICONS, STATUS_CONFIG } from "../../utils/constants";
 import {
@@ -55,11 +57,18 @@ export const ComplaintCard = ({ complaint, onClick }) => {
             </span>
           </div>
 
+
           <p className="text-gray-600 text-sm mb-3 line-clamp-2">
             {complaint.description}
           </p>
 
           <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500">
+             <span className="flex items-center gap-1 font-medium text-gray-700">
+              <User className="w-4 h-4" />
+              {complaint.user_name}
+            </span>
+             <span className="w-px h-3 bg-gray-300 mx-1 hidden sm:block"></span>
+            
             <span className="flex items-center gap-1 font-medium">
               <span className="capitalize">
                 {complaint.category_name?.replace("_", " ")}
@@ -84,7 +93,7 @@ export const ComplaintCard = ({ complaint, onClick }) => {
 
             <span className="flex items-center gap-1 hover:text-blue-600 transition">
               <ThumbsUp className="w-4 h-4" />
-              {complaint.vote_count || 0}
+              {complaint.up_vote_count || 0}
             </span>
 
             <span className="flex items-center gap-1 hover:text-blue-600 transition">

@@ -18,6 +18,7 @@ router.post("/:id/vote", authenticateToken, complaintController.vote);
 router.post("/:id/comments", authenticateToken, complaintController.addComment);
 router.get("/:id/comments", complaintController.getComments);
 router.get("/:id/history", complaintController.getHistory);
+router.delete("/:id/comments/:commentId", authenticateToken, complaintController.deleteComment);
 
 // Image upload routes
 router.post("/:id/upload", authenticateToken, upload.single("image"), uploadController.uploadImage);

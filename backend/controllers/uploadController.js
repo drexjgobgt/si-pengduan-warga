@@ -1,6 +1,6 @@
+
 const pool = require('../config/database');
-const path = require('path');
-const fs = require('fs');
+const { cloudinary } = require('../config/cloudinary');
 
 exports.uploadImage = async (req, res, next) => {
   try {
@@ -19,7 +19,7 @@ exports.uploadImage = async (req, res, next) => {
 
     if (complaintResult.rows.length === 0) {
       // Delete uploaded file if complaint doesn't exist
-      fs.unlinkSync(req.file.path);
+      if(req.file.filename) await cloudinary.uploader.destroy(req.file.filename);
       return res.status(404).json({ error: 'Pengaduan tidak ditemukan' });
     }
 
@@ -27,12 +27,13 @@ exports.uploadImage = async (req, res, next) => {
     
     // Check if user owns the complaint or is admin/petugas
     if (complaint.user_id !== userId && req.user.role !== 'admin' && req.user.role !== 'petugas') {
-      fs.unlinkSync(req.file.path);
+      if(req.file.filename) await cloudinary.uploader.destroy(req.file.filename);
       return res.status(403).json({ error: 'Tidak memiliki akses' });
     }
 
-    // Generate public URL
-    const imageUrl = `/uploads/complaints/${req.file.filename}`;
+    // Get URL from Cloudinary
+    const imageUrl = req.file.path; // Cloudinary returns the URL in 'path'
+    const publicId = req.file.filename;
 
     // Check if this is the first image (make it primary)
     const existingImages = await pool.query(
@@ -51,7 +52,7 @@ exports.uploadImage = async (req, res, next) => {
       [
         id,
         imageUrl,
-        req.file.path,
+        publicId, // Store public_id in image_path for deletion
         req.file.originalname,
         req.file.size,
         req.file.mimetype,
@@ -74,12 +75,8 @@ exports.uploadImage = async (req, res, next) => {
     });
   } catch (error) {
     // Clean up file on error
-    if (req.file && req.file.path) {
-      try {
-        fs.unlinkSync(req.file.path);
-      } catch (unlinkError) {
-        console.error('Error deleting file:', unlinkError);
-      }
+    if (req.file && req.file.filename) {
+       await cloudinary.uploader.destroy(req.file.filename).catch(e => console.error("Cleanup error:", e));
     }
     next(error);
   }
@@ -110,12 +107,13 @@ exports.deleteImage = async (req, res, next) => {
       return res.status(403).json({ error: 'Tidak memiliki akses' });
     }
 
-    // Delete file from filesystem
-    if (image.image_path && fs.existsSync(image.image_path)) {
+    // Delete file from Cloudinary 
+    // image_path stored the public_id
+    if (image.image_path) {
       try {
-        fs.unlinkSync(image.image_path);
-      } catch (unlinkError) {
-        console.error('Error deleting file:', unlinkError);
+        await cloudinary.uploader.destroy(image.image_path);
+      } catch (cloudError) {
+        console.error('Error deleting from Cloudinary:', cloudError);
       }
     }
 
@@ -148,4 +146,5 @@ exports.getImages = async (req, res, next) => {
     next(error);
   }
 };
+
 

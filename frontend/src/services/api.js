@@ -50,10 +50,11 @@ export const complaintAPI = {
   getById: (id) => api.get(`/complaints/${id}`),
   create: (data) => api.post("/complaints", data),
   updateStatus: (id, data) => api.patch(`/complaints/${id}/status`, data),
-  vote: (id) => api.post(`/complaints/${id}/vote`),
+  vote: (id, vote_type) => api.post(`/complaints/${id}/vote`, { vote_type }),
   addComment: (id, comment) =>
     api.post(`/complaints/${id}/comments`, { comment }),
   getComments: (id) => api.get(`/complaints/${id}/comments`),
+  deleteComment: (id, commentId) => api.delete(`/complaints/${id}/comments/${commentId}`),
   getHistory: (id) => api.get(`/complaints/${id}/history`),
   uploadImage: (complaintId, formData) => {
     return api.post(`/complaints/${complaintId}/upload`, formData, {

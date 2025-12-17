@@ -56,15 +56,6 @@ export const LoginForm = ({ onSubmit, loading, onForgotPassword }) => {
         </button>
       )}
 
-      <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
-        <p className="text-sm text-blue-800 font-medium mb-2">Demo Login:</p>
-        <p className="text-xs text-blue-700">
-          Admin: admin@pengaduan.local / admin123
-        </p>
-        <p className="text-xs text-blue-700">
-          Petugas: petugas@pengaduan.local / admin123
-        </p>
-      </div>
     </div>
   );
 };

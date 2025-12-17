@@ -24,7 +24,7 @@ export const Footer = () => {
               <Mail className="w-5 h-5" />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/drexjgobgt"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600 transition"

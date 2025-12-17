@@ -346,13 +346,13 @@ INSERT INTO categories (name, description, color, icon) VALUES
 -- Password: admin123 (change this in production!)
 INSERT INTO users (name, email, phone, password_hash, role, email_verified) VALUES
 ('Administrator', 'admin@pengaduan.local', '081234567890', 
- '$2b$10$rI3qFrGLW8mEXmI0lJ0LTOqKQvN8wPQvLYvJ3JZN3YyXxLlR6Fa0S', 
+ '$2b$10$pKnyJ6AdbBqQ4OdW5UeXhOJ7BIGy3769E1k4nH0nVOZ8xiTztVuo2', 
  'admin', TRUE);
 
 -- Create sample petugas (officer)
 INSERT INTO users (name, email, phone, password_hash, role, email_verified) VALUES
 ('Petugas Kelurahan', 'petugas@pengaduan.local', '081234567891',
- '$2b$10$rI3qFrGLW8mEXmI0lJ0LTOqKQvN8wPQvLYvJ3JZN3YyXxLlR6Fa0S',
+ '$2b$10$pKnyJ6AdbBqQ4OdW5UeXhOJ7BIGy3769E1k4nH0nVOZ8xiTztVuo2',
  'petugas', TRUE);
 
 -- ========================================

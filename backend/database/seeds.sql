@@ -4,13 +4,13 @@
 -- Insert sample warga (citizen) users
 INSERT INTO users (name, email, phone, password_hash, role, email_verified) VALUES
 ('Budi Santoso', 'budi@example.com', '081234567892', 
- '$2b$10$rI3qFrGLW8mEXmI0lJ0LTOqKQvN8wPQvLYvJ3JZN3YyXxLlR6Fa0S', 
+ '$2b$10$pKnyJ6AdbBqQ4OdW5UeXhOJ7BIGy3769E1k4nH0nVOZ8xiTztVuo2', 
  'warga', TRUE),
 ('Siti Nurhaliza', 'siti@example.com', '081234567893',
- '$2b$10$rI3qFrGLW8mEXmI0lJ0LTOqKQvN8wPQvLYvJ3JZN3YyXxLlR6Fa0S',
+ '$2b$10$pKnyJ6AdbBqQ4OdW5UeXhOJ7BIGy3769E1k4nH0nVOZ8xiTztVuo2',
  'warga', TRUE),
 ('Ahmad Yani', 'ahmad@example.com', '081234567894',
- '$2b$10$rI3qFrGLW8mEXmI0lJ0LTOqKQvN8wPQvLYvJ3JZN3YyXxLlR6Fa0S',
+ '$2b$10$pKnyJ6AdbBqQ4OdW5UeXhOJ7BIGy3769E1k4nH0nVOZ8xiTztVuo2',
  'warga', TRUE);
 
 -- Insert sample complaints

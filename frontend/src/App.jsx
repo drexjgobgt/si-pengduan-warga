@@ -1,9 +1,12 @@
+
 import React, { useState, useEffect } from "react";
 import { Header } from "./components/Layout/Header";
 import { Footer } from "./components/Layout/Footer";
 import { ComplaintList } from "./components/Complaints/ComplaintList";
 import { ComplaintFilters } from "./components/Complaints/ComplaintFilters";
 import { ComplaintForm } from "./components/Complaints/ComplaintForm";
+import { ComplaintInteractions } from "./components/Complaints/ComplaintInteractions";
+import { StatusUpdate } from "./components/Complaints/StatusUpdate";
 import { LoginForm } from "./components/Auth/LoginForm";
 import { RegisterForm } from "./components/Auth/RegisterForm";
 import ForgotPasswordForm from "./components/Auth/ForgotPasswordForm";
@@ -18,7 +21,7 @@ import { complaintAPI, authAPI, statisticsAPI } from "./services/api";
 import { ArrowLeft } from "lucide-react";
 
 function App() {
-  const { login, isAuthenticated } = useAuth();
+  const { login, isAuthenticated, user } = useAuth();
   const [currentView, setCurrentView] = useState("home");
   const [authMode, setAuthMode] = useState("login");
   const [resetToken, setResetToken] = useState(null);
@@ -81,10 +84,20 @@ function App() {
     }
   };
 
-  const handleCreateComplaint = async (formData) => {
+
+  const handleCreateComplaint = async (data, file) => {
     try {
       setLoading(true);
-      const response = await complaintAPI.create(formData);
+      // 1. Create complaint
+      const response = await complaintAPI.create(data);
+      const newComplaintId = response.data.data.id; // Assuming response structure
+
+      // 2. Upload image if exists
+      if (file && newComplaintId) {
+        const imageFormData = new FormData();
+        imageFormData.append("image", file);
+        await complaintAPI.uploadImage(newComplaintId, imageFormData);
+      }
 
       alert(
         `✅ Pengaduan berhasil dibuat!\n\n` +
@@ -95,7 +108,26 @@ function App() {
       setCurrentView("home");
       fetchComplaints();
     } catch (error) {
+      console.error(error);
       alert(error.response?.data?.error || "Gagal membuat pengaduan");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleStatusUpdate = async (data) => {
+    if (!selectedComplaint) return;
+    
+    try {
+      setLoading(true);
+      await complaintAPI.updateStatus(selectedComplaint.id, data);
+      
+      alert("✅ Status pengaduan berhasil diperbarui");
+      setSelectedComplaint(null);
+      fetchComplaints();
+    } catch (error) {
+      console.error("Error updating status:", error);
+      alert(error.response?.data?.error || "Gagal mengupdate status");
     } finally {
       setLoading(false);
     }
@@ -338,6 +370,7 @@ function App() {
               </div>
             )}
 
+
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <h3 className="font-semibold text-gray-700 mb-2">Kategori</h3>
@@ -352,6 +385,20 @@ function App() {
                 </p>
               </div>
             </div>
+
+            <ComplaintInteractions 
+              complaint={selectedComplaint} 
+              onUpdate={fetchComplaints} 
+            />
+
+            {/* Status Update Section for Admin/Petugas */}
+            {isAuthenticated && ["admin", "petugas"].includes(user?.role) && (
+              <StatusUpdate 
+                currentStatus={selectedComplaint.status}
+                onUpdate={handleStatusUpdate}
+                loading={loading}
+              />
+            )}
           </div>
         </Modal>
       )}

@@ -15,9 +15,11 @@ exports.getAll = async (req, res, next) => {
     } = req.query;
 
     let query = `
+
       SELECT c.*, cat.name as category_name, cat.color as category_color,
              u.name as user_name, 
-             COUNT(DISTINCT v.id) as vote_count,
+             COUNT(DISTINCT CASE WHEN v.vote_type = 'up' THEN v.id END) as up_vote_count,
+             COUNT(DISTINCT CASE WHEN v.vote_type = 'down' THEN v.id END) as down_vote_count,
              COUNT(DISTINCT cm.id) as comment_count
       FROM complaints c
       LEFT JOIN categories cat ON c.category_id = cat.id
@@ -117,10 +119,13 @@ exports.getById = async (req, res, next) => {
 
     const result = await pool.query(
       `
+
       SELECT c.*, cat.name as category_name, cat.color as category_color,
              auto_cat.name as auto_category_name,
              u.name as user_name, u.email as user_email, u.phone as user_phone,
-             resp.name as responder_name
+             resp.name as responder_name,
+             (SELECT COUNT(*) FROM votes WHERE complaint_id = c.id AND vote_type = 'up') as up_vote_count,
+             (SELECT COUNT(*) FROM votes WHERE complaint_id = c.id AND vote_type = 'down') as down_vote_count
       FROM complaints c
       LEFT JOIN categories cat ON c.category_id = cat.id
       LEFT JOIN categories auto_cat ON c.auto_category_id = auto_cat.id
@@ -306,29 +311,74 @@ exports.updateStatus = async (req, res, next) => {
   }
 };
 
+
 exports.vote = async (req, res, next) => {
   try {
     const { id } = req.params;
+    const { vote_type } = req.body; // 'up' or 'down'
     const userId = req.user.userId;
 
-    await pool.query(
-      `INSERT INTO votes (complaint_id, user_id, vote_type) 
-       VALUES ($1, $2, $3) 
-       ON CONFLICT (complaint_id, user_id) DO NOTHING`,
-      [id, userId, "support"]
-    );
+    if (!['up', 'down'].includes(vote_type)) {
+       return res.status(400).json({ error: "Invalid vote type. Use 'up' or 'down'" });
+    }
 
-    // Get updated vote count
-    const result = await pool.query(
-      "SELECT COUNT(*) as count FROM votes WHERE complaint_id = $1",
-      [id]
-    );
+    const client = await pool.connect();
+    try {
+      await client.query("BEGIN");
 
-    res.json({
-      success: true,
-      message: "Vote berhasil ditambahkan",
-      voteCount: parseInt(result.rows[0].count),
-    });
+      // Check existing vote
+      const existingVote = await client.query(
+        "SELECT * FROM votes WHERE complaint_id = $1 AND user_id = $2",
+        [id, userId]
+      );
+
+      if (existingVote.rows.length > 0) {
+        if (existingVote.rows[0].vote_type === vote_type) {
+          // Toggle off (remove vote)
+          await client.query(
+            "DELETE FROM votes WHERE id = $1",
+            [existingVote.rows[0].id]
+          );
+        } else {
+          // Change vote
+          await client.query(
+            "UPDATE votes SET vote_type = $1 WHERE id = $2",
+            [vote_type, existingVote.rows[0].id]
+          );
+        }
+      } else {
+        // Insert new vote
+        await client.query(
+          "INSERT INTO votes (complaint_id, user_id, vote_type) VALUES ($1, $2, $3)",
+          [id, userId, vote_type]
+        );
+      }
+
+      await client.query("COMMIT");
+
+      // Get updated counts
+      const counts = await client.query(
+        `SELECT 
+           COUNT(*) FILTER (WHERE vote_type = 'up') as up_count,
+           COUNT(*) FILTER (WHERE vote_type = 'down') as down_count
+         FROM votes WHERE complaint_id = $1`,
+        [id]
+      );
+
+      res.json({
+        success: true,
+        data: {
+          up_count: parseInt(counts.rows[0].up_count),
+          down_count: parseInt(counts.rows[0].down_count),
+          user_vote: existingVote.rows.length > 0 && existingVote.rows[0].vote_type === vote_type ? null : vote_type // approximating the new state
+        }
+      });
+    } catch (e) {
+      await client.query("ROLLBACK");
+      throw e;
+    } finally {
+      client.release();
+    }
   } catch (error) {
     next(error);
   }
@@ -404,6 +454,41 @@ exports.getHistory = async (req, res, next) => {
       success: true,
       data: result.rows,
     });
+  } catch (error) {
+    next(error);
+  }
+};
+
+
+exports.deleteComment = async (req, res, next) => {
+  try {
+    const { id, commentId } = req.params;
+    const userId = req.user.userId;
+
+    const client = await pool.connect();
+    try {
+      const commentResult = await client.query(
+        "SELECT user_id FROM comments WHERE id = $1 AND complaint_id = $2",
+        [commentId, id]
+      );
+
+      if (commentResult.rows.length === 0) {
+        return res.status(404).json({ error: "Komentar tidak ditemukan" });
+      }
+
+      const comment = commentResult.rows[0];
+
+      // Check ownership (or admin can delete? Let's stick to owner for now based on request)
+      if (comment.user_id !== userId && req.user.role !== 'admin') {
+        return res.status(403).json({ error: "Tidak memiliki akses menghapus komentar ini" });
+      }
+
+      await client.query("DELETE FROM comments WHERE id = $1", [commentId]);
+
+      res.json({ success: true, message: "Komentar berhasil dihapus" });
+    } finally {
+      client.release();
+    }
   } catch (error) {
     next(error);
   }
