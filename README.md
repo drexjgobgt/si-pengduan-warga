@@ -128,15 +128,15 @@ npm run dev
 
 ---
 
-## 📸 Screnshots
+## 📸 Screenshots
 
 | Dashboard Utama | Detail Laporan (Map & Chart) |
 |:---:|:---:|
-| *(Ganti ini dengan screenshot home)* | *(Ganti ini dengan screenshot detail)* |
+| ![Dashboard](./assets/images/dashboard.png) | ![Detail Laporan](./assets/images/detail.png) |
 
 | Heatmap Wilayah (Admin) | Versi Mobile |
 |:---:|:---:|
-| *(Ganti ini dengan screenshot heatmap)* | *(Ganti ini dengan screenshot mobile)* |
+| ![Heatmap](./assets/images/heatmap.png) | ![Mobile View](./assets/images/mobile.png) |
 
 ---
 
