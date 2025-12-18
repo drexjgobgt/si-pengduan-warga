@@ -8,6 +8,7 @@ const upload = require("../middleware/upload");
 router.get("/", complaintController.getAll);
 router.get("/:id", complaintController.getById);
 router.post("/", authenticateToken, complaintController.create);
+router.delete("/:id", authenticateToken, complaintController.delete);
 router.patch(
   "/:id/status",
   authenticateToken,

@@ -192,8 +192,8 @@ exports.create = async (req, res, next) => {
     const complaintResult = await client.query(
       `INSERT INTO complaints 
        (user_id, title, description, auto_category_id, category_id, 
-        confidence_score, location_address, location_lat, location_lng, image_url)
-       VALUES ($1, $2, $3, $4, $4, $5, $6, $7, $8, $9)
+        confidence_score, location_address, location_lat, location_lng, image_url, is_anonymous)
+       VALUES ($1, $2, $3, $4, $4, $5, $6, $7, $8, $9, $10)
        RETURNING *`,
       [
         userId,
@@ -205,6 +205,7 @@ exports.create = async (req, res, next) => {
         location_lat,
         location_lng,
         image_url,
+        req.body.is_anonymous || false
       ]
     );
 
@@ -491,6 +492,49 @@ exports.deleteComment = async (req, res, next) => {
     }
   } catch (error) {
     next(error);
+  }
+};
+
+
+
+exports.delete = async (req, res, next) => {
+  const client = await pool.connect();
+  try {
+    const { id } = req.params;
+    const userId = req.user.userId;
+
+    await client.query("BEGIN");
+
+    // Check existence and ownership
+    const checkResult = await client.query(
+      "SELECT user_id, image_url FROM complaints WHERE id = $1",
+      [id]
+    );
+
+    if (checkResult.rows.length === 0) {
+      return res.status(404).json({ error: "Pengaduan tidak ditemukan" });
+    }
+
+    const complaint = checkResult.rows[0];
+
+    // Allow owner or admin/petugas to delete
+    if (complaint.user_id !== userId && !["admin", "petugas"].includes(req.user.role)) {
+       return res.status(403).json({ error: "Anda tidak memiliki akses untuk menghapus pengaduan ini" });
+    }
+
+    // Delete from DB (Conversations/Votes/History cascade automatically usually, checking schema...)
+    // Schema says: ON DELETE CASCADE for comments, votes, notifications.
+    // So safe to just delete complaint.
+    await client.query("DELETE FROM complaints WHERE id = $1", [id]);
+
+    await client.query("COMMIT");
+
+    res.json({ success: true, message: "Pengaduan berhasil dihapus" });
+  } catch (error) {
+    await client.query("ROLLBACK");
+    next(error);
+  } finally {
+    client.release();
   }
 };
 

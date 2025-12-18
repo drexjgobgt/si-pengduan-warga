@@ -49,6 +49,7 @@ export const complaintAPI = {
   getAll: (params) => api.get("/complaints", { params }),
   getById: (id) => api.get(`/complaints/${id}`),
   create: (data) => api.post("/complaints", data),
+  delete: (id) => api.delete(`/complaints/${id}`),
   updateStatus: (id, data) => api.patch(`/complaints/${id}/status`, data),
   vote: (id, vote_type) => api.post(`/complaints/${id}/vote`, { vote_type }),
   addComment: (id, comment) =>

@@ -19,7 +19,7 @@ export const ComplaintFilters = ({ filters, onFilterChange }) => {
             onChange={(e) =>
               onFilterChange({ ...filters, search: e.target.value })
             }
-            className="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent glass-input"
           />
         </div>
 
@@ -28,7 +28,7 @@ export const ComplaintFilters = ({ filters, onFilterChange }) => {
           onChange={(e) =>
             onFilterChange({ ...filters, status: e.target.value })
           }
-          className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent glass-input"
         >
           <option value="">Semua Status</option>
           <option value="pending">Pending</option>
@@ -42,7 +42,7 @@ export const ComplaintFilters = ({ filters, onFilterChange }) => {
           onChange={(e) =>
             onFilterChange({ ...filters, category: e.target.value })
           }
-          className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent glass-input"
         >
           <option value="">Semua Kategori</option>
           <option value="sampah">Sampah</option>
@@ -61,7 +61,7 @@ export const ComplaintFilters = ({ filters, onFilterChange }) => {
           onChange={(e) =>
             onFilterChange({ ...filters, priority: e.target.value })
           }
-          className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent glass-input"
         >
           <option value="">Semua Prioritas</option>
           <option value="rendah">Rendah</option>

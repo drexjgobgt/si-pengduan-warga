@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from "react";
+import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import { Header } from "./components/Layout/Header";
 import { Footer } from "./components/Layout/Footer";
 import { ComplaintList } from "./components/Complaints/ComplaintList";
@@ -18,7 +19,8 @@ import { Modal } from "./components/Common/Modal";
 import { Button } from "./components/Common/Button";
 import { useAuth } from "./hooks/useAuth";
 import { complaintAPI, authAPI, statisticsAPI } from "./services/api";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Trash2 } from "lucide-react";
+import { ComplaintHeatmap } from "./components/Maps/ComplaintHeatmap";
 
 function App() {
   const { login, isAuthenticated, user } = useAuth();
@@ -128,6 +130,25 @@ function App() {
     } catch (error) {
       console.error("Error updating status:", error);
       alert(error.response?.data?.error || "Gagal mengupdate status");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleDeleteComplaint = async () => {
+    if (!selectedComplaint) return;
+    if (!window.confirm("Apakah Anda yakin ingin menghapus laporan ini? Tindakan ini tidak dapat dibatalkan.")) return;
+
+    try {
+      setLoading(true);
+      await complaintAPI.delete(selectedComplaint.id);
+      
+      alert("✅ Laporan berhasil dihapus");
+      setSelectedComplaint(null);
+      fetchComplaints();
+    } catch (error) {
+      console.error("Error deleting complaint:", error);
+      alert(error.response?.data?.error || "Gagal menghapus laporan");
     } finally {
       setLoading(false);
     }
@@ -320,6 +341,33 @@ function App() {
     );
   }
 
+  // Heatmap View
+  if (currentView === "heatmap") {
+    return (
+      <div className="min-h-screen bg-gray-50 flex flex-col">
+        <Header onNavigate={setCurrentView} currentView={currentView} />
+        <div className="flex-1 p-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-6 flex items-center justify-between">
+              <h2 className="text-2xl font-bold text-gray-800">
+                🗺️ Peta Persebaran Masalah
+              </h2>
+              <Button
+                variant="secondary"
+                icon={ArrowLeft}
+                onClick={() => setCurrentView("home")}
+              >
+                Kembali
+              </Button>
+            </div>
+            <ComplaintHeatmap />
+          </div>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
   // Home View (Main)
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
@@ -361,9 +409,43 @@ function App() {
               <p className="text-gray-600">{selectedComplaint.description}</p>
             </div>
 
+            {/* Image Preview */}
+            {selectedComplaint.image_url && (
+              <div className="rounded-xl overflow-hidden shadow-sm border border-gray-100">
+                <img 
+                  src={selectedComplaint.image_url.startsWith('http') ? selectedComplaint.image_url : `http://localhost:5000${selectedComplaint.image_url}`} 
+                  alt="Bukti Laporan" 
+                  className="w-full h-auto max-h-96 object-contain bg-gray-50"
+                  onError={(e) => e.target.style.display = 'none'}
+                />
+              </div>
+            )}
+
+            {/* Map Preview */}
+            {selectedComplaint.location_lat && selectedComplaint.location_lng && (
+              <div className="h-64 rounded-xl overflow-hidden border border-gray-200 z-0 relative">
+                 <MapContainer
+                    center={[selectedComplaint.location_lat, selectedComplaint.location_lng]}
+                    zoom={15}
+                    style={{ height: "100%", width: "100%" }}
+                    dragging={false}
+                    touchZoom={false}
+                    zoomControl={false}
+                    scrollWheelZoom={false}
+                    doubleClickZoom={false}
+                  >
+                    <TileLayer
+                      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    />
+                    <Marker position={[selectedComplaint.location_lat, selectedComplaint.location_lng]} />
+                  </MapContainer>
+              </div>
+            )}
+
             {selectedComplaint.location_address && (
               <div>
-                <h3 className="font-semibold text-gray-700 mb-2">Lokasi</h3>
+                <h3 className="font-semibold text-gray-700 mb-2">Alamat</h3>
                 <p className="text-gray-600">
                   {selectedComplaint.location_address}
                 </p>
@@ -398,6 +480,20 @@ function App() {
                 onUpdate={handleStatusUpdate}
                 loading={loading}
               />
+            )}
+
+            {/* Delete Button for Owner or Admin */}
+            {isAuthenticated && (user?.id === selectedComplaint.user_id || ["admin", "petugas"].includes(user?.role)) && (
+              <div className="pt-4 border-t border-gray-100">
+                <button
+                  onClick={handleDeleteComplaint}
+                  disabled={loading}
+                  className="w-full py-2.5 rounded-xl border border-red-200 text-red-600 hover:bg-red-50 font-medium transition-colors flex items-center justify-center gap-2"
+                >
+                  <Trash2 className="w-4 h-4" />
+                  Hapus Laporan
+                </button>
+              </div>
             )}
           </div>
         </Modal>
