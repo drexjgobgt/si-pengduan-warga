@@ -159,7 +159,7 @@ function App() {
     const token =
       new URLSearchParams(window.location.search).get("token") || resetToken;
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-[#f1f5f9] flex items-center justify-center p-4">
         <ResetPasswordForm
           token={token}
           onBack={() => {
@@ -179,7 +179,7 @@ function App() {
   // Forgot Password View
   if (currentView === "forgot-password") {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-[#f1f5f9] flex items-center justify-center p-4">
         <ForgotPasswordForm
           onBack={() => {
             setCurrentView("auth");
@@ -197,10 +197,10 @@ function App() {
   // Auth View
   if (currentView === "auth") {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
-        <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md">
+      <div className="min-h-screen bg-[#f1f5f9] flex items-center justify-center p-4">
+        <div className="civic-card p-8 w-full max-w-md">
           <div className="text-center mb-6">
-            <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-sm">
               <svg
                 className="w-8 h-8 text-white"
                 fill="none"
@@ -226,20 +226,20 @@ function App() {
           <div className="flex gap-2 mb-6">
             <button
               onClick={() => setAuthMode("login")}
-              className={`flex-1 py-2 rounded-lg font-medium transition ${
+              className={`flex-1 py-2 rounded-lg font-medium transition-colors ${
                 authMode === "login"
-                  ? "bg-blue-600 text-white"
-                  : "bg-gray-100 text-gray-600"
+                  ? "bg-indigo-600 text-white"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}
             >
               Login
             </button>
             <button
               onClick={() => setAuthMode("register")}
-              className={`flex-1 py-2 rounded-lg font-medium transition ${
+              className={`flex-1 py-2 rounded-lg font-medium transition-colors ${
                 authMode === "register"
-                  ? "bg-blue-600 text-white"
-                  : "bg-gray-100 text-gray-600"
+                  ? "bg-indigo-600 text-white"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}
             >
               Daftar
@@ -280,7 +280,7 @@ function App() {
         <Header onNavigate={setCurrentView} currentView={currentView} />
         <div className="flex-1 p-4">
           <div className="max-w-2xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-lg p-6">
+            <div className="civic-card p-6">
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-2xl font-bold text-gray-800">
                   📝 Buat Pengaduan Baru
