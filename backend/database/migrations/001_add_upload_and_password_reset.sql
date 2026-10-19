@@ -29,7 +29,15 @@ CREATE TABLE IF NOT EXISTS password_reset_tokens (
 CREATE INDEX IF NOT EXISTS idx_password_reset_tokens_token ON password_reset_tokens(token);
 CREATE INDEX IF NOT EXISTS idx_password_reset_tokens_user_id ON password_reset_tokens(user_id);
 
+-- Add is_anonymous column if not exists
+ALTER TABLE complaints ADD COLUMN IF NOT EXISTS is_anonymous BOOLEAN DEFAULT FALSE;
+
+-- Update votes constraint to allow 'up', 'down', 'support'
+ALTER TABLE votes DROP CONSTRAINT IF EXISTS votes_vote_type_check;
+ALTER TABLE votes ADD CONSTRAINT votes_vote_type_check CHECK (vote_type IN ('up', 'down', 'support'));
+
 -- Comments
 COMMENT ON TABLE complaint_images IS 'Stores multiple images for each complaint';
 COMMENT ON TABLE password_reset_tokens IS 'Stores password reset tokens with expiration';
+
 

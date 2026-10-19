@@ -16,10 +16,10 @@ export const ComplaintInteractions = ({ complaint, onUpdate }) => {
 
   useEffect(() => {
     fetchComments();
-    // Update local counts if complaint prop changes
-    setUpCount(parseInt(complaint.up_vote_count) || 0);
-    setDownCount(parseInt(complaint.down_vote_count) || 0);
-  }, [complaint.id]);
+    setUpCount(parseInt(complaint.up_vote_count, 10) || 0);
+    setDownCount(parseInt(complaint.down_vote_count, 10) || 0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [complaint.id, complaint.up_vote_count, complaint.down_vote_count]);
 
   const fetchComments = async () => {
     try {
@@ -105,21 +105,31 @@ export const ComplaintInteractions = ({ complaint, onUpdate }) => {
 
         {/* Comment Form */}
         {isAuthenticated ? (
-          <form onSubmit={handleCommentSubmit} className="mb-6 flex gap-2">
-            <input
-              type="text"
-              value={newComment}
-              onChange={(e) => setNewComment(e.target.value)}
-              placeholder="Tulis komentar..."
-              className="flex-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent glass-input"
-            />
-            <button
-              type="submit"
-              disabled={!newComment.trim()}
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 transition"
-            >
-              <Send className="w-4 h-4" />
-            </button>
+          <form onSubmit={handleCommentSubmit} className="mb-6">
+            {commentError && (
+              <div className="mb-2 p-2 rounded text-xs text-rose-700 bg-rose-50 border border-rose-200">
+                {commentError}
+              </div>
+            )}
+            <div className="flex gap-2">
+              <input
+                type="text"
+                value={newComment}
+                onChange={(e) => {
+                  setNewComment(e.target.value);
+                  if (commentError) setCommentError(null);
+                }}
+                placeholder="Tulis komentar..."
+                className="flex-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent glass-input"
+              />
+              <button
+                type="submit"
+                disabled={!newComment.trim()}
+                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 transition"
+              >
+                <Send className="w-4 h-4" />
+              </button>
+            </div>
           </form>
         ) : (
           <div className="mb-6 text-sm text-gray-500 bg-gray-50 p-3 rounded-lg text-center">

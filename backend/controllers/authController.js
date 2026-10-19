@@ -5,9 +5,14 @@ const pool = require("../config/database");
 const {
   validateEmail,
   validatePassword,
+  validatePhone,
+  validateNIK,
   sanitizeInput,
 } = require("../utils/Validator");
 const { sendWelcomeEmail, sendPasswordResetEmail } = require("../services/emailService");
+
+// Dummy hash for timing attack mitigation
+const DUMMY_HASH = "$2b$10$e8O4K8K10zU3Y7E5eYg5l.nK9Z3O5u0F5e0E7X5A9J3K5L7M9N1O";
 
 exports.register = async (req, res, next) => {
   try {
@@ -28,6 +33,14 @@ exports.register = async (req, res, next) => {
       return res.status(400).json({ error: "Password minimal 6 karakter" });
     }
 
+    if (phone && !validatePhone(phone)) {
+      return res.status(400).json({ error: "Format nomor telepon tidak valid" });
+    }
+
+    if (nik && !validateNIK(nik)) {
+      return res.status(400).json({ error: "NIK harus 16 digit angka" });
+    }
+
     // Sanitize inputs
     const cleanName = sanitizeInput(name);
     const cleanEmail = sanitizeInput(email);
@@ -35,12 +48,12 @@ exports.register = async (req, res, next) => {
     // Hash password
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    // Insert user
+    // Insert user (ensure null instead of undefined for optional fields)
     const result = await pool.query(
       `INSERT INTO users (name, email, phone, nik, password_hash) 
        VALUES ($1, $2, $3, $4, $5) 
        RETURNING id, name, email, role, created_at`,
-      [cleanName, cleanEmail, phone, nik, hashedPassword]
+      [cleanName, cleanEmail, phone || null, nik || null, hashedPassword]
     );
 
     const user = result.rows[0];
@@ -89,6 +102,8 @@ exports.login = async (req, res, next) => {
     );
 
     if (result.rows.length === 0) {
+      // Timing attack protection: run dummy compare to maintain uniform response time
+      await bcrypt.compare(password, DUMMY_HASH);
       return res.status(401).json({
         error: "Email atau password salah",
       });
@@ -153,12 +168,18 @@ exports.updateProfile = async (req, res, next) => {
     const userId = req.user.userId;
     const { name, phone } = req.body;
 
+    if (phone && !validatePhone(phone)) {
+      return res.status(400).json({ error: "Format nomor telepon tidak valid" });
+    }
+
+    const cleanName = name ? sanitizeInput(name) : null;
+
     const result = await pool.query(
       `UPDATE users 
        SET name = COALESCE($1, name), phone = COALESCE($2, phone)
        WHERE id = $3
        RETURNING id, name, email, phone, role`,
-      [name, phone, userId]
+      [cleanName, phone || null, userId]
     );
 
     res.json({
@@ -195,20 +216,21 @@ exports.forgotPassword = async (req, res, next) => {
 
     const user = userResult.rows[0];
 
-    // Generate token
-    const token = crypto.randomBytes(32).toString("hex");
+    // Generate token and store its sha256 hash
+    const rawToken = crypto.randomBytes(32).toString("hex");
+    const hashedToken = crypto.createHash("sha256").update(rawToken).digest("hex");
     const expiresAt = new Date();
     expiresAt.setHours(expiresAt.getHours() + 1); // 1 hour expiry
 
-    // Save token
+    // Save hashed token
     await pool.query(
       `INSERT INTO password_reset_tokens (user_id, token, expires_at)
        VALUES ($1, $2, $3)`,
-      [user.id, token, expiresAt]
+      [user.id, hashedToken, expiresAt]
     );
 
-    // Send email
-    const resetLink = `${process.env.FRONTEND_URL || "http://localhost:3000"}/reset-password?token=${token}`;
+    // Send email with raw token in link
+    const resetLink = `${process.env.FRONTEND_URL || "http://localhost:3000"}/reset-password?token=${rawToken}`;
     await sendPasswordResetEmail(user.email, user.name, resetLink);
 
     res.json({
@@ -236,6 +258,9 @@ exports.resetPassword = async (req, res, next) => {
       });
     }
 
+    // Hash incoming token to match with stored sha256 hash
+    const hashedToken = crypto.createHash("sha256").update(token).digest("hex");
+
     // Find valid token
     const tokenResult = await pool.query(
       `SELECT prt.*, u.id as user_id
@@ -244,7 +269,7 @@ exports.resetPassword = async (req, res, next) => {
        WHERE prt.token = $1 
          AND prt.expires_at > NOW()
          AND prt.used = FALSE`,
-      [token]
+      [hashedToken]
     );
 
     if (tokenResult.rows.length === 0) {

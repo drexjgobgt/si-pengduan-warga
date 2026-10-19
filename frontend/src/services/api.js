@@ -57,6 +57,15 @@ export const complaintAPI = {
   getComments: (id) => api.get(`/complaints/${id}/comments`),
   deleteComment: (id, commentId) => api.delete(`/complaints/${id}/comments/${commentId}`),
   getHistory: (id) => api.get(`/complaints/${id}/history`),
+  
+  // New: Timeline, Disposisi & SLA
+  getTimeline: (id) => api.get(`/complaints/${id}/timeline`),
+  assign: (id, data) => api.post(`/complaints/${id}/assign`, data),
+  addProgressNote: (id, data) => api.post(`/complaints/${id}/progress`, data),
+  resolve: (id, data) => api.post(`/complaints/${id}/resolve`, data),
+  reopen: (id, data) => api.post(`/complaints/${id}/reopen`, data),
+  getSLASummary: () => api.get("/complaints/sla/summary"),
+
   uploadImage: (complaintId, formData) => {
     return api.post(`/complaints/${complaintId}/upload`, formData, {
       headers: {
@@ -70,6 +79,14 @@ export const complaintAPI = {
   deleteImage: (complaintId, imageId) => {
     return api.delete(`/complaints/${complaintId}/images/${imageId}`);
   },
+};
+
+// Department & Officer APIs
+export const departmentAPI = {
+  getAll: () => api.get("/departments"),
+  getOfficers: (params) => api.get("/departments/officers", { params }),
+  create: (data) => api.post("/departments", data),
+  update: (id, data) => api.put(`/departments/${id}`, data),
 };
 
 // Category APIs

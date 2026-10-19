@@ -1,8 +1,7 @@
-
 import React, { useState, useEffect } from "react";
 import { Input } from "../Common/Input";
 import { Button } from "../Common/Button";
-import { Send, MapPin } from "lucide-react";
+import { Send, MapPin, Clock, ShieldCheck, Sparkles } from "lucide-react";
 import { ImageUpload } from "../Common/ImageUpload";
 import { MapContainer, TileLayer, Marker, useMapEvents } from "react-leaflet";
 import L from "leaflet";
@@ -43,12 +42,13 @@ export const ComplaintForm = ({ onSubmit, loading }) => {
     location_address: "",
     location_lat: null,
     location_lng: null,
+    priority: "normal",
+    is_anonymous: false,
   });
   const [file, setFile] = useState(null);
   const [mapPosition, setMapPosition] = useState(null);
 
   useEffect(() => {
-    // Try to get user's current location
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -61,7 +61,6 @@ export const ComplaintForm = ({ onSubmit, loading }) => {
           }));
         },
         () => {
-          // Default to Jakarta if permission denied or error
           setMapPosition({ lat: -6.1751, lng: 106.865 });
         }
       );
@@ -88,48 +87,96 @@ export const ComplaintForm = ({ onSubmit, loading }) => {
     onSubmit(formData, file);
   };
 
+  const priorities = [
+    { value: "rendah", label: "Rendah", sla: "120 Jam (5 Hari)", desc: "Dampak terbatas" },
+    { value: "normal", label: "Normal", sla: "72 Jam (3 Hari)", desc: "Standar operasional" },
+    { value: "tinggi", label: "Tinggi", sla: "48 Jam (2 Hari)", desc: "Mengganggu aktivitas warga" },
+    { value: "darurat", label: "Darurat", sla: "24 Jam (1 Hari)", desc: "Risiko bahaya & keselamatan" },
+  ];
+
   return (
     <div className="space-y-6">
-      <div className="glass-card p-6 rounded-2xl space-y-4">
-        <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-          Buat Pengaduan Baru
-        </h3>
-
+      <div className="space-y-5">
         <Input
-          label="Judul Pengaduan"
+          label="Judul Laporan Pengaduan"
           value={formData.title}
           onChange={(e) => handleChange("title", e.target.value)}
-          placeholder="Contoh: Jalan berlubang di depan gang 5"
+          placeholder="Contoh: Lampu penerangan jalan padam di Jl. Merdeka RT 03"
           required
-          className="glass-input"
         />
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            Deskripsi Detail <span className="text-red-500">*</span>
+          <label className="block text-xs font-semibold text-slate-700 mb-1.5 flex items-center justify-between">
+            <span>
+              Deskripsi Masalah Lengkap <span className="text-rose-500">*</span>
+            </span>
+            <span className="text-[11px] font-normal text-indigo-600 flex items-center gap-1">
+              <Sparkles className="w-3 h-3" /> Auto-kategori AI
+            </span>
           </label>
           <textarea
             value={formData.description}
             onChange={(e) => handleChange("description", e.target.value)}
-            placeholder="Jelaskan masalahnya secara detail. AI akan otomatis mengklasifikasikan kategori pengaduan Anda."
-            rows="5"
+            placeholder="Jelaskan kondisi permasalahan secara jelas, detail, dan sertakan dampak yang dialami lingkungan sekitar."
+            rows="4"
             required
-            className="w-full px-4 py-3 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent glass-input"
+            className="w-full p-3 text-xs rounded-lg border border-slate-300 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 bg-white leading-relaxed"
           />
-          <p className="text-sm text-gray-500 mt-2">
-            💡 Tip: Semakin detail deskripsi, semakin akurat klasifikasi AI
+          <p className="text-[11px] text-slate-400 mt-1">
+            Sistem cerdas kami akan menganalisis teks pengaduan secara otomatis untuk memetakan OPD yang bertanggung jawab.
           </p>
         </div>
 
-        <div className="space-y-2">
-          <label className="block text-sm font-medium text-gray-700">
-            Lokasi Kejadian
+        {/* Priority & SLA Selection */}
+        <div>
+          <label className="block text-xs font-semibold text-slate-700 mb-1.5 flex items-center gap-1.5">
+            <Clock className="w-3.5 h-3.5 text-slate-500" />
+            Tingkat Urgensi & Target Penyelesaian (SLA)
           </label>
-          <div className="h-64 w-full rounded-xl overflow-hidden border border-gray-200 z-0 relative">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2.5">
+            {priorities.map((p) => {
+              const isSelected = formData.priority === p.value;
+              return (
+                <button
+                  key={p.value}
+                  type="button"
+                  onClick={() => handleChange("priority", p.value)}
+                  className={`p-2.5 text-left rounded-lg border transition-all text-xs ${
+                    isSelected
+                      ? "border-indigo-600 bg-indigo-50/60 ring-1 ring-indigo-500"
+                      : "border-slate-200 bg-white hover:bg-slate-50"
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold text-slate-900 capitalize">
+                      {p.label}
+                    </span>
+                    {isSelected && (
+                      <span className="w-2 h-2 rounded-full bg-indigo-600" />
+                    )}
+                  </div>
+                  <div className="text-[11px] font-medium text-indigo-700 mt-0.5">
+                    Target: {p.sla}
+                  </div>
+                  <div className="text-[10px] text-slate-400 mt-0.5">
+                    {p.desc}
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Interactive Map */}
+        <div className="space-y-1.5">
+          <label className="block text-xs font-semibold text-slate-700">
+            Titik Koordinat Lokasi Kejadian
+          </label>
+          <div className="h-60 w-full rounded-lg overflow-hidden border border-slate-200 z-0 relative">
             {mapPosition && (
               <MapContainer
                 center={mapPosition}
-                zoom={13}
+                zoom={14}
                 style={{ height: "100%", width: "100%" }}
               >
                 <TileLayer
@@ -143,47 +190,64 @@ export const ComplaintForm = ({ onSubmit, loading }) => {
               </MapContainer>
             )}
           </div>
-          <p className="text-xs text-gray-500">
-            Klik pada peta untuk menandai lokasi kejadian.
+          <p className="text-[11px] text-slate-400">
+            Klik pada peta untuk menyesuaikan titik lokasi permasalahan secara presisi.
           </p>
         </div>
 
         <Input
-          label="Detail Lokasi (Patokan/Alamat)"
+          label="Detail Lokasi / Patokan Alamat"
           icon={MapPin}
           value={formData.location_address}
           onChange={(e) => handleChange("location_address", e.target.value)}
-          placeholder="Contoh: Depan Toko Maju Jaya, Jl. Sudirman No. 123"
-          className="glass-input"
+          placeholder="Contoh: Depan Kantor Pos, Jl. Pemuda No. 45"
         />
 
-        <ImageUpload onImageSelected={setFile} />
+        {/* Image Attachment */}
+        <div>
+          <label className="block text-xs font-semibold text-slate-700 mb-1.5">
+            Foto Bukti Kejadian
+          </label>
+          <ImageUpload onImageSelected={setFile} />
+        </div>
 
-        <div className="flex items-center gap-2 pt-2">
+        {/* Whistleblower Anonymous Toggle */}
+        <div className="p-3 bg-slate-50 border border-slate-200 rounded-lg flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <ShieldCheck className="w-4 h-4 text-slate-600" />
+            <div>
+              <label htmlFor="is_anonymous" className="text-xs font-semibold text-slate-800 cursor-pointer">
+                Kirim Sebagai Laporan Anonim
+              </label>
+              <p className="text-[11px] text-slate-500">
+                Nama, email, dan nomor telepon Anda akan dirahasiakan sepenuhnya dari publik.
+              </p>
+            </div>
+          </div>
           <input
             type="checkbox"
             id="is_anonymous"
             checked={formData.is_anonymous || false}
             onChange={(e) => handleChange("is_anonymous", e.target.checked)}
-            className="w-4 h-4 text-blue-600 rounded border-gray-300 focus:ring-blue-500"
+            className="w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500 cursor-pointer"
           />
-          <label htmlFor="is_anonymous" className="text-sm text-gray-700 select-none">
-            Sembunyikan nama saya (Laporan Anonim)
-          </label>
         </div>
 
-        <div className="pt-4">
+        {/* Submit */}
+        <div className="pt-2">
           <Button
             onClick={handleSubmit}
             disabled={loading || !formData.title || !formData.description}
             variant="primary"
             icon={Send}
-            className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+            className="w-full py-2.5 text-xs font-semibold bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg shadow-sm transition-colors"
           >
-            {loading ? "Mengirim..." : "Kirim Pengaduan"}
+            {loading ? "Mengirim Laporan..." : "Kirimkan Laporan Pengaduan"}
           </Button>
         </div>
       </div>
     </div>
   );
 };
+
+export default ComplaintForm;

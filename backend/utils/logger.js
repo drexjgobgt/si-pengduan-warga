@@ -3,7 +3,11 @@ const path = require("path");
 
 const logDir = path.join(__dirname, "../logs");
 if (!fs.existsSync(logDir)) {
-  fs.mkdirSync(logDir);
+  try {
+    fs.mkdirSync(logDir, { recursive: true });
+  } catch (e) {
+    // ignore directory creation error
+  }
 }
 
 const log = (level, message, meta = {}) => {
@@ -18,12 +22,14 @@ const log = (level, message, meta = {}) => {
   // Console log
   console.log(`[${timestamp}] ${level.toUpperCase()}: ${message}`);
 
-  // File log
+  // Non-blocking file append
   const logFile = path.join(
     logDir,
     `${level}-${new Date().toISOString().split("T")[0]}.log`
   );
-  fs.appendFileSync(logFile, JSON.stringify(logEntry) + "\n");
+  fs.appendFile(logFile, JSON.stringify(logEntry) + "\n", (err) => {
+    if (err) console.error("Logging error:", err);
+  });
 };
 
 module.exports = {

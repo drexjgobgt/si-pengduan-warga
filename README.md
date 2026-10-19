@@ -7,20 +7,19 @@ Sistem Informasi Pengaduan Warga modern dengan antarmuka **Premium Glassmorphism
 ## 🚀 Fitur Unggulan
 
 ### 🌟 User Experience (Warga)
-- **Modern UI**: Desain Glassmorphism yang estetik, responsif, dan animasi halus.
-- **Laporan Anonim**: Opsi untuk menyembunyikan identitas pelapor demi keamanan privasi.
-- **Lokasi Presisi**: Pinpoint lokasi kejadian via Peta Interaktif (Leaflet) atau GPS otomatis.
-- **Bukti Multimedia**: Upload foto kejadian dengan preview langsung.
-- **Tracking Transparan**: Pantau status laporan (Pending -> Diproses -> Selesai) secara real-time.
-- **Interaksi Komunitas**: Fitur Vote dan Komentar layaknya sosial media.
-- **Hapus Laporan**: Kontrol penuh untuk menghapus laporan sendiri jika diperlukan.
+- **Civic UI (Taste Skill)**: Desain utilitas publik yang bersih, profesional, modern, bebas gradien berlebihan, dengan kontras keterbacaan tinggi.
+- **Timeline Kronologis Transparan**: Rekam jejak lengkap dari pelaporan, verifikasi, penugasan dinas, catatan perkembangan berkala, hingga bukti foto tindakan penyelesaian.
+- **Laporan Anonim Terlindungi**: Opsi anonim menjaga kerahasiaan identitas pelapor baik pada kartu laporan maupun jejak kronologi timeline.
+- **Pilihan Urgensi & Estimasi SLA**: Warga dapat melihat estimasi batas waktu penanganan secara transparan (24j - 120j).
+- **Pembukaan Kembali Laporan**: Warga dapat membuka kembali laporan yang selesai jika permasalahan di lapangan belum tuntas.
+- **Lokasi Presisi & Bukti Foto**: Pinpoint peta interaktif (Leaflet) dan upload foto kejadian dengan preview instan.
 
-### 🛡️ Dashboard (Admin & Petugas)
-- **Heatmap Visual**: Peta panas sebaran masalah untuk prioritas penanganan wilayah.
-- **AI Classification**: Klasifikasi otomatis kategori laporan (Sampah, Infra, Keamanan) menggunakan keyword matching.
-- **Statistik Lengkap**: Grafik tren laporan bulanan dan kategori terbanyak.
-- **Manajemen Laporan**: Update status, respon cepat, dan verifikasi lapangan.
-- **Notifikasi Sistem**: Alert real-time untuk laporan baru atau update status.
+### 🛡️ Dashboard Operasional (Admin, Supervisor, & Petugas)
+- **SLA & Eskalasi Otomatis**: Sistem penghitungan batas waktu penanganan di backend dengan indikator aman, mendekati tenggat (< 12 jam), terlambat, dan auto-eskalasi ke Supervisor.
+- **Manajemen Disposisi & OPD**: Antrean disposisi cepat ke OPD (DLH, PUPR, DISHUB, SATPOL PP, dll) dan petugas lapangan disertai indikator beban kerja aktif (*workload balancing*).
+- **Tab Khusus Petugas ("Tugas Saya")**: Antarmuka terfokus bagi petugas untuk memperbarui progres penanganan, mencatat catatan internal/publik, dan mengunggah foto bukti penyelesaian.
+- **Audit Trail Pemindahan**: Riwayat lengkap aktor, waktu, catatan pengalihan, dan mutasi tugas tanpa menghapus riwayat lama.
+- **Heatmap Visual & Statistik**: Peta persebaran masalah lingkungan dan analitik kepatuhan SLA per departemen.
 
 ---
 
@@ -94,12 +93,11 @@ EMAIL_USER=email_anda@gmail.com
 EMAIL_PASS=app_password_gmail
 ```
 
-**Setup Database:**
-Jalankan script migrasi (Pastikan PostgreSQL sudah berjalan):
+**Setup Database & Migrasi:**
+Jalankan migrasi database otomatis (Pastikan PostgreSQL sudah berjalan):
 ```bash
-# Otomatis membuat DB dan Tabel
-node scripts/migrate_anonymous.js
-# Atau import manual file database/schema.sql via pgAdmin
+# Jalankan runner migrasi otomatis (mencakup upload, reset password, SLA, OPD & disposisi)
+node database/migrations/run-migration.js
 ```
 
 Jalankan Server:

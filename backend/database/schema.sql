@@ -38,6 +38,17 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 -- STEP 3: CREATE TABLES
 -- ========================================
 
+-- Table: departments
+CREATE TABLE departments (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL UNIQUE,
+    code VARCHAR(20) NOT NULL UNIQUE,
+    description TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+COMMENT ON TABLE departments IS 'Government departments responsible for handling complaints';
+
 -- Table: users
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
@@ -46,7 +57,8 @@ CREATE TABLE users (
     phone VARCHAR(20),
     nik VARCHAR(16) UNIQUE,
     password_hash VARCHAR(255) NOT NULL,
-    role VARCHAR(20) DEFAULT 'warga' CHECK (role IN ('warga', 'admin', 'petugas')),
+    role VARCHAR(20) DEFAULT 'warga' CHECK (role IN ('warga', 'petugas', 'supervisor', 'admin')),
+    department_id INTEGER REFERENCES departments(id) ON DELETE SET NULL,
     is_active BOOLEAN DEFAULT TRUE,
     email_verified BOOLEAN DEFAULT FALSE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -54,12 +66,13 @@ CREATE TABLE users (
 );
 
 -- Add comment to table
-COMMENT ON TABLE users IS 'Stores user information including citizens, admin, and officers';
+COMMENT ON TABLE users IS 'Stores user information including citizens, officers, supervisors, and admins';
 
 -- Table: categories
 CREATE TABLE categories (
     id SERIAL PRIMARY KEY,
     name VARCHAR(50) NOT NULL UNIQUE,
+    department_id INTEGER REFERENCES departments(id) ON DELETE SET NULL,
     description TEXT,
     color VARCHAR(7) DEFAULT '#6B7280',
     icon VARCHAR(50),
@@ -67,7 +80,7 @@ CREATE TABLE categories (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-COMMENT ON TABLE categories IS 'Complaint categories for classification';
+COMMENT ON TABLE categories IS 'Complaint categories for classification, assigned to departments';
 
 -- Table: complaints
 CREATE TABLE complaints (
@@ -82,8 +95,22 @@ CREATE TABLE complaints (
     location_lat DECIMAL(10,8),
     location_lng DECIMAL(11,8),
     image_url TEXT,
+    is_anonymous BOOLEAN DEFAULT FALSE,
     status VARCHAR(20) DEFAULT 'pending' CHECK (status IN ('pending', 'diproses', 'selesai', 'ditolak')),
     priority VARCHAR(20) DEFAULT 'normal' CHECK (priority IN ('rendah', 'normal', 'tinggi', 'darurat')),
+    assigned_to INTEGER REFERENCES users(id) ON DELETE SET NULL,
+    department_id INTEGER REFERENCES departments(id) ON DELETE SET NULL,
+    sla_hours INTEGER DEFAULT 72,
+    sla_start_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    sla_deadline_at TIMESTAMP,
+    sla_status VARCHAR(30) DEFAULT 'aman' CHECK (sla_status IN ('aman', 'mendekati_tenggat', 'terlambat', 'selesai_tepat_waktu', 'selesai_terlambat')),
+    is_escalated BOOLEAN DEFAULT FALSE,
+    escalated_at TIMESTAMP,
+    escalation_level INTEGER DEFAULT 0,
+    escalation_reason TEXT,
+    resolution_proof_url TEXT,
+    resolution_notes TEXT,
+    resolved_at TIMESTAMP,
     response_text TEXT,
     response_by INTEGER REFERENCES users(id) ON DELETE SET NULL,
     response_at TIMESTAMP,
@@ -91,21 +118,39 @@ CREATE TABLE complaints (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-COMMENT ON TABLE complaints IS 'Main complaints table with AI classification results';
+COMMENT ON TABLE complaints IS 'Main complaints table with AI classification results, SLA, and disposition tracking';
 COMMENT ON COLUMN complaints.auto_category_id IS 'AI-predicted category';
 COMMENT ON COLUMN complaints.confidence_score IS 'AI confidence percentage (0-100)';
+COMMENT ON COLUMN complaints.is_anonymous IS 'Whether complaint was submitted anonymously';
+
+-- Table: complaint_dispositions
+CREATE TABLE complaint_dispositions (
+    id SERIAL PRIMARY KEY,
+    complaint_id INTEGER NOT NULL REFERENCES complaints(id) ON DELETE CASCADE,
+    assigned_by INTEGER NOT NULL REFERENCES users(id) ON DELETE RESTRICT,
+    from_officer_id INTEGER REFERENCES users(id) ON DELETE SET NULL,
+    to_officer_id INTEGER REFERENCES users(id) ON DELETE SET NULL,
+    department_id INTEGER REFERENCES departments(id) ON DELETE SET NULL,
+    notes TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+COMMENT ON TABLE complaint_dispositions IS 'Audit trail for officer assignments and departmental transfers';
 
 -- Table: complaint_history
 CREATE TABLE complaint_history (
     id SERIAL PRIMARY KEY,
     complaint_id INTEGER NOT NULL REFERENCES complaints(id) ON DELETE CASCADE,
     status VARCHAR(20) NOT NULL,
+    action_type VARCHAR(50) DEFAULT 'status_change',
     note TEXT,
+    is_internal BOOLEAN DEFAULT FALSE,
+    proof_url TEXT,
     changed_by INTEGER REFERENCES users(id) ON DELETE SET NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-COMMENT ON TABLE complaint_history IS 'Audit trail for complaint status changes';
+COMMENT ON TABLE complaint_history IS 'Audit trail and rich chronological timeline for complaint lifecycle';
 
 -- Table: comments
 CREATE TABLE comments (
@@ -125,7 +170,7 @@ CREATE TABLE votes (
     id SERIAL PRIMARY KEY,
     complaint_id INTEGER NOT NULL REFERENCES complaints(id) ON DELETE CASCADE,
     user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-    vote_type VARCHAR(10) DEFAULT 'support' CHECK (vote_type IN ('upvote', 'support')),
+    vote_type VARCHAR(10) DEFAULT 'up' CHECK (vote_type IN ('up', 'down', 'support')),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     UNIQUE(complaint_id, user_id)
 );
@@ -146,6 +191,33 @@ CREATE TABLE classification_logs (
 );
 
 COMMENT ON TABLE classification_logs IS 'Logs for AI classification performance monitoring';
+
+-- Table: complaint_images
+CREATE TABLE complaint_images (
+    id SERIAL PRIMARY KEY,
+    complaint_id INTEGER NOT NULL REFERENCES complaints(id) ON DELETE CASCADE,
+    image_url TEXT NOT NULL,
+    image_path TEXT, -- Cloudinary public_id or local path
+    file_name VARCHAR(255),
+    file_size INTEGER,
+    mime_type VARCHAR(50),
+    is_primary BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+COMMENT ON TABLE complaint_images IS 'Stores multiple images for each complaint';
+
+-- Table: password_reset_tokens
+CREATE TABLE password_reset_tokens (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    token VARCHAR(255) NOT NULL UNIQUE,
+    expires_at TIMESTAMP NOT NULL,
+    used BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+COMMENT ON TABLE password_reset_tokens IS 'Stores password reset tokens with expiration';
 
 -- Table: notifications (optional)
 CREATE TABLE notifications (
@@ -186,11 +258,14 @@ CREATE INDEX idx_comments_user_id ON comments(user_id);
 CREATE INDEX idx_votes_complaint_id ON votes(complaint_id);
 CREATE INDEX idx_votes_user_id ON votes(user_id);
 CREATE INDEX idx_classification_logs_complaint_id ON classification_logs(complaint_id);
+CREATE INDEX idx_complaint_images_complaint_id ON complaint_images(complaint_id);
+CREATE INDEX idx_password_reset_tokens_token ON password_reset_tokens(token);
+CREATE INDEX idx_password_reset_tokens_user_id ON password_reset_tokens(user_id);
 CREATE INDEX idx_notifications_user_id ON notifications(user_id);
 CREATE INDEX idx_notifications_is_read ON notifications(is_read);
 
--- Full-text search index for complaints
-CREATE INDEX idx_complaints_fulltext ON complaints USING gin(to_tsvector('indonesian', title || ' ' || description));
+-- Full-text search index for complaints (using 'simple' for standard PostgreSQL compatibility)
+CREATE INDEX idx_complaints_fulltext ON complaints USING gin(to_tsvector('simple', title || ' ' || description));
 
 -- ========================================
 -- STEP 5: CREATE VIEWS

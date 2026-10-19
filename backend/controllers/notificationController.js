@@ -5,6 +5,9 @@ exports.getAll = async (req, res, next) => {
     const userId = req.user.userId;
     const { is_read, limit = 50, offset = 0 } = req.query;
 
+    const safeLimit = Math.min(Math.max(parseInt(limit, 10) || 50, 1), 100);
+    const safeOffset = Math.max(parseInt(offset, 10) || 0, 0);
+
     let query = `
       SELECT n.*, c.title as complaint_title
       FROM notifications n
@@ -21,20 +24,24 @@ exports.getAll = async (req, res, next) => {
     }
 
     query += ` ORDER BY n.created_at DESC LIMIT $${paramIndex} OFFSET $${paramIndex + 1}`;
-    params.push(limit, offset);
+    params.push(safeLimit, safeOffset);
 
-    const result = await pool.query(query, params);
-
-    // Get unread count
-    const unreadResult = await pool.query(
-      'SELECT COUNT(*) as count FROM notifications WHERE user_id = $1 AND is_read = FALSE',
-      [userId]
-    );
+    const [result, unreadResult] = await Promise.all([
+      pool.query(query, params),
+      pool.query(
+        'SELECT COUNT(*) as count FROM notifications WHERE user_id = $1 AND is_read = FALSE',
+        [userId]
+      ),
+    ]);
 
     res.json({
       success: true,
       data: result.rows,
-      unreadCount: parseInt(unreadResult.rows[0].count),
+      unreadCount: parseInt(unreadResult.rows[0].count, 10) || 0,
+      pagination: {
+        limit: safeLimit,
+        offset: safeOffset,
+      },
     });
   } catch (error) {
     next(error);

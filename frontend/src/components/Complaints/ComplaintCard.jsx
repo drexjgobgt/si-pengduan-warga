@@ -6,7 +6,9 @@ import {
   Clock,
   Calendar,
   User,
-  AlertCircle
+  AlertCircle,
+  Building2,
+  UserCheck,
 } from "lucide-react";
 import { CATEGORY_ICONS, STATUS_CONFIG } from "../../utils/constants";
 import {
@@ -15,6 +17,7 @@ import {
   getConfidenceColor,
 } from "../../utils/helpers";
 import * as LucideIcons from "lucide-react";
+import { SLABadge } from "../Common/SLABadge";
 
 export const ComplaintCard = ({ complaint, onClick }) => {
   const CategoryIcon =
@@ -23,11 +26,17 @@ export const ComplaintCard = ({ complaint, onClick }) => {
   const StatusIcon =
     LucideIcons[STATUS_CONFIG[complaint.status]?.icon] || Clock;
 
+  const statusConfig = STATUS_CONFIG[complaint.status] || {
+    label: complaint.status,
+    color: "bg-slate-100 text-slate-700 border-slate-200",
+  };
+
   return (
     <div
       onClick={onClick}
-      className="civic-card p-5 cursor-pointer hover:border-indigo-400 hover:shadow-md transition-all duration-200 group flex flex-col h-full"
+      className="civic-card p-5 cursor-pointer hover:border-indigo-400 hover:shadow-md transition-all duration-200 group flex flex-col h-full bg-white border border-slate-200 rounded-lg"
     >
+      {/* Header: Title and Status */}
       <div className="flex items-start justify-between gap-3 mb-3">
         <div className="flex items-center gap-3 min-w-0">
           <div
@@ -43,23 +52,43 @@ export const ComplaintCard = ({ complaint, onClick }) => {
         </div>
         <span
           className={`px-2.5 py-1 rounded-md text-[10px] font-bold tracking-wide uppercase flex items-center gap-1.5 flex-shrink-0 border ${
-            STATUS_CONFIG[complaint.status].color.replace('bg-', 'bg-').replace('text-', 'text-').replace('border-', 'border-')
+            statusConfig.color
           } opacity-90`}
         >
           <StatusIcon className="w-3 h-3" />
-          {STATUS_CONFIG[complaint.status].label}
+          {statusConfig.label}
         </span>
       </div>
 
+      {/* Description */}
       <p className="text-slate-600 text-sm mb-4 line-clamp-2 leading-relaxed flex-grow">
         {complaint.description}
       </p>
+
+      {/* SLA & Department Badges */}
+      <div className="flex flex-wrap items-center gap-2 mb-3">
+        <SLABadge complaint={complaint} showDeadline />
+
+        {complaint.department_name && (
+          <span className="inline-flex items-center gap-1 text-[11px] font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+            <Building2 className="w-3 h-3 text-slate-500" />
+            <span className="truncate max-w-[140px]">{complaint.department_name}</span>
+          </span>
+        )}
+
+        {complaint.assigned_officer_name && (
+          <span className="inline-flex items-center gap-1 text-[11px] font-medium text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-200">
+            <UserCheck className="w-3 h-3 text-indigo-600" />
+            <span className="truncate max-w-[120px]">{complaint.assigned_officer_name}</span>
+          </span>
+        )}
+      </div>
 
       {/* Tags and Location */}
       <div className="flex flex-wrap items-center gap-2 mb-4">
         <span className="inline-flex items-center gap-1.5 text-slate-600 bg-slate-100 px-2 py-1 rounded-md border border-slate-200 text-[11px] font-medium">
           <User className="w-3 h-3" />
-          {complaint.is_anonymous ? "Warga" : complaint.user_name}
+          {complaint.is_anonymous ? "Pelapor Anonim" : (complaint.user_name || "Warga")}
         </span>
         
         <span className="inline-flex items-center gap-1.5 bg-slate-100 px-2 py-1 rounded-md border border-slate-200 text-[11px] font-medium">
@@ -92,7 +121,7 @@ export const ComplaintCard = ({ complaint, onClick }) => {
             src={complaint.image_url.startsWith('http') ? complaint.image_url : `http://localhost:5000${complaint.image_url}`} 
             alt="Lampiran" 
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-            onError={(e) => e.target.style.display = 'none'}
+            onError={(e) => (e.target.style.display = 'none')}
           />
         </div>
       )}
@@ -117,3 +146,5 @@ export const ComplaintCard = ({ complaint, onClick }) => {
     </div>
   );
 };
+
+export default ComplaintCard;

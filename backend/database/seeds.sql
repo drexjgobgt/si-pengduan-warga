@@ -61,11 +61,11 @@ INSERT INTO complaint_history (complaint_id, status, note, changed_by) VALUES
 
 -- Insert some votes
 INSERT INTO votes (complaint_id, user_id, vote_type) VALUES
-(1, 4, 'support'),
-(1, 5, 'support'),
-(2, 3, 'support'),
-(2, 5, 'support'),
-(3, 3, 'support');
+(1, 4, 'up'),
+(1, 5, 'up'),
+(2, 3, 'up'),
+(2, 5, 'up'),
+(3, 3, 'up');
 
 -- Insert some comments
 INSERT INTO comments (complaint_id, user_id, comment) VALUES
