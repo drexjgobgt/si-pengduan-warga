@@ -1,113 +1,143 @@
-# Sistem Pengaduan Warga (SIPW)
+# Sistem Informasi Pengaduan Warga (SIPW)
 
-Sistem Informasi Pengaduan Warga modern dengan antarmuka **Premium Glassmorphism**, klasifikasi otomatis berbasis AI, dan visualisasi data **Heatmap**. Aplikasi ini memudahkan warga melaporkan masalah lingkungan (sampah, jalan rusak, banjir, dll) secara transparan dan responsif.
+<p align="center">
+  <img src="./assets/images/logo.png" alt="Logo SIPW" width="220" />
+</p>
 
-![Banner Preview](https://via.placeholder.com/1200x600?text=Sistem+Pengaduan+Warga+Preview)
+Sistem Informasi Pengaduan Warga (SIPW) adalah aplikasi web pelayanan publik untuk pelaporan, penelusuran status, disposisi tugas, dan pemantauan Service Level Agreement (SLA) penanganan masalah lingkungan perkotaan. 
 
-## 🚀 Fitur Unggulan
-
-### 🌟 User Experience (Warga)
-- **Civic UI (Taste Skill)**: Desain utilitas publik yang bersih, profesional, modern, bebas gradien berlebihan, dengan kontras keterbacaan tinggi.
-- **Timeline Kronologis Transparan**: Rekam jejak lengkap dari pelaporan, verifikasi, penugasan dinas, catatan perkembangan berkala, hingga bukti foto tindakan penyelesaian.
-- **Laporan Anonim Terlindungi**: Opsi anonim menjaga kerahasiaan identitas pelapor baik pada kartu laporan maupun jejak kronologi timeline.
-- **Pilihan Urgensi & Estimasi SLA**: Warga dapat melihat estimasi batas waktu penanganan secara transparan (24j - 120j).
-- **Pembukaan Kembali Laporan**: Warga dapat membuka kembali laporan yang selesai jika permasalahan di lapangan belum tuntas.
-- **Lokasi Presisi & Bukti Foto**: Pinpoint peta interaktif (Leaflet) dan upload foto kejadian dengan preview instan.
-
-### 🛡️ Dashboard Operasional (Admin, Supervisor, & Petugas)
-- **SLA & Eskalasi Otomatis**: Sistem penghitungan batas waktu penanganan di backend dengan indikator aman, mendekati tenggat (< 12 jam), terlambat, dan auto-eskalasi ke Supervisor.
-- **Manajemen Disposisi & OPD**: Antrean disposisi cepat ke OPD (DLH, PUPR, DISHUB, SATPOL PP, dll) dan petugas lapangan disertai indikator beban kerja aktif (*workload balancing*).
-- **Tab Khusus Petugas ("Tugas Saya")**: Antarmuka terfokus bagi petugas untuk memperbarui progres penanganan, mencatat catatan internal/publik, dan mengunggah foto bukti penyelesaian.
-- **Audit Trail Pemindahan**: Riwayat lengkap aktor, waktu, catatan pengalihan, dan mutasi tugas tanpa menghapus riwayat lama.
-- **Heatmap Visual & Statistik**: Peta persebaran masalah lingkungan dan analitik kepatuhan SLA per departemen.
+Aplikasi ini menghubungkan masyarakat dengan instansi Organisasi Perangkat Daerah (OPD) seperti Dinas Lingkungan Hidup (DLH), Dinas Pekerjaan Umum (PUPR), Dinas Perhubungan (DISHUB), dan Satuan Polisi Pamong Praja (SATPOL PP).
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## Pratinjau Antarmuka
+
+### 1. Beranda & Daftar Laporan (Desktop Full-Width)
+Tata letak fluid hingga lebar 1720px dengan pembagian kolom adaptif, baris filter terpadu, dan kartu laporan yang terstruktur rapi.
+
+![Beranda Desktop](./assets/images/dashboard.png)
+
+### 2. Statistik & Tren Interaktif
+Grafik linier formal berbasis Recharts untuk memantau volume aduan masuk, laporan selesai, antrean proses, dan keterlambatan SLA dengan rentang waktu 7 hari hingga 12 bulan.
+
+![Statistik dan Tren](./assets/images/statistics.png)
+
+### 3. Kinerja Penanganan & Komparasi Antar-OPD
+Metrik rata-rata durasi penyelesaian (jam), rasio kepatuhan target SLA, serta diagram batang horizontal yang dapat diurutkan berdasarkan beban kerja atau tingkat ketuntasan.
+
+![Kinerja OPD](./assets/images/performance.png)
+
+### 4. Tampilan Mobile & Drawer Navigasi
+Dioptimalkan untuk layar ponsel (320px–430px) tanpa pergeseran horizontal (*zero overflow*), dilengkapi menu drawer samping dan kontrol formulir yang mudah disentuh.
+
+![Tampilan Mobile](./assets/images/mobile.png)
+
+---
+
+## Fitur Utama
+
+### Pelayanan Publik (Warga)
+- **Pelaporan Berbasis Peta & Bukti**: Penandaan titik lokasi dengan peta interaktif (Leaflet), alamat otomatis, dan unggah foto lampiran.
+- **Opsi Pelapor Anonim**: Melindungi identitas pelapor pada kartu laporan publik dan linimasa penanganan.
+- **Linimasa Kronologis**: Riwayat tahapan dari pelaporan, verifikasi, penugasan petugas, hingga bukti foto tindakan selesai.
+- **Keterbukaan SLA**: Menampilkan estimasi batas waktu penanganan secara transparan (24 jam hingga 120 jam sesuai tingkat urgensi).
+- **Pembukaan Kembali Laporan**: Warga dapat mengajukan pembukaan kembali jika kendala di lapangan belum tuntas.
+
+### Manajemen Operasional & Penugasan (Admin & Petugas)
+- **Pemantauan Batas Waktu SLA**: Klasifikasi otomatis status tenggat (*Aman*, *Mendekati Batas < 12 jam*, *Melewati SLA*, dan *Eskalasi Supervisor*).
+- **Disposisi Cepat ke OPD & Petugas**: Penugasan laporan ke dinas terkait dan petugas lapangan disertai pemantauan beban kerja aktif.
+- **Tab Khusus Petugas ("Tugas Saya")**: Antarmuka kerja bagi petugas untuk memperbarui progres, mencatat tindakan lapangan, dan mengunggah foto bukti penyelesaian.
+- **Audit Trail Pengalihan**: Pencatatan riwayat perpindahan tugas dan catatan internal antar-petugas.
+
+### Analisis Data & Aksesibilitas
+- **Grafik Tren Garis Linier**: Pilihan rentang waktu (7 Hari, 30 Hari, 90 Hari, 12 Bulan) dan opsi toggle kurva interpolasi halus vs garis linier presisi.
+- **Tabel Data Alternatif**: Mode tabel data terstruktur untuk pembaca layar (*screen reader*) sesuai standar aksesibilitas WCAG 2.1 AA.
+- **Peta Kepadatan Spasial (Heatmap)**: Pemetaan sebaran konsentrasi masalah lingkungan di seluruh wilayah administratif.
+
+---
+
+## Tumpukan Teknologi
 
 ### Frontend
-- **React 18** (Vite-based)
-- **Tailwind CSS** (Styling & Responsive Design)
-- **Framer Motion** & **Glass UI** (Animations & Effects)
-- **React Leaflet** (Maps & Heatmap)
-- **Lucide React** (Modern Icons)
-- **Axios** (API Client)
+- **React 18** (`react-scripts`)
+- **Tailwind CSS 3** (Sistem token warna *Civic Navy*, *Azure*, dan semantik status)
+- **Recharts 2.15** (Visualisasi data analitik)
+- **React Leaflet & Leaflet** (Peta spasial dan geolokasi)
+- **Lucide React** (Ikon antarmuka)
+- **Axios** (Klien HTTP API)
 
 ### Backend
-- **Node.js** & **Express** (REST API)
-- **PostgreSQL** (Database Relasional)
-- **Cloudinary** (Cloud Storage untuk Gambar)
-- **JWT** (Secure Authentication)
-- **Multer** (File Handling)
+- **Node.js** & **Express.js** (REST API)
+- **PostgreSQL** (Database relasional dengan agregasi SQL kontinu `generate_series`)
+- **JSON Web Token (JWT)** & **Bcrypt** (Autentikasi dan otorisasi role)
+- **Multer** & **Cloudinary** (Manajemen berkas dan foto lampiran)
 
 ---
 
-## 📋 Prasyarat Instalasi
+## Persyaratan Sistem
 
-Pastikan komputer Anda sudah terinstall:
-- **Node.js** (v16+)
-- **PostgreSQL** (v13+)
+Pastikan perangkat telah terpasang:
+- **Node.js** (versi 16 atau lebih baru)
+- **PostgreSQL** (versi 13 atau lebih baru)
 - **Git**
 
 ---
 
-## ⚡ Panduan Instalasi Cepat
+## Panduan Instalasi & Menjalankan Aplikasi
 
-### 1. Clone Repository
+### 1. Salin Repositori
 ```bash
 git clone https://github.com/drexjgobgt/si-pengduan-warga.git
 cd si-pengduan-warga
 ```
 
 ### 2. Konfigurasi Backend
-Masuk ke folder backend dan install dependencies:
+Masuk ke direktori backend dan instal dependensi:
 ```bash
 cd backend
 npm install
 ```
 
-Buat file `.env` di dalam folder `/backend`:
+Buat file konfigurasi `.env` di dalam folder `/backend`:
 ```env
 PORT=5000
 NODE_ENV=development
 
-# Database Config
+# Konfigurasi Database PostgreSQL
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=pengaduan_warga
 DB_USER=postgres
-DB_PASSWORD=password_db_anda
+DB_PASSWORD=password_database_anda
 
-# Authentication
-JWT_SECRET=rahasia_super_secure_bisa_diganti
+# Autentikasi
+JWT_SECRET=kunci_rahasia_jwt_anda
 
-# Cloudinary (Untuk Upload Gambar)
-CLOUDINARY_CLOUD_NAME=nama_cloud_anda
+# Penyimpanan Cloudinary (Foto Lampiran)
+CLOUDINARY_CLOUD_NAME=cloud_name_anda
 CLOUDINARY_API_KEY=api_key_anda
 CLOUDINARY_API_SECRET=api_secret_anda
 
-# Email Service (Opsional - SMTP Gmail)
+# Layanan Notifikasi Email (Opsional)
 EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
 EMAIL_USER=email_anda@gmail.com
-EMAIL_PASS=app_password_gmail
+EMAIL_PASS=app_password_anda
 ```
 
-**Setup Database & Migrasi:**
-Jalankan migrasi database otomatis (Pastikan PostgreSQL sudah berjalan):
+Jalankan skrip migrasi database:
 ```bash
-# Jalankan runner migrasi otomatis (mencakup upload, reset password, SLA, OPD & disposisi)
 node database/migrations/run-migration.js
 ```
 
-Jalankan Server:
+Jalankan server backend:
 ```bash
 npm run dev
-# Server berjalan di: http://localhost:5000
+# Server aktif pada port: http://localhost:5000
 ```
 
 ### 3. Konfigurasi Frontend
-Buka terminal baru, masuk ke folder frontend:
+Buka terminal baru, masuk ke direktori frontend, lalu pasang dependensi:
 ```bash
 cd ../frontend
 npm install
@@ -118,46 +148,30 @@ Buat file `.env` di dalam folder `/frontend`:
 REACT_APP_API_URL=http://localhost:5000/api
 ```
 
-Jalankan Aplikasi:
+Jalankan aplikasi React:
 ```bash
-npm run dev
-# Akses aplikasi di: http://localhost:3000
+npm start
+# Antarmuka web dapat diakses di: http://localhost:3000
+```
+
+Untuk membangun versi produksi:
+```bash
+npm run build
 ```
 
 ---
 
-## 📸 Screenshots
+## Akun Demo Bawaan
 
-| Dashboard Utama | Detail Laporan (Map & Chart) |
-|:---:|:---:|
-| ![Dashboard](./assets/images/dashboard.png) | ![Detail Laporan](./assets/images/detail.png) |
-
-| Heatmap Wilayah (Admin) | Versi Mobile |
-|:---:|:---:|
-| ![Heatmap](./assets/images/heatmap.png) | ![Mobile View](./assets/images/mobile.png) |
-
----
-
-## 🔐 Akun Demo (Default)
-
-| Role | Email | Password |
-|:---|:---|:---|
-| **Admin** | `admin@pengaduan.local` | `admin123` |
-| **Petugas** | `petugas@pengaduan.local` | `admin123` |
-| **Warga** | *(Silakan Register Sendiri)* | - |
+| Peran | Alamat Email | Kata Sandi | Akses Utama |
+|:---|:---|:---|:---|
+| **Admin** | `admin@pengaduan.local` | `admin123` | Seluruh dashboard, disposisi OPD, analitik kinerja |
+| **Petugas** | `petugas@pengaduan.local` | `admin123` | Tab Tugas Saya, pembaruan status, unggah bukti |
+| **Supervisor** | `supervisor@pengaduan.local` | `admin123` | Eskalasi aduan lewat batas waktu, rekapitulasi SLA |
+| **Warga** | *Daftar mandiri via form* | *Sesuai pendaftaran* | Pelaporan aduan, pelacakan linimasa, ulasan |
 
 ---
 
-## 👥 Kontribusi
+## Lisensi
 
-Project ini dikembangkan untuk kebutuhan Open Source. Pull Request sangat dipersilakan!
-1. Fork repo ini
-2. Buat branch fitur (`git checkout -b fitur-keren`)
-3. Commit perubahan (`git commit -m 'Menambah fitur keren'`)
-4. Push ke branch (`git push origin fitur-keren`)
-5. Buat Pull Request
-
----
-
-**License**: MIT
-**Author**: Drexjgobgt & Team
+Proyek ini dirilis di bawah lisensi [MIT](LICENSE).
