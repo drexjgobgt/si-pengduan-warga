@@ -84,65 +84,65 @@ export const OperationalDashboard = ({ onSelectComplaint, onOpenDisposition }) =
       </div>
 
       {/* KPI Cards (Taste Skill: data as typography, quiet 1px borders) */}
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
-        <div className="p-3.5 bg-white rounded-lg border border-slate-200 shadow-sm">
-          <div className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">
+      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3">
+        <div className="p-3.5 bg-white rounded-md border border-slate-200/90 shadow-2xs">
+          <div className="text-xs font-semibold text-slate-500">
             Laporan Aktif
           </div>
-          <div className="text-2xl font-bold text-slate-900 mt-1">
+          <div className="text-2xl font-bold text-slate-900 mt-1 tabular-nums">
             {summary.active_count || 0}
           </div>
           <div className="text-[11px] text-slate-500 mt-0.5">Sedang ditangani</div>
         </div>
 
-        <div className="p-3.5 bg-white rounded-lg border border-slate-200 shadow-sm">
-          <div className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">
+        <div className="p-3.5 bg-white rounded-md border border-slate-200/90 shadow-2xs">
+          <div className="text-xs font-semibold text-slate-500">
             Antrean Disposisi
           </div>
-          <div className="text-2xl font-bold text-indigo-600 mt-1">
+          <div className="text-2xl font-bold text-slate-900 mt-1 tabular-nums">
             {summary.unassigned_count || unassignedComplaints.length}
           </div>
-          <div className="text-[11px] text-slate-500 mt-0.5">Belum ada petugas</div>
+          <div className="text-[11px] text-slate-500 mt-0.5">Menunggu petugas</div>
         </div>
 
-        <div className="p-3.5 bg-white rounded-lg border border-slate-200 shadow-sm">
-          <div className="text-[11px] font-medium text-amber-700 uppercase tracking-wider">
+        <div className="p-3.5 bg-white rounded-md border border-slate-200/90 shadow-2xs">
+          <div className="text-xs font-semibold text-amber-800">
             Mendekati Batas
           </div>
-          <div className="text-2xl font-bold text-amber-600 mt-1">
+          <div className="text-2xl font-bold text-amber-700 mt-1 tabular-nums">
             {summary.near_deadline_count || 0}
           </div>
-          <div className="text-[11px] text-amber-600/80 mt-0.5">&lt; 12 jam tersisa</div>
+          <div className="text-[11px] text-slate-500 mt-0.5">&lt; 12 jam tersisa</div>
         </div>
 
-        <div className="p-3.5 bg-white rounded-lg border border-slate-200 shadow-sm">
-          <div className="text-[11px] font-medium text-rose-700 uppercase tracking-wider">
-            Melewati Batas SLA
+        <div className="p-3.5 bg-white rounded-md border border-slate-200/90 shadow-2xs">
+          <div className="text-xs font-semibold text-rose-800">
+            Melewati SLA
           </div>
-          <div className="text-2xl font-bold text-rose-600 mt-1">
+          <div className="text-2xl font-bold text-rose-700 mt-1 tabular-nums">
             {summary.overdue_count || 0}
           </div>
-          <div className="text-[11px] text-rose-600/80 mt-0.5">Perlu intervensi</div>
+          <div className="text-[11px] text-slate-500 mt-0.5">Perlu intervensi</div>
         </div>
 
-        <div className="p-3.5 bg-white rounded-lg border border-slate-200 shadow-sm">
-          <div className="text-[11px] font-medium text-red-800 uppercase tracking-wider">
+        <div className="p-3.5 bg-white rounded-md border border-slate-200/90 shadow-2xs">
+          <div className="text-xs font-semibold text-slate-700">
             Eskalasi Supervisor
           </div>
-          <div className="text-2xl font-bold text-red-700 mt-1">
+          <div className="text-2xl font-bold text-slate-900 mt-1 tabular-nums">
             {summary.escalated_count || urgentComplaints.length}
           </div>
-          <div className="text-[11px] text-red-600/80 mt-0.5">Perhatian khusus</div>
+          <div className="text-[11px] text-slate-500 mt-0.5">Perhatian khusus</div>
         </div>
 
-        <div className="p-3.5 bg-white rounded-lg border border-slate-200 shadow-sm">
-          <div className="text-[11px] font-medium text-emerald-700 uppercase tracking-wider">
+        <div className="p-3.5 bg-white rounded-md border border-slate-200/90 shadow-2xs">
+          <div className="text-xs font-semibold text-emerald-800">
             Tepat Waktu
           </div>
-          <div className="text-2xl font-bold text-emerald-600 mt-1">
+          <div className="text-2xl font-bold text-emerald-800 mt-1 tabular-nums">
             {summary.resolved_on_time_count || 0}
           </div>
-          <div className="text-[11px] text-emerald-700/80 mt-0.5">Kepatuhan selesai</div>
+          <div className="text-[11px] text-slate-500 mt-0.5">Kepatuhan selesai</div>
         </div>
       </div>
 
@@ -152,7 +152,7 @@ export const OperationalDashboard = ({ onSelectComplaint, onOpenDisposition }) =
           onClick={() => setActiveTab("overview")}
           className={`pb-3 px-1 flex items-center gap-1.5 border-b-2 transition-colors ${
             activeTab === "overview"
-              ? "border-sky-700 text-sky-800 font-bold"
+              ? "border-slate-900 text-slate-900 font-bold"
               : "border-transparent text-slate-500 hover:text-slate-800"
           }`}
         >

@@ -321,8 +321,8 @@ function App() {
     return (
       <div className="min-h-screen bg-slate-50 flex flex-col">
         <Header onNavigate={setCurrentView} currentView={currentView} />
-        <main className="flex-1 p-4 sm:p-6">
-          <div className="max-w-2xl mx-auto">
+        <main className="flex-1 civic-container py-6">
+          <div className="max-w-3xl mx-auto">
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
               <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-100">
                 <div>
@@ -358,7 +358,7 @@ function App() {
     return (
       <div className="min-h-screen bg-slate-50 flex flex-col">
         <Header onNavigate={setCurrentView} currentView={currentView} />
-        <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <main className="flex-1 civic-container py-6">
           <OperationalDashboard
             onSelectComplaint={(c) => {
               setSelectedComplaint(c);
@@ -380,7 +380,7 @@ function App() {
     return (
       <div className="min-h-screen bg-slate-50 flex flex-col">
         <Header onNavigate={setCurrentView} currentView={currentView} />
-        <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <main className="flex-1 civic-container py-6">
           <div className="mb-6 flex items-center justify-between">
             <div>
               <h2 className="text-xl font-bold text-slate-900">
@@ -430,7 +430,7 @@ function App() {
     return (
       <div className="min-h-screen bg-slate-50 flex flex-col">
         <Header onNavigate={setCurrentView} currentView={currentView} />
-        <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <main className="flex-1 civic-container py-6">
           <div className="mb-6 flex items-center justify-between">
             <div>
               <h2 className="text-xl font-bold text-slate-900">
@@ -460,7 +460,7 @@ function App() {
     <div className="min-h-screen bg-slate-50 flex flex-col">
       <Header onNavigate={setCurrentView} currentView={currentView} />
 
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <main className="flex-1 civic-container py-6">
         <div className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <h2 className="text-xl font-bold text-slate-900 tracking-tight">

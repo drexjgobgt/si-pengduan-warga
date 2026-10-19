@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
 import {
   ResponsiveContainer,
-  AreaChart,
-  Area,
+  LineChart,
   Line,
   XAxis,
   YAxis,
@@ -19,44 +18,65 @@ import {
   CheckCircle2,
   Clock,
   AlertTriangle,
-  Info,
 } from "lucide-react";
 import { statisticsAPI } from "../../services/api";
 
-// Custom Tooltip for Indonesian Civic Analytics
-const CivicChartTooltip = ({ active, payload, label, isMonthly }) => {
+// Format helper for full Indonesian date in Tooltip
+const formatFullIndonesianDate = (dateStr, isMonthly) => {
+  if (!dateStr) return "";
+  if (isMonthly) {
+    const parts = dateStr.split("-");
+    if (parts.length >= 2) {
+      const monthNames = [
+        "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+        "Juli", "Agustus", "September", "Oktober", "November", "Desember",
+      ];
+      const monthIndex = parseInt(parts[1], 10) - 1;
+      return `${monthNames[monthIndex] || parts[1]} ${parts[0]}`;
+    }
+  }
+
+  const date = new Date(dateStr);
+  if (isNaN(date.getTime())) return dateStr;
+
+  return date.toLocaleDateString("id-ID", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+};
+
+// Formal Civic Tooltip (High-contrast, accurate, zero clutter)
+const CivicChartTooltip = ({ active, payload, label, points, isMonthly }) => {
   if (!active || !payload || !payload.length) return null;
 
+  const currentPoint = points?.find((p) => p.displayDate === label);
+  const fullDate = currentPoint ? formatFullIndonesianDate(currentPoint.date, isMonthly) : label;
+
   return (
-    <div className="bg-slate-900 text-white rounded-lg p-3 shadow-xl border border-slate-700 text-xs min-w-[180px]">
-      <div className="font-semibold text-slate-200 border-b border-slate-800 pb-1.5 mb-2 flex items-center justify-between">
-        <span>{label}</span>
+    <div className="bg-slate-900 text-white rounded-md px-3.5 py-2.5 shadow-lg border border-slate-700 text-xs min-w-[200px]">
+      <div className="font-semibold text-slate-100 border-b border-slate-800 pb-1.5 mb-2 flex items-center justify-between gap-3">
+        <span>{fullDate}</span>
         <span className="text-[10px] text-slate-400 font-normal">
-          {isMonthly ? "Bulan" : "Harian"}
+          {isMonthly ? "Bulanan" : "Harian"}
         </span>
       </div>
       <div className="space-y-1.5">
-        {payload.map((entry, index) => {
-          return (
-            <div
-              key={index}
-              className="flex items-center justify-between gap-3"
-            >
-              <div className="flex items-center gap-1.5">
-                <span
-                  className="w-2.5 h-2.5 rounded-full inline-block"
-                  style={{ backgroundColor: entry.color }}
-                />
-                <span className="text-slate-300 capitalize">
-                  {entry.name}:
-                </span>
-              </div>
-              <span className="font-bold tabular-nums text-white">
-                {entry.value.toLocaleString("id-ID")}
-              </span>
+        {payload.map((entry, index) => (
+          <div key={index} className="flex items-center justify-between gap-4">
+            <div className="flex items-center gap-2">
+              <span
+                className="w-2 h-2 rounded-xs inline-block"
+                style={{ backgroundColor: entry.color }}
+              />
+              <span className="text-slate-300 text-[11px] capitalize">{entry.name}:</span>
             </div>
-          );
-        })}
+            <span className="font-semibold tabular-nums text-white text-xs">
+              {entry.value.toLocaleString("id-ID")} Laporan
+            </span>
+          </div>
+        ))}
       </div>
     </div>
   );
@@ -67,10 +87,10 @@ export const InteractiveTrendChart = ({
   scope = "all",
   departmentId = null,
   title = "Tren Pengaduan & Penyelesaian",
-  subtitle = "Analisis volume aduan masuk berbanding penyelesaian operasional.",
+  subtitle = "Grafik linier dinamis volume pengaduan masuk berbanding penyelesaian operasional.",
 }) => {
   const [period, setPeriod] = useState("30d"); // '7d', '30d', '90d', '12m'
-  const [curveType, setCurveType] = useState("monotone"); // 'monotone' (halus) vs 'linear' (presisi)
+  const [curveType, setCurveType] = useState("linear"); // 'linear' (presisi linier formal) vs 'monotone' (halus)
   const [showTable, setShowTable] = useState(false);
   const [points, setPoints] = useState([]);
   const [summary, setSummary] = useState(null);
@@ -82,7 +102,7 @@ export const InteractiveTrendChart = ({
     masuk: true,
     selesai: true,
     proses: true,
-    terlambat: role !== "warga", // Citizen does not need to see overdue by default
+    terlambat: role !== "warga",
   });
 
   const isOfficer = role === "petugas";
@@ -105,7 +125,7 @@ export const InteractiveTrendChart = ({
       }
     } catch (err) {
       console.error("Failed to load trend data:", err);
-      setError("Gagal memuat data tren statistik. Silakan coba kembali.");
+      setError("Gagal memuat data tren statistik.");
     } finally {
       setLoading(false);
     }
@@ -122,6 +142,15 @@ export const InteractiveTrendChart = ({
     }));
   };
 
+  // Determine smart X-axis tick interval to prevent label collision
+  const tickInterval = useMemo(() => {
+    if (period === "7d") return 0; // Show all 7 days
+    if (period === "30d") return 4; // Show every 5th day (~6-7 ticks)
+    if (period === "90d") return 14; // Show every 15th day (~6 ticks)
+    if (period === "12m") return 0; // Show 12 months
+    return 2;
+  }, [period]);
+
   // Calculate resolution rate
   const resolutionRate =
     summary && summary.totalMasuk > 0
@@ -131,7 +160,7 @@ export const InteractiveTrendChart = ({
       : 0;
 
   return (
-    <div className="civic-card p-4 sm:p-6 space-y-5 animate-civic-in">
+    <div className="civic-card p-4 sm:p-6 space-y-5 animate-civic-in text-left">
       {/* Header & Controls */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-100">
         <div>
@@ -140,13 +169,13 @@ export const InteractiveTrendChart = ({
               {title}
             </h3>
             {isOfficer && (
-              <span className="text-[10px] font-semibold text-indigo-700 bg-indigo-50 border border-indigo-200 px-2 py-0.5 rounded-full">
-                Tugas Anda
+              <span className="text-[11px] font-semibold text-slate-700 bg-slate-100 border border-slate-200 px-2 py-0.5 rounded">
+                Tugas Ditugaskan
               </span>
             )}
             {isCitizen && (
-              <span className="text-[10px] font-semibold text-sky-700 bg-sky-50 border border-sky-200 px-2 py-0.5 rounded-full">
-                Laporan Saya
+              <span className="text-[11px] font-semibold text-slate-700 bg-slate-100 border border-slate-200 px-2 py-0.5 rounded">
+                Aduan Saya
               </span>
             )}
           </div>
@@ -157,7 +186,7 @@ export const InteractiveTrendChart = ({
         <div className="flex flex-wrap items-center gap-2">
           {/* Time Filter Buttons */}
           <div
-            className="inline-flex bg-slate-100 p-1 rounded-lg border border-slate-200 text-xs font-medium"
+            className="inline-flex bg-slate-100 p-0.5 rounded-md border border-slate-200 text-xs font-medium"
             role="group"
             aria-label="Pilih Rentang Waktu"
           >
@@ -170,10 +199,10 @@ export const InteractiveTrendChart = ({
               <button
                 key={p.id}
                 onClick={() => setPeriod(p.id)}
-                className={`px-2.5 py-1 rounded-md transition-colors ${
+                className={`px-2.5 py-1 rounded transition-colors text-xs ${
                   period === p.id
-                    ? "bg-white text-slate-900 font-semibold shadow-sm"
-                    : "text-slate-600 hover:text-slate-900 hover:bg-slate-200/60"
+                    ? "bg-white text-slate-900 font-semibold shadow-2xs"
+                    : "text-slate-600 hover:text-slate-900 hover:bg-slate-200/50"
                 }`}
                 aria-pressed={period === p.id}
               >
@@ -186,23 +215,23 @@ export const InteractiveTrendChart = ({
           <button
             onClick={() =>
               setCurveType((prev) =>
-                prev === "monotone" ? "linear" : "monotone"
+                prev === "linear" ? "monotone" : "linear"
               )
             }
-            className="px-2.5 py-1.5 text-xs font-medium rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 transition-colors flex items-center gap-1.5"
+            className="px-2.5 py-1 text-xs font-medium rounded-md border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 transition-colors"
             title={
-              curveType === "monotone"
-                ? "Beralih ke garis lurus (akurasi titik)"
-                : "Beralih ke kurva halus"
+              curveType === "linear"
+                ? "Beralih ke kurva interpolasi halus"
+                : "Beralih ke garis lurus presisi diskret"
             }
           >
-            <span>{curveType === "monotone" ? "Kurva Halus" : "Garis Lurus"}</span>
+            <span>{curveType === "linear" ? "Garis Presisi" : "Kurva Halus"}</span>
           </button>
 
           {/* Accessible Table Toggle */}
           <button
             onClick={() => setShowTable((prev) => !prev)}
-            className={`p-1.5 rounded-lg border transition-colors ${
+            className={`p-1.5 rounded-md border transition-colors ${
               showTable
                 ? "bg-slate-900 text-white border-slate-900"
                 : "bg-white text-slate-600 border-slate-200 hover:bg-slate-50"
@@ -217,92 +246,92 @@ export const InteractiveTrendChart = ({
           <button
             onClick={loadTrendData}
             disabled={loading}
-            className="p-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-600 transition-colors"
+            className="p-1.5 rounded-md border border-slate-200 bg-white hover:bg-slate-50 text-slate-600 transition-colors"
             title="Muat ulang data grafik"
             aria-label="Muat ulang data grafik"
           >
             <RefreshCw
-              className={`w-4 h-4 ${loading ? "animate-spin text-sky-600" : ""}`}
+              className={`w-4 h-4 ${loading ? "animate-spin text-slate-600" : ""}`}
             />
           </button>
         </div>
       </div>
 
-      {/* KPI Metric Summary Pills */}
+      {/* KPI Metric Summary - Clean Numbers with Context & Denominators */}
       {summary && (
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          <div className="bg-slate-50/70 border border-slate-200/80 rounded-lg p-3">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <div className="bg-slate-50/70 border border-slate-200/80 rounded-md p-3">
             <div className="flex items-center gap-1.5 text-xs text-slate-500 font-medium">
-              <TrendingUp className="w-3.5 h-3.5 text-sky-600" />
+              <TrendingUp className="w-3.5 h-3.5 text-slate-700" />
               <span>Laporan Masuk</span>
             </div>
-            <div className="text-xl font-bold text-slate-900 mt-1 tabular-nums">
+            <div className="text-2xl font-bold text-slate-900 mt-1 tabular-nums">
               {summary.totalMasuk}
             </div>
-            <div className="text-[10px] text-slate-400 mt-0.5">
-              Periode {period === "12m" ? "12 Bulan" : `${period.replace("d", " Hari")}`}
+            <div className="text-[11px] text-slate-500 mt-0.5">
+              Periode {period === "12m" ? "12 Bulan" : `${period.replace("d", " Hari Terakhir")}`}
             </div>
           </div>
 
-          <div className="bg-slate-50/70 border border-slate-200/80 rounded-lg p-3">
+          <div className="bg-slate-50/70 border border-slate-200/80 rounded-md p-3">
             <div className="flex items-center gap-1.5 text-xs text-slate-500 font-medium">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-              <span>Laporan Selesai</span>
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700" />
+              <span>Laporan Tuntas</span>
             </div>
-            <div className="text-xl font-bold text-emerald-700 mt-1 tabular-nums">
+            <div className="text-2xl font-bold text-emerald-800 mt-1 tabular-nums">
               {summary.totalSelesai}
             </div>
-            <div className="text-[10px] text-slate-400 mt-0.5">
-              Rasio Selesai: {resolutionRate}%
+            <div className="text-[11px] text-slate-500 mt-0.5">
+              Rasio Penanganan: {resolutionRate}%
             </div>
           </div>
 
-          <div className="bg-slate-50/70 border border-slate-200/80 rounded-lg p-3">
+          <div className="bg-slate-50/70 border border-slate-200/80 rounded-md p-3">
             <div className="flex items-center gap-1.5 text-xs text-slate-500 font-medium">
-              <Clock className="w-3.5 h-3.5 text-amber-600" />
+              <Clock className="w-3.5 h-3.5 text-amber-700" />
               <span>Dalam Penanganan</span>
             </div>
-            <div className="text-xl font-bold text-amber-700 mt-1 tabular-nums">
+            <div className="text-2xl font-bold text-amber-800 mt-1 tabular-nums">
               {summary.currentProses}
             </div>
-            <div className="text-[10px] text-slate-400 mt-0.5">
-              Status terbuka / aktif
+            <div className="text-[11px] text-slate-500 mt-0.5">
+              Aduan aktif di lapangan
             </div>
           </div>
 
-          <div className="bg-slate-50/70 border border-slate-200/80 rounded-lg p-3">
+          <div className="bg-slate-50/70 border border-slate-200/80 rounded-md p-3">
             <div className="flex items-center gap-1.5 text-xs text-slate-500 font-medium">
-              <AlertTriangle className="w-3.5 h-3.5 text-rose-600" />
-              <span>Volume Puncak</span>
+              <AlertTriangle className="w-3.5 h-3.5 text-rose-700" />
+              <span>Melewati SLA</span>
             </div>
-            <div className="text-xl font-bold text-slate-900 mt-1 tabular-nums">
-              {summary.peakMasuk}
+            <div className="text-2xl font-bold text-rose-800 mt-1 tabular-nums">
+              {points.reduce((acc, p) => Math.max(acc, p.terlambat || 0), 0)}
             </div>
-            <div className="text-[10px] text-slate-400 mt-0.5">
-              Laporan / {period === "12m" ? "bulan" : "hari"}
+            <div className="text-[11px] text-slate-500 mt-0.5">
+              Perlu percepatan tindakan
             </div>
           </div>
         </div>
       )}
 
-      {/* Interactive Legend & Series Toggles */}
-      <div className="flex flex-wrap items-center justify-between gap-2 text-xs pt-1">
-        <span className="text-slate-400 text-[11px]">
-          Klik indikator untuk menyembunyikan/menampilkan seri:
+      {/* Series Toggle Legend Bar */}
+      <div className="flex flex-wrap items-center justify-between gap-3 text-xs bg-slate-50 px-3 py-2 rounded-md border border-slate-200/70">
+        <span className="text-slate-500 text-[11px] font-medium">
+          Klik label untuk sembunyikan/tampilkan seri:
         </span>
-        <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+        <div className="flex flex-wrap items-center gap-2">
           <button
             onClick={() => toggleSeries("masuk")}
-            className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border text-xs font-medium transition-all ${
+            className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded border text-xs font-medium transition-colors ${
               visibleSeries.masuk
-                ? "bg-sky-50 border-sky-300 text-sky-800"
-                : "bg-slate-50 border-slate-200 text-slate-400 line-through"
+                ? "bg-white border-slate-300 text-slate-900 shadow-2xs"
+                : "bg-slate-100 border-transparent text-slate-400 line-through"
             }`}
           >
-            <span className="w-2.5 h-2.5 rounded-full bg-sky-600" />
-            <span>Laporan Masuk</span>
+            <span className="w-2.5 h-0.5 bg-slate-900 inline-block" />
+            <span>Masuk</span>
             {visibleSeries.masuk ? (
-              <Eye className="w-3 h-3 text-sky-600 ml-0.5" />
+              <Eye className="w-3 h-3 text-slate-500 ml-0.5" />
             ) : (
               <EyeOff className="w-3 h-3 text-slate-400 ml-0.5" />
             )}
@@ -310,16 +339,16 @@ export const InteractiveTrendChart = ({
 
           <button
             onClick={() => toggleSeries("selesai")}
-            className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border text-xs font-medium transition-all ${
+            className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded border text-xs font-medium transition-colors ${
               visibleSeries.selesai
-                ? "bg-emerald-50 border-emerald-300 text-emerald-800"
-                : "bg-slate-50 border-slate-200 text-slate-400 line-through"
+                ? "bg-white border-emerald-300 text-emerald-800 shadow-2xs"
+                : "bg-slate-100 border-transparent text-slate-400 line-through"
             }`}
           >
-            <span className="w-2.5 h-2.5 rounded-full bg-emerald-600" />
-            <span>Laporan Selesai</span>
+            <span className="w-2.5 h-0.5 bg-emerald-700 inline-block" />
+            <span>Selesai</span>
             {visibleSeries.selesai ? (
-              <Eye className="w-3 h-3 text-emerald-600 ml-0.5" />
+              <Eye className="w-3 h-3 text-emerald-700 ml-0.5" />
             ) : (
               <EyeOff className="w-3 h-3 text-slate-400 ml-0.5" />
             )}
@@ -327,16 +356,16 @@ export const InteractiveTrendChart = ({
 
           <button
             onClick={() => toggleSeries("proses")}
-            className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border text-xs font-medium transition-all ${
+            className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded border text-xs font-medium transition-colors ${
               visibleSeries.proses
-                ? "bg-amber-50 border-amber-300 text-amber-800"
-                : "bg-slate-50 border-slate-200 text-slate-400 line-through"
+                ? "bg-white border-amber-300 text-amber-800 shadow-2xs"
+                : "bg-slate-100 border-transparent text-slate-400 line-through"
             }`}
           >
-            <span className="w-2.5 h-2.5 rounded-full bg-amber-500" />
+            <span className="w-2.5 h-0.5 bg-amber-600 inline-block" />
             <span>Dalam Proses</span>
             {visibleSeries.proses ? (
-              <Eye className="w-3 h-3 text-amber-600 ml-0.5" />
+              <Eye className="w-3 h-3 text-amber-700 ml-0.5" />
             ) : (
               <EyeOff className="w-3 h-3 text-slate-400 ml-0.5" />
             )}
@@ -345,16 +374,16 @@ export const InteractiveTrendChart = ({
           {role !== "warga" && (
             <button
               onClick={() => toggleSeries("terlambat")}
-              className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border text-xs font-medium transition-all ${
+              className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded border text-xs font-medium transition-colors ${
                 visibleSeries.terlambat
-                  ? "bg-rose-50 border-rose-300 text-rose-800"
-                  : "bg-slate-50 border-slate-200 text-slate-400 line-through"
+                  ? "bg-white border-rose-300 text-rose-800 shadow-2xs"
+                  : "bg-slate-100 border-transparent text-slate-400 line-through"
               }`}
             >
-              <span className="w-2.5 h-0.5 bg-rose-600" />
+              <span className="w-2.5 h-0.5 border-b border-dashed border-rose-700 inline-block" />
               <span>Terlambat (SLA)</span>
               {visibleSeries.terlambat ? (
-                <Eye className="w-3 h-3 text-rose-600 ml-0.5" />
+                <Eye className="w-3 h-3 text-rose-700 ml-0.5" />
               ) : (
                 <EyeOff className="w-3 h-3 text-slate-400 ml-0.5" />
               )}
@@ -365,25 +394,25 @@ export const InteractiveTrendChart = ({
 
       {/* Main Chart Canvas / States */}
       {loading ? (
-        <div className="h-72 sm:h-80 flex flex-col items-center justify-center bg-slate-50/50 rounded-lg border border-dashed border-slate-200">
-          <RefreshCw className="w-6 h-6 animate-spin text-sky-600 mb-2" />
+        <div className="h-72 sm:h-80 flex flex-col items-center justify-center bg-slate-50/50 rounded-md border border-slate-200">
+          <RefreshCw className="w-5 h-5 animate-spin text-slate-600 mb-2" />
           <p className="text-xs text-slate-500">
             Mengolah kurva statistik dari server...
           </p>
         </div>
       ) : error ? (
-        <div className="h-72 sm:h-80 flex flex-col items-center justify-center bg-rose-50/50 rounded-lg border border-rose-200 p-6 text-center">
+        <div className="h-72 sm:h-80 flex flex-col items-center justify-center bg-rose-50/50 rounded-md border border-rose-200 p-6 text-center">
           <AlertTriangle className="w-6 h-6 text-rose-600 mb-2" />
           <p className="text-xs text-rose-800 font-medium mb-3">{error}</p>
           <button
             onClick={loadTrendData}
-            className="px-3 py-1.5 bg-rose-600 text-white rounded-lg text-xs font-medium shadow-sm hover:bg-rose-700 transition-colors"
+            className="px-3 py-1.5 bg-rose-600 text-white rounded-md text-xs font-medium shadow-2xs hover:bg-rose-700 transition-colors"
           >
             Coba Lagi
           </button>
         </div>
       ) : points.length === 0 ? (
-        <div className="h-72 sm:h-80 flex flex-col items-center justify-center bg-slate-50/50 rounded-lg border border-dashed border-slate-200 p-6 text-center">
+        <div className="h-72 sm:h-80 flex flex-col items-center justify-center bg-slate-50/50 rounded-md border border-slate-200 p-6 text-center">
           <Calendar className="w-8 h-8 text-slate-400 mb-2" />
           <p className="text-xs font-semibold text-slate-700">
             Tidak ada aktivitas pengaduan pada rentang waktu ini
@@ -393,31 +422,16 @@ export const InteractiveTrendChart = ({
           </p>
         </div>
       ) : (
-        <div className="h-72 sm:h-84 w-full">
+        <div className="h-72 sm:h-80 w-full">
           <ResponsiveContainer width="100%" height="100%">
-            <AreaChart
+            <LineChart
               data={points}
-              margin={{ top: 10, right: 10, left: -20, bottom: 0 }}
+              margin={{ top: 10, right: 15, left: -20, bottom: 5 }}
             >
-              <defs>
-                <linearGradient id="colorMasuk" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#0284c7" stopOpacity={0.25} />
-                  <stop offset="95%" stopColor="#0284c7" stopOpacity={0.0} />
-                </linearGradient>
-                <linearGradient id="colorSelesai" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#10b981" stopOpacity={0.25} />
-                  <stop offset="95%" stopColor="#10b981" stopOpacity={0.0} />
-                </linearGradient>
-                <linearGradient id="colorProses" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#f59e0b" stopOpacity={0.2} />
-                  <stop offset="95%" stopColor="#f59e0b" stopOpacity={0.0} />
-                </linearGradient>
-              </defs>
-
               <CartesianGrid
                 strokeDasharray="3 3"
                 vertical={false}
-                stroke="#e2e8f0"
+                stroke="#f1f5f9"
               />
 
               <XAxis
@@ -425,7 +439,8 @@ export const InteractiveTrendChart = ({
                 stroke="#64748b"
                 fontSize={11}
                 tickLine={false}
-                axisLine={{ stroke: "#cbd5e1" }}
+                axisLine={{ stroke: "#e2e8f0" }}
+                interval={tickInterval}
               />
 
               <YAxis
@@ -439,111 +454,119 @@ export const InteractiveTrendChart = ({
 
               <Tooltip
                 content={
-                  <CivicChartTooltip isMonthly={period === "12m"} />
+                  <CivicChartTooltip
+                    points={points}
+                    isMonthly={period === "12m"}
+                  />
                 }
               />
 
               {visibleSeries.masuk && (
-                <Area
+                <Line
                   type={curveType}
                   dataKey="masuk"
                   name="Masuk"
-                  stroke="#0284c7"
-                  strokeWidth={2.5}
-                  fillOpacity={1}
-                  fill="url(#colorMasuk)"
-                  dot={{ r: points.length > 30 ? 0 : 2.5, fill: "#0284c7" }}
-                  activeDot={{ r: 5, stroke: "#ffffff", strokeWidth: 2 }}
+                  stroke="#0f172a"
+                  strokeWidth={2}
+                  dot={
+                    period === "7d"
+                      ? { r: 2.5, strokeWidth: 1.5, fill: "#fff" }
+                      : false
+                  }
+                  activeDot={{ r: 4.5, stroke: "#0f172a", strokeWidth: 2, fill: "#fff" }}
                 />
               )}
 
               {visibleSeries.selesai && (
-                <Area
+                <Line
                   type={curveType}
                   dataKey="selesai"
                   name="Selesai"
-                  stroke="#10b981"
-                  strokeWidth={2.5}
-                  fillOpacity={1}
-                  fill="url(#colorSelesai)"
-                  dot={{ r: points.length > 30 ? 0 : 2.5, fill: "#10b981" }}
-                  activeDot={{ r: 5, stroke: "#ffffff", strokeWidth: 2 }}
+                  stroke="#059669"
+                  strokeWidth={2}
+                  dot={
+                    period === "7d"
+                      ? { r: 2.5, strokeWidth: 1.5, fill: "#fff" }
+                      : false
+                  }
+                  activeDot={{ r: 4.5, stroke: "#059669", strokeWidth: 2, fill: "#fff" }}
                 />
               )}
 
               {visibleSeries.proses && (
-                <Area
+                <Line
                   type={curveType}
                   dataKey="proses"
                   name="Dalam Proses"
-                  stroke="#f59e0b"
+                  stroke="#d97706"
                   strokeWidth={2}
-                  fillOpacity={1}
-                  fill="url(#colorProses)"
-                  dot={{ r: points.length > 30 ? 0 : 2, fill: "#f59e0b" }}
-                  activeDot={{ r: 4, stroke: "#ffffff", strokeWidth: 2 }}
+                  dot={
+                    period === "7d"
+                      ? { r: 2.5, strokeWidth: 1.5, fill: "#fff" }
+                      : false
+                  }
+                  activeDot={{ r: 4.5, stroke: "#d97706", strokeWidth: 2, fill: "#fff" }}
                 />
               )}
 
-              {visibleSeries.terlambat && role !== "warga" && (
+              {role !== "warga" && visibleSeries.terlambat && (
                 <Line
                   type={curveType}
                   dataKey="terlambat"
-                  name="Terlambat"
-                  stroke="#ef4444"
+                  name="Lewat SLA"
+                  stroke="#e11d48"
                   strokeWidth={1.75}
                   strokeDasharray="4 4"
-                  dot={{ r: points.length > 30 ? 0 : 2, fill: "#ef4444" }}
+                  dot={false}
+                  activeDot={{ r: 4.5, stroke: "#e11d48", strokeWidth: 2, fill: "#fff" }}
                 />
               )}
-            </AreaChart>
+            </LineChart>
           </ResponsiveContainer>
         </div>
       )}
 
-      {/* Accessible Tabular Fallback (WCAG Accessibility Requirement) */}
+      {/* Accessible Tabular Fallback View */}
       {showTable && points.length > 0 && (
-        <div className="pt-4 border-t border-slate-200">
+        <div className="mt-4 pt-4 border-t border-slate-200">
           <div className="flex items-center justify-between mb-2">
-            <h4 className="text-xs font-bold text-slate-800 flex items-center gap-1.5">
-              <TableIcon className="w-3.5 h-3.5 text-slate-500" />
-              Tabel Nilai Data Tren (Alternatif Aksesibilitas)
+            <h4 className="text-xs font-bold text-slate-800">
+              Data Tabel Linimasa Statistik ({period === "12m" ? "12 Bulan" : `${period.replace("d", " Hari")}`})
             </h4>
             <span className="text-[11px] text-slate-500">
-              {points.length} data record
+              Alternatif aksesibilitas pembaca layar (WCAG 2.1 AA)
             </span>
           </div>
-
-          <div className="overflow-x-auto max-h-56 rounded-lg border border-slate-200">
-            <table className="min-w-full divide-y divide-slate-200 text-xs">
-              <thead className="bg-slate-50 sticky top-0 text-slate-600 font-semibold">
+          <div className="overflow-x-auto border border-slate-200 rounded-md">
+            <table className="w-full text-xs text-left">
+              <thead className="bg-slate-50 text-slate-600 font-semibold border-b border-slate-200">
                 <tr>
-                  <th className="px-3 py-2 text-left">Periode Waktu</th>
-                  <th className="px-3 py-2 text-right">Laporan Masuk</th>
-                  <th className="px-3 py-2 text-right">Laporan Selesai</th>
-                  <th className="px-3 py-2 text-right">Sedang Diproses</th>
+                  <th className="py-2 px-3">Tanggal / Periode</th>
+                  <th className="py-2 px-3 text-right">Laporan Masuk</th>
+                  <th className="py-2 px-3 text-right">Laporan Selesai</th>
+                  <th className="py-2 px-3 text-right">Dalam Proses</th>
                   {role !== "warga" && (
-                    <th className="px-3 py-2 text-right">Terlambat SLA</th>
+                    <th className="py-2 px-3 text-right text-rose-700">Terlambat SLA</th>
                   )}
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-100 bg-white tabular-nums">
-                {points.map((pt, i) => (
-                  <tr key={i} className="hover:bg-slate-50">
-                    <td className="px-3 py-1.5 font-medium text-slate-800">
-                      {pt.displayDate} ({pt.date})
+              <tbody className="divide-y divide-slate-100">
+                {points.map((pt, idx) => (
+                  <tr key={idx} className="hover:bg-slate-50/80">
+                    <td className="py-1.5 px-3 font-medium text-slate-800">
+                      {formatFullIndonesianDate(pt.date, period === "12m")}
                     </td>
-                    <td className="px-3 py-1.5 text-right text-sky-700 font-semibold">
+                    <td className="py-1.5 px-3 text-right tabular-nums text-slate-900 font-semibold">
                       {pt.masuk}
                     </td>
-                    <td className="px-3 py-1.5 text-right text-emerald-700 font-semibold">
+                    <td className="py-1.5 px-3 text-right tabular-nums text-emerald-700 font-semibold">
                       {pt.selesai}
                     </td>
-                    <td className="px-3 py-1.5 text-right text-amber-700">
+                    <td className="py-1.5 px-3 text-right tabular-nums text-amber-700 font-semibold">
                       {pt.proses}
                     </td>
                     {role !== "warga" && (
-                      <td className="px-3 py-1.5 text-right text-rose-700">
+                      <td className="py-1.5 px-3 text-right tabular-nums text-rose-700 font-semibold">
                         {pt.terlambat}
                       </td>
                     )}
@@ -554,14 +577,6 @@ export const InteractiveTrendChart = ({
           </div>
         </div>
       )}
-
-      {/* Accessible summary caption */}
-      <div className="flex items-center gap-1.5 text-[11px] text-slate-500 pt-1 border-t border-slate-100">
-        <Info className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
-        <span>
-          Data disajikan secara real-time dari basis data pengaduan SIPW. Kurva halus merepresentasikan volume kumulatif dan ritme operasional.
-        </span>
-      </div>
     </div>
   );
 };

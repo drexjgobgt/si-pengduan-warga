@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import {
   ResponsiveContainer,
   BarChart,
@@ -7,14 +7,11 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Cell,
 } from "recharts";
 import {
   Clock,
   Building2,
-  AlertOctagon,
-  Award,
-  Zap,
+  ArrowUpDown,
 } from "lucide-react";
 import { statisticsAPI } from "../../services/api";
 
@@ -22,6 +19,7 @@ export const PerformanceMetricsChart = ({ departmentId = null }) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [sortBy, setSortBy] = useState("total"); // 'total', 'onTimeRate', 'avgHours'
 
   useEffect(() => {
     const fetchPerf = async () => {
@@ -35,7 +33,7 @@ export const PerformanceMetricsChart = ({ departmentId = null }) => {
         }
       } catch (err) {
         console.error("Failed to load performance metrics:", err);
-        setError("Gagal memuat data kinerja.");
+        setError("Gagal memuat data kinerja operasional.");
       } finally {
         setLoading(false);
       }
@@ -44,11 +42,25 @@ export const PerformanceMetricsChart = ({ departmentId = null }) => {
     fetchPerf();
   }, [departmentId]);
 
+  // Sort departments based on active selection
+  const sortedDepartments = useMemo(() => {
+    if (!data?.departments) return [];
+    const list = [...data.departments].filter((d) => d.total > 0);
+
+    if (sortBy === "onTimeRate") {
+      return list.sort((a, b) => b.onTimeRate - a.onTimeRate);
+    }
+    if (sortBy === "avgHours") {
+      return list.sort((a, b) => (a.avgHours || 999) - (b.avgHours || 999));
+    }
+    return list.sort((a, b) => b.total - a.total);
+  }, [data?.departments, sortBy]);
+
   if (loading) {
     return (
-      <div className="civic-card p-6 flex items-center justify-center min-h-[300px]">
+      <div className="civic-card p-6 flex items-center justify-center min-h-[260px]">
         <div className="flex items-center gap-2 text-xs text-slate-500">
-          <Clock className="w-4 h-4 animate-spin text-sky-600" />
+          <Clock className="w-4 h-4 animate-spin text-slate-600" />
           <span>Memuat data kinerja operasional...</span>
         </div>
       </div>
@@ -59,94 +71,111 @@ export const PerformanceMetricsChart = ({ departmentId = null }) => {
     return null;
   }
 
-  const { resolutionSpeed, onTimeStats, departments = [] } = data;
-
-  // Colors for department bars
-  const deptColors = ["#0284c7", "#10b981", "#6366f1", "#f59e0b", "#ec4899", "#8b5cf6", "#14b8a6"];
+  const { resolutionSpeed, onTimeStats } = data;
 
   return (
-    <div className="space-y-6">
-      {/* Top 3 Metric Cards */}
+    <div className="space-y-6 text-left">
+      {/* KPI Cards: Quiet, Data-Dense, Clear Denominators (Taste Skill) */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        {/* Speed */}
-        <div className="civic-card p-4 flex items-center justify-between">
-          <div>
-            <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
-              Rata-Rata Waktu Selesai
-            </div>
-            <div className="text-2xl font-bold text-slate-900 mt-1 tabular-nums">
-              {resolutionSpeed.avgHours > 0 ? `${resolutionSpeed.avgHours} jam` : "-"}
-            </div>
-            <div className="text-[11px] text-slate-500 mt-0.5">
-              Berdasarkan {resolutionSpeed.sampleCount} laporan terselesaikan
-            </div>
+        {/* Speed Card */}
+        <div className="civic-card p-4 sm:p-5 border border-slate-200/90 bg-white">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-semibold text-slate-500">
+              Rata-Rata Durasi Penyelesaian
+            </span>
+            <span className="text-[10px] text-slate-400 font-medium">Batas SLA</span>
           </div>
-          <div className="w-11 h-11 rounded-lg bg-sky-50 border border-sky-200 flex items-center justify-center text-sky-600">
-            <Zap className="w-5 h-5" />
+          <div className="text-2xl sm:text-3xl font-bold text-slate-900 mt-2 tabular-nums">
+            {resolutionSpeed.avgHours > 0 ? `${resolutionSpeed.avgHours} Jam` : "-"}
+          </div>
+          <div className="text-xs text-slate-500 mt-1">
+            Dihitung dari {resolutionSpeed.sampleCount} laporan terselesaikan (Min: {resolutionSpeed.minHours}j, Max: {resolutionSpeed.maxHours}j)
           </div>
         </div>
 
-        {/* On-Time Rate */}
-        <div className="civic-card p-4 flex items-center justify-between">
-          <div>
-            <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
-              Kepatuhan Target SLA
-            </div>
-            <div className="text-2xl font-bold text-emerald-700 mt-1 tabular-nums">
-              {onTimeStats.onTimePct}%
-            </div>
-            <div className="text-[11px] text-slate-500 mt-0.5">
-              {onTimeStats.onTimeCount} dari {onTimeStats.totalResolved} tepat waktu
-            </div>
+        {/* SLA On-Time Rate Card */}
+        <div className="civic-card p-4 sm:p-5 border border-slate-200/90 bg-white">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-semibold text-slate-500">
+              Kepatuhan Waktu SLA
+            </span>
+            <span className="text-[10px] text-emerald-700 font-semibold bg-emerald-50 px-1.5 py-0.5 rounded">
+              Tepat Waktu
+            </span>
           </div>
-          <div className="w-11 h-11 rounded-lg bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-600">
-            <Award className="w-5 h-5" />
+          <div className="text-2xl sm:text-3xl font-bold text-emerald-800 mt-2 tabular-nums">
+            {onTimeStats.onTimePct}%
+          </div>
+          <div className="text-xs text-slate-500 mt-1">
+            {onTimeStats.onTimeCount} dari {onTimeStats.totalResolved} laporan selesai sebelum tenggat
           </div>
         </div>
 
-        {/* Overdue Count */}
-        <div className="civic-card p-4 flex items-center justify-between">
-          <div>
-            <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+        {/* Overdue Count Card */}
+        <div className="civic-card p-4 sm:p-5 border border-slate-200/90 bg-white">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-semibold text-slate-500">
               Penyelesaian Terlambat
-            </div>
-            <div className="text-2xl font-bold text-rose-700 mt-1 tabular-nums">
-              {onTimeStats.lateCount}
-            </div>
-            <div className="text-[11px] text-slate-500 mt-0.5">
-              Laporan selesai di luar batas waktu
-            </div>
+            </span>
+            <span className="text-[10px] text-rose-700 font-semibold bg-rose-50 px-1.5 py-0.5 rounded">
+              Evaluasi
+            </span>
           </div>
-          <div className="w-11 h-11 rounded-lg bg-rose-50 border border-rose-200 flex items-center justify-center text-rose-600">
-            <AlertOctagon className="w-5 h-5" />
+          <div className="text-2xl sm:text-3xl font-bold text-slate-900 mt-2 tabular-nums">
+            {onTimeStats.lateCount} <span className="text-sm font-normal text-slate-500">laporan</span>
+          </div>
+          <div className="text-xs text-slate-500 mt-1">
+            Laporan yang diselesaikan melewati batas waktu SLA
           </div>
         </div>
       </div>
 
-      {/* Department Comparison Chart & Breakdown */}
-      {departments.length > 0 && (
-        <div className="civic-card p-4 sm:p-6 space-y-4">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-100">
+      {/* Department Comparison Horizontal Bar Chart */}
+      {sortedDepartments.length > 0 && (
+        <div className="civic-card p-4 sm:p-6 space-y-4 border border-slate-200/90 bg-white">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
             <div>
               <h3 className="text-base font-bold text-slate-900 tracking-tight flex items-center gap-2">
-                <Building2 className="w-4 h-4 text-sky-600" />
-                Perbandingan Beban & Kinerja Antar-OPD
+                <Building2 className="w-4 h-4 text-slate-600" />
+                <span>Perbandingan Beban & Kinerja Antar-OPD</span>
               </h3>
               <p className="text-xs text-slate-500 mt-0.5">
-                Jumlah laporan terkelola, tingkat penyelesaian tepat waktu, dan rata-rata durasi.
+                Evaluasi komparatif volume pengaduan dan tingkat tuntas per dinas terkait.
               </p>
+            </div>
+
+            {/* Sorting controls */}
+            <div className="flex items-center gap-1.5 text-xs">
+              <ArrowUpDown className="w-3.5 h-3.5 text-slate-400" />
+              <span className="text-slate-500">Urutkan:</span>
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                className="px-2 py-1 text-xs border border-slate-300 rounded bg-white text-slate-700 focus:outline-none focus:ring-1 focus:ring-slate-900"
+              >
+                <option value="total">Beban Laporan Terbanyak</option>
+                <option value="onTimeRate">Tingkat Kepatuhan SLA (%)</option>
+                <option value="avgHours">Kecepatan Durasi (Jam)</option>
+              </select>
             </div>
           </div>
 
           <div className="h-64 sm:h-72 w-full">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart
-                data={departments.filter((d) => d.total > 0)}
+                data={sortedDepartments}
                 layout="vertical"
-                margin={{ top: 5, right: 20, left: 20, bottom: 5 }}
+                margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
               >
-                <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#e2e8f0" />
-                <XAxis type="number" stroke="#64748b" fontSize={11} allowDecimals={false} />
+                <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#f1f5f9" />
+                <XAxis
+                  type="number"
+                  stroke="#64748b"
+                  fontSize={11}
+                  allowDecimals={false}
+                  tickLine={false}
+                  axisLine={{ stroke: "#e2e8f0" }}
+                />
                 <YAxis
                   dataKey="code"
                   type="category"
@@ -154,110 +183,77 @@ export const PerformanceMetricsChart = ({ departmentId = null }) => {
                   fontSize={11}
                   fontWeight={600}
                   tickLine={false}
-                  axisLine={{ stroke: "#cbd5e1" }}
-                  width={60}
+                  axisLine={{ stroke: "#e2e8f0" }}
+                  width={70}
                 />
                 <Tooltip
-                  formatter={(value, name) => [
-                    `${value} Laporan`,
-                    name === "resolved" ? "Terselesaikan" : "Total Laporan",
-                  ]}
+                  cursor={{ fill: "rgba(241, 245, 249, 0.6)" }}
                   content={({ active, payload }) => {
                     if (!active || !payload || !payload.length) return null;
                     const item = payload[0].payload;
                     return (
-                      <div className="bg-slate-900 text-white rounded-lg p-3 shadow-xl border border-slate-700 text-xs min-w-[200px]">
+                      <div className="bg-slate-900 text-white rounded-md px-3.5 py-2.5 shadow-lg border border-slate-700 text-xs min-w-[220px]">
                         <div className="font-bold text-slate-100 border-b border-slate-800 pb-1 mb-2">
                           {item.name} ({item.code})
                         </div>
                         <div className="space-y-1 text-slate-300">
                           <div className="flex justify-between">
                             <span>Total Laporan:</span>
-                            <span className="font-bold text-white tabular-nums">{item.total}</span>
+                            <span className="font-bold text-white tabular-nums">
+                              {item.total} Aduan
+                            </span>
                           </div>
                           <div className="flex justify-between text-emerald-400">
-                            <span>Selesai:</span>
-                            <span className="font-bold tabular-nums">{item.resolved}</span>
+                            <span>Terselesaikan:</span>
+                            <span className="font-bold tabular-nums">
+                              {item.resolved} Aduan
+                            </span>
                           </div>
-                          <div className="flex justify-between text-amber-400">
-                            <span>Dalam Proses:</span>
-                            <span className="font-bold tabular-nums">{item.active}</span>
-                          </div>
-                          <div className="flex justify-between text-sky-300 pt-1 border-t border-slate-800">
+                          <div className="flex justify-between">
                             <span>Kepatuhan SLA:</span>
-                            <span className="font-bold tabular-nums">{item.onTimeRate}%</span>
+                            <span className="font-bold text-white tabular-nums">
+                              {item.onTimeRate}%
+                            </span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>Rata-Rata Durasi:</span>
+                            <span className="font-bold text-white tabular-nums">
+                              {item.avgHours > 0 ? `${item.avgHours} Jam` : "-"}
+                            </span>
                           </div>
                         </div>
                       </div>
                     );
                   }}
                 />
-                <Bar dataKey="total" name="Total Laporan" radius={[0, 4, 4, 0]}>
-                  {departments.map((entry, index) => (
-                    <Cell
-                      key={`cell-${index}`}
-                      fill={deptColors[index % deptColors.length]}
-                    />
-                  ))}
-                </Bar>
+                {/* Single unified civic color for professional public service dashboard */}
+                <Bar
+                  dataKey="total"
+                  name="Total Laporan"
+                  fill="#0369a1"
+                  radius={[0, 4, 4, 0]}
+                  barSize={18}
+                />
+                <Bar
+                  dataKey="resolved"
+                  name="Terselesaikan"
+                  fill="#059669"
+                  radius={[0, 4, 4, 0]}
+                  barSize={18}
+                />
               </BarChart>
             </ResponsiveContainer>
           </div>
 
-          {/* Department Detail List */}
-          <div className="overflow-x-auto rounded-lg border border-slate-200">
-            <table className="min-w-full divide-y divide-slate-200 text-xs">
-              <thead className="bg-slate-50 text-slate-600 font-semibold">
-                <tr>
-                  <th className="px-3 py-2 text-left">Nama Instansi / OPD</th>
-                  <th className="px-3 py-2 text-center">Kode</th>
-                  <th className="px-3 py-2 text-right">Total</th>
-                  <th className="px-3 py-2 text-right">Selesai</th>
-                  <th className="px-3 py-2 text-right">Aktif</th>
-                  <th className="px-3 py-2 text-right">Tepat Waktu (%)</th>
-                  <th className="px-3 py-2 text-right">Rata-Rata</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100 bg-white tabular-nums">
-                {departments.map((dept) => (
-                  <tr key={dept.id} className="hover:bg-slate-50 transition-colors">
-                    <td className="px-3 py-2 font-medium text-slate-800">
-                      {dept.name}
-                    </td>
-                    <td className="px-3 py-2 text-center">
-                      <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">
-                        {dept.code}
-                      </span>
-                    </td>
-                    <td className="px-3 py-2 text-right font-semibold text-slate-900">
-                      {dept.total}
-                    </td>
-                    <td className="px-3 py-2 text-right text-emerald-700 font-medium">
-                      {dept.resolved}
-                    </td>
-                    <td className="px-3 py-2 text-right text-amber-700 font-medium">
-                      {dept.active}
-                    </td>
-                    <td className="px-3 py-2 text-right">
-                      <span
-                        className={`inline-block px-1.5 py-0.5 rounded text-[11px] font-semibold ${
-                          dept.onTimeRate >= 80
-                            ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
-                            : dept.onTimeRate >= 50
-                            ? "bg-amber-50 text-amber-700 border border-amber-200"
-                            : "bg-slate-100 text-slate-600"
-                        }`}
-                      >
-                        {dept.resolved > 0 ? `${dept.onTimeRate}%` : "-"}
-                      </span>
-                    </td>
-                    <td className="px-3 py-2 text-right text-slate-600">
-                      {dept.avgHours > 0 ? `${dept.avgHours} jam` : "-"}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="flex items-center justify-end gap-4 text-xs text-slate-500 pt-2 border-t border-slate-100">
+            <div className="flex items-center gap-1.5">
+              <span className="w-3 h-3 rounded-xs bg-[#0369a1] inline-block" />
+              <span>Total Beban Laporan</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <span className="w-3 h-3 rounded-xs bg-[#059669] inline-block" />
+              <span>Laporan Tuntas</span>
+            </div>
           </div>
         </div>
       )}

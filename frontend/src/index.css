@@ -1,9 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  /* SIPW Civic Design System Tokens */
+  /* Centralized Typography Tokens (Single source of truth) */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --font-size-xs: 0.75rem;     /* 12px - micro metadata, badges */
+  --font-size-sm: 0.8125rem;   /* 13px - captions, secondary labels */
+  --font-size-base: 0.9375rem; /* 15px - optimal body reading text */
+  --font-size-md: 1rem;        /* 16px - inputs, navigation, card titles */
+  --font-size-lg: 1.125rem;    /* 18px - section subheadings */
+  --font-size-xl: 1.25rem;     /* 20px - section headings */
+  --font-size-2xl: 1.5rem;     /* 24px - page titles */
+  --font-size-3xl: 1.875rem;   /* 30px - large KPI metrics */
+
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+
+  /* SIPW Civic Design System Palette Tokens */
   --civic-navy: #0f2942;
   --civic-navy-dark: #0a1b2b;
   --civic-blue: #1e3a8a;
@@ -47,14 +66,53 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--surface-muted);
   color: var(--text-primary);
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+/* Fluid Full-Width Container System (1720px max with comfortable edge padding) */
+.civic-container {
+  width: 100%;
+  max-width: 1720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .civic-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .civic-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .civic-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1680px) {
+  .civic-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 /* Custom Scrollbars */
