@@ -99,6 +99,8 @@ export const categoryAPI = {
 export const statisticsAPI = {
   get: () => api.get("/statistics"),
   getMonthly: () => api.get("/statistics/monthly"),
+  getTrends: (params) => api.get("/statistics/trends", { params }),
+  getPerformance: (params) => api.get("/statistics/performance", { params }),
 };
 
 // Notification APIs

@@ -19,6 +19,8 @@ import ResetPasswordForm from "./components/Auth/ResetPasswordForm";
 import { StatsDashboard } from "./components/Statistics/StatsDashboard";
 import { CategoryChart } from "./components/Statistics/CategoryChart";
 import { StatusChart } from "./components/Statistics/StatusChart";
+import { InteractiveTrendChart } from "./components/Statistics/InteractiveTrendChart";
+import { PerformanceMetricsChart } from "./components/Statistics/PerformanceMetricsChart";
 import { Modal } from "./components/Common/Modal";
 import { Button } from "./components/Common/Button";
 import { useAuth } from "./hooks/useAuth";
@@ -254,13 +256,12 @@ function App() {
       <div className="min-h-screen bg-slate-100 flex items-center justify-center p-4">
         <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-8 w-full max-w-md">
           <div className="text-center mb-6">
-            <div className="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-3 text-white font-bold text-xl shadow-sm">
-              SIPW
-            </div>
-            <h1 className="text-xl font-bold text-slate-900 tracking-tight">
-              Sistem Informasi Pengaduan Warga
-            </h1>
-            <p className="text-xs text-slate-500 mt-1">
+            <img
+              src="/logo.png"
+              alt="Logo Sistem Informasi Pengaduan Warga"
+              className="h-20 w-auto mx-auto mb-3 object-contain"
+            />
+            <p className="text-xs text-slate-500">
               Portal Layanan Aspirasi dan Penanganan Masalah Lingkungan
             </p>
           </div>
@@ -398,15 +399,26 @@ function App() {
             </Button>
           </div>
 
-          {stats && (
-            <div className="space-y-6">
-              <StatsDashboard stats={stats} />
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <CategoryChart data={stats.byCategory} />
-                <StatusChart data={stats.byStatus} />
-              </div>
+          <div className="space-y-6">
+            <StatsDashboard stats={stats} />
+
+            {/* Interactive Line / Curve Chart */}
+            <InteractiveTrendChart
+              role={user?.role || "warga"}
+              scope={user?.role === "petugas" ? "my_tasks" : "all"}
+              title="Tren Laporan Masuk & Penyelesaian"
+              subtitle="Kurva interaktif dinamis data pengaduan masyarakat berbanding kecepatan penanganan instansi."
+            />
+
+            {/* Performance Analytics & Department Comparison */}
+            <PerformanceMetricsChart />
+
+            {/* Categorical & Status Breakdown */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <CategoryChart data={stats?.byCategory} />
+              <StatusChart data={stats?.byStatus} />
             </div>
-          )}
+          </div>
         </main>
         <Footer />
       </div>
@@ -479,6 +491,17 @@ function App() {
             </button>
           )}
         </div>
+
+        {currentView === "my_tasks" && (
+          <div className="mb-6">
+            <InteractiveTrendChart
+              role="petugas"
+              scope="my_tasks"
+              title="Grafik Beban Kerja & Penyelesaian Tugas Anda"
+              subtitle="Monitoring kurva penugasan laporan baru dan kecepatan penyelesaian tugas operasional Anda."
+            />
+          </div>
+        )}
 
         <ComplaintFilters filters={filters} onFilterChange={setFilters} />
 

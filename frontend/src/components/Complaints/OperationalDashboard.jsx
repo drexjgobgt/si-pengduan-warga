@@ -12,6 +12,8 @@ import {
 import { complaintAPI, departmentAPI } from "../../services/api";
 import { SLABadge } from "../Common/SLABadge";
 import { formatDate } from "../../utils/helpers";
+import { InteractiveTrendChart } from "../Statistics/InteractiveTrendChart";
+import { PerformanceMetricsChart } from "../Statistics/PerformanceMetricsChart";
 
 export const OperationalDashboard = ({ onSelectComplaint, onOpenDisposition }) => {
   const [activeTab, setActiveTab] = useState("overview"); // 'overview', 'unassigned', 'urgent', 'departments'
@@ -144,68 +146,86 @@ export const OperationalDashboard = ({ onSelectComplaint, onOpenDisposition }) =
         </div>
       </div>
 
-      {/* Navigation Sub-Tabs */}
-      <div className="flex border-b border-slate-200 gap-6 text-xs font-semibold">
+      {/* Navigation Sub-Tabs (Scrollable on Mobile) */}
+      <div className="flex border-b border-slate-200 gap-2 sm:gap-6 text-xs font-semibold overflow-x-auto whitespace-nowrap pb-px">
         <button
           onClick={() => setActiveTab("overview")}
-          className={`pb-3 flex items-center gap-1.5 border-b-2 transition-colors ${
+          className={`pb-3 px-1 flex items-center gap-1.5 border-b-2 transition-colors ${
             activeTab === "overview"
-              ? "border-indigo-600 text-indigo-600"
+              ? "border-sky-700 text-sky-800 font-bold"
               : "border-transparent text-slate-500 hover:text-slate-800"
           }`}
         >
           <Building2 className="w-3.5 h-3.5" />
-          Kinerja Per Departemen
+          <span>Tren & Kinerja OPD</span>
         </button>
 
         <button
           onClick={() => setActiveTab("unassigned")}
-          className={`pb-3 flex items-center gap-1.5 border-b-2 transition-colors ${
+          className={`pb-3 px-1 flex items-center gap-1.5 border-b-2 transition-colors ${
             activeTab === "unassigned"
-              ? "border-indigo-600 text-indigo-600"
+              ? "border-sky-700 text-sky-800 font-bold"
               : "border-transparent text-slate-500 hover:text-slate-800"
           }`}
         >
           <ArrowRightLeft className="w-3.5 h-3.5" />
-          Antrean Disposisi ({unassignedComplaints.length})
+          <span>Antrean Disposisi ({unassignedComplaints.length})</span>
         </button>
 
         <button
           onClick={() => setActiveTab("urgent")}
-          className={`pb-3 flex items-center gap-1.5 border-b-2 transition-colors ${
+          className={`pb-3 px-1 flex items-center gap-1.5 border-b-2 transition-colors ${
             activeTab === "urgent"
-              ? "border-indigo-600 text-indigo-600"
+              ? "border-sky-700 text-sky-800 font-bold"
               : "border-transparent text-slate-500 hover:text-slate-800"
           }`}
         >
           <ShieldAlert className="w-3.5 h-3.5 text-rose-500" />
-          Laporan Eskalasi & Terlambat ({urgentComplaints.length})
+          <span>Eskalasi & Terlambat ({urgentComplaints.length})</span>
         </button>
 
         <button
           onClick={() => setActiveTab("departments")}
-          className={`pb-3 flex items-center gap-1.5 border-b-2 transition-colors ${
+          className={`pb-3 px-1 flex items-center gap-1.5 border-b-2 transition-colors ${
             activeTab === "departments"
-              ? "border-indigo-600 text-indigo-600"
+              ? "border-sky-700 text-sky-800 font-bold"
               : "border-transparent text-slate-500 hover:text-slate-800"
           }`}
         >
           <Users className="w-3.5 h-3.5" />
-          Beban Kerja Petugas ({officers.length})
+          <span>Beban Petugas ({officers.length})</span>
         </button>
       </div>
 
-      {/* Tab 1: Kinerja Per Departemen */}
+      {/* Tab 1: Kinerja & Tren Per Departemen */}
       {activeTab === "overview" && (
-        <div className="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm">
-          <div className="p-4 border-b border-slate-100 flex items-center justify-between">
-            <h3 className="text-xs font-semibold text-slate-800">
-              Kepatuhan SLA dan Volume Laporan Antar-OPD
-            </h3>
-            <span className="text-[11px] text-slate-500 font-mono">
-              Total {deptBreakdown.length || departments.length} OPD Terdaftar
-            </span>
-          </div>
+        <div className="space-y-6">
+          {/* Interactive Curve Trend Chart */}
+          <InteractiveTrendChart
+            role="admin"
+            scope="all"
+            title="Tren Dinamika Pengaduan & Penyelesaian"
+            subtitle="Kurva interaktif volume pengaduan masuk berbanding penyelesaian tepat waktu dan keterlambatan."
+          />
+
+          {/* Performance & SLA Metrics */}
+          <PerformanceMetricsChart />
+
+          {/* OPD SLA Compliance Table */}
+          <div className="civic-card overflow-hidden">
+            <div className="p-4 border-b border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider">
+                  Matriks Kepatuhan SLA Antar-OPD
+                </h3>
+                <p className="text-[11px] text-slate-500 mt-0.5">
+                  Rekapitulasi status kasus aktif, eskalasi supervisor, dan tingkat penyelesaian tepat waktu.
+                </p>
+              </div>
+              <span className="text-[11px] text-slate-600 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-medium self-start sm:self-auto">
+                {deptBreakdown.length || departments.length} OPD Terdaftar
+              </span>
+            </div>
 
           <div className="overflow-x-auto">
             <table className="w-full text-left text-xs">
@@ -260,6 +280,7 @@ export const OperationalDashboard = ({ onSelectComplaint, onOpenDisposition }) =
             </table>
           </div>
         </div>
+      </div>
       )}
 
       {/* Tab 2: Antrean Disposisi */}

@@ -30,18 +30,23 @@ export default function ForgotPasswordForm({ onBack, onSuccess }) {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
-      <div className="mb-6">
+    <div className="max-w-md w-full mx-auto bg-white rounded-xl shadow-sm border border-slate-200 p-6 sm:p-8">
+      <div className="text-center mb-6">
+        <img
+          src="/logo.png"
+          alt="SIPW Logo"
+          className="h-16 w-auto mx-auto mb-3 object-contain"
+        />
         <button
           onClick={onBack}
-          className="flex items-center gap-2 text-gray-600 hover:text-gray-800 mb-4"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-slate-800 mb-3"
         >
-          <ArrowLeft className="w-4 h-4" />
-          Kembali ke Login
+          <ArrowLeft className="w-3.5 h-3.5" />
+          Kembali ke Form Masuk
         </button>
-        <h2 className="text-2xl font-bold text-gray-800">Lupa Password</h2>
-        <p className="text-gray-600 mt-2">
-          Masukkan email Anda dan kami akan mengirimkan link untuk reset password
+        <h2 className="text-lg font-bold text-slate-900">Pemulihan Password</h2>
+        <p className="text-xs text-slate-500 mt-1">
+          Masukkan email terdaftar Anda untuk menerima tautan pemulihan kata sandi.
         </p>
       </div>
 

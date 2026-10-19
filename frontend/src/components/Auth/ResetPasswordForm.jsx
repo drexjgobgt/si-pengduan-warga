@@ -53,15 +53,21 @@ export default function ResetPasswordForm({ token, onBack, onSuccess }) {
 
   if (!token) {
     return (
-      <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
+      <div className="max-w-md w-full mx-auto bg-white rounded-xl border border-slate-200 shadow-sm p-6 sm:p-8">
         <div className="text-center">
-          <p className="text-red-600 mb-4">{error}</p>
+          <img
+            src="/logo.png"
+            alt="SIPW Logo"
+            className="h-16 w-auto mx-auto mb-3 object-contain"
+          />
+          <p className="text-rose-600 text-xs font-semibold mb-4">{error}</p>
           {onBack && (
             <button
               onClick={onBack}
-              className="text-blue-600 hover:text-blue-800"
+              className="text-xs font-semibold text-slate-600 hover:text-slate-900 inline-flex items-center gap-1.5"
             >
-              Kembali
+              <ArrowLeft className="w-3.5 h-3.5" />
+              Kembali ke Login
             </button>
           )}
         </div>
@@ -70,20 +76,25 @@ export default function ResetPasswordForm({ token, onBack, onSuccess }) {
   }
 
   return (
-    <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
-      <div className="mb-6">
+    <div className="max-w-md w-full mx-auto bg-white rounded-xl border border-slate-200 shadow-sm p-6 sm:p-8">
+      <div className="text-center mb-6">
+        <img
+          src="/logo.png"
+          alt="SIPW Logo"
+          className="h-16 w-auto mx-auto mb-3 object-contain"
+        />
         {onBack && (
           <button
             onClick={onBack}
-            className="flex items-center gap-2 text-gray-600 hover:text-gray-800 mb-4"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-slate-800 mb-3"
           >
-            <ArrowLeft className="w-4 h-4" />
+            <ArrowLeft className="w-3.5 h-3.5" />
             Kembali
           </button>
         )}
-        <h2 className="text-2xl font-bold text-gray-800">Reset Password</h2>
-        <p className="text-gray-600 mt-2">
-          Masukkan password baru Anda
+        <h2 className="text-lg font-bold text-slate-900">Atur Ulang Password</h2>
+        <p className="text-xs text-slate-500 mt-1">
+          Masukkan kata sandi baru untuk mengamankan akun SIPW Anda
         </p>
       </div>
 
