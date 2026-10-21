@@ -173,7 +173,10 @@ router.get("/trends", async (req, res, next) => {
       pIdx++;
     }
 
-    const whereExtra = filterClauses.length > 0 ? "AND " + filterClauses.join(" AND ") : "";
+    const getFilterClause = (alias) =>
+      filterClauses.length > 0
+        ? "AND " + filterClauses.map((col) => `${alias}.${col}`).join(" AND ")
+        : "";
 
     let query = "";
     const isMonthly = period === "12m";
@@ -196,16 +199,16 @@ router.get("/trends", async (req, res, next) => {
           COUNT(DISTINCT c_late.id) AS terlambat
         FROM month_series ms
         LEFT JOIN complaints c_in 
-          ON DATE_TRUNC('month', c_in.created_at) = ms.m_start ${whereExtra}
+          ON DATE_TRUNC('month', c_in.created_at) = ms.m_start ${getFilterClause("c_in")}
         LEFT JOIN complaints c_out 
           ON c_out.status = 'selesai' 
-          AND DATE_TRUNC('month', COALESCE(c_out.resolved_at, c_out.updated_at)) = ms.m_start ${whereExtra}
+          AND DATE_TRUNC('month', COALESCE(c_out.resolved_at, c_out.updated_at)) = ms.m_start ${getFilterClause("c_out")}
         LEFT JOIN complaints c_act 
           ON c_act.status IN ('pending', 'diproses') 
-          AND DATE_TRUNC('month', c_act.created_at) <= ms.m_start ${whereExtra}
+          AND DATE_TRUNC('month', c_act.created_at) <= ms.m_start ${getFilterClause("c_act")}
         LEFT JOIN complaints c_late 
           ON c_late.sla_status = 'terlambat' 
-          AND DATE_TRUNC('month', c_late.created_at) <= ms.m_start ${whereExtra}
+          AND DATE_TRUNC('month', c_late.created_at) <= ms.m_start ${getFilterClause("c_late")}
         GROUP BY ms.m_start
         ORDER BY ms.m_start ASC;
       `;
@@ -231,16 +234,16 @@ router.get("/trends", async (req, res, next) => {
           COUNT(DISTINCT c_late.id) AS terlambat
         FROM date_series ds
         LEFT JOIN complaints c_in 
-          ON c_in.created_at::date = ds.day ${whereExtra}
+          ON c_in.created_at::date = ds.day ${getFilterClause("c_in")}
         LEFT JOIN complaints c_out 
           ON c_out.status = 'selesai' 
-          AND COALESCE(c_out.resolved_at, c_out.updated_at)::date = ds.day ${whereExtra}
+          AND COALESCE(c_out.resolved_at, c_out.updated_at)::date = ds.day ${getFilterClause("c_out")}
         LEFT JOIN complaints c_act 
           ON c_act.status IN ('pending', 'diproses') 
-          AND c_act.created_at::date <= ds.day ${whereExtra}
+          AND c_act.created_at::date <= ds.day ${getFilterClause("c_act")}
         LEFT JOIN complaints c_late 
           ON c_late.sla_status = 'terlambat' 
-          AND c_late.created_at::date <= ds.day ${whereExtra}
+          AND c_late.created_at::date <= ds.day ${getFilterClause("c_late")}
         GROUP BY ds.day
         ORDER BY ds.day ASC;
       `;
