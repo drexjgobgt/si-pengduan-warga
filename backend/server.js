@@ -53,6 +53,7 @@ const categoryRoutes = require("./routes/categories");
 const statisticsRoutes = require("./routes/statistics");
 const notificationsRoutes = require("./routes/notifications");
 const departmentRoutes = require("./routes/departments");
+const chatRoutes = require("./routes/chat");
 
 app.use("/api/auth", authRoutes);
 app.use("/api/complaints", complaintRoutes);
@@ -60,6 +61,7 @@ app.use("/api/categories", categoryRoutes);
 app.use("/api/statistics", statisticsRoutes);
 app.use("/api/notifications", notificationsRoutes);
 app.use("/api/departments", departmentRoutes);
+app.use("/api/chat", chatRoutes);
 
 // Health check
 app.get("/api/health", (req, res) => {
@@ -67,7 +69,9 @@ app.get("/api/health", (req, res) => {
     status: "ok",
     timestamp: new Date().toISOString(),
     database: "PostgreSQL",
-    aiClassification: "Active",
+    aiClassification: "Active (Real LLM via Kios API)",
+    aiChatbot: "Active (Kios API)",
+    freeOnly: (process.env.KIOSAPI_FREE_ONLY || "true").toLowerCase() === "true",
   });
 });
 
@@ -84,7 +88,8 @@ app.listen(PORT, () => {
   console.log("========================================");
   console.log(`🚀 Server berjalan di port ${PORT}`);
   console.log(`📊 Database: PostgreSQL`);
-  console.log(`🤖 ML Classification: Active (Keyword-based)`);
+  console.log(`🤖 AI Engine: Kios API (Real LLM Classification & Citizen Chatbot)`);
+  console.log(`🛡️ Free-Only Policy: ${(process.env.KIOSAPI_FREE_ONLY || "true").toLowerCase() === "true" ? "Aktif (Gratis Saja)" : "Nonaktif"}`);
   console.log(`🌐 API URL: http://localhost:${PORT}/api`);
   console.log("========================================");
 });
