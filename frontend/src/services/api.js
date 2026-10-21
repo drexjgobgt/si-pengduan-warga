@@ -111,4 +111,11 @@ export const notificationAPI = {
   delete: (id) => api.delete(`/notifications/${id}`),
 };
 
+// Citizen AI Chatbot APIs (Kios API)
+export const chatAPI = {
+  sendMessage: (data) => api.post("/chat", data),
+  getFAQ: () => api.get("/chat/faq"),
+  getStatus: () => api.get("/chat/status"),
+};
+
 export default api;
