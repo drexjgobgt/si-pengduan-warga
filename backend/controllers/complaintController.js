@@ -357,9 +357,11 @@ exports.create = async (req, res, next) => {
   const cleanTitle = sanitizeInput(title);
   const cleanDescription = sanitizeInput(description);
 
-  // Perform AI classification
+  // Perform Real LLM classification via Kios API
   const classification = await classifyComplaint(
-    `${cleanTitle} ${cleanDescription}`
+    cleanTitle,
+    cleanDescription,
+    pool
   );
 
   const client = await pool.connect();
@@ -373,7 +375,18 @@ exports.create = async (req, res, next) => {
     );
 
     const autoCategoryId = categoryResult.rows[0]?.id || null;
-    const departmentId = categoryResult.rows[0]?.department_id || null;
+    let departmentId = categoryResult.rows[0]?.department_id || null;
+
+    // If departmentId not mapped from category, try matching suggestedDepartment
+    if (!departmentId && classification.suggestedDepartment) {
+      const deptRes = await client.query(
+        "SELECT id FROM departments WHERE code = $1 OR name ILIKE $1",
+        [classification.suggestedDepartment]
+      );
+      if (deptRes.rows.length > 0) {
+        departmentId = deptRes.rows[0].id;
+      }
+    }
 
     // Calculate SLA
     const slaHours = getSLAHoursByPriority(priority);
@@ -406,7 +419,7 @@ exports.create = async (req, res, next) => {
 
     const complaint = complaintResult.rows[0];
 
-    // Log classification
+    // Log structured classification details
     await client.query(
       `INSERT INTO classification_logs 
        (complaint_id, input_text, predicted_category, confidence_score, 
@@ -417,17 +430,30 @@ exports.create = async (req, res, next) => {
         `${cleanTitle} ${cleanDescription}`,
         classification.category,
         classification.confidence,
-        JSON.stringify(classification.scores),
+        JSON.stringify({
+          category: classification.category,
+          secondaryCategories: classification.secondaryCategories,
+          suggestedDepartment: classification.suggestedDepartment,
+          suggestedPriority: classification.suggestedPriority,
+          reason: classification.reason,
+          needsHumanReview: classification.needsHumanReview,
+          classificationSource: classification.classificationSource,
+          status: classification.status,
+        }),
         classification.modelVersion,
         classification.processingTime,
       ]
     );
 
     // Add initial history timeline entry
+    const initialTimelineNote = classification.needsHumanReview
+      ? "Laporan diajukan oleh warga (AI: klasifikasi perlu ditinjau petugas)"
+      : "Laporan berhasil diajukan oleh warga";
+
     await client.query(
       `INSERT INTO complaint_history (complaint_id, status, note, changed_by, action_type, is_internal) 
        VALUES ($1, $2, $3, $4, 'created', FALSE)`,
-      [complaint.id, "pending", "Laporan berhasil diajukan oleh warga", userId]
+      [complaint.id, "pending", initialTimelineNote, userId]
     );
 
     await client.query("COMMIT");
@@ -438,7 +464,12 @@ exports.create = async (req, res, next) => {
       data: complaint,
       classification: {
         category: classification.category,
+        secondaryCategories: classification.secondaryCategories,
+        suggestedDepartment: classification.suggestedDepartment,
+        suggestedPriority: classification.suggestedPriority,
+        reason: classification.reason,
         confidence: classification.confidence,
+        needsHumanReview: classification.needsHumanReview,
         processingTime: classification.processingTime,
       },
     });
@@ -1189,3 +1220,87 @@ exports.delete = async (req, res, next) => {
     client.release();
   }
 };
+
+/**
+ * POST /api/complaints/:id/reclassify
+ * Re-trigger AI LLM classification on an existing complaint (Staff/Admin only)
+ */
+exports.reclassify = async (req, res, next) => {
+  const { id } = req.params;
+  try {
+    const compRes = await pool.query("SELECT * FROM complaints WHERE id = $1", [id]);
+    if (compRes.rows.length === 0) {
+      return res.status(404).json({ error: "Pengaduan tidak ditemukan" });
+    }
+    const complaint = compRes.rows[0];
+
+    const classification = await classifyComplaint(
+      complaint.title,
+      complaint.description,
+      pool
+    );
+
+    const catRes = await pool.query("SELECT id FROM categories WHERE name = $1", [
+      classification.category,
+    ]);
+    const autoCategoryId = catRes.rows[0]?.id || null;
+
+    // Log the reclassification
+    await pool.query(
+      `INSERT INTO classification_logs 
+       (complaint_id, input_text, predicted_category, confidence_score, 
+        all_scores, model_version, processing_time_ms)
+       VALUES ($1, $2, $3, $4, $5, $6, $7)`,
+      [
+        complaint.id,
+        `${complaint.title} ${complaint.description}`,
+        classification.category,
+        classification.confidence,
+        JSON.stringify({
+          category: classification.category,
+          secondaryCategories: classification.secondaryCategories,
+          suggestedDepartment: classification.suggestedDepartment,
+          suggestedPriority: classification.suggestedPriority,
+          reason: classification.reason,
+          needsHumanReview: classification.needsHumanReview,
+          isReclassification: true,
+          status: classification.status,
+        }),
+        classification.modelVersion,
+        classification.processingTime,
+      ]
+    );
+
+    // Update auto_category_id and confidence_score
+    await pool.query(
+      `UPDATE complaints 
+       SET auto_category_id = $1, confidence_score = $2, updated_at = CURRENT_TIMESTAMP
+       WHERE id = $3`,
+      [autoCategoryId, classification.confidence, complaint.id]
+    );
+
+    // Audit timeline entry
+    await pool.query(
+      `INSERT INTO complaint_history (complaint_id, status, note, changed_by, action_type, is_internal) 
+       VALUES ($1, $2, $3, $4, 'ai_reclassified', TRUE)`,
+      [
+        complaint.id,
+        complaint.status,
+        `AI klasifikasi ulang dijalankan: Rekomendasi "${classification.category}" (${classification.confidence}%)`,
+        req.user.userId,
+      ]
+    );
+
+    res.json({
+      success: true,
+      message: "Klasifikasi ulang AI berhasil dijalankan",
+      data: {
+        complaintId: complaint.id,
+        classification,
+      },
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+

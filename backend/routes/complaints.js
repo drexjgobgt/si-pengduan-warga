@@ -25,6 +25,14 @@ router.post("/", authenticateToken, complaintController.create);
 // Delete Complaint
 router.delete("/:id", authenticateToken, complaintController.delete);
 
+// Re-classify Complaint using AI LLM (Staff only)
+router.post(
+  "/:id/reclassify",
+  authenticateToken,
+  authorizeRoles("admin", "supervisor", "petugas"),
+  complaintController.reclassify
+);
+
 // General status update
 router.patch(
   "/:id/status",
