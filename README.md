@@ -161,6 +161,85 @@ npm run build
 
 ---
 
+## Integrasi Kecerdasan Buatan (Kios API)
+
+SIPW menggunakan **Kios API** (`https://api.kiosapi.id/v1`), gateway API kompatibel dengan spesifikasi OpenAI standar, untuk menyediakan dua kapabilitas AI mandiri:
+
+### 1. Layanan Klasifikasi Pengaduan (Real LLM)
+- Menggantikan sistem pencocokan kata kunci (*keyword matching*) sebagai mekanisme utama.
+- Menganalisis judul dan deskripsi laporan dalam bahasa Indonesia sehari-hari, salah ketik, kalimat panjang, konteks ambigu, dan laporan majemuk.
+- Menghasilkan rekomendasi terstruktur: `category`, `secondaryCategories`, `suggestedDepartment`, `suggestedPriority`, `reason`, `confidence`, dan `needsHumanReview`.
+- **Validasi Ketat**: Kategori dan departemen divalidasi terhadap database aktif; kategori/departemen fiktif hasil halusinasi model otomatis dialihkan ke `lainnya` / `KELURAHAN` dan ditandai untuk peninjauan petugas (`needsHumanReview = true`).
+- **Resiliensi Pengaduan**: Jika layanan AI mengalami kendala jaringan atau batas kuota habis, pengaduan warga **tetap berhasil disimpan** dengan penandaan verifikasi manual petugas tanpa mematikan alur operasional.
+
+### 2. Layanan Chatbot Warga (Citizen AI Chatbot)
+- **FAQ Publik Terbuka**: Pengunjung umum (tanpa login) dapat menanyakan alur pelaporan, 9 kategori resmi, penjelasan status, batas waktu SLA, pelaporan anonim, dan bantuan umum.
+- **Pelacakan Laporan Terotorisasi**: Pertanyaan seperti *"Bagaimana status laporan saya?"* memerlukan login (JWT). Sistem memverifikasi identitas pengguna di backend dan hanya menyajikan ringkasan laporan milik warga yang bersangkutan (tanpa catatan rahasia internal petugas atau data warga lain).
+- **Pertahanan Prompt Injection**: Prompt sistem dirancang ketat untuk menolak instruksi manipulatif, permintaan kode berbahaya, atau upaya membocorkan kredensial.
+- **Privasi Sesi**: Sesi obrolan bersifat temporer, ringan, dan tidak menyimpan data percakapan yang tidak perlu.
+
+### 3. Kebijakan "Gratis Saja" (*Free-Only Policy*)
+SIPW dirancang untuk beroperasi tanpa biaya API tak terkendali:
+- `KIOSAPI_FREE_ONLY=true` (wajib aktif): Mencegah fallback otomatis ke model berbayar.
+- Model default menggunakan tier gratis (misalnya: `meta-llama/llama-3.2-3b-instruct:free`, `google/gemini-2.0-flash-exp:free`, `qwen/qwen-2.5-7b-instruct:free`).
+- Pembatasan kuota request harian lokal (`KIOSAPI_DAILY_REQUEST_LIMIT=200`).
+- Pembatasan panjang input (maks 500 karakter per pesan) dan batas token respon.
+- Rate limiting 25 request/menit per alamat IP pada endpoint `/api/chat`.
+- Kredensial rahasia (`KIOSAPI_API_KEY`) hanya disimpan di lingkungan backend `.env` dan **tidak pernah dikirim ke frontend, respons API, atau log**.
+
+### 4. Daftar Environment Variable Kios API (Backend)
+Tambahkan ke file `backend/.env`:
+```env
+# Kios API Key dari dashboard https://api.kiosapi.id
+KIOSAPI_API_KEY=kios_live_xxxxxx
+
+# Base URL provider
+KIOSAPI_BASE_URL=https://api.kiosapi.id/v1
+
+# Model untuk klasifikasi laporan
+KIOSAPI_CLASSIFICATION_MODEL=meta-llama/llama-3.2-3b-instruct:free
+
+# Model untuk chatbot interaktif warga
+KIOSAPI_CHAT_MODEL=meta-llama/llama-3.2-3b-instruct:free
+
+# Kebijakan gratis saja (true / false)
+KIOSAPI_FREE_ONLY=true
+
+# Batas kuota request lokal per hari
+KIOSAPI_DAILY_REQUEST_LIMIT=200
+
+# Batas waktu panggilan API (milidetik)
+KIOSAPI_REQUEST_TIMEOUT_MS=15000
+
+# Batas token keluaran
+KIOSAPI_CLASSIFICATION_MAX_TOKENS=500
+KIOSAPI_CHAT_MAX_TOKENS=600
+```
+
+---
+
+## Pengujian Otomatis
+
+SIPW menyediakan rangkaian uji unit (*unit test suite*) bawaan Node.js untuk memverifikasi logika AI, validasi model, privasi pelacakan, dan keamanan:
+
+```bash
+cd backend
+npm test
+```
+
+Rangkaian pengujian mencakup 17 skenario:
+- Pemanggilan Kios API dan penegakan kebijakan Free-Only.
+- Sanitasi API key agar tidak bocor ke log atau pesan galat.
+- Parsing dan validasi keluaran terstruktur model klasifikasi.
+- Penanganan kategori fiktif dan ambang batas keyakinan (*confidence threshold*).
+- Penanganan kegagalan provider tanpa mengorbankan penyimpanan aduan warga.
+- Aksesibilitas FAQ publik tanpa login.
+- Penolakan pelacakan pengaduan pribadi bagi pengunjung anonim.
+- Pembatasan data pelacakan hanya untuk pemilik sah laporan.
+- Pembatasan ukuran pesan dan penolakan prompt injection.
+
+---
+
 ## Akun Demo Bawaan
 
 | Peran | Alamat Email | Kata Sandi | Akses Utama |
@@ -168,7 +247,7 @@ npm run build
 | **Admin** | `admin@pengaduan.local` | `admin123` | Seluruh dashboard, disposisi OPD, analitik kinerja |
 | **Petugas** | `petugas@pengaduan.local` | `admin123` | Tab Tugas Saya, pembaruan status, unggah bukti |
 | **Supervisor** | `supervisor@pengaduan.local` | `admin123` | Eskalasi aduan lewat batas waktu, rekapitulasi SLA |
-| **Warga** | *Daftar mandiri via form* | *Sesuai pendaftaran* | Pelaporan aduan, pelacakan linimasa, ulasan |
+| **Warga** | `rafifnyantuy@gmail.com` | *(akun warga terdaftar)* | Pelaporan aduan, pelacakan linimasa, chatbot asisten |
 
 ---
 
