@@ -23,6 +23,7 @@ import { InteractiveTrendChart } from "./components/Statistics/InteractiveTrendC
 import { PerformanceMetricsChart } from "./components/Statistics/PerformanceMetricsChart";
 import { Modal } from "./components/Common/Modal";
 import { Button } from "./components/Common/Button";
+import { CitizenChatWidget } from "./components/Chat/CitizenChatWidget";
 import { useAuth } from "./hooks/useAuth";
 import { complaintAPI, authAPI, statisticsAPI } from "./services/api";
 import {
@@ -138,10 +139,14 @@ function App() {
         await complaintAPI.uploadImage(newComplaintId, imageFormData);
       }
 
+      const ai = response.data.classification || {};
+      const reviewNotice = ai.needsHumanReview ? "\n⚠️ Catatan AI: Klasifikasi ditandai untuk verifikasi petugas" : "";
       alert(
         `✅ Pengaduan berhasil diajukan!\n\n` +
-          `🤖 Klasifikasi AI: ${response.data.classification.category.toUpperCase()}\n` +
-          `⏱️ Target Operasional (SLA): ${response.data.data.sla_hours} jam`
+          `🤖 Klasifikasi AI: ${(ai.category || "lainnya").toUpperCase()}\n` +
+          `🏢 Rekomendasi Dinas: ${ai.suggestedDepartment || "Dalam Verifikasi"}\n` +
+          `⏱️ Target Operasional (SLA): ${response.data.data.sla_hours} jam` +
+          reviewNotice
       );
 
       setCurrentView("home");
@@ -831,6 +836,16 @@ function App() {
           }}
         />
       )}
+
+      {/* Citizen AI Chatbot Widget (Kios API) */}
+      <CitizenChatWidget
+        isAuthenticated={isAuthenticated}
+        user={user}
+        onOpenLogin={() => {
+          setCurrentView("auth");
+          setAuthMode("login");
+        }}
+      />
     </div>
   );
 }
