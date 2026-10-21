@@ -247,7 +247,7 @@ Rangkaian pengujian mencakup 17 skenario:
 | **Admin** | `admin@pengaduan.local` | `admin123` | Seluruh dashboard, disposisi OPD, analitik kinerja |
 | **Petugas** | `petugas@pengaduan.local` | `admin123` | Tab Tugas Saya, pembaruan status, unggah bukti |
 | **Supervisor** | `supervisor@pengaduan.local` | `admin123` | Eskalasi aduan lewat batas waktu, rekapitulasi SLA |
-| **Warga** | `rafifnyantuy@gmail.com` | *(akun warga terdaftar)* | Pelaporan aduan, pelacakan linimasa, chatbot asisten |
+| **Warga** | `warga123@gmail.com` | *(akun warga terdaftar)* | Pelaporan aduan, pelacakan linimasa, chatbot asisten |
 
 ---
 
