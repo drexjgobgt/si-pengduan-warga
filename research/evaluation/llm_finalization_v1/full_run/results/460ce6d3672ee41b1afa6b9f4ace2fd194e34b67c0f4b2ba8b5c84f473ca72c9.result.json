@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0260",
+  "target_category": "lainnya",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T11:03:16.676Z",
+  "duration_ms": 4820.459799999953,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"lainnya\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"KELURAHAN\",\n  \"suggestedPriority\": \"rendah\",\n  \"reason\": \"Laporan bersifat umum dan belum menjelaskan masalah atau lokasi secara spesifik, sehingga memerlukan verifikasi dan pelengkapan informasi oleh warga melalui sekretariat kelurahan.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "lainnya",
+    "secondaryCategories": [],
+    "suggestedDepartment": "KELURAHAN",
+    "suggestedPriority": "rendah",
+    "reason": "Laporan bersifat umum dan belum menjelaskan masalah atau lokasi secara spesifik, sehingga memerlukan verifikasi dan pelengkapan informasi oleh warga melalui sekretariat kelurahan.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "lainnya",
+  "usage": {
+    "prompt_tokens": 890,
+    "completion_tokens": 87,
+    "total_tokens": 977,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

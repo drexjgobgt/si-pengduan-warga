@@ -1,0 +1,43 @@
+{
+  "status": "FROZEN_SYNTHETIC_RULE_TARGETS",
+  "frozen_at": "2026-10-26T08:27:49.056Z",
+  "registry_frozen_at": "2026-10-26T08:26:42.825Z",
+  "registry_sha256": "e663226792e23eef1c5e277a066aeb5dae35e554c2c379befd5ae1df0babfa03",
+  "dataset_sha256": "98a2d730f8272969d2576e6385a0b36b9453d8ba2e85e87dc7ca86611bb63e3e",
+  "qa_checks_sha256": "320623e74966a9b4409e0d1bf491ee8bb1e8c4cf0f42a86f086b71dfe835dc29",
+  "registry_rows": 270,
+  "eligible": 270,
+  "excluded": 0,
+  "categories": {
+    "sampah": 30,
+    "jalan_rusak": 30,
+    "banjir": 30,
+    "listrik": 30,
+    "air_bersih": 30,
+    "keamanan": 30,
+    "kesehatan": 30,
+    "pendidikan": 30,
+    "lainnya": 30
+  },
+  "case_types": {
+    "formal": 45,
+    "informal": 45,
+    "typo": 45,
+    "ambiguous": 45,
+    "incomplete": 45,
+    "multicategory": 40,
+    "out_of_scope": 5
+  },
+  "families": 55,
+  "target_provenance": "scenario_rule_target_not_human_ground_truth",
+  "api_requests": 0,
+  "db_access": 0,
+  "live_allowed": false,
+  "limitations": [
+    "Five core domain events reused across language types; variants are dependent",
+    "Deterministic phrasing/template fingerprints; not 270 independent events",
+    "No independent human or semantic AI validation",
+    "Exact fact preservation is not proof of full semantic correctness",
+    "No representativeness for real complaints"
+  ]
+}

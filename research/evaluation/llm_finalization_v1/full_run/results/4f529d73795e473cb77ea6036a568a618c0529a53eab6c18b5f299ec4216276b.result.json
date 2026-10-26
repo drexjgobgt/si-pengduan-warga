@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0164",
+  "target_category": "keamanan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:51:52.567Z",
+  "duration_ms": 4549.5044999999955,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"keamanan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"SATPOLPP\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Laporan menyebut barang pengunjung di area rekreasi diambil berulang kali tanpa izin dan meminta peningkatan keamanan serta tindak lanjut pencurian.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "keamanan",
+    "secondaryCategories": [],
+    "suggestedDepartment": "SATPOLPP",
+    "suggestedPriority": "tinggi",
+    "reason": "Laporan menyebut barang pengunjung di area rekreasi diambil berulang kali tanpa izin dan meminta peningkatan keamanan serta tindak lanjut pencurian.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "keamanan",
+  "usage": {
+    "prompt_tokens": 898,
+    "completion_tokens": 83,
+    "total_tokens": 981,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

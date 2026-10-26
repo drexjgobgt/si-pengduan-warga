@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0052",
+  "target_category": "jalan_rusak",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:19:11.197Z",
+  "duration_ms": 2988.820399999997,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"jalan_rusak\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan menggambarkan kerusakan tepi badan jalan berupa cekungan akibat terkikis pada lintasan menuju kebun. Perbaikan jalan termasuk kewenangan Dinas Pekerjaan Umum dan Tata Air.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "jalan_rusak",
+    "secondaryCategories": [],
+    "suggestedDepartment": "PUPR",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan menggambarkan kerusakan tepi badan jalan berupa cekungan akibat terkikis pada lintasan menuju kebun. Perbaikan jalan termasuk kewenangan Dinas Pekerjaan Umum dan Tata Air.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "jalan_rusak",
+  "usage": {
+    "prompt_tokens": 896,
+    "completion_tokens": 90,
+    "total_tokens": 986,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

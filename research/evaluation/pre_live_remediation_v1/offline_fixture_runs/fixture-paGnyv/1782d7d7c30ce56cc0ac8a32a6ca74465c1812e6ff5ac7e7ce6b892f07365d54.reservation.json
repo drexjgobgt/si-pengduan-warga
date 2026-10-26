@@ -1,0 +1,8 @@
+{
+  "identity": "7507de628953409a74f61e1c0ae295130983301d221cad44fef1a2952f5cc592",
+  "sample_id": "FAKE-154",
+  "key": "1782d7d7c30ce56cc0ac8a32a6ca74465c1812e6ff5ac7e7ce6b892f07365d54",
+  "dispatch_wall_ms": 101540,
+  "active_budget_reserved_ms": 60,
+  "mode": "OFFLINE_FIXTURE_NOT_LLM_EVIDENCE"
+}

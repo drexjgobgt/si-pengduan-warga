@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-26T06:30:52.606Z",
+  "sample_id": "SIPW-CAND-0002",
+  "model": "minimax-m3.1-flash-free",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "request_status": "success",
+  "latency_ms": 3142.3527,
+  "raw_content": "{\n  \"category\": \"jalan_rusak\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Lapisan aspal pada jalur kendaraan mengelupas dan membentuk cekungan yang mengganggu dan berisiko menyebabkan motor oleng. Perbaikan berupa penambalan permukaan jalan diperlukan.\",\n  \"confidence\": 96,\n  \"needsHumanReview\": false\n}",
+  "raw_category": "jalan_rusak",
+  "final_category": "jalan_rusak",
+  "ground_truth_category": "jalan_rusak",
+  "label_validation_status": "provisional",
+  "output_valid": true,
+  "usage": {
+    "prompt_tokens": 963,
+    "completion_tokens": 90,
+    "total_tokens": 1053
+  },
+  "error_type": null,
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "source": "synthetic dev smoke; no DB; one request only"
+}

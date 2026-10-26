@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-26T06:30:40.633Z",
+  "sample_id": "SIPW-CAND-0001",
+  "model": "minimax-m3.1-flash-free",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "request_status": "success",
+  "latency_ms": 2981.0278,
+  "raw_content": "{\n  \"category\": \"sampah\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DLH\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Pengangkutan sampah rumah tangga dari tempat pengumpulan terhenti selama empat hari sehingga berpotensi menumpuk dan mengganggu kebersihan lingkungan.\",\n  \"confidence\": 96,\n  \"needsHumanReview\": false\n}",
+  "raw_category": "sampah",
+  "final_category": "sampah",
+  "ground_truth_category": "sampah",
+  "label_validation_status": "provisional",
+  "output_valid": true,
+  "usage": {
+    "prompt_tokens": 961,
+    "completion_tokens": 79,
+    "total_tokens": 1040
+  },
+  "error_type": null,
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "source": "synthetic dev smoke; no DB; one request only"
+}

@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-10-26T05:33:29.376Z",
+  "status": "INCOMPLETE_STOPPED_ON_HTTP_429",
+  "evidence_kind": "ACTUAL_LLM_SYNTHETIC_PROVISIONAL_PILOT",
+  "planned_samples": 18,
+  "attempted_samples": 1,
+  "service_success": 0,
+  "unattempted_samples": [
+    "SIPW-CAND-0011",
+    "SIPW-CAND-0012",
+    "SIPW-CAND-0013",
+    "SIPW-CAND-0014",
+    "SIPW-CAND-0015",
+    "SIPW-CAND-0016",
+    "SIPW-CAND-0017",
+    "SIPW-CAND-0018",
+    "SIPW-CAND-0019",
+    "SIPW-CAND-0020",
+    "SIPW-CAND-0021",
+    "SIPW-CAND-0022",
+    "SIPW-CAND-0023",
+    "SIPW-CAND-0024",
+    "SIPW-CAND-0025",
+    "SIPW-CAND-0026",
+    "SIPW-CAND-0027"
+  ],
+  "coverage": {
+    "count": 1,
+    "denominator": 18,
+    "value": 0.05555555555555555
+  },
+  "valid_output_rate": {
+    "count": 0,
+    "denominator": 1,
+    "value": 0
+  },
+  "failure_rate": {
+    "count": 1,
+    "denominator": 1,
+    "value": 1
+  },
+  "timeout_rate": {
+    "count": 0,
+    "denominator": 1,
+    "value": 0
+  },
+  "fallback": {
+    "count": 1,
+    "denominator": 1,
+    "value": 1
+  },
+  "needs_human_review": {
+    "count": 1,
+    "denominator": 1,
+    "value": 1
+  },
+  "latency_ms": {
+    "all_attempts_median": 3606.8927,
+    "all_attempts_p95": 3606.8927,
+    "n": 1
+  },
+  "final_system_label_matches_attempted": {
+    "count": 0,
+    "denominator": 1,
+    "value": 0
+  },
+  "llm_classification_metrics": null,
+  "llm_metrics_unavailable_reason": "No successful provider prediction; incomplete 1/18 pilot and labels provisional. Fallback mismatch is system outcome, not a semantic LLM prediction.",
+  "account_billing": {
+    "user_supplied_evidence": "Prior matching smoke screenshot: requested model deepseek-v4-flash-free; response self-dploy/DeepSeek-V4-Flash; 949/92 tokens; Free-Pro 0x; Rp0",
+    "evidence_file": "unavailable: attachment not accessible as a verified workspace file",
+    "pilot_dashboard_evidence": "User screenshot 2026-10-26 12:32:07 WIB: same model, Free-Pro, Error status_code=429 openai_error, cost Rp0; matches attempted sample timestamp.",
+    "pilot_debit_idr": 0,
+    "pilot_debit_evidence_source": "user_supplied_dashboard_screenshot_not_billing_API",
+    "remaining_quota": null,
+    "post_run_reconciliation_required": false
+  },
+  "baseline_comparison": "Not comparable: baseline has 18 predictions; LLM has 0 successful predictions.",
+  "source_records": [
+    {
+      "sample_id": "SIPW-CAND-0010",
+      "sha256": "f00e344431b99fc55ecf94721abd58644468229db5883deeda1e2ceb46434496"
+    }
+  ]
+}

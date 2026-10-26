@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0248",
+  "target_category": "lainnya",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T11:01:50.786Z",
+  "duration_ms": 3027.1560999999056,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"lainnya\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"KELURAHAN\",\n  \"suggestedPriority\": \"rendah\",\n  \"reason\": \"Keluhan mengenai informasi jam pelayanan administrasi yang tidak tercantum pada papan informasi balai merupakan masalah administrasi umum dan tidak menunjukkan bahaya keselamatan.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "lainnya",
+    "secondaryCategories": [],
+    "suggestedDepartment": "KELURAHAN",
+    "suggestedPriority": "rendah",
+    "reason": "Keluhan mengenai informasi jam pelayanan administrasi yang tidak tercantum pada papan informasi balai merupakan masalah administrasi umum dan tidak menunjukkan bahaya keselamatan.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "lainnya",
+  "usage": {
+    "prompt_tokens": 894,
+    "completion_tokens": 87,
+    "total_tokens": 981,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

@@ -1,0 +1,377 @@
+{
+  "audit_timestamp": "2026-10-26T09:37:57.140Z",
+  "dataset_summary": {
+    "dataset_rows": 270,
+    "registry_rows": 270,
+    "baseline_predictions_rows": 270,
+    "categories_count": 9,
+    "target_distribution": {
+      "sampah": 30,
+      "jalan_rusak": 30,
+      "banjir": 30,
+      "listrik": 30,
+      "air_bersih": 30,
+      "keamanan": 30,
+      "kesehatan": 30,
+      "pendidikan": 30,
+      "lainnya": 30
+    },
+    "unique_families": 55,
+    "case_types": {
+      "formal": 45,
+      "informal": 45,
+      "typo": 45,
+      "ambiguous": 45,
+      "incomplete": 45,
+      "multicategory": 40,
+      "out_of_scope": 5
+    }
+  },
+  "file_hashes": {
+    "registry": {
+      "path": "research/evaluation/synthetic_final_v1/synthetic_scenario_registry.json",
+      "sha256": "e663226792e23eef1c5e277a066aeb5dae35e554c2c379befd5ae1df0babfa03",
+      "size_bytes": 243869
+    },
+    "dataset": {
+      "path": "research/evaluation/synthetic_final_v1/synthetic_dataset.json",
+      "sha256": "98a2d730f8272969d2576e6385a0b36b9453d8ba2e85e87dc7ca86611bb63e3e",
+      "size_bytes": 149373
+    },
+    "dataset_manifest": {
+      "path": "research/evaluation/synthetic_final_v1/dataset_manifest.json",
+      "sha256": "6e5c0fcd1a9bcfa3eeb239f8d4f73648a0291c121c420cecc63d8d858b4dd343",
+      "size_bytes": 1356
+    },
+    "frozen_protocol": {
+      "path": "research/evaluation/synthetic_final_v1/frozen_experiment_protocol.md",
+      "sha256": "d55256a706ee063b2b628a8ba6c3742e9a6c97cbc78867af30b5e3da094d8d4f",
+      "size_bytes": 4352
+    },
+    "baseline_predictions": {
+      "path": "research/evaluation/synthetic_final_v1/keyword_baseline/predictions.json",
+      "sha256": "e47f0760e4ea5c02d24cc800ee36d7cee1cbc09549c3fb0d2f3e8d0ccbebc9b9",
+      "size_bytes": 91226
+    },
+    "baseline_manifest": {
+      "path": "research/evaluation/synthetic_final_v1/keyword_baseline/manifest.json",
+      "sha256": "268b2ff7f39e87775f4ef1f7038e82a336ad46388d4cc8be5cb97d8e2f13abd4",
+      "size_bytes": 621
+    },
+    "scoring_contract": {
+      "path": "research/evaluation/pre_live_remediation_v1/scoring_contract.md",
+      "sha256": "b59f75616f6d8e45ececb7e3b8242773cefd46b09f1b8c71d0eab5fe81227265",
+      "size_bytes": 7799
+    },
+    "remediation_report": {
+      "path": "research/evaluation/pre_live_remediation_v1/remediation_report.md",
+      "sha256": "02c72fb4e18ea95675be7fd50221c0d36991668e044c3cf323492988160fcd45",
+      "size_bytes": 6420
+    },
+    "article_md": {
+      "path": "research/manuscript/artikel_ilmiah_final_v1.md",
+      "sha256": "2109516ebe41ba94b8200883faa37dc9910b9fee7bfe34e6a383b6df4c7385a0",
+      "size_bytes": 45965
+    }
+  },
+  "manifest_integrity": {
+    "registry_in_manifest": true,
+    "dataset_in_manifest": true,
+    "baseline_dataset_ref": true,
+    "baseline_registry_ref": true
+  },
+  "baseline_recalculation": {
+    "denominator": 270,
+    "correct_matches": 178,
+    "mismatches_count": 92,
+    "accuracy": 0.6592592592592592,
+    "macro_precision": 0.8186694130126908,
+    "macro_recall": 0.6592592592592592,
+    "macro_f1": 0.6401765209978252,
+    "predictions_per_category": {
+      "sampah": 6,
+      "jalan_rusak": 29,
+      "banjir": 39,
+      "listrik": 36,
+      "air_bersih": 12,
+      "keamanan": 5,
+      "kesehatan": 24,
+      "pendidikan": 30,
+      "lainnya": 89,
+      "__invalid__": 0,
+      "__missing__": 0
+    },
+    "per_category": [
+      {
+        "category": "sampah",
+        "support": 30,
+        "tp": 6,
+        "fp": 0,
+        "fn": 24,
+        "predicted": 6,
+        "precision": 1,
+        "recall": 0.2,
+        "f1": 0.33333333333333337
+      },
+      {
+        "category": "jalan_rusak",
+        "support": 30,
+        "tp": 18,
+        "fp": 11,
+        "fn": 12,
+        "predicted": 29,
+        "precision": 0.6206896551724138,
+        "recall": 0.6,
+        "f1": 0.6101694915254238
+      },
+      {
+        "category": "banjir",
+        "support": 30,
+        "tp": 29,
+        "fp": 10,
+        "fn": 1,
+        "predicted": 39,
+        "precision": 0.7435897435897436,
+        "recall": 0.9666666666666667,
+        "f1": 0.8405797101449275
+      },
+      {
+        "category": "listrik",
+        "support": 30,
+        "tp": 24,
+        "fp": 12,
+        "fn": 6,
+        "predicted": 36,
+        "precision": 0.6666666666666666,
+        "recall": 0.8,
+        "f1": 0.7272727272727272
+      },
+      {
+        "category": "air_bersih",
+        "support": 30,
+        "tp": 12,
+        "fp": 0,
+        "fn": 18,
+        "predicted": 12,
+        "precision": 1,
+        "recall": 0.4,
+        "f1": 0.5714285714285715
+      },
+      {
+        "category": "keamanan",
+        "support": 30,
+        "tp": 5,
+        "fp": 0,
+        "fn": 25,
+        "predicted": 5,
+        "precision": 1,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857
+      },
+      {
+        "category": "kesehatan",
+        "support": 30,
+        "tp": 24,
+        "fp": 0,
+        "fn": 6,
+        "predicted": 24,
+        "precision": 1,
+        "recall": 0.8,
+        "f1": 0.888888888888889
+      },
+      {
+        "category": "pendidikan",
+        "support": 30,
+        "tp": 30,
+        "fp": 0,
+        "fn": 0,
+        "predicted": 30,
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      {
+        "category": "lainnya",
+        "support": 30,
+        "tp": 30,
+        "fp": 59,
+        "fn": 0,
+        "predicted": 89,
+        "precision": 0.33707865168539325,
+        "recall": 1,
+        "f1": 0.5042016806722689
+      }
+    ],
+    "confusion_matrix": {
+      "sampah": {
+        "sampah": 6,
+        "jalan_rusak": 0,
+        "banjir": 0,
+        "listrik": 4,
+        "air_bersih": 0,
+        "keamanan": 0,
+        "kesehatan": 0,
+        "pendidikan": 0,
+        "lainnya": 20,
+        "__invalid__": 0,
+        "__missing__": 0
+      },
+      "jalan_rusak": {
+        "sampah": 0,
+        "jalan_rusak": 18,
+        "banjir": 0,
+        "listrik": 2,
+        "air_bersih": 0,
+        "keamanan": 0,
+        "kesehatan": 0,
+        "pendidikan": 0,
+        "lainnya": 10,
+        "__invalid__": 0,
+        "__missing__": 0
+      },
+      "banjir": {
+        "sampah": 0,
+        "jalan_rusak": 0,
+        "banjir": 29,
+        "listrik": 0,
+        "air_bersih": 0,
+        "keamanan": 0,
+        "kesehatan": 0,
+        "pendidikan": 0,
+        "lainnya": 1,
+        "__invalid__": 0,
+        "__missing__": 0
+      },
+      "listrik": {
+        "sampah": 0,
+        "jalan_rusak": 6,
+        "banjir": 0,
+        "listrik": 24,
+        "air_bersih": 0,
+        "keamanan": 0,
+        "kesehatan": 0,
+        "pendidikan": 0,
+        "lainnya": 0,
+        "__invalid__": 0,
+        "__missing__": 0
+      },
+      "air_bersih": {
+        "sampah": 0,
+        "jalan_rusak": 5,
+        "banjir": 10,
+        "listrik": 0,
+        "air_bersih": 12,
+        "keamanan": 0,
+        "kesehatan": 0,
+        "pendidikan": 0,
+        "lainnya": 3,
+        "__invalid__": 0,
+        "__missing__": 0
+      },
+      "keamanan": {
+        "sampah": 0,
+        "jalan_rusak": 0,
+        "banjir": 0,
+        "listrik": 5,
+        "air_bersih": 0,
+        "keamanan": 5,
+        "kesehatan": 0,
+        "pendidikan": 0,
+        "lainnya": 20,
+        "__invalid__": 0,
+        "__missing__": 0
+      },
+      "kesehatan": {
+        "sampah": 0,
+        "jalan_rusak": 0,
+        "banjir": 0,
+        "listrik": 1,
+        "air_bersih": 0,
+        "keamanan": 0,
+        "kesehatan": 24,
+        "pendidikan": 0,
+        "lainnya": 5,
+        "__invalid__": 0,
+        "__missing__": 0
+      },
+      "pendidikan": {
+        "sampah": 0,
+        "jalan_rusak": 0,
+        "banjir": 0,
+        "listrik": 0,
+        "air_bersih": 0,
+        "keamanan": 0,
+        "kesehatan": 0,
+        "pendidikan": 30,
+        "lainnya": 0,
+        "__invalid__": 0,
+        "__missing__": 0
+      },
+      "lainnya": {
+        "sampah": 0,
+        "jalan_rusak": 0,
+        "banjir": 0,
+        "listrik": 0,
+        "air_bersih": 0,
+        "keamanan": 0,
+        "kesehatan": 0,
+        "pendidikan": 0,
+        "lainnya": 30,
+        "__invalid__": 0,
+        "__missing__": 0
+      }
+    }
+  },
+  "article_comparison": {
+    "numerical_comparison": {
+      "sample_size": {
+        "expected": 270,
+        "actual": 270,
+        "match": true
+      },
+      "category_distribution": {
+        "expected": 30,
+        "all_30": true
+      },
+      "matches": {
+        "expected": 178,
+        "actual": 178,
+        "match": true
+      },
+      "mismatches": {
+        "expected": 92,
+        "actual": 92,
+        "match": true
+      },
+      "accuracy": {
+        "expected": 0.6592592592592592,
+        "actual": 0.6592592592592592,
+        "match": true
+      },
+      "macro_precision": {
+        "expected": 0.8186694130126908,
+        "actual": 0.8186694130126908,
+        "match": true
+      },
+      "macro_recall": {
+        "expected": 0.6592592592592592,
+        "actual": 0.6592592592592592,
+        "match": true
+      },
+      "macro_f1": {
+        "expected": 0.6401765209978252,
+        "actual": 0.6401765209978252,
+        "match": true
+      }
+    },
+    "article_text_assertions": {
+      "accuracy_65_93": true,
+      "macro_p_81_87": true,
+      "macro_r_65_93": true,
+      "macro_f1_64_02": true,
+      "matches_178_270": true
+    },
+    "discrepancies": []
+  },
+  "audit_status": "PASS_VERIFIED"
+}

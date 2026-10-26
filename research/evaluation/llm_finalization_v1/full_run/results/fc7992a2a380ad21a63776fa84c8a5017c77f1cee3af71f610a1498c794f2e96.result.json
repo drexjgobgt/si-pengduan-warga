@@ -1,0 +1,25 @@
+{
+  "sample_id": "SIPW-SYN-0044",
+  "target_category": "jalan_rusak",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:18:19.166Z",
+  "duration_ms": 16175.7627,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": "parse_failed",
+  "schema_valid": false,
+  "is_pure_json": false,
+  "raw_text": "{\n  \"category\": \"jalan_rusak\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Ubin pijakan pada jembatan penyeberangan yang lepas posesif posingposesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif posesif",
+  "parsed_output": null,
+  "predicted_category": null,
+  "usage": {
+    "prompt_tokens": 899,
+    "completion_tokens": 500,
+    "total_tokens": 1399,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "PARSE_FAILED"
+}

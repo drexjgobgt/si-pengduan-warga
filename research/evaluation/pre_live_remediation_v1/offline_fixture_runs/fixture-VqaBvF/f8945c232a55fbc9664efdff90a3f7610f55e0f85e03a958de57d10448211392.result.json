@@ -1,0 +1,13 @@
+{
+  "identity": "7507de628953409a74f61e1c0ae295130983301d221cad44fef1a2952f5cc592",
+  "sample_id": "FAKE-22",
+  "mode": "OFFLINE_FIXTURE_NOT_LLM_EVIDENCE",
+  "http_status": 200,
+  "error_type": null,
+  "service_success": true,
+  "raw_content": "fixture not LLM output",
+  "response_truncated": false,
+  "model_id": "FAKE_ONLY",
+  "active_ms": 10,
+  "account_charge_verified": false
+}

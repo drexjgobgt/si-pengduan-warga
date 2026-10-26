@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0028",
+  "target_category": "sampah",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:15:51.407Z",
+  "duration_ms": 3544.640299999999,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"sampah\",\n  \"secondaryCategories\": [\"listrik\"],\n  \"suggestedDepartment\": \"DLH\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan utama adalah limbah padat yang meluber dari kontainer pasar ikan sehingga perlu segera dikosongkan agar kebersihan lingkungan terjaga. Lampu taman yang redup merupakan masalah tambahan dan dapat ditangani secara terpisah.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "sampah",
+    "secondaryCategories": [
+      "listrik"
+    ],
+    "suggestedDepartment": "DLH",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan utama adalah limbah padat yang meluber dari kontainer pasar ikan sehingga perlu segera dikosongkan agar kebersihan lingkungan terjaga. Lampu taman yang redup merupakan masalah tambahan dan dapat ditangani secara terpisah.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "sampah",
+  "usage": {
+    "prompt_tokens": 902,
+    "completion_tokens": 100,
+    "total_tokens": 1002,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

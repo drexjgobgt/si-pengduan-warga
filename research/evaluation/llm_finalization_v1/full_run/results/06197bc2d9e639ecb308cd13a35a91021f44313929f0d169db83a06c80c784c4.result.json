@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0075",
+  "target_category": "banjir",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:21:53.284Z",
+  "duration_ms": 4169.061099999992,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"banjir\",\n  \"secondaryCategories\": [\"jalan_rusak\"],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Air meluap dan meningkat di lorong dekat terminal sehingga mengganggu akses warga. Perlu penanganan drainase dan pengendalian limpasan secara segera.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "banjir",
+    "secondaryCategories": [
+      "jalan_rusak"
+    ],
+    "suggestedDepartment": "PUPR",
+    "suggestedPriority": "tinggi",
+    "reason": "Air meluap dan meningkat di lorong dekat terminal sehingga mengganggu akses warga. Perlu penanganan drainase dan pengendalian limpasan secara segera.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "banjir",
+  "usage": {
+    "prompt_tokens": 898,
+    "completion_tokens": 89,
+    "total_tokens": 987,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

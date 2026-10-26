@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "dataset_count": 270,
+  "registry_count": 270,
+  "baseline_count": 270,
+  "dataset_duplicate_ids": [],
+  "registry_duplicate_ids": [],
+  "baseline_duplicate_ids": [],
+  "missing_targets": [],
+  "extra_targets": [],
+  "missing_baseline": [],
+  "extra_baseline": [],
+  "invalid_targets": [],
+  "target_distribution": {
+    "sampah": 30,
+    "jalan_rusak": 30,
+    "banjir": 30,
+    "listrik": 30,
+    "air_bersih": 30,
+    "keamanan": 30,
+    "kesehatan": 30,
+    "pendidikan": 30,
+    "lainnya": 30
+  },
+  "narrative_field_keys": [
+    "sample_id",
+    "title",
+    "description",
+    "complaint_text"
+  ],
+  "baseline_target_mismatches": [],
+  "families": 55,
+  "case_type_distribution": {
+    "formal": 45,
+    "informal": 45,
+    "typo": 45,
+    "ambiguous": 45,
+    "incomplete": 45,
+    "multicategory": 40,
+    "out_of_scope": 5
+  },
+  "limitation": "ID consistency and distribution do not independently validate semantic targets or representativeness."
+}

@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0142",
+  "target_category": "air_bersih",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:29:46.127Z",
+  "duration_ms": 3480.260600000038,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"air_bersih\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"KELURAHAN\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan berkaitan dengan kualitas air perpipaan yang mengandung endapan pasir pada hidran layanan umum. Karena titik dan waktu kejadian belum jelas, pemeriksaan dapat dikoordinasikan melalui sekretariat kelurahan.\",\n  \"confidence\": 88,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "air_bersih",
+    "secondaryCategories": [],
+    "suggestedDepartment": "KELURAHAN",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan berkaitan dengan kualitas air perpipaan yang mengandung endapan pasir pada hidran layanan umum. Karena titik dan waktu kejadian belum jelas, pemeriksaan dapat dikoordinasikan melalui sekretariat kelurahan.",
+    "confidence": 88,
+    "needsHumanReview": false
+  },
+  "predicted_category": "air_bersih",
+  "usage": {
+    "prompt_tokens": 898,
+    "completion_tokens": 101,
+    "total_tokens": 999,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0214",
+  "target_category": "pendidikan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:57:51.270Z",
+  "duration_ms": 2565.690600000031,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"pendidikan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DISDIK\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Laporan berkaitan dengan layanan pembelajaran sekolah yang terganggu karena tidak adanya kelas pengganti saat pengajar kosong. Perlu penugasan petugas untuk memulihkan jadwal belajar.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "pendidikan",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DISDIK",
+    "suggestedPriority": "normal",
+    "reason": "Laporan berkaitan dengan layanan pembelajaran sekolah yang terganggu karena tidak adanya kelas pengganti saat pengajar kosong. Perlu penugasan petugas untuk memulihkan jadwal belajar.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "pendidikan",
+  "usage": {
+    "prompt_tokens": 892,
+    "completion_tokens": 86,
+    "total_tokens": 978,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0166",
+  "target_category": "keamanan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:52:07.946Z",
+  "duration_ms": 5918.858500000002,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"keamanan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"SATPOLPP\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Laporan menunjukkan adanya pemaksaan pembayaran dengan ancaman di fasilitas olahraga, sehingga perlu patroli dan penertiban oleh aparat keamanan.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "keamanan",
+    "secondaryCategories": [],
+    "suggestedDepartment": "SATPOLPP",
+    "suggestedPriority": "tinggi",
+    "reason": "Laporan menunjukkan adanya pemaksaan pembayaran dengan ancaman di fasilitas olahraga, sehingga perlu patroli dan penertiban oleh aparat keamanan.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "keamanan",
+  "usage": {
+    "prompt_tokens": 899,
+    "completion_tokens": 81,
+    "total_tokens": 980,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

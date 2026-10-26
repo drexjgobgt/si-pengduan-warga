@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-26T06:31:19.842Z",
+  "sample_id": "SIPW-CAND-0005",
+  "model": "minimax-m3.1-flash-free",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "request_status": "success",
+  "latency_ms": 2961.8206,
+  "raw_content": "{\n  \"category\": \"air_bersih\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"KELURAHAN\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Air keran berwarna kecokelatan selama dua hari sehingga tidak dapat digunakan untuk memasak, yang menunjukkan gangguan kualitas air jaringan. Perlu pemeriksaan dan penanganan oleh pihak berwenang terkait.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "raw_category": "air_bersih",
+  "final_category": "air_bersih",
+  "ground_truth_category": "air_bersih",
+  "label_validation_status": "provisional",
+  "output_valid": true,
+  "usage": {
+    "prompt_tokens": 962,
+    "completion_tokens": 96,
+    "total_tokens": 1058
+  },
+  "error_type": null,
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "source": "synthetic dev smoke; no DB; one request only"
+}

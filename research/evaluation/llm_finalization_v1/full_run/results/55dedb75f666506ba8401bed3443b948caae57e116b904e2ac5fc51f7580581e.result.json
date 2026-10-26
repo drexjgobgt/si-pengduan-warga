@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0138",
+  "target_category": "air_bersih",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:29:19.072Z",
+  "duration_ms": 4461.261699999915,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"air_bersih\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"KELURAHAN\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Laporan berkaitan dengan distribusi air bersih yang tidak mengalir ke tandon komunal meskipun jadwal suplai tetap berlangsung. Kondisi ini mengganggu layanan air dan perlu pemeriksaan serta pemulihan distribusi.\",\n  \"confidence\": 88,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "air_bersih",
+    "secondaryCategories": [],
+    "suggestedDepartment": "KELURAHAN",
+    "suggestedPriority": "normal",
+    "reason": "Laporan berkaitan dengan distribusi air bersih yang tidak mengalir ke tandon komunal meskipun jadwal suplai tetap berlangsung. Kondisi ini mengganggu layanan air dan perlu pemeriksaan serta pemulihan distribusi.",
+    "confidence": 88,
+    "needsHumanReview": false
+  },
+  "predicted_category": "air_bersih",
+  "usage": {
+    "prompt_tokens": 902,
+    "completion_tokens": 94,
+    "total_tokens": 996,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

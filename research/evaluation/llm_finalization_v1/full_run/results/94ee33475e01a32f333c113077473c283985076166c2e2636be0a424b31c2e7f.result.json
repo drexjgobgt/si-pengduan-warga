@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0149",
+  "target_category": "air_bersih",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:30:35.305Z",
+  "duration_ms": 3607.7451000000583,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": false,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"air_bersih\",\n  \"secondaryCategories\": [\"listrik\"],\n  \"suggestedDepartment\": \"PDAM\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan utama adalah aliran air berhenti di pipa layanan gang setelah perbaikan jaringan di hulu, sehingga perlu pemeriksaan sambungan dan pemulihan pasokan. Lampu taman yang redup merupakan masalah tambahan yang lebih rendah prioritas.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "air_bersih",
+    "secondaryCategories": [
+      "listrik"
+    ],
+    "suggestedDepartment": "PDAM",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan utama adalah aliran air berhenti di pipa layanan gang setelah perbaikan jaringan di hulu, sehingga perlu pemeriksaan sambungan dan pemulihan pasokan. Lampu taman yang redup merupakan masalah tambahan yang lebih rendah prioritas.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": null,
+  "usage": {
+    "prompt_tokens": 906,
+    "completion_tokens": 102,
+    "total_tokens": 1008,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "INVALID_SCHEMA",
+  "schema_error": "INVALID_SUGGESTED_DEPARTMENT"
+}

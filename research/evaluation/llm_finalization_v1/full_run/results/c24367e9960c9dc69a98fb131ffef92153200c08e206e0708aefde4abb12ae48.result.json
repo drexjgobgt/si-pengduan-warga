@@ -1,0 +1,26 @@
+{
+  "sample_id": "SIPW-SYN-0061",
+  "target_category": "banjir",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:11:38.047Z",
+  "duration_ms": 14943.993799999997,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"banjir\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Genangan air hujan di underpass menutup lintasan dan mengganggu kelancaran serta keselamatan pengguna jalan. Drainase perlu dipulihkan agar genangan segera hilang.\",\n  \"confidence\": 96,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "banjir",
+    "secondaryCategories": [],
+    "suggestedDepartment": "PUPR",
+    "suggestedPriority": "tinggi",
+    "reason": "Genangan air hujan di underpass menutup lintasan dan mengganggu kelancaran serta keselamatan pengguna jalan. Drainase perlu dipulihkan agar genangan segera hilang.",
+    "confidence": 96,
+    "needsHumanReview": false
+  },
+  "predicted_category": "banjir",
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

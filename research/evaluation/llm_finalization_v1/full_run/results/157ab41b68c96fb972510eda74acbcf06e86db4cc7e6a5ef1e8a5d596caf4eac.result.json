@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0118",
+  "target_category": "listrik",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:26:54.931Z",
+  "duration_ms": 3920.1774999999907,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"listrik\",\n  \"secondaryCategories\": [\"lainnya\"],\n  \"suggestedDepartment\": \"DISHUB\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Keluhan utama berupa tegangan listrik naik-turun yang menyebabkan peralatan mati mendadak, sehingga memerlukan pemeriksaan kestabilan pasokan. Jadwal loket administrasi tidak jelas merupakan keluhan tambahan yang tidak mengubah fokus utama.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "listrik",
+    "secondaryCategories": [
+      "lainnya"
+    ],
+    "suggestedDepartment": "DISHUB",
+    "suggestedPriority": "tinggi",
+    "reason": "Keluhan utama berupa tegangan listrik naik-turun yang menyebabkan peralatan mati mendadak, sehingga memerlukan pemeriksaan kestabilan pasokan. Jadwal loket administrasi tidak jelas merupakan keluhan tambahan yang tidak mengubah fokus utama.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "listrik",
+  "usage": {
+    "prompt_tokens": 907,
+    "completion_tokens": 103,
+    "total_tokens": 1010,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

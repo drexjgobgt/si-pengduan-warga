@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0004",
+  "target_category": "sampah",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:13:55.486Z",
+  "duration_ms": 7307.578500000001,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"sampah\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DLH\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Puing renovasi dibuang sembarangan di tempat pengumpulan komunal sehingga mengganggu kebersihan dantertib pengelolaan lingkungan. Perlu penanganan petugas untuk pengumpulan dan pembersihan puing.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "sampah",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DLH",
+    "suggestedPriority": "normal",
+    "reason": "Puing renovasi dibuang sembarangan di tempat pengumpulan komunal sehingga mengganggu kebersihan dantertib pengelolaan lingkungan. Perlu penanganan petugas untuk pengumpulan dan pembersihan puing.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "sampah",
+  "usage": {
+    "prompt_tokens": 896,
+    "completion_tokens": 91,
+    "total_tokens": 987,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

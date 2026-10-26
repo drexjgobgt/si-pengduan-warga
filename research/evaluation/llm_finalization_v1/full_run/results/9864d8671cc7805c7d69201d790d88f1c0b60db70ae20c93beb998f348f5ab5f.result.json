@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0007",
+  "target_category": "sampah",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:14:07.350Z",
+  "duration_ms": 3086.595799999999,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"sampah\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DLH\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan mengenai perabot bekas yang dibiarkan di area penampungan merupakan masalah pengelolaan sampah dan kebersihan lingkungan. Perlu penanganan pengangkutan oleh pihak berwenang.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "sampah",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DLH",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan mengenai perabot bekas yang dibiarkan di area penampungan merupakan masalah pengelolaan sampah dan kebersihan lingkungan. Perlu penanganan pengangkutan oleh pihak berwenang.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "sampah",
+  "usage": {
+    "prompt_tokens": 899,
+    "completion_tokens": 87,
+    "total_tokens": 986,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0220",
+  "target_category": "pendidikan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:58:38.550Z",
+  "duration_ms": 7809.126500000013,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"pendidikan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DISDIK\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan berkaitan dengan akses ruang ujian sekolah yang tersumbat sehingga peserta ujian sulit masuk. Masalah ini berada dalam lingkup sarana dan fasilitas pendidikan.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "pendidikan",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DISDIK",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan berkaitan dengan akses ruang ujian sekolah yang tersumbat sehingga peserta ujian sulit masuk. Masalah ini berada dalam lingkup sarana dan fasilitas pendidikan.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "pendidikan",
+  "usage": {
+    "prompt_tokens": 895,
+    "completion_tokens": 86,
+    "total_tokens": 981,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

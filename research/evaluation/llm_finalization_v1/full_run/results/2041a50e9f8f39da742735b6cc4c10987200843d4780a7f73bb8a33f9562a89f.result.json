@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0174",
+  "target_category": "keamanan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:53:13.128Z",
+  "duration_ms": 4789.569599999988,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"keamanan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"SATPOLPP\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Laporan berkaitan dengan pencurian barang pengunjung di area rekreasi dan meminta peningkatan pengawasan serta tindak lanjut keamanan.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "keamanan",
+    "secondaryCategories": [],
+    "suggestedDepartment": "SATPOLPP",
+    "suggestedPriority": "normal",
+    "reason": "Laporan berkaitan dengan pencurian barang pengunjung di area rekreasi dan meminta peningkatan pengawasan serta tindak lanjut keamanan.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "keamanan",
+  "usage": {
+    "prompt_tokens": 893,
+    "completion_tokens": 79,
+    "total_tokens": 972,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

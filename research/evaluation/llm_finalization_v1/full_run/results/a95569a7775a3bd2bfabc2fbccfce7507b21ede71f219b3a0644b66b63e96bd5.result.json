@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0199",
+  "target_category": "kesehatan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:56:08.513Z",
+  "duration_ms": 4917.474000000046,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"kesehatan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DINKES\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Keluhan berkaitan dengan respons dan ketersediaan layanan ambulans untuk penjemputan pasien, sehingga menjadi masalah pelayanan kesehatan yang mengganggu fasilitas vital. Perbaikan respons petugas diperlukan agar layanan tidak terlambat.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "kesehatan",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DINKES",
+    "suggestedPriority": "tinggi",
+    "reason": "Keluhan berkaitan dengan respons dan ketersediaan layanan ambulans untuk penjemputan pasien, sehingga menjadi masalah pelayanan kesehatan yang mengganggu fasilitas vital. Perbaikan respons petugas diperlukan agar layanan tidak terlambat.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "kesehatan",
+  "usage": {
+    "prompt_tokens": 900,
+    "completion_tokens": 96,
+    "total_tokens": 996,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

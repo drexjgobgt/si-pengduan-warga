@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0050",
+  "target_category": "jalan_rusak",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:18:57.097Z",
+  "duration_ms": 2895.2927000000054,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"jalan_rusak\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Lapisan permukaan jalan lingkungan yang terlepas dan menyebabkan lintasan bergelombang merupakan kerusakan jalan yang perlu diperbaiki oleh Dinas Pekerjaan Umum & Tata Air.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "jalan_rusak",
+    "secondaryCategories": [],
+    "suggestedDepartment": "PUPR",
+    "suggestedPriority": "normal",
+    "reason": "Lapisan permukaan jalan lingkungan yang terlepas dan menyebabkan lintasan bergelombang merupakan kerusakan jalan yang perlu diperbaiki oleh Dinas Pekerjaan Umum & Tata Air.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "jalan_rusak",
+  "usage": {
+    "prompt_tokens": 898,
+    "completion_tokens": 86,
+    "total_tokens": 984,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

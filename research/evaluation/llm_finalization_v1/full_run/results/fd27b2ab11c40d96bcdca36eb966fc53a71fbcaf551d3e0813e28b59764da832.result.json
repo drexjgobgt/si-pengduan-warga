@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0238",
+  "target_category": "pendidikan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T11:00:41.143Z",
+  "duration_ms": 3460.5299000000814,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"pendidikan\",\n  \"secondaryCategories\": [\"listrik\"],\n  \"suggestedDepartment\": \"DISDIK\",\n  \"suggestedPriority\": \"darurat\",\n  \"reason\": \"Plafon ruang belajar yang terkelupas dan jatuh ke meja murid merupakan bahaya langsung bagi keselamatan siswa sehingga perlu penanganan segera. Lampu taman yang redup merupakan masalah tambahan yanghandled setelah risiko utama diamankan.\",\n  \"confidence\": 96,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "pendidikan",
+    "secondaryCategories": [
+      "listrik"
+    ],
+    "suggestedDepartment": "DISDIK",
+    "suggestedPriority": "darurat",
+    "reason": "Plafon ruang belajar yang terkelupas dan jatuh ke meja murid merupakan bahaya langsung bagi keselamatan siswa sehingga perlu penanganan segera. Lampu taman yang redup merupakan masalah tambahan yanghandled setelah risiko utama diamankan.",
+    "confidence": 96,
+    "needsHumanReview": false
+  },
+  "predicted_category": "pendidikan",
+  "usage": {
+    "prompt_tokens": 908,
+    "completion_tokens": 104,
+    "total_tokens": 1012,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

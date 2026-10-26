@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0147",
+  "target_category": "air_bersih",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:30:20.752Z",
+  "duration_ms": 3065.2817000000505,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": false,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"air_bersih\",\n  \"secondaryCategories\": [\"listrik\"],\n  \"suggestedDepartment\": \"PDAM\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan utama adalah kualitas air perpipaan yang keruh dan mengandung endapan pasir di hidran layanan umum, sehingga perlu pemeriksaan dan pembersihan jaringan pasokan. Lampu taman yang redup merupakan masalah tambahan yang lebih kecil.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "air_bersih",
+    "secondaryCategories": [
+      "listrik"
+    ],
+    "suggestedDepartment": "PDAM",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan utama adalah kualitas air perpipaan yang keruh dan mengandung endapan pasir di hidran layanan umum, sehingga perlu pemeriksaan dan pembersihan jaringan pasokan. Lampu taman yang redup merupakan masalah tambahan yang lebih kecil.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": null,
+  "usage": {
+    "prompt_tokens": 911,
+    "completion_tokens": 106,
+    "total_tokens": 1017,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "INVALID_SCHEMA",
+  "schema_error": "INVALID_SUGGESTED_DEPARTMENT"
+}

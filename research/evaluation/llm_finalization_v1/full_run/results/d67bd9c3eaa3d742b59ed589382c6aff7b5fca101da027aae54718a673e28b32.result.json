@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0130",
+  "target_category": "air_bersih",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:28:22.032Z",
+  "duration_ms": 3483.7410999999847,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"air_bersih\",\n  \"secondaryCategories\": [\"kesehatan\"],\n  \"suggestedDepartment\": \"DINKES\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Air layanan di fasilitas umum berwarna kehijauan dan berbau logam, sehingga berpotensi tidak layak konsumsi dan mengganggu kesehatan masyarakat. Perlu pemeriksaan mutu air segera oleh pihak berwenang.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "air_bersih",
+    "secondaryCategories": [
+      "kesehatan"
+    ],
+    "suggestedDepartment": "DINKES",
+    "suggestedPriority": "tinggi",
+    "reason": "Air layanan di fasilitas umum berwarna kehijauan dan berbau logam, sehingga berpotensi tidak layak konsumsi dan mengganggu kesehatan masyarakat. Perlu pemeriksaan mutu air segera oleh pihak berwenang.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "air_bersih",
+  "usage": {
+    "prompt_tokens": 897,
+    "completion_tokens": 97,
+    "total_tokens": 994,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

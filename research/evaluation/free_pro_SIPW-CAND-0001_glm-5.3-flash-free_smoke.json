@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-26T06:30:11.719Z",
+  "sample_id": "SIPW-CAND-0001",
+  "model": "glm-5.3-flash-free",
+  "returned_model": "z-ai/glm-5.3-flash",
+  "http_status": 200,
+  "request_status": "success",
+  "latency_ms": 13289.5607,
+  "raw_content": "{\n  \"category\": \"sampah\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DLH\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Laporan jelas mengenai pengangkutan sampah rumah tangga yang terhenti selama empat hari di tempat pengumpulan, sehingga termasuk kategori pengelolaan sampah dan menjadi kewenangan Dinas Lingkungan Hidup. Belum ada indikasi bahaya langsung atau penutupan akses jalan, sehingga prioritas reguler.\",\n  \"confidence\": 96,\n  \"needsHumanReview\": false\n}",
+  "raw_category": "sampah",
+  "final_category": "sampah",
+  "ground_truth_category": "sampah",
+  "label_validation_status": "provisional",
+  "output_valid": true,
+  "usage": {
+    "prompt_tokens": 1009,
+    "completion_tokens": 417,
+    "total_tokens": 1426
+  },
+  "error_type": null,
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "source": "synthetic dev smoke; no DB; one request only"
+}

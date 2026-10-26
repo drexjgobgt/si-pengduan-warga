@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-26T06:31:56.793Z",
+  "sample_id": "SIPW-CAND-0009",
+  "model": "minimax-m3.1-flash-free",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "request_status": "success",
+  "latency_ms": 5113.2737,
+  "raw_content": "{\n  \"category\": \"lainnya\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"KELURAHAN\",\n  \"suggestedPriority\": \"rendah\",\n  \"reason\": \"Keluhan berkaitan dengan ketidaksesuaian informasi persyaratan surat domisili antara loket dan papan pengumuman, sehingga memerlukan clarification dan penyelarasan prosedur administrasi.\",\n  \"confidence\": 96,\n  \"needsHumanReview\": false\n}",
+  "raw_category": "lainnya",
+  "final_category": "lainnya",
+  "ground_truth_category": "lainnya",
+  "label_validation_status": "provisional",
+  "output_valid": true,
+  "usage": {
+    "prompt_tokens": 957,
+    "completion_tokens": 92,
+    "total_tokens": 1049
+  },
+  "error_type": null,
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "source": "synthetic dev smoke; no DB; one request only"
+}

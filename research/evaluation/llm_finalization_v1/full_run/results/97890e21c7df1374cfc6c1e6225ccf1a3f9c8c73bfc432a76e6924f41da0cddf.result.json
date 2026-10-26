@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0005",
+  "target_category": "sampah",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:13:58.236Z",
+  "duration_ms": 2750.044099999999,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"sampah\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DLH\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Cairan dari kantong buangan mengotori bak kawasan pertokoan dan necessitates pembersihan serta pengangkutan sampah oleh petugas yang sesuai.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "sampah",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DLH",
+    "suggestedPriority": "normal",
+    "reason": "Cairan dari kantong buangan mengotori bak kawasan pertokoan dan necessitates pembersihan serta pengangkutan sampah oleh petugas yang sesuai.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "sampah",
+  "usage": {
+    "prompt_tokens": 898,
+    "completion_tokens": 83,
+    "total_tokens": 981,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

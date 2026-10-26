@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0221",
+  "target_category": "pendidikan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:58:45.487Z",
+  "duration_ms": 6935.264299999981,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"pendidikan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DISDIK\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan berkaitan dengan keterbatasan akses bahan bacaan di perpustakaan sekolah yang menghambat kegiatan belajar mengajar. Perlu pemeriksaan dan pemulihan sarana belajar oleh Dinas Pendidikan.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "pendidikan",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DISDIK",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan berkaitan dengan keterbatasan akses bahan bacaan di perpustakaan sekolah yang menghambat kegiatan belajar mengajar. Perlu pemeriksaan dan pemulihan sarana belajar oleh Dinas Pendidikan.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "pendidikan",
+  "usage": {
+    "prompt_tokens": 896,
+    "completion_tokens": 88,
+    "total_tokens": 984,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

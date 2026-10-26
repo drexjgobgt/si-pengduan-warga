@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-26T06:31:27.881Z",
+  "sample_id": "SIPW-CAND-0006",
+  "model": "minimax-m3.1-flash-free",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "request_status": "success",
+  "latency_ms": 3197.2912,
+  "raw_content": "{\n  \"category\": \"keamanan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"SATPOLPP\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Laporan berkaitan dengan pemaksaan atau pungli yang mengancam pengunjung di pintu pasar dan mengganggu keamanan publik. Penertiban perlu dilakukan untuk melindungi warga dan memastikan aktivitas pasar berjalan tertib.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "raw_category": "keamanan",
+  "final_category": "keamanan",
+  "ground_truth_category": "keamanan",
+  "label_validation_status": "provisional",
+  "output_valid": true,
+  "usage": {
+    "prompt_tokens": 954,
+    "completion_tokens": 91,
+    "total_tokens": 1045
+  },
+  "error_type": null,
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "source": "synthetic dev smoke; no DB; one request only"
+}

@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0113",
+  "target_category": "listrik",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:26:22.982Z",
+  "duration_ms": 7589.957600000082,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"listrik\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DISHUB\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Laporan menyebut tegangan listrik naik-turun sehingga peralatan mati mendadak di jaringan pasokan permukiman. Gangguan ini mengganggu fasilitas umum vital dan perlu pemeriksaan segera, meskipun titik dan waktu kejadian belum terperinci.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "listrik",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DISHUB",
+    "suggestedPriority": "tinggi",
+    "reason": "Laporan menyebut tegangan listrik naik-turun sehingga peralatan mati mendadak di jaringan pasokan permukiman. Gangguan ini mengganggu fasilitas umum vital dan perlu pemeriksaan segera, meskipun titik dan waktu kejadian belum terperinci.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "listrik",
+  "usage": {
+    "prompt_tokens": 894,
+    "completion_tokens": 99,
+    "total_tokens": 993,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

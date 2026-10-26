@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0094",
+  "target_category": "listrik",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:24:06.194Z",
+  "duration_ms": 3934.973100000003,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"listrik\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DISHUB\",\n  \"suggestedPriority\": \"darurat\",\n  \"reason\": \"Panel penerangan terbuka dan penghantar yang terlihat merupakan bahaya listrik langsung bagi keselamatan warga. Panel perlu segera ditutup dan penghantar diamankan oleh petugas berwenang.\",\n  \"confidence\": 96,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "listrik",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DISHUB",
+    "suggestedPriority": "darurat",
+    "reason": "Panel penerangan terbuka dan penghantar yang terlihat merupakan bahaya listrik langsung bagi keselamatan warga. Panel perlu segera ditutup dan penghantar diamankan oleh petugas berwenang.",
+    "confidence": 96,
+    "needsHumanReview": false
+  },
+  "predicted_category": "listrik",
+  "usage": {
+    "prompt_tokens": 893,
+    "completion_tokens": 89,
+    "total_tokens": 982,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

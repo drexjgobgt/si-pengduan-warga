@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0241",
+  "target_category": "lainnya",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T11:01:01.675Z",
+  "duration_ms": 2958.1378999999724,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"lainnya\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"KELURAHAN\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Laporan berkaitan dengan perbedaan prosedur administrasi pada loket legalisasi umum dan tidak menunjukkan gangguan pada kategori layanan khusus. Penyeragaman prosedur perlu ditangani melalui.secretariat kelurahan atau instansi yang berwenang.\",\n  \"confidence\": 88,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "lainnya",
+    "secondaryCategories": [],
+    "suggestedDepartment": "KELURAHAN",
+    "suggestedPriority": "normal",
+    "reason": "Laporan berkaitan dengan perbedaan prosedur administrasi pada loket legalisasi umum dan tidak menunjukkan gangguan pada kategori layanan khusus. Penyeragaman prosedur perlu ditangani melalui.secretariat kelurahan atau instansi yang berwenang.",
+    "confidence": 88,
+    "needsHumanReview": false
+  },
+  "predicted_category": "lainnya",
+  "usage": {
+    "prompt_tokens": 893,
+    "completion_tokens": 96,
+    "total_tokens": 989,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

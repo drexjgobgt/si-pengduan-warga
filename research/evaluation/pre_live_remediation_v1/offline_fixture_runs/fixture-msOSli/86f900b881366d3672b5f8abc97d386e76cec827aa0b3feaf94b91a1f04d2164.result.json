@@ -1,0 +1,13 @@
+{
+  "identity": "3f10b01faf1a37d6264af56a8c5e3c9122ca02ad579755b9a533ef107482301d",
+  "sample_id": "FAKE-0",
+  "mode": "OFFLINE_FIXTURE_NOT_LLM_EVIDENCE",
+  "http_status": null,
+  "error_type": "TIMEOUT",
+  "service_success": false,
+  "raw_content": null,
+  "response_truncated": false,
+  "model_id": null,
+  "active_ms": 0,
+  "account_charge_verified": false
+}

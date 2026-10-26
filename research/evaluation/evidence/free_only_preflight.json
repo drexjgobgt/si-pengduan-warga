@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-10-26T05:28:59.198Z",
+  "money_budget_idr": 0,
+  "approved_pilot_request_cap": 18,
+  "generation_requests_this_check": 0,
+  "metadata_requests": 1,
+  "configured_model": "deepseek-v4-flash-free",
+  "provider_host": "kiosapi.com",
+  "account_quota_verified": false,
+  "account_billing_verified": false,
+  "previous_smoke_usage": {
+    "cost": 0.00015862,
+    "upstream_inference_cost": 0.00015862,
+    "currency": "unavailable",
+    "interpretation": "Provider-reported usage; actual account debit unknown. Nonzero usage cost prevents asserting free-only."
+  },
+  "decision": "BLOCKED_FREE_ONLY_UNVERIFIED",
+  "http_status": 200,
+  "model_listed": true,
+  "catalog": {
+    "id": "deepseek-v4-flash-free",
+    "owned_by": "openai"
+  },
+  "catalog_field_names": [
+    "id",
+    "object",
+    "created",
+    "owned_by",
+    "supported_endpoint_types"
+  ]
+}

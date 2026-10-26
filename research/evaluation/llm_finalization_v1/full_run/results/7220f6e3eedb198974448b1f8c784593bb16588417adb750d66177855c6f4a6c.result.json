@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0210",
+  "target_category": "kesehatan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:57:23.693Z",
+  "duration_ms": 3018.5838999999687,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"kesehatan\",\n  \"secondaryCategories\": [\"listrik\"],\n  \"suggestedDepartment\": \"DINKES\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan utama berkaitan dengan komunikasi pelayanan medis di klinik publik, sehingga perlu dievaluasi oleh Dinas Kesehatan. Lampu taman yang redup merupakan masalah tambahan bertingkat rendah dan tidak mengubah fokus utama.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "kesehatan",
+    "secondaryCategories": [
+      "listrik"
+    ],
+    "suggestedDepartment": "DINKES",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan utama berkaitan dengan komunikasi pelayanan medis di klinik publik, sehingga perlu dievaluasi oleh Dinas Kesehatan. Lampu taman yang redup merupakan masalah tambahan bertingkat rendah dan tidak mengubah fokus utama.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "kesehatan",
+  "usage": {
+    "prompt_tokens": 900,
+    "completion_tokens": 100,
+    "total_tokens": 1000,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

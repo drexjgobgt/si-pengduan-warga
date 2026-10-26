@@ -1,0 +1,100 @@
+{
+  "purpose": "synthetic runtime smoke; not final evaluation",
+  "timestamp": "2026-10-26T05:14:03.278Z",
+  "configured_model": "deepseek-v4-flash-free",
+  "provider": "kiosapi.com",
+  "dataset_sample": false,
+  "operational_database_writes": 0,
+  "catalog_source": "production service defaults (pool=null)",
+  "input": {
+    "title": "Lampu penerangan jalan tidak menyala",
+    "description": "Dua lampu penerangan di jalan lingkungan padam sejak tiga malam. Mohon diperiksa agar pengguna jalan dapat melintas dengan aman."
+  },
+  "provider_quota_verified": false,
+  "provider_price_verified": false,
+  "attempts": 1,
+  "model_catalog_http_status": 200,
+  "configured_model_listed": true,
+  "request": {
+    "model": "deepseek-v4-flash-free",
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "Anda adalah asisten AI klasifikasi pengaduan warga pada Sistem Informasi Pengaduan Warga (SIPW) di Indonesia.\nTugas Anda adalah menganalisis laporan masyarakat secara objektif dan mengelompokkannya secara akurat.\n\nPANDUAN & ATURAN:\n1. Pahami bahasa Indonesia sehari-hari, bahasa daerah populer, salah ketik (typo), kalimat panjang/pendek, dan nada emosional warga.\n2. Pilih HANYA SATU kategori utama dari daftar kategori resmi berikut:\n- \"sampah\": Pengelolaan sampah, kebersihan lingkungan, TPS, limbah\n- \"jalan_rusak\": Kerusakan jalan raya, aspal bolong, trotoar, jembatan\n- \"banjir\": Banjir, genangan air hujan, saluran air tersumbat, drainase meluap\n- \"listrik\": Gangguan listrik PLN, pemadaman, kabel bahaya, lampu jalan mati\n- \"air_bersih\": Distribusi air PDAM macet, air keruh, pipa bocor\n- \"keamanan\": Kamtibmas, pencurian, pungli, premanisme, tawuran, patroli\n- \"kesehatan\": Pelayanan puskesmas, posyandu, sanitasi, wabah, ambulans\n- \"pendidikan\": Fasilitas sekolah, sarana belajar mengajar, gedung kelas rusak\n- \"lainnya\": Pengaduan umum administratif atau masalah di luar kategori spesifik\nJANGAN PERNAH membuat nama kategori baru di luar daftar di atas. Jika tidak cocok atau ambigu, gunakan \"lainnya\".\n\n3. Rekomendasikan OPD/Dinas yang berwenang dari daftar kode resmi berikut:\n- \"DLH\" (Dinas Lingkungan Hidup): \n- \"PUPR\" (Dinas Pekerjaan Umum & Tata Air): \n- \"DISHUB\" (Dinas Perhubungan & Penerangan): \n- \"SATPOLPP\" (Satuan Polisi Pamong Praja): \n- \"DINKES\" (Dinas Kesehatan): \n- \"DISDIK\" (Dinas Pendidikan): \n- \"KELURAHAN\" (Sekretariat Kelurahan): \nJANGAN PERNAH membuat kode instansi baru.\n\n4. Rekomendasikan tingkat prioritas penanganan (hanya pilih satu):\n- \"darurat\": Bahaya langsung keselamatan jiwa / bencana mendesak (contoh: tiang listrik roboh berasap, banjir bandang setinggi 2 meter, jalan amblas putus).\n- \"tinggi\": Mengganggu fasilitas umum vital secara masif (contoh: lampu merah persimpangan padam total, sampah menumpuk menutup akses jalan).\n- \"normal\": Masalah reguler yang memerlukan perbaikan (contoh: jalan berlubang sedang, sampah belum diangkut 2 hari).\n- \"rendah\": Masalah estetika ringan atau keluhan administratif umum.\n\n5. Berikan estimasi keyakinan (confidence) berupa integer antara 0 s.d 100.\n6. Tandai \"needsHumanReview\": true jika laporan ambigu, memiliki banyak masalah yang bertentangan, memiliki indikasi spam, atau tingkat keyakinan Anda < 60.\n\nFORMAT KELUARAN WAJIB JSON (HANYA JSON murni, tanpa pengantar atau markdown lain):\n{\n  \"category\": \"nama_kategori_resmi\",\n  \"secondaryCategories\": [\"kategori_tambahan_jika_ada\"],\n  \"suggestedDepartment\": \"KODE_OPD\",\n  \"suggestedPriority\": \"rendah|normal|tinggi|darurat\",\n  \"reason\": \"Alasan singkat dalam 1-2 kalimat bahasa Indonesia baku\",\n  \"confidence\": 85,\n  \"needsHumanReview\": false\n}"
+      },
+      {
+        "role": "user",
+        "content": "Analisis laporan berikut:\nJudul: Lampu penerangan jalan tidak menyala\nDeskripsi: Dua lampu penerangan di jalan lingkungan padam sejak tiga malam. Mohon diperiksa agar pengguna jalan dapat melintas dengan aman."
+      }
+    ]
+  },
+  "http_status": 200,
+  "provider_returned_model_id": "self-dploy/DeepSeek-V4-Flash",
+  "raw_content": "{\n  \"category\": \"listrik\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DISHUB\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Lampu penerangan jalan (PJU) padam termasuk gangguan penerangan jalan yang menjadi kewenangan Dinas Perhubungan dan Penerangan.\",\n  \"confidence\": 85,\n  \"needsHumanReview\": false\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 949,
+    "total_tokens": 1041,
+    "completion_tokens": 92,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0,
+      "image_tokens": 0
+    },
+    "reasoning_tokens": 0,
+    "cost": 0.00015862,
+    "cost_details": {
+      "upstream_inference_cost": 0.00015862,
+      "upstream_inference_prompt_cost": 0.00013286,
+      "upstream_inference_completions_cost": 0.00002576,
+      "total_cost": 0.00015862,
+      "input_cost": 0.00013286,
+      "output_cost": 0.00002576,
+      "cached_input_cost": 0,
+      "cache_write_input_cost": 0,
+      "request_cost": 0,
+      "web_search_cost": 0,
+      "image_input_cost": null,
+      "image_output_cost": null,
+      "audio_input_cost": null,
+      "data_storage_cost": 0.00001041
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "normalized_result": {
+    "category": "listrik",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DISHUB",
+    "suggestedPriority": "normal",
+    "reason": "Lampu penerangan jalan (PJU) padam termasuk gangguan penerangan jalan yang menjadi kewenangan Dinas Perhubungan dan Penerangan.",
+    "confidence": 85,
+    "needsHumanReview": false,
+    "scores": {
+      "listrik": 85
+    },
+    "allScores": [
+      {
+        "category": "listrik",
+        "score": 85
+      }
+    ],
+    "processingTime": 7592,
+    "timestamp": "2026-10-26T05:14:11.538Z",
+    "modelVersion": "kiosapi/self-dploy/DeepSeek-V4-Flash",
+    "classificationSource": "real_llm",
+    "status": "success"
+  },
+  "generation_status": "success",
+  "latency_ms": 7592.688300000001
+}

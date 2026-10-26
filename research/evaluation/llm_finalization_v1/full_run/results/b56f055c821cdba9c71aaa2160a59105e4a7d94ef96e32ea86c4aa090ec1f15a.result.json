@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0232",
+  "target_category": "pendidikan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:59:58.577Z",
+  "duration_ms": 2945.4873999999836,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"pendidikan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DISDIK\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan berkaitan dengan sarana praktik belajar di sekolah yang tidak stabil sehingga kegiatan latihan terhenti. Perbaikan furniture dan fasilitas praktik sekolah berada dalam kewenangan Dinas Pendidikan.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "pendidikan",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DISDIK",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan berkaitan dengan sarana praktik belajar di sekolah yang tidak stabil sehingga kegiatan latihan terhenti. Perbaikan furniture dan fasilitas praktik sekolah berada dalam kewenangan Dinas Pendidikan.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "pendidikan",
+  "usage": {
+    "prompt_tokens": 890,
+    "completion_tokens": 88,
+    "total_tokens": 978,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

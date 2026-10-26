@@ -1,0 +1,16 @@
+# Methodological acceptance note — decision still OPEN
+
+Frozen synthetic_final_v1 has270 narratives,30 targets/class and **55 family IDs**. Targets are scenario-rule specifications written before text realization, not human ground truth. Five domain events are reused across formal/informal/typo/controlled-ambiguity/incomplete/multicategory forms; other-class vague/OOD families differ. Repeated text variants are correlated and effective diversity is below270; do not treat rows as independent citizens or derive population confidence from binomial sampling assumptions. Group all variants by frozen family ID in sensitivity analysis; no family split across future development/evaluation sets.
+
+## Risks requiring explicit acceptance
+
+- Deterministic syntax, neutral repeated titles, explicit action requests and family fingerprints may advantage instruction-following LLM relative to keyword baseline or make tasks easier. Do not infer a universal method ranking. Do not revise text/target because frozen baseline scored178/270; that result is exposed development knowledge now.
+- Ambiguity is primarily **unknown cause/details with a clear domain**, not unresolved category ambiguity. Production prompt says "if ambiguous use lainnya"; label-family interpretation may conflict with this wording. Expose results by type; user must accept the construct or authorize a **new** dataset/protocol version before LLM execution. Do not reinterpret failed target afterwards.
+- Typo consists largely of mild misspelling in connective/request wording, while core category facts survive literally. It does not establish robustness to heavily corrupted domain terms, dialects, code-switching or adversarial language.
+- Incomplete cases omit time/exact point while retaining causal object/action; not equivalent to genuinely underspecified incoming citizen reports. Out-of-scope has5 cases, too few/diverse for broad OOD conclusions.
+- QA checks literal fact preservation, duplicate strings and local trigram overlap against known files; not independent semantic review, no human/other validated oracle. Shared designer of registry/text can share bias with prompt/taxonomy. Natural category-related words are legitimate facts, but explicit target leakage and semantic redundancy remain separate risks.
+- Equal30/class is engineered coverage, not observed prevalence. Mapping departments is application specification, not legal/institutional jurisdiction; no DB/E2E result exists. Confidence is self-report, needsHumanReview isn't proof of actual review.
+
+## Handling without changing frozen files
+
+Keep registry/dataset/baseline unchanged and report row metrics, per-type support, family counts and paired same-ID comparison. Add family descriptive aggregate as scoring contract specifies; do not label it independent-population CI. Preserve all model mistakes, raw/final and failed/unattempted rows. User may either accept v1 as a **bounded synthetic condition test**, or authorize v2 with genuinely broader families/corruptions and new freeze before inference. No target substitution/exclusion to boost scores. Current B07=OPEN: writing limitations is not evidence of acceptance or removal of bias. Paper title remains unchanged; methods/abstract must explicitly state synthetic-only scope and cannot generalize to real complaints.

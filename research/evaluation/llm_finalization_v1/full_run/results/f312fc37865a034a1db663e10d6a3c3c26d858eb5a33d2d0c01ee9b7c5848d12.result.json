@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0226",
+  "target_category": "pendidikan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:59:19.851Z",
+  "duration_ms": 6259.997600000002,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"pendidikan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DISDIK\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan berkaitan dengan bahan bacaan pelajaran di perpustakaan sekolah yang tidak dapat diakses saat jam belajar, sehingga mengganggu sarana belajar mengajar.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "pendidikan",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DISDIK",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan berkaitan dengan bahan bacaan pelajaran di perpustakaan sekolah yang tidak dapat diakses saat jam belajar, sehingga mengganggu sarana belajar mengajar.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "pendidikan",
+  "usage": {
+    "prompt_tokens": 898,
+    "completion_tokens": 83,
+    "total_tokens": 981,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

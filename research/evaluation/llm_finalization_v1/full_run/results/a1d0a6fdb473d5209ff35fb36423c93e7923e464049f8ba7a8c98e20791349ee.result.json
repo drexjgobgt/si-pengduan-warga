@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0121",
+  "target_category": "air_bersih",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:27:18.718Z",
+  "duration_ms": 3241.683500000043,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"air_bersih\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Laporan mengenai kebocoran jaringan distribusi air pada sambungan sebelum meter, sehingga perlu penanganan oleh petugas yang sesuai.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "air_bersih",
+    "secondaryCategories": [],
+    "suggestedDepartment": "PUPR",
+    "suggestedPriority": "normal",
+    "reason": "Laporan mengenai kebocoran jaringan distribusi air pada sambungan sebelum meter, sehingga perlu penanganan oleh petugas yang sesuai.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "air_bersih",
+  "usage": {
+    "prompt_tokens": 899,
+    "completion_tokens": 80,
+    "total_tokens": 979,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

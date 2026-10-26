@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0131",
+  "target_category": "air_bersih",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:28:28.374Z",
+  "duration_ms": 2817.032600000035,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"air_bersih\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Laporan mengenai kebocoran jaringan pipa air di area meter layanan yang menyebabkan air terus-menerus mengucur. Perbaikan kebocoran jaringan distribusi memerlukan penanganan teknis dari Dinas Pekerjaan Umum dan Tata Air.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "air_bersih",
+    "secondaryCategories": [],
+    "suggestedDepartment": "PUPR",
+    "suggestedPriority": "normal",
+    "reason": "Laporan mengenai kebocoran jaringan pipa air di area meter layanan yang menyebabkan air terus-menerus mengucur. Perbaikan kebocoran jaringan distribusi memerlukan penanganan teknis dari Dinas Pekerjaan Umum dan Tata Air.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "air_bersih",
+  "usage": {
+    "prompt_tokens": 902,
+    "completion_tokens": 99,
+    "total_tokens": 1001,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

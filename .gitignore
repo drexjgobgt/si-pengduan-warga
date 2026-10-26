@@ -31,3 +31,7 @@ Thumbs.db
 # Keep package-lock.json (uncomment if you want to ignore it)
 # But usually we want to commit it for consistency
 
+
+# Research Manuscript & Drafts (Private local academic papers, excluded from VCS)
+research/manuscript/
+research/manuscript_local_backup/

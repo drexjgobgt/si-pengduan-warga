@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0194",
+  "target_category": "kesehatan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:55:31.763Z",
+  "duration_ms": 3221.349799999967,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"kesehatan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DINKES\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Permintaan penjemputan pasien melalui fasilitas ambulans tidak ditindaklanjuti, sehingga layanan kegawatdaruratan terganggu.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "kesehatan",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DINKES",
+    "suggestedPriority": "tinggi",
+    "reason": "Permintaan penjemputan pasien melalui fasilitas ambulans tidak ditindaklanjuti, sehingga layanan kegawatdaruratan terganggu.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "kesehatan",
+  "usage": {
+    "prompt_tokens": 898,
+    "completion_tokens": 82,
+    "total_tokens": 980,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

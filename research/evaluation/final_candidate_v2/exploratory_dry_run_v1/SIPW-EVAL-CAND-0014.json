@@ -1,0 +1,7 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0014",
+  "mode": "DRY_RUN",
+  "api_requests": 0,
+  "planned_model": "minimax-m3.1-flash-free",
+  "ground_truth_category": "air_bersih"
+}

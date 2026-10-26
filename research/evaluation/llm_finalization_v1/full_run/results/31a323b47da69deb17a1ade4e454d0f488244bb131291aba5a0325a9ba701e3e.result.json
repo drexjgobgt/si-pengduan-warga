@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0068",
+  "target_category": "banjir",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:20:59.986Z",
+  "duration_ms": 3408.2446000000054,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"banjir\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Genangan air hujan di halaman balai bersama akibat lubang pembuangan tidak berfungsi menunjukkan gangguan drainase yang perlu segera diperbaiki agar tidak semakin parah.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "banjir",
+    "secondaryCategories": [],
+    "suggestedDepartment": "PUPR",
+    "suggestedPriority": "tinggi",
+    "reason": "Genangan air hujan di halaman balai bersama akibat lubang pembuangan tidak berfungsi menunjukkan gangguan drainase yang perlu segera diperbaiki agar tidak semakin parah.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "banjir",
+  "usage": {
+    "prompt_tokens": 900,
+    "completion_tokens": 87,
+    "total_tokens": 987,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

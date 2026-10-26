@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0237",
+  "target_category": "pendidikan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T11:00:34.036Z",
+  "duration_ms": 3356.916599999997,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"pendidikan\",\n  \"secondaryCategories\": [\"listrik\"],\n  \"suggestedDepartment\": \"DISDIK\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan utama berkaitan dengan meja praktik yang tidak stabil sehingga menghentikan kegiatan belajar di sekolah. Lampu taman yang redup merupakan masalah tambahan dan kurang mengganggu aktivitas utama.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "pendidikan",
+    "secondaryCategories": [
+      "listrik"
+    ],
+    "suggestedDepartment": "DISDIK",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan utama berkaitan dengan meja praktik yang tidak stabil sehingga menghentikan kegiatan belajar di sekolah. Lampu taman yang redup merupakan masalah tambahan dan kurang mengganggu aktivitas utama.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "pendidikan",
+  "usage": {
+    "prompt_tokens": 903,
+    "completion_tokens": 92,
+    "total_tokens": 995,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

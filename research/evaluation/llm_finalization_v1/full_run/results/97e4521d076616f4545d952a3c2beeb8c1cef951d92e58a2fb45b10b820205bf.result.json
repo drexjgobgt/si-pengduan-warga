@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0244",
+  "target_category": "lainnya",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T11:01:23.707Z",
+  "duration_ms": 3969.394800000009,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"lainnya\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"KELURAHAN\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan berkaitan dengan prosedur antrean administrasi yang tidak jelas dan perlu diperbaiki oleh petugas pelayanan. Tidak termasuk kategori infrastruktur atau layanan publik spesifik yang tercantum.\",\n  \"confidence\": 88,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "lainnya",
+    "secondaryCategories": [],
+    "suggestedDepartment": "KELURAHAN",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan berkaitan dengan prosedur antrean administrasi yang tidak jelas dan perlu diperbaiki oleh petugas pelayanan. Tidak termasuk kategori infrastruktur atau layanan publik spesifik yang tercantum.",
+    "confidence": 88,
+    "needsHumanReview": false
+  },
+  "predicted_category": "lainnya",
+  "usage": {
+    "prompt_tokens": 893,
+    "completion_tokens": 91,
+    "total_tokens": 984,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

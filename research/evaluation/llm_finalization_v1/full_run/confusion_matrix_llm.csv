@@ -1,0 +1,10 @@
+actual/predicted,sampah,jalan_rusak,banjir,listrik,air_bersih,keamanan,kesehatan,pendidikan,lainnya,__invalid__,__missing__,__no_prediction__,total
+sampah,30,0,0,0,0,0,0,0,0,0,0,0,30
+jalan_rusak,0,29,0,0,0,0,0,0,0,1,0,0,30
+banjir,0,0,30,0,0,0,0,0,0,0,0,0,30
+listrik,0,0,0,30,0,0,0,0,0,0,0,0,30
+air_bersih,0,0,0,0,27,0,0,0,0,3,0,0,30
+keamanan,0,0,0,0,0,29,0,0,0,1,0,0,30
+kesehatan,0,0,0,0,0,0,30,0,0,0,0,0,30
+pendidikan,0,0,0,0,0,0,0,30,0,0,0,0,30
+lainnya,0,0,0,0,0,0,0,0,30,0,0,0,30

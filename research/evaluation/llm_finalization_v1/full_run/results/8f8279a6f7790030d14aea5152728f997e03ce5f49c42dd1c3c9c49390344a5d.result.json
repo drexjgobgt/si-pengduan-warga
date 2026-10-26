@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0067",
+  "target_category": "banjir",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:20:54.224Z",
+  "duration_ms": 4661.0088000000105,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"banjir\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Luapan parit dan genangan air yang menyebar ke akses masuk pasar saat hujan menunjukkan masalah drainase yang mengganggu jalur umum. Perbaikan saluran pembuangan air diperlukan agar genangan tidak semakin parah.\",\n  \"confidence\": 94,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "banjir",
+    "secondaryCategories": [],
+    "suggestedDepartment": "PUPR",
+    "suggestedPriority": "tinggi",
+    "reason": "Luapan parit dan genangan air yang menyebar ke akses masuk pasar saat hujan menunjukkan masalah drainase yang mengganggu jalur umum. Perbaikan saluran pembuangan air diperlukan agar genangan tidak semakin parah.",
+    "confidence": 94,
+    "needsHumanReview": false
+  },
+  "predicted_category": "banjir",
+  "usage": {
+    "prompt_tokens": 903,
+    "completion_tokens": 97,
+    "total_tokens": 1000,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

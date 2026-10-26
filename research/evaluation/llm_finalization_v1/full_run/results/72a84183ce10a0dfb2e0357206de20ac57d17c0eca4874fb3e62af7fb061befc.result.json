@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0064",
+  "target_category": "banjir",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:20:31.934Z",
+  "duration_ms": 3394.522100000002,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"banjir\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Aliran drainase berbalik dan masuk ke halaman saat hujan menunjukkan gangguan saluran air yang berpotensi menyebabkan genangan dan banjir di lingkungan setempat.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "banjir",
+    "secondaryCategories": [],
+    "suggestedDepartment": "PUPR",
+    "suggestedPriority": "tinggi",
+    "reason": "Aliran drainase berbalik dan masuk ke halaman saat hujan menunjukkan gangguan saluran air yang berpotensi menyebabkan genangan dan banjir di lingkungan setempat.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "banjir",
+  "usage": {
+    "prompt_tokens": 892,
+    "completion_tokens": 86,
+    "total_tokens": 978,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

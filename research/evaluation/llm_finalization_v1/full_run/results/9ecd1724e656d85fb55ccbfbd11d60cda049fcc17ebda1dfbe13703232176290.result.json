@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0058",
+  "target_category": "jalan_rusak",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:19:58.545Z",
+  "duration_ms": 5044.559899999993,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"jalan_rusak\",\n  \"secondaryCategories\": [\"listrik\"],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Permukaan ramp pejalan kaki yang lapisan pijakannya terangkat posesif menjadi risiko tersangkut dan cedera, sehingga perlu segera diperbaiki. Lampu taman yang redup merupakan keluhan tambahan yanghandled oleh Dishub.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "jalan_rusak",
+    "secondaryCategories": [
+      "listrik"
+    ],
+    "suggestedDepartment": "PUPR",
+    "suggestedPriority": "tinggi",
+    "reason": "Permukaan ramp pejalan kaki yang lapisan pijakannya terangkat posesif menjadi risiko tersangkut dan cedera, sehingga perlu segera diperbaiki. Lampu taman yang redup merupakan keluhan tambahan yanghandled oleh Dishub.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "jalan_rusak",
+  "usage": {
+    "prompt_tokens": 904,
+    "completion_tokens": 105,
+    "total_tokens": 1009,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

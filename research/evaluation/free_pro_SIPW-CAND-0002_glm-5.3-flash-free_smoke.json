@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-26T06:30:32.090Z",
+  "sample_id": "SIPW-CAND-0002",
+  "model": "glm-5.3-flash-free",
+  "returned_model": null,
+  "http_status": null,
+  "request_status": "needs_manual_review",
+  "latency_ms": 15013.8413,
+  "raw_content": null,
+  "raw_category": null,
+  "final_category": "lainnya",
+  "ground_truth_category": "jalan_rusak",
+  "label_validation_status": "provisional",
+  "output_valid": false,
+  "usage": null,
+  "error_type": "AbortError",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "source": "synthetic dev smoke; no DB; one request only"
+}

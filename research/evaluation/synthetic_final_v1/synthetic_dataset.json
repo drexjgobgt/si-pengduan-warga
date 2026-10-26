@@ -1,0 +1,1622 @@
+[
+  {
+    "sample_id": "SIPW-SYN-0001",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pada wadah pilah di lapangan, kemasan makanan tercecer setelah kegiatan. Permintaan penanganan adalah jadwalkan pembersihan dan pengangkutan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Permohonan tindak lanjut\nPada wadah pilah di lapangan, kemasan makanan tercecer setelah kegiatan. Permintaan penanganan adalah jadwalkan pembersihan dan pengangkutan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0002",
+    "title": "Keluhan belum tertangani",
+    "description": "Pada depo permukiman, sisa perabot bekas dibiarkan di area penampungan. Permintaan penanganan adalah angkut barang buangan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Keluhan belum tertangani\nPada depo permukiman, sisa perabot bekas dibiarkan di area penampungan. Permintaan penanganan adalah angkut barang buangan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0003",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pada kontainer pasar ikan, limbah padat meluber melewati bibir kontainer. Permintaan penanganan adalah kosongkan kontainer. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPada kontainer pasar ikan, limbah padat meluber melewati bibir kontainer. Permintaan penanganan adalah kosongkan kontainer. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0004",
+    "title": "Perlu penanganan petugas",
+    "description": "Pada tempat pengumpulan komunal, puing renovasi dibuang sembarangan. Permintaan penanganan adalah tertibkan pembuangan dan bersihkan puing. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Perlu penanganan petugas\nPada tempat pengumpulan komunal, puing renovasi dibuang sembarangan. Permintaan penanganan adalah tertibkan pembuangan dan bersihkan puing. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0005",
+    "title": "Laporan situasi setempat",
+    "description": "Pada bak kawasan pertokoan, cairan dari kantong buangan mengotori lantai bak. Permintaan penanganan adalah bersihkan bak dan angkut kantong buangan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Laporan situasi setempat\nPada bak kawasan pertokoan, cairan dari kantong buangan mengotori lantai bak. Permintaan penanganan adalah bersihkan bak dan angkut kantong buangan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0006",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pak bu, di wadah pilah di lapangan itu kemasan makanan tercecer setelah kegiatan. Bisa tolong jadwalkan pembersihan dan pengangkutan ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Permohonan tindak lanjut\nPak bu, di wadah pilah di lapangan itu kemasan makanan tercecer setelah kegiatan. Bisa tolong jadwalkan pembersihan dan pengangkutan ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0007",
+    "title": "Keluhan belum tertangani",
+    "description": "Pak bu, di depo permukiman itu sisa perabot bekas dibiarkan di area penampungan. Bisa tolong angkut barang buangan ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Keluhan belum tertangani\nPak bu, di depo permukiman itu sisa perabot bekas dibiarkan di area penampungan. Bisa tolong angkut barang buangan ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0008",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pak bu, di kontainer pasar ikan itu limbah padat meluber melewati bibir kontainer. Bisa tolong kosongkan kontainer ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPak bu, di kontainer pasar ikan itu limbah padat meluber melewati bibir kontainer. Bisa tolong kosongkan kontainer ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0009",
+    "title": "Perlu penanganan petugas",
+    "description": "Pak bu, di tempat pengumpulan komunal itu puing renovasi dibuang sembarangan. Bisa tolong tertibkan pembuangan dan bersihkan puing ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Perlu penanganan petugas\nPak bu, di tempat pengumpulan komunal itu puing renovasi dibuang sembarangan. Bisa tolong tertibkan pembuangan dan bersihkan puing ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0010",
+    "title": "Laporan situasi setempat",
+    "description": "Pak bu, di bak kawasan pertokoan itu cairan dari kantong buangan mengotori lantai bak. Bisa tolong bersihkan bak dan angkut kantong buangan ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Laporan situasi setempat\nPak bu, di bak kawasan pertokoan itu cairan dari kantong buangan mengotori lantai bak. Bisa tolong bersihkan bak dan angkut kantong buangan ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0011",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di wadah pilah di lapangan, kemasan makanan tercecer setelah kegiatan. Mhon jadwalkan pembersihan dan pengangkutan, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Permohonan tindak lanjut\nDi wadah pilah di lapangan, kemasan makanan tercecer setelah kegiatan. Mhon jadwalkan pembersihan dan pengangkutan, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0012",
+    "title": "Keluhan belum tertangani",
+    "description": "Di depo permukiman, sisa perabot bekas dibiarkan di area penampungan. Mhon angkut barang buangan, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Keluhan belum tertangani\nDi depo permukiman, sisa perabot bekas dibiarkan di area penampungan. Mhon angkut barang buangan, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0013",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di kontainer pasar ikan, limbah padat meluber melewati bibir kontainer. Mhon kosongkan kontainer, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi kontainer pasar ikan, limbah padat meluber melewati bibir kontainer. Mhon kosongkan kontainer, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0014",
+    "title": "Perlu penanganan petugas",
+    "description": "Di tempat pengumpulan komunal, puing renovasi dibuang sembarangan. Mhon tertibkan pembuangan dan bersihkan puing, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Perlu penanganan petugas\nDi tempat pengumpulan komunal, puing renovasi dibuang sembarangan. Mhon tertibkan pembuangan dan bersihkan puing, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0015",
+    "title": "Laporan situasi setempat",
+    "description": "Di bak kawasan pertokoan, cairan dari kantong buangan mengotori lantai bak. Mhon bersihkan bak dan angkut kantong buangan, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Laporan situasi setempat\nDi bak kawasan pertokoan, cairan dari kantong buangan mengotori lantai bak. Mhon bersihkan bak dan angkut kantong buangan, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0016",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di wadah pilah di lapangan ada kondisi yang saya belum tahu penyebabnya: kemasan makanan tercecer setelah kegiatan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah jadwalkan pembersihan dan pengangkutan.",
+    "complaint_text": "Permohonan tindak lanjut\nDi wadah pilah di lapangan ada kondisi yang saya belum tahu penyebabnya: kemasan makanan tercecer setelah kegiatan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah jadwalkan pembersihan dan pengangkutan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0017",
+    "title": "Keluhan belum tertangani",
+    "description": "Di depo permukiman ada kondisi yang saya belum tahu penyebabnya: sisa perabot bekas dibiarkan di area penampungan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah angkut barang buangan.",
+    "complaint_text": "Keluhan belum tertangani\nDi depo permukiman ada kondisi yang saya belum tahu penyebabnya: sisa perabot bekas dibiarkan di area penampungan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah angkut barang buangan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0018",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di kontainer pasar ikan ada kondisi yang saya belum tahu penyebabnya: limbah padat meluber melewati bibir kontainer. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah kosongkan kontainer.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi kontainer pasar ikan ada kondisi yang saya belum tahu penyebabnya: limbah padat meluber melewati bibir kontainer. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah kosongkan kontainer."
+  },
+  {
+    "sample_id": "SIPW-SYN-0019",
+    "title": "Perlu penanganan petugas",
+    "description": "Di tempat pengumpulan komunal ada kondisi yang saya belum tahu penyebabnya: puing renovasi dibuang sembarangan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah tertibkan pembuangan dan bersihkan puing.",
+    "complaint_text": "Perlu penanganan petugas\nDi tempat pengumpulan komunal ada kondisi yang saya belum tahu penyebabnya: puing renovasi dibuang sembarangan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah tertibkan pembuangan dan bersihkan puing."
+  },
+  {
+    "sample_id": "SIPW-SYN-0020",
+    "title": "Laporan situasi setempat",
+    "description": "Di bak kawasan pertokoan ada kondisi yang saya belum tahu penyebabnya: cairan dari kantong buangan mengotori lantai bak. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah bersihkan bak dan angkut kantong buangan.",
+    "complaint_text": "Laporan situasi setempat\nDi bak kawasan pertokoan ada kondisi yang saya belum tahu penyebabnya: cairan dari kantong buangan mengotori lantai bak. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah bersihkan bak dan angkut kantong buangan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0021",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di wadah pilah di lapangan, kemasan makanan tercecer setelah kegiatan. Rincian waktu dan titik pastinya belum tersedia. Mohon jadwalkan pembersihan dan pengangkutan.",
+    "complaint_text": "Permohonan tindak lanjut\nDi wadah pilah di lapangan, kemasan makanan tercecer setelah kegiatan. Rincian waktu dan titik pastinya belum tersedia. Mohon jadwalkan pembersihan dan pengangkutan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0022",
+    "title": "Keluhan belum tertangani",
+    "description": "Di depo permukiman, sisa perabot bekas dibiarkan di area penampungan. Rincian waktu dan titik pastinya belum tersedia. Mohon angkut barang buangan.",
+    "complaint_text": "Keluhan belum tertangani\nDi depo permukiman, sisa perabot bekas dibiarkan di area penampungan. Rincian waktu dan titik pastinya belum tersedia. Mohon angkut barang buangan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0023",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di kontainer pasar ikan, limbah padat meluber melewati bibir kontainer. Rincian waktu dan titik pastinya belum tersedia. Mohon kosongkan kontainer.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi kontainer pasar ikan, limbah padat meluber melewati bibir kontainer. Rincian waktu dan titik pastinya belum tersedia. Mohon kosongkan kontainer."
+  },
+  {
+    "sample_id": "SIPW-SYN-0024",
+    "title": "Perlu penanganan petugas",
+    "description": "Di tempat pengumpulan komunal, puing renovasi dibuang sembarangan. Rincian waktu dan titik pastinya belum tersedia. Mohon tertibkan pembuangan dan bersihkan puing.",
+    "complaint_text": "Perlu penanganan petugas\nDi tempat pengumpulan komunal, puing renovasi dibuang sembarangan. Rincian waktu dan titik pastinya belum tersedia. Mohon tertibkan pembuangan dan bersihkan puing."
+  },
+  {
+    "sample_id": "SIPW-SYN-0025",
+    "title": "Laporan situasi setempat",
+    "description": "Di bak kawasan pertokoan, cairan dari kantong buangan mengotori lantai bak. Rincian waktu dan titik pastinya belum tersedia. Mohon bersihkan bak dan angkut kantong buangan.",
+    "complaint_text": "Laporan situasi setempat\nDi bak kawasan pertokoan, cairan dari kantong buangan mengotori lantai bak. Rincian waktu dan titik pastinya belum tersedia. Mohon bersihkan bak dan angkut kantong buangan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0026",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di wadah pilah di lapangan, kemasan makanan tercecer setelah kegiatan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan jadwalkan pembersihan dan pengangkutan sebelum masalah tambahan itu.",
+    "complaint_text": "Permohonan tindak lanjut\nDi wadah pilah di lapangan, kemasan makanan tercecer setelah kegiatan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan jadwalkan pembersihan dan pengangkutan sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0027",
+    "title": "Keluhan belum tertangani",
+    "description": "Di depo permukiman, sisa perabot bekas dibiarkan di area penampungan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan angkut barang buangan sebelum masalah tambahan itu.",
+    "complaint_text": "Keluhan belum tertangani\nDi depo permukiman, sisa perabot bekas dibiarkan di area penampungan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan angkut barang buangan sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0028",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di kontainer pasar ikan, limbah padat meluber melewati bibir kontainer. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan kosongkan kontainer sebelum masalah tambahan itu.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi kontainer pasar ikan, limbah padat meluber melewati bibir kontainer. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan kosongkan kontainer sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0029",
+    "title": "Perlu penanganan petugas",
+    "description": "Di tempat pengumpulan komunal, puing renovasi dibuang sembarangan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan tertibkan pembuangan dan bersihkan puing sebelum masalah tambahan itu.",
+    "complaint_text": "Perlu penanganan petugas\nDi tempat pengumpulan komunal, puing renovasi dibuang sembarangan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan tertibkan pembuangan dan bersihkan puing sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0030",
+    "title": "Laporan situasi setempat",
+    "description": "Di bak kawasan pertokoan, cairan dari kantong buangan mengotori lantai bak. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan bersihkan bak dan angkut kantong buangan sebelum masalah tambahan itu.",
+    "complaint_text": "Laporan situasi setempat\nDi bak kawasan pertokoan, cairan dari kantong buangan mengotori lantai bak. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan bersihkan bak dan angkut kantong buangan sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0031",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pada jalur sepeda, permukaan lintasan pecah membentuk undakan. Permintaan penanganan adalah ratakan dan perbaiki lapisan lintasan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Permohonan tindak lanjut\nPada jalur sepeda, permukaan lintasan pecah membentuk undakan. Permintaan penanganan adalah ratakan dan perbaiki lapisan lintasan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0032",
+    "title": "Keluhan belum tertangani",
+    "description": "Pada ruas menuju kebun, tepi badan jalan terkikis membentuk cekungan. Permintaan penanganan adalah perbaiki bagian lintasan yang terkikis. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Keluhan belum tertangani\nPada ruas menuju kebun, tepi badan jalan terkikis membentuk cekungan. Permintaan penanganan adalah perbaiki bagian lintasan yang terkikis. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0033",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pada ramp pejalan kaki, lapisan pijakan terangkat sehingga roda kursi tersangkut. Permintaan penanganan adalah perbaiki permukaan ramp. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPada ramp pejalan kaki, lapisan pijakan terangkat sehingga roda kursi tersangkut. Permintaan penanganan adalah perbaiki permukaan ramp. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0034",
+    "title": "Perlu penanganan petugas",
+    "description": "Pada akses jembatan penyeberangan, ubin pijakan lepas dari dudukannya. Permintaan penanganan adalah pasang kembali dan amankan permukaan pijakan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Perlu penanganan petugas\nPada akses jembatan penyeberangan, ubin pijakan lepas dari dudukannya. Permintaan penanganan adalah pasang kembali dan amankan permukaan pijakan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0035",
+    "title": "Laporan situasi setempat",
+    "description": "Pada tikungan jalan lingkungan, lapisan penambalan terlepas sehingga lintasan bergelombang. Permintaan penanganan adalah perbaiki lapisan permukaan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Laporan situasi setempat\nPada tikungan jalan lingkungan, lapisan penambalan terlepas sehingga lintasan bergelombang. Permintaan penanganan adalah perbaiki lapisan permukaan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0036",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pak bu, di jalur sepeda itu permukaan lintasan pecah membentuk undakan. Bisa tolong ratakan dan perbaiki lapisan lintasan ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Permohonan tindak lanjut\nPak bu, di jalur sepeda itu permukaan lintasan pecah membentuk undakan. Bisa tolong ratakan dan perbaiki lapisan lintasan ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0037",
+    "title": "Keluhan belum tertangani",
+    "description": "Pak bu, di ruas menuju kebun itu tepi badan jalan terkikis membentuk cekungan. Bisa tolong perbaiki bagian lintasan yang terkikis ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Keluhan belum tertangani\nPak bu, di ruas menuju kebun itu tepi badan jalan terkikis membentuk cekungan. Bisa tolong perbaiki bagian lintasan yang terkikis ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0038",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pak bu, di ramp pejalan kaki itu lapisan pijakan terangkat sehingga roda kursi tersangkut. Bisa tolong perbaiki permukaan ramp ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPak bu, di ramp pejalan kaki itu lapisan pijakan terangkat sehingga roda kursi tersangkut. Bisa tolong perbaiki permukaan ramp ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0039",
+    "title": "Perlu penanganan petugas",
+    "description": "Pak bu, di akses jembatan penyeberangan itu ubin pijakan lepas dari dudukannya. Bisa tolong pasang kembali dan amankan permukaan pijakan ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Perlu penanganan petugas\nPak bu, di akses jembatan penyeberangan itu ubin pijakan lepas dari dudukannya. Bisa tolong pasang kembali dan amankan permukaan pijakan ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0040",
+    "title": "Laporan situasi setempat",
+    "description": "Pak bu, di tikungan jalan lingkungan itu lapisan penambalan terlepas sehingga lintasan bergelombang. Bisa tolong perbaiki lapisan permukaan ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Laporan situasi setempat\nPak bu, di tikungan jalan lingkungan itu lapisan penambalan terlepas sehingga lintasan bergelombang. Bisa tolong perbaiki lapisan permukaan ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0041",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di jalur sepeda, permukaan lintasan pecah membentuk undakan. Mhon ratakan dan perbaiki lapisan lintasan, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Permohonan tindak lanjut\nDi jalur sepeda, permukaan lintasan pecah membentuk undakan. Mhon ratakan dan perbaiki lapisan lintasan, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0042",
+    "title": "Keluhan belum tertangani",
+    "description": "Di ruas menuju kebun, tepi badan jalan terkikis membentuk cekungan. Mhon perbaiki bagian lintasan yang terkikis, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Keluhan belum tertangani\nDi ruas menuju kebun, tepi badan jalan terkikis membentuk cekungan. Mhon perbaiki bagian lintasan yang terkikis, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0043",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di ramp pejalan kaki, lapisan pijakan terangkat sehingga roda kursi tersangkut. Mhon perbaiki permukaan ramp, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi ramp pejalan kaki, lapisan pijakan terangkat sehingga roda kursi tersangkut. Mhon perbaiki permukaan ramp, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0044",
+    "title": "Perlu penanganan petugas",
+    "description": "Di akses jembatan penyeberangan, ubin pijakan lepas dari dudukannya. Mhon pasang kembali dan amankan permukaan pijakan, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Perlu penanganan petugas\nDi akses jembatan penyeberangan, ubin pijakan lepas dari dudukannya. Mhon pasang kembali dan amankan permukaan pijakan, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0045",
+    "title": "Laporan situasi setempat",
+    "description": "Di tikungan jalan lingkungan, lapisan penambalan terlepas sehingga lintasan bergelombang. Mhon perbaiki lapisan permukaan, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Laporan situasi setempat\nDi tikungan jalan lingkungan, lapisan penambalan terlepas sehingga lintasan bergelombang. Mhon perbaiki lapisan permukaan, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0046",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di jalur sepeda ada kondisi yang saya belum tahu penyebabnya: permukaan lintasan pecah membentuk undakan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah ratakan dan perbaiki lapisan lintasan.",
+    "complaint_text": "Permohonan tindak lanjut\nDi jalur sepeda ada kondisi yang saya belum tahu penyebabnya: permukaan lintasan pecah membentuk undakan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah ratakan dan perbaiki lapisan lintasan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0047",
+    "title": "Keluhan belum tertangani",
+    "description": "Di ruas menuju kebun ada kondisi yang saya belum tahu penyebabnya: tepi badan jalan terkikis membentuk cekungan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah perbaiki bagian lintasan yang terkikis.",
+    "complaint_text": "Keluhan belum tertangani\nDi ruas menuju kebun ada kondisi yang saya belum tahu penyebabnya: tepi badan jalan terkikis membentuk cekungan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah perbaiki bagian lintasan yang terkikis."
+  },
+  {
+    "sample_id": "SIPW-SYN-0048",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di ramp pejalan kaki ada kondisi yang saya belum tahu penyebabnya: lapisan pijakan terangkat sehingga roda kursi tersangkut. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah perbaiki permukaan ramp.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi ramp pejalan kaki ada kondisi yang saya belum tahu penyebabnya: lapisan pijakan terangkat sehingga roda kursi tersangkut. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah perbaiki permukaan ramp."
+  },
+  {
+    "sample_id": "SIPW-SYN-0049",
+    "title": "Perlu penanganan petugas",
+    "description": "Di akses jembatan penyeberangan ada kondisi yang saya belum tahu penyebabnya: ubin pijakan lepas dari dudukannya. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah pasang kembali dan amankan permukaan pijakan.",
+    "complaint_text": "Perlu penanganan petugas\nDi akses jembatan penyeberangan ada kondisi yang saya belum tahu penyebabnya: ubin pijakan lepas dari dudukannya. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah pasang kembali dan amankan permukaan pijakan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0050",
+    "title": "Laporan situasi setempat",
+    "description": "Di tikungan jalan lingkungan ada kondisi yang saya belum tahu penyebabnya: lapisan penambalan terlepas sehingga lintasan bergelombang. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah perbaiki lapisan permukaan.",
+    "complaint_text": "Laporan situasi setempat\nDi tikungan jalan lingkungan ada kondisi yang saya belum tahu penyebabnya: lapisan penambalan terlepas sehingga lintasan bergelombang. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah perbaiki lapisan permukaan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0051",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di jalur sepeda, permukaan lintasan pecah membentuk undakan. Rincian waktu dan titik pastinya belum tersedia. Mohon ratakan dan perbaiki lapisan lintasan.",
+    "complaint_text": "Permohonan tindak lanjut\nDi jalur sepeda, permukaan lintasan pecah membentuk undakan. Rincian waktu dan titik pastinya belum tersedia. Mohon ratakan dan perbaiki lapisan lintasan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0052",
+    "title": "Keluhan belum tertangani",
+    "description": "Di ruas menuju kebun, tepi badan jalan terkikis membentuk cekungan. Rincian waktu dan titik pastinya belum tersedia. Mohon perbaiki bagian lintasan yang terkikis.",
+    "complaint_text": "Keluhan belum tertangani\nDi ruas menuju kebun, tepi badan jalan terkikis membentuk cekungan. Rincian waktu dan titik pastinya belum tersedia. Mohon perbaiki bagian lintasan yang terkikis."
+  },
+  {
+    "sample_id": "SIPW-SYN-0053",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di ramp pejalan kaki, lapisan pijakan terangkat sehingga roda kursi tersangkut. Rincian waktu dan titik pastinya belum tersedia. Mohon perbaiki permukaan ramp.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi ramp pejalan kaki, lapisan pijakan terangkat sehingga roda kursi tersangkut. Rincian waktu dan titik pastinya belum tersedia. Mohon perbaiki permukaan ramp."
+  },
+  {
+    "sample_id": "SIPW-SYN-0054",
+    "title": "Perlu penanganan petugas",
+    "description": "Di akses jembatan penyeberangan, ubin pijakan lepas dari dudukannya. Rincian waktu dan titik pastinya belum tersedia. Mohon pasang kembali dan amankan permukaan pijakan.",
+    "complaint_text": "Perlu penanganan petugas\nDi akses jembatan penyeberangan, ubin pijakan lepas dari dudukannya. Rincian waktu dan titik pastinya belum tersedia. Mohon pasang kembali dan amankan permukaan pijakan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0055",
+    "title": "Laporan situasi setempat",
+    "description": "Di tikungan jalan lingkungan, lapisan penambalan terlepas sehingga lintasan bergelombang. Rincian waktu dan titik pastinya belum tersedia. Mohon perbaiki lapisan permukaan.",
+    "complaint_text": "Laporan situasi setempat\nDi tikungan jalan lingkungan, lapisan penambalan terlepas sehingga lintasan bergelombang. Rincian waktu dan titik pastinya belum tersedia. Mohon perbaiki lapisan permukaan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0056",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di jalur sepeda, permukaan lintasan pecah membentuk undakan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan ratakan dan perbaiki lapisan lintasan sebelum masalah tambahan itu.",
+    "complaint_text": "Permohonan tindak lanjut\nDi jalur sepeda, permukaan lintasan pecah membentuk undakan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan ratakan dan perbaiki lapisan lintasan sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0057",
+    "title": "Keluhan belum tertangani",
+    "description": "Di ruas menuju kebun, tepi badan jalan terkikis membentuk cekungan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan perbaiki bagian lintasan yang terkikis sebelum masalah tambahan itu.",
+    "complaint_text": "Keluhan belum tertangani\nDi ruas menuju kebun, tepi badan jalan terkikis membentuk cekungan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan perbaiki bagian lintasan yang terkikis sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0058",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di ramp pejalan kaki, lapisan pijakan terangkat sehingga roda kursi tersangkut. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan perbaiki permukaan ramp sebelum masalah tambahan itu.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi ramp pejalan kaki, lapisan pijakan terangkat sehingga roda kursi tersangkut. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan perbaiki permukaan ramp sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0059",
+    "title": "Perlu penanganan petugas",
+    "description": "Di akses jembatan penyeberangan, ubin pijakan lepas dari dudukannya. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan pasang kembali dan amankan permukaan pijakan sebelum masalah tambahan itu.",
+    "complaint_text": "Perlu penanganan petugas\nDi akses jembatan penyeberangan, ubin pijakan lepas dari dudukannya. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan pasang kembali dan amankan permukaan pijakan sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0060",
+    "title": "Laporan situasi setempat",
+    "description": "Di tikungan jalan lingkungan, lapisan penambalan terlepas sehingga lintasan bergelombang. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan perbaiki lapisan permukaan sebelum masalah tambahan itu.",
+    "complaint_text": "Laporan situasi setempat\nDi tikungan jalan lingkungan, lapisan penambalan terlepas sehingga lintasan bergelombang. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan perbaiki lapisan permukaan sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0061",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pada underpass, air hujan tertahan hingga menutup lintasan. Permintaan penanganan adalah pulihkan drainase dan keluarkan genangan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Permohonan tindak lanjut\nPada underpass, air hujan tertahan hingga menutup lintasan. Permintaan penanganan adalah pulihkan drainase dan keluarkan genangan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0062",
+    "title": "Keluhan belum tertangani",
+    "description": "Pada jalur masuk pasar, luapan parit menyebar ke akses masuk saat hujan. Permintaan penanganan adalah atasi luapan dan perbaiki pembuangan air. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Keluhan belum tertangani\nPada jalur masuk pasar, luapan parit menyebar ke akses masuk saat hujan. Permintaan penanganan adalah atasi luapan dan perbaiki pembuangan air. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0063",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pada halaman balai bersama, air hujan mengumpul karena lubang pembuangan tidak berfungsi. Permintaan penanganan adalah pulihkan saluran pembuangan genangan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPada halaman balai bersama, air hujan mengumpul karena lubang pembuangan tidak berfungsi. Permintaan penanganan adalah pulihkan saluran pembuangan genangan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0064",
+    "title": "Perlu penanganan petugas",
+    "description": "Pada gang buntu, aliran drainase berbalik memasuki halaman saat hujan. Permintaan penanganan adalah benahi aliran drainase. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Perlu penanganan petugas\nPada gang buntu, aliran drainase berbalik memasuki halaman saat hujan. Permintaan penanganan adalah benahi aliran drainase. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0065",
+    "title": "Laporan situasi setempat",
+    "description": "Pada lorong dekat terminal, permukaan air naik ketika sungai kecil melimpas. Permintaan penanganan adalah kendalikan limpasan dan pulihkan akses. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Laporan situasi setempat\nPada lorong dekat terminal, permukaan air naik ketika sungai kecil melimpas. Permintaan penanganan adalah kendalikan limpasan dan pulihkan akses. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0066",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pak bu, di underpass itu air hujan tertahan hingga menutup lintasan. Bisa tolong pulihkan drainase dan keluarkan genangan ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Permohonan tindak lanjut\nPak bu, di underpass itu air hujan tertahan hingga menutup lintasan. Bisa tolong pulihkan drainase dan keluarkan genangan ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0067",
+    "title": "Keluhan belum tertangani",
+    "description": "Pak bu, di jalur masuk pasar itu luapan parit menyebar ke akses masuk saat hujan. Bisa tolong atasi luapan dan perbaiki pembuangan air ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Keluhan belum tertangani\nPak bu, di jalur masuk pasar itu luapan parit menyebar ke akses masuk saat hujan. Bisa tolong atasi luapan dan perbaiki pembuangan air ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0068",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pak bu, di halaman balai bersama itu air hujan mengumpul karena lubang pembuangan tidak berfungsi. Bisa tolong pulihkan saluran pembuangan genangan ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPak bu, di halaman balai bersama itu air hujan mengumpul karena lubang pembuangan tidak berfungsi. Bisa tolong pulihkan saluran pembuangan genangan ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0069",
+    "title": "Perlu penanganan petugas",
+    "description": "Pak bu, di gang buntu itu aliran drainase berbalik memasuki halaman saat hujan. Bisa tolong benahi aliran drainase ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Perlu penanganan petugas\nPak bu, di gang buntu itu aliran drainase berbalik memasuki halaman saat hujan. Bisa tolong benahi aliran drainase ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0070",
+    "title": "Laporan situasi setempat",
+    "description": "Pak bu, di lorong dekat terminal itu permukaan air naik ketika sungai kecil melimpas. Bisa tolong kendalikan limpasan dan pulihkan akses ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Laporan situasi setempat\nPak bu, di lorong dekat terminal itu permukaan air naik ketika sungai kecil melimpas. Bisa tolong kendalikan limpasan dan pulihkan akses ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0071",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di underpass, air hujan tertahan hingga menutup lintasan. Mhon pulihkan drainase dan keluarkan genangan, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Permohonan tindak lanjut\nDi underpass, air hujan tertahan hingga menutup lintasan. Mhon pulihkan drainase dan keluarkan genangan, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0072",
+    "title": "Keluhan belum tertangani",
+    "description": "Di jalur masuk pasar, luapan parit menyebar ke akses masuk saat hujan. Mhon atasi luapan dan perbaiki pembuangan air, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Keluhan belum tertangani\nDi jalur masuk pasar, luapan parit menyebar ke akses masuk saat hujan. Mhon atasi luapan dan perbaiki pembuangan air, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0073",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di halaman balai bersama, air hujan mengumpul karena lubang pembuangan tidak berfungsi. Mhon pulihkan saluran pembuangan genangan, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi halaman balai bersama, air hujan mengumpul karena lubang pembuangan tidak berfungsi. Mhon pulihkan saluran pembuangan genangan, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0074",
+    "title": "Perlu penanganan petugas",
+    "description": "Di gang buntu, aliran drainase berbalik memasuki halaman saat hujan. Mhon benahi aliran drainase, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Perlu penanganan petugas\nDi gang buntu, aliran drainase berbalik memasuki halaman saat hujan. Mhon benahi aliran drainase, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0075",
+    "title": "Laporan situasi setempat",
+    "description": "Di lorong dekat terminal, permukaan air naik ketika sungai kecil melimpas. Mhon kendalikan limpasan dan pulihkan akses, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Laporan situasi setempat\nDi lorong dekat terminal, permukaan air naik ketika sungai kecil melimpas. Mhon kendalikan limpasan dan pulihkan akses, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0076",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di underpass ada kondisi yang saya belum tahu penyebabnya: air hujan tertahan hingga menutup lintasan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah pulihkan drainase dan keluarkan genangan.",
+    "complaint_text": "Permohonan tindak lanjut\nDi underpass ada kondisi yang saya belum tahu penyebabnya: air hujan tertahan hingga menutup lintasan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah pulihkan drainase dan keluarkan genangan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0077",
+    "title": "Keluhan belum tertangani",
+    "description": "Di jalur masuk pasar ada kondisi yang saya belum tahu penyebabnya: luapan parit menyebar ke akses masuk saat hujan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah atasi luapan dan perbaiki pembuangan air.",
+    "complaint_text": "Keluhan belum tertangani\nDi jalur masuk pasar ada kondisi yang saya belum tahu penyebabnya: luapan parit menyebar ke akses masuk saat hujan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah atasi luapan dan perbaiki pembuangan air."
+  },
+  {
+    "sample_id": "SIPW-SYN-0078",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di halaman balai bersama ada kondisi yang saya belum tahu penyebabnya: air hujan mengumpul karena lubang pembuangan tidak berfungsi. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah pulihkan saluran pembuangan genangan.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi halaman balai bersama ada kondisi yang saya belum tahu penyebabnya: air hujan mengumpul karena lubang pembuangan tidak berfungsi. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah pulihkan saluran pembuangan genangan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0079",
+    "title": "Perlu penanganan petugas",
+    "description": "Di gang buntu ada kondisi yang saya belum tahu penyebabnya: aliran drainase berbalik memasuki halaman saat hujan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah benahi aliran drainase.",
+    "complaint_text": "Perlu penanganan petugas\nDi gang buntu ada kondisi yang saya belum tahu penyebabnya: aliran drainase berbalik memasuki halaman saat hujan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah benahi aliran drainase."
+  },
+  {
+    "sample_id": "SIPW-SYN-0080",
+    "title": "Laporan situasi setempat",
+    "description": "Di lorong dekat terminal ada kondisi yang saya belum tahu penyebabnya: permukaan air naik ketika sungai kecil melimpas. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah kendalikan limpasan dan pulihkan akses.",
+    "complaint_text": "Laporan situasi setempat\nDi lorong dekat terminal ada kondisi yang saya belum tahu penyebabnya: permukaan air naik ketika sungai kecil melimpas. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah kendalikan limpasan dan pulihkan akses."
+  },
+  {
+    "sample_id": "SIPW-SYN-0081",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di underpass, air hujan tertahan hingga menutup lintasan. Rincian waktu dan titik pastinya belum tersedia. Mohon pulihkan drainase dan keluarkan genangan.",
+    "complaint_text": "Permohonan tindak lanjut\nDi underpass, air hujan tertahan hingga menutup lintasan. Rincian waktu dan titik pastinya belum tersedia. Mohon pulihkan drainase dan keluarkan genangan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0082",
+    "title": "Keluhan belum tertangani",
+    "description": "Di jalur masuk pasar, luapan parit menyebar ke akses masuk saat hujan. Rincian waktu dan titik pastinya belum tersedia. Mohon atasi luapan dan perbaiki pembuangan air.",
+    "complaint_text": "Keluhan belum tertangani\nDi jalur masuk pasar, luapan parit menyebar ke akses masuk saat hujan. Rincian waktu dan titik pastinya belum tersedia. Mohon atasi luapan dan perbaiki pembuangan air."
+  },
+  {
+    "sample_id": "SIPW-SYN-0083",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di halaman balai bersama, air hujan mengumpul karena lubang pembuangan tidak berfungsi. Rincian waktu dan titik pastinya belum tersedia. Mohon pulihkan saluran pembuangan genangan.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi halaman balai bersama, air hujan mengumpul karena lubang pembuangan tidak berfungsi. Rincian waktu dan titik pastinya belum tersedia. Mohon pulihkan saluran pembuangan genangan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0084",
+    "title": "Perlu penanganan petugas",
+    "description": "Di gang buntu, aliran drainase berbalik memasuki halaman saat hujan. Rincian waktu dan titik pastinya belum tersedia. Mohon benahi aliran drainase.",
+    "complaint_text": "Perlu penanganan petugas\nDi gang buntu, aliran drainase berbalik memasuki halaman saat hujan. Rincian waktu dan titik pastinya belum tersedia. Mohon benahi aliran drainase."
+  },
+  {
+    "sample_id": "SIPW-SYN-0085",
+    "title": "Laporan situasi setempat",
+    "description": "Di lorong dekat terminal, permukaan air naik ketika sungai kecil melimpas. Rincian waktu dan titik pastinya belum tersedia. Mohon kendalikan limpasan dan pulihkan akses.",
+    "complaint_text": "Laporan situasi setempat\nDi lorong dekat terminal, permukaan air naik ketika sungai kecil melimpas. Rincian waktu dan titik pastinya belum tersedia. Mohon kendalikan limpasan dan pulihkan akses."
+  },
+  {
+    "sample_id": "SIPW-SYN-0086",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di underpass, air hujan tertahan hingga menutup lintasan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan pulihkan drainase dan keluarkan genangan sebelum masalah tambahan itu.",
+    "complaint_text": "Permohonan tindak lanjut\nDi underpass, air hujan tertahan hingga menutup lintasan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan pulihkan drainase dan keluarkan genangan sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0087",
+    "title": "Keluhan belum tertangani",
+    "description": "Di jalur masuk pasar, luapan parit menyebar ke akses masuk saat hujan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan atasi luapan dan perbaiki pembuangan air sebelum masalah tambahan itu.",
+    "complaint_text": "Keluhan belum tertangani\nDi jalur masuk pasar, luapan parit menyebar ke akses masuk saat hujan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan atasi luapan dan perbaiki pembuangan air sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0088",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di halaman balai bersama, air hujan mengumpul karena lubang pembuangan tidak berfungsi. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan pulihkan saluran pembuangan genangan sebelum masalah tambahan itu.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi halaman balai bersama, air hujan mengumpul karena lubang pembuangan tidak berfungsi. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan pulihkan saluran pembuangan genangan sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0089",
+    "title": "Perlu penanganan petugas",
+    "description": "Di gang buntu, aliran drainase berbalik memasuki halaman saat hujan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan benahi aliran drainase sebelum masalah tambahan itu.",
+    "complaint_text": "Perlu penanganan petugas\nDi gang buntu, aliran drainase berbalik memasuki halaman saat hujan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan benahi aliran drainase sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0090",
+    "title": "Laporan situasi setempat",
+    "description": "Di lorong dekat terminal, permukaan air naik ketika sungai kecil melimpas. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan kendalikan limpasan dan pulihkan akses sebelum masalah tambahan itu.",
+    "complaint_text": "Laporan situasi setempat\nDi lorong dekat terminal, permukaan air naik ketika sungai kecil melimpas. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan kendalikan limpasan dan pulihkan akses sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0091",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pada gardu penerangan taman, panel penerangan mendengung disertai percikan. Permintaan penanganan adalah amankan instalasi dan periksa rangkaian. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Permohonan tindak lanjut\nPada gardu penerangan taman, panel penerangan mendengung disertai percikan. Permintaan penanganan adalah amankan instalasi dan periksa rangkaian. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0092",
+    "title": "Keluhan belum tertangani",
+    "description": "Pada lampu lintasan sepeda, penerangan berkedip lalu padam berulang. Permintaan penanganan adalah periksa suplai dan sambungan penerangan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Keluhan belum tertangani\nPada lampu lintasan sepeda, penerangan berkedip lalu padam berulang. Permintaan penanganan adalah periksa suplai dan sambungan penerangan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0093",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pada jaringan pasokan permukiman, tegangan naik turun sehingga peralatan mati mendadak. Permintaan penanganan adalah periksa kestabilan suplai. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPada jaringan pasokan permukiman, tegangan naik turun sehingga peralatan mati mendadak. Permintaan penanganan adalah periksa kestabilan suplai. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0094",
+    "title": "Perlu penanganan petugas",
+    "description": "Pada tiang penerangan lapangan, pintu panel terbuka dan penghantar terlihat. Permintaan penanganan adalah tutup panel dan amankan penghantar. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Perlu penanganan petugas\nPada tiang penerangan lapangan, pintu panel terbuka dan penghantar terlihat. Permintaan penanganan adalah tutup panel dan amankan penghantar. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0095",
+    "title": "Laporan situasi setempat",
+    "description": "Pada lampu terowongan pejalan kaki, seluruh titik penerangan mati setelah gangguan sambungan. Permintaan penanganan adalah pulihkan rangkaian penerangan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Laporan situasi setempat\nPada lampu terowongan pejalan kaki, seluruh titik penerangan mati setelah gangguan sambungan. Permintaan penanganan adalah pulihkan rangkaian penerangan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0096",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pak bu, di gardu penerangan taman itu panel penerangan mendengung disertai percikan. Bisa tolong amankan instalasi dan periksa rangkaian ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Permohonan tindak lanjut\nPak bu, di gardu penerangan taman itu panel penerangan mendengung disertai percikan. Bisa tolong amankan instalasi dan periksa rangkaian ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0097",
+    "title": "Keluhan belum tertangani",
+    "description": "Pak bu, di lampu lintasan sepeda itu penerangan berkedip lalu padam berulang. Bisa tolong periksa suplai dan sambungan penerangan ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Keluhan belum tertangani\nPak bu, di lampu lintasan sepeda itu penerangan berkedip lalu padam berulang. Bisa tolong periksa suplai dan sambungan penerangan ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0098",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pak bu, di jaringan pasokan permukiman itu tegangan naik turun sehingga peralatan mati mendadak. Bisa tolong periksa kestabilan suplai ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPak bu, di jaringan pasokan permukiman itu tegangan naik turun sehingga peralatan mati mendadak. Bisa tolong periksa kestabilan suplai ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0099",
+    "title": "Perlu penanganan petugas",
+    "description": "Pak bu, di tiang penerangan lapangan itu pintu panel terbuka dan penghantar terlihat. Bisa tolong tutup panel dan amankan penghantar ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Perlu penanganan petugas\nPak bu, di tiang penerangan lapangan itu pintu panel terbuka dan penghantar terlihat. Bisa tolong tutup panel dan amankan penghantar ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0100",
+    "title": "Laporan situasi setempat",
+    "description": "Pak bu, di lampu terowongan pejalan kaki itu seluruh titik penerangan mati setelah gangguan sambungan. Bisa tolong pulihkan rangkaian penerangan ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Laporan situasi setempat\nPak bu, di lampu terowongan pejalan kaki itu seluruh titik penerangan mati setelah gangguan sambungan. Bisa tolong pulihkan rangkaian penerangan ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0101",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di gardu penerangan taman, panel penerangan mendengung disertai percikan. Mhon amankan instalasi dan periksa rangkaian, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Permohonan tindak lanjut\nDi gardu penerangan taman, panel penerangan mendengung disertai percikan. Mhon amankan instalasi dan periksa rangkaian, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0102",
+    "title": "Keluhan belum tertangani",
+    "description": "Di lampu lintasan sepeda, penerangan berkedip lalu padam berulang. Mhon periksa suplai dan sambungan penerangan, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Keluhan belum tertangani\nDi lampu lintasan sepeda, penerangan berkedip lalu padam berulang. Mhon periksa suplai dan sambungan penerangan, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0103",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di jaringan pasokan permukiman, tegangan naik turun sehingga peralatan mati mendadak. Mhon periksa kestabilan suplai, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi jaringan pasokan permukiman, tegangan naik turun sehingga peralatan mati mendadak. Mhon periksa kestabilan suplai, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0104",
+    "title": "Perlu penanganan petugas",
+    "description": "Di tiang penerangan lapangan, pintu panel terbuka dan penghantar terlihat. Mhon tutup panel dan amankan penghantar, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Perlu penanganan petugas\nDi tiang penerangan lapangan, pintu panel terbuka dan penghantar terlihat. Mhon tutup panel dan amankan penghantar, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0105",
+    "title": "Laporan situasi setempat",
+    "description": "Di lampu terowongan pejalan kaki, seluruh titik penerangan mati setelah gangguan sambungan. Mhon pulihkan rangkaian penerangan, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Laporan situasi setempat\nDi lampu terowongan pejalan kaki, seluruh titik penerangan mati setelah gangguan sambungan. Mhon pulihkan rangkaian penerangan, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0106",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di gardu penerangan taman ada kondisi yang saya belum tahu penyebabnya: panel penerangan mendengung disertai percikan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah amankan instalasi dan periksa rangkaian.",
+    "complaint_text": "Permohonan tindak lanjut\nDi gardu penerangan taman ada kondisi yang saya belum tahu penyebabnya: panel penerangan mendengung disertai percikan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah amankan instalasi dan periksa rangkaian."
+  },
+  {
+    "sample_id": "SIPW-SYN-0107",
+    "title": "Keluhan belum tertangani",
+    "description": "Di lampu lintasan sepeda ada kondisi yang saya belum tahu penyebabnya: penerangan berkedip lalu padam berulang. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah periksa suplai dan sambungan penerangan.",
+    "complaint_text": "Keluhan belum tertangani\nDi lampu lintasan sepeda ada kondisi yang saya belum tahu penyebabnya: penerangan berkedip lalu padam berulang. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah periksa suplai dan sambungan penerangan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0108",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di jaringan pasokan permukiman ada kondisi yang saya belum tahu penyebabnya: tegangan naik turun sehingga peralatan mati mendadak. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah periksa kestabilan suplai.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi jaringan pasokan permukiman ada kondisi yang saya belum tahu penyebabnya: tegangan naik turun sehingga peralatan mati mendadak. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah periksa kestabilan suplai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0109",
+    "title": "Perlu penanganan petugas",
+    "description": "Di tiang penerangan lapangan ada kondisi yang saya belum tahu penyebabnya: pintu panel terbuka dan penghantar terlihat. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah tutup panel dan amankan penghantar.",
+    "complaint_text": "Perlu penanganan petugas\nDi tiang penerangan lapangan ada kondisi yang saya belum tahu penyebabnya: pintu panel terbuka dan penghantar terlihat. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah tutup panel dan amankan penghantar."
+  },
+  {
+    "sample_id": "SIPW-SYN-0110",
+    "title": "Laporan situasi setempat",
+    "description": "Di lampu terowongan pejalan kaki ada kondisi yang saya belum tahu penyebabnya: seluruh titik penerangan mati setelah gangguan sambungan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah pulihkan rangkaian penerangan.",
+    "complaint_text": "Laporan situasi setempat\nDi lampu terowongan pejalan kaki ada kondisi yang saya belum tahu penyebabnya: seluruh titik penerangan mati setelah gangguan sambungan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah pulihkan rangkaian penerangan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0111",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di gardu penerangan taman, panel penerangan mendengung disertai percikan. Rincian waktu dan titik pastinya belum tersedia. Mohon amankan instalasi dan periksa rangkaian.",
+    "complaint_text": "Permohonan tindak lanjut\nDi gardu penerangan taman, panel penerangan mendengung disertai percikan. Rincian waktu dan titik pastinya belum tersedia. Mohon amankan instalasi dan periksa rangkaian."
+  },
+  {
+    "sample_id": "SIPW-SYN-0112",
+    "title": "Keluhan belum tertangani",
+    "description": "Di lampu lintasan sepeda, penerangan berkedip lalu padam berulang. Rincian waktu dan titik pastinya belum tersedia. Mohon periksa suplai dan sambungan penerangan.",
+    "complaint_text": "Keluhan belum tertangani\nDi lampu lintasan sepeda, penerangan berkedip lalu padam berulang. Rincian waktu dan titik pastinya belum tersedia. Mohon periksa suplai dan sambungan penerangan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0113",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di jaringan pasokan permukiman, tegangan naik turun sehingga peralatan mati mendadak. Rincian waktu dan titik pastinya belum tersedia. Mohon periksa kestabilan suplai.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi jaringan pasokan permukiman, tegangan naik turun sehingga peralatan mati mendadak. Rincian waktu dan titik pastinya belum tersedia. Mohon periksa kestabilan suplai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0114",
+    "title": "Perlu penanganan petugas",
+    "description": "Di tiang penerangan lapangan, pintu panel terbuka dan penghantar terlihat. Rincian waktu dan titik pastinya belum tersedia. Mohon tutup panel dan amankan penghantar.",
+    "complaint_text": "Perlu penanganan petugas\nDi tiang penerangan lapangan, pintu panel terbuka dan penghantar terlihat. Rincian waktu dan titik pastinya belum tersedia. Mohon tutup panel dan amankan penghantar."
+  },
+  {
+    "sample_id": "SIPW-SYN-0115",
+    "title": "Laporan situasi setempat",
+    "description": "Di lampu terowongan pejalan kaki, seluruh titik penerangan mati setelah gangguan sambungan. Rincian waktu dan titik pastinya belum tersedia. Mohon pulihkan rangkaian penerangan.",
+    "complaint_text": "Laporan situasi setempat\nDi lampu terowongan pejalan kaki, seluruh titik penerangan mati setelah gangguan sambungan. Rincian waktu dan titik pastinya belum tersedia. Mohon pulihkan rangkaian penerangan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0116",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di gardu penerangan taman, panel penerangan mendengung disertai percikan. Selain itu jadwal loket administrasi belum jelas. Keluhan utama saya tetap yang pertama; mohon utamakan amankan instalasi dan periksa rangkaian sebelum masalah tambahan itu.",
+    "complaint_text": "Permohonan tindak lanjut\nDi gardu penerangan taman, panel penerangan mendengung disertai percikan. Selain itu jadwal loket administrasi belum jelas. Keluhan utama saya tetap yang pertama; mohon utamakan amankan instalasi dan periksa rangkaian sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0117",
+    "title": "Keluhan belum tertangani",
+    "description": "Di lampu lintasan sepeda, penerangan berkedip lalu padam berulang. Selain itu jadwal loket administrasi belum jelas. Keluhan utama saya tetap yang pertama; mohon utamakan periksa suplai dan sambungan penerangan sebelum masalah tambahan itu.",
+    "complaint_text": "Keluhan belum tertangani\nDi lampu lintasan sepeda, penerangan berkedip lalu padam berulang. Selain itu jadwal loket administrasi belum jelas. Keluhan utama saya tetap yang pertama; mohon utamakan periksa suplai dan sambungan penerangan sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0118",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di jaringan pasokan permukiman, tegangan naik turun sehingga peralatan mati mendadak. Selain itu jadwal loket administrasi belum jelas. Keluhan utama saya tetap yang pertama; mohon utamakan periksa kestabilan suplai sebelum masalah tambahan itu.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi jaringan pasokan permukiman, tegangan naik turun sehingga peralatan mati mendadak. Selain itu jadwal loket administrasi belum jelas. Keluhan utama saya tetap yang pertama; mohon utamakan periksa kestabilan suplai sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0119",
+    "title": "Perlu penanganan petugas",
+    "description": "Di tiang penerangan lapangan, pintu panel terbuka dan penghantar terlihat. Selain itu jadwal loket administrasi belum jelas. Keluhan utama saya tetap yang pertama; mohon utamakan tutup panel dan amankan penghantar sebelum masalah tambahan itu.",
+    "complaint_text": "Perlu penanganan petugas\nDi tiang penerangan lapangan, pintu panel terbuka dan penghantar terlihat. Selain itu jadwal loket administrasi belum jelas. Keluhan utama saya tetap yang pertama; mohon utamakan tutup panel dan amankan penghantar sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0120",
+    "title": "Laporan situasi setempat",
+    "description": "Di lampu terowongan pejalan kaki, seluruh titik penerangan mati setelah gangguan sambungan. Selain itu jadwal loket administrasi belum jelas. Keluhan utama saya tetap yang pertama; mohon utamakan pulihkan rangkaian penerangan sebelum masalah tambahan itu.",
+    "complaint_text": "Laporan situasi setempat\nDi lampu terowongan pejalan kaki, seluruh titik penerangan mati setelah gangguan sambungan. Selain itu jadwal loket administrasi belum jelas. Keluhan utama saya tetap yang pertama; mohon utamakan pulihkan rangkaian penerangan sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0121",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pada meter layanan perpipaan, sambungan sebelum meter mengucurkan air terus-menerus. Permintaan penanganan adalah perbaiki kebocoran jaringan distribusi. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Permohonan tindak lanjut\nPada meter layanan perpipaan, sambungan sebelum meter mengucurkan air terus-menerus. Permintaan penanganan adalah perbaiki kebocoran jaringan distribusi. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0122",
+    "title": "Keluhan belum tertangani",
+    "description": "Pada hidran layanan umum, air perpipaan membawa endapan pasir setiap keran dibuka. Permintaan penanganan adalah periksa kualitas dan bilas jaringan pasokan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Keluhan belum tertangani\nPada hidran layanan umum, air perpipaan membawa endapan pasir setiap keran dibuka. Permintaan penanganan adalah periksa kualitas dan bilas jaringan pasokan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0123",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pada tandon distribusi komunal, air layanan tidak mencapai tandon meski jadwal suplai berlangsung. Permintaan penanganan adalah pulihkan distribusi ke tandon. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPada tandon distribusi komunal, air layanan tidak mencapai tandon meski jadwal suplai berlangsung. Permintaan penanganan adalah pulihkan distribusi ke tandon. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0124",
+    "title": "Perlu penanganan petugas",
+    "description": "Pada pipa layanan gang, aliran keran berhenti setelah perbaikan jaringan di hulu. Permintaan penanganan adalah periksa sambungan dan pulihkan pasokan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Perlu penanganan petugas\nPada pipa layanan gang, aliran keran berhenti setelah perbaikan jaringan di hulu. Permintaan penanganan adalah periksa sambungan dan pulihkan pasokan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0125",
+    "title": "Laporan situasi setempat",
+    "description": "Pada keran fasilitas umum, air layanan berwarna kehijauan dan berbau logam. Permintaan penanganan adalah periksa mutu air distribusi. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Laporan situasi setempat\nPada keran fasilitas umum, air layanan berwarna kehijauan dan berbau logam. Permintaan penanganan adalah periksa mutu air distribusi. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0126",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pak bu, di meter layanan perpipaan itu sambungan sebelum meter mengucurkan air terus-menerus. Bisa tolong perbaiki kebocoran jaringan distribusi ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Permohonan tindak lanjut\nPak bu, di meter layanan perpipaan itu sambungan sebelum meter mengucurkan air terus-menerus. Bisa tolong perbaiki kebocoran jaringan distribusi ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0127",
+    "title": "Keluhan belum tertangani",
+    "description": "Pak bu, di hidran layanan umum itu air perpipaan membawa endapan pasir setiap keran dibuka. Bisa tolong periksa kualitas dan bilas jaringan pasokan ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Keluhan belum tertangani\nPak bu, di hidran layanan umum itu air perpipaan membawa endapan pasir setiap keran dibuka. Bisa tolong periksa kualitas dan bilas jaringan pasokan ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0128",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pak bu, di tandon distribusi komunal itu air layanan tidak mencapai tandon meski jadwal suplai berlangsung. Bisa tolong pulihkan distribusi ke tandon ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPak bu, di tandon distribusi komunal itu air layanan tidak mencapai tandon meski jadwal suplai berlangsung. Bisa tolong pulihkan distribusi ke tandon ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0129",
+    "title": "Perlu penanganan petugas",
+    "description": "Pak bu, di pipa layanan gang itu aliran keran berhenti setelah perbaikan jaringan di hulu. Bisa tolong periksa sambungan dan pulihkan pasokan ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Perlu penanganan petugas\nPak bu, di pipa layanan gang itu aliran keran berhenti setelah perbaikan jaringan di hulu. Bisa tolong periksa sambungan dan pulihkan pasokan ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0130",
+    "title": "Laporan situasi setempat",
+    "description": "Pak bu, di keran fasilitas umum itu air layanan berwarna kehijauan dan berbau logam. Bisa tolong periksa mutu air distribusi ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Laporan situasi setempat\nPak bu, di keran fasilitas umum itu air layanan berwarna kehijauan dan berbau logam. Bisa tolong periksa mutu air distribusi ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0131",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di meter layanan perpipaan, sambungan sebelum meter mengucurkan air terus-menerus. Mhon perbaiki kebocoran jaringan distribusi, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Permohonan tindak lanjut\nDi meter layanan perpipaan, sambungan sebelum meter mengucurkan air terus-menerus. Mhon perbaiki kebocoran jaringan distribusi, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0132",
+    "title": "Keluhan belum tertangani",
+    "description": "Di hidran layanan umum, air perpipaan membawa endapan pasir setiap keran dibuka. Mhon periksa kualitas dan bilas jaringan pasokan, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Keluhan belum tertangani\nDi hidran layanan umum, air perpipaan membawa endapan pasir setiap keran dibuka. Mhon periksa kualitas dan bilas jaringan pasokan, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0133",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di tandon distribusi komunal, air layanan tidak mencapai tandon meski jadwal suplai berlangsung. Mhon pulihkan distribusi ke tandon, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi tandon distribusi komunal, air layanan tidak mencapai tandon meski jadwal suplai berlangsung. Mhon pulihkan distribusi ke tandon, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0134",
+    "title": "Perlu penanganan petugas",
+    "description": "Di pipa layanan gang, aliran keran berhenti setelah perbaikan jaringan di hulu. Mhon periksa sambungan dan pulihkan pasokan, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Perlu penanganan petugas\nDi pipa layanan gang, aliran keran berhenti setelah perbaikan jaringan di hulu. Mhon periksa sambungan dan pulihkan pasokan, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0135",
+    "title": "Laporan situasi setempat",
+    "description": "Di keran fasilitas umum, air layanan berwarna kehijauan dan berbau logam. Mhon periksa mutu air distribusi, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Laporan situasi setempat\nDi keran fasilitas umum, air layanan berwarna kehijauan dan berbau logam. Mhon periksa mutu air distribusi, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0136",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di meter layanan perpipaan ada kondisi yang saya belum tahu penyebabnya: sambungan sebelum meter mengucurkan air terus-menerus. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah perbaiki kebocoran jaringan distribusi.",
+    "complaint_text": "Permohonan tindak lanjut\nDi meter layanan perpipaan ada kondisi yang saya belum tahu penyebabnya: sambungan sebelum meter mengucurkan air terus-menerus. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah perbaiki kebocoran jaringan distribusi."
+  },
+  {
+    "sample_id": "SIPW-SYN-0137",
+    "title": "Keluhan belum tertangani",
+    "description": "Di hidran layanan umum ada kondisi yang saya belum tahu penyebabnya: air perpipaan membawa endapan pasir setiap keran dibuka. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah periksa kualitas dan bilas jaringan pasokan.",
+    "complaint_text": "Keluhan belum tertangani\nDi hidran layanan umum ada kondisi yang saya belum tahu penyebabnya: air perpipaan membawa endapan pasir setiap keran dibuka. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah periksa kualitas dan bilas jaringan pasokan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0138",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di tandon distribusi komunal ada kondisi yang saya belum tahu penyebabnya: air layanan tidak mencapai tandon meski jadwal suplai berlangsung. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah pulihkan distribusi ke tandon.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi tandon distribusi komunal ada kondisi yang saya belum tahu penyebabnya: air layanan tidak mencapai tandon meski jadwal suplai berlangsung. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah pulihkan distribusi ke tandon."
+  },
+  {
+    "sample_id": "SIPW-SYN-0139",
+    "title": "Perlu penanganan petugas",
+    "description": "Di pipa layanan gang ada kondisi yang saya belum tahu penyebabnya: aliran keran berhenti setelah perbaikan jaringan di hulu. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah periksa sambungan dan pulihkan pasokan.",
+    "complaint_text": "Perlu penanganan petugas\nDi pipa layanan gang ada kondisi yang saya belum tahu penyebabnya: aliran keran berhenti setelah perbaikan jaringan di hulu. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah periksa sambungan dan pulihkan pasokan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0140",
+    "title": "Laporan situasi setempat",
+    "description": "Di keran fasilitas umum ada kondisi yang saya belum tahu penyebabnya: air layanan berwarna kehijauan dan berbau logam. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah periksa mutu air distribusi.",
+    "complaint_text": "Laporan situasi setempat\nDi keran fasilitas umum ada kondisi yang saya belum tahu penyebabnya: air layanan berwarna kehijauan dan berbau logam. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah periksa mutu air distribusi."
+  },
+  {
+    "sample_id": "SIPW-SYN-0141",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di meter layanan perpipaan, sambungan sebelum meter mengucurkan air terus-menerus. Rincian waktu dan titik pastinya belum tersedia. Mohon perbaiki kebocoran jaringan distribusi.",
+    "complaint_text": "Permohonan tindak lanjut\nDi meter layanan perpipaan, sambungan sebelum meter mengucurkan air terus-menerus. Rincian waktu dan titik pastinya belum tersedia. Mohon perbaiki kebocoran jaringan distribusi."
+  },
+  {
+    "sample_id": "SIPW-SYN-0142",
+    "title": "Keluhan belum tertangani",
+    "description": "Di hidran layanan umum, air perpipaan membawa endapan pasir setiap keran dibuka. Rincian waktu dan titik pastinya belum tersedia. Mohon periksa kualitas dan bilas jaringan pasokan.",
+    "complaint_text": "Keluhan belum tertangani\nDi hidran layanan umum, air perpipaan membawa endapan pasir setiap keran dibuka. Rincian waktu dan titik pastinya belum tersedia. Mohon periksa kualitas dan bilas jaringan pasokan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0143",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di tandon distribusi komunal, air layanan tidak mencapai tandon meski jadwal suplai berlangsung. Rincian waktu dan titik pastinya belum tersedia. Mohon pulihkan distribusi ke tandon.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi tandon distribusi komunal, air layanan tidak mencapai tandon meski jadwal suplai berlangsung. Rincian waktu dan titik pastinya belum tersedia. Mohon pulihkan distribusi ke tandon."
+  },
+  {
+    "sample_id": "SIPW-SYN-0144",
+    "title": "Perlu penanganan petugas",
+    "description": "Di pipa layanan gang, aliran keran berhenti setelah perbaikan jaringan di hulu. Rincian waktu dan titik pastinya belum tersedia. Mohon periksa sambungan dan pulihkan pasokan.",
+    "complaint_text": "Perlu penanganan petugas\nDi pipa layanan gang, aliran keran berhenti setelah perbaikan jaringan di hulu. Rincian waktu dan titik pastinya belum tersedia. Mohon periksa sambungan dan pulihkan pasokan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0145",
+    "title": "Laporan situasi setempat",
+    "description": "Di keran fasilitas umum, air layanan berwarna kehijauan dan berbau logam. Rincian waktu dan titik pastinya belum tersedia. Mohon periksa mutu air distribusi.",
+    "complaint_text": "Laporan situasi setempat\nDi keran fasilitas umum, air layanan berwarna kehijauan dan berbau logam. Rincian waktu dan titik pastinya belum tersedia. Mohon periksa mutu air distribusi."
+  },
+  {
+    "sample_id": "SIPW-SYN-0146",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di meter layanan perpipaan, sambungan sebelum meter mengucurkan air terus-menerus. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan perbaiki kebocoran jaringan distribusi sebelum masalah tambahan itu.",
+    "complaint_text": "Permohonan tindak lanjut\nDi meter layanan perpipaan, sambungan sebelum meter mengucurkan air terus-menerus. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan perbaiki kebocoran jaringan distribusi sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0147",
+    "title": "Keluhan belum tertangani",
+    "description": "Di hidran layanan umum, air perpipaan membawa endapan pasir setiap keran dibuka. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan periksa kualitas dan bilas jaringan pasokan sebelum masalah tambahan itu.",
+    "complaint_text": "Keluhan belum tertangani\nDi hidran layanan umum, air perpipaan membawa endapan pasir setiap keran dibuka. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan periksa kualitas dan bilas jaringan pasokan sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0148",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di tandon distribusi komunal, air layanan tidak mencapai tandon meski jadwal suplai berlangsung. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan pulihkan distribusi ke tandon sebelum masalah tambahan itu.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi tandon distribusi komunal, air layanan tidak mencapai tandon meski jadwal suplai berlangsung. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan pulihkan distribusi ke tandon sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0149",
+    "title": "Perlu penanganan petugas",
+    "description": "Di pipa layanan gang, aliran keran berhenti setelah perbaikan jaringan di hulu. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan periksa sambungan dan pulihkan pasokan sebelum masalah tambahan itu.",
+    "complaint_text": "Perlu penanganan petugas\nDi pipa layanan gang, aliran keran berhenti setelah perbaikan jaringan di hulu. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan periksa sambungan dan pulihkan pasokan sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0150",
+    "title": "Laporan situasi setempat",
+    "description": "Di keran fasilitas umum, air layanan berwarna kehijauan dan berbau logam. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan periksa mutu air distribusi sebelum masalah tambahan itu.",
+    "complaint_text": "Laporan situasi setempat\nDi keran fasilitas umum, air layanan berwarna kehijauan dan berbau logam. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan periksa mutu air distribusi sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0151",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pada pintu fasilitas olahraga, pengunjung dipaksa membayar oleh orang yang mengancam. Permintaan penanganan adalah lakukan patroli dan penertiban pemaksaan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Permohonan tindak lanjut\nPada pintu fasilitas olahraga, pengunjung dipaksa membayar oleh orang yang mengancam. Permintaan penanganan adalah lakukan patroli dan penertiban pemaksaan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0152",
+    "title": "Keluhan belum tertangani",
+    "description": "Pada area antrean angkutan, sekelompok orang berkelahi dan mengintimidasi penumpang. Permintaan penanganan adalah amankan area dan tertibkan pelaku. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Keluhan belum tertangani\nPada area antrean angkutan, sekelompok orang berkelahi dan mengintimidasi penumpang. Permintaan penanganan adalah amankan area dan tertibkan pelaku. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0153",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pada ruang terbuka bersama, orang membawa benda tajam sambil mengancam pengunjung. Permintaan penanganan adalah lakukan pengamanan dan hentikan ancaman. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPada ruang terbuka bersama, orang membawa benda tajam sambil mengancam pengunjung. Permintaan penanganan adalah lakukan pengamanan dan hentikan ancaman. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0154",
+    "title": "Perlu penanganan petugas",
+    "description": "Pada akses area rekreasi, barang pengunjung berulang kali diambil tanpa izin. Permintaan penanganan adalah tingkatkan pengamanan dan tindaklanjuti pencurian. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Perlu penanganan petugas\nPada akses area rekreasi, barang pengunjung berulang kali diambil tanpa izin. Permintaan penanganan adalah tingkatkan pengamanan dan tindaklanjuti pencurian. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0155",
+    "title": "Laporan situasi setempat",
+    "description": "Pada jalur pulang kegiatan, warga diadang dan diancam agar menyerahkan uang. Permintaan penanganan adalah lakukan patroli perlindungan warga. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Laporan situasi setempat\nPada jalur pulang kegiatan, warga diadang dan diancam agar menyerahkan uang. Permintaan penanganan adalah lakukan patroli perlindungan warga. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0156",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pak bu, di pintu fasilitas olahraga itu pengunjung dipaksa membayar oleh orang yang mengancam. Bisa tolong lakukan patroli dan penertiban pemaksaan ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Permohonan tindak lanjut\nPak bu, di pintu fasilitas olahraga itu pengunjung dipaksa membayar oleh orang yang mengancam. Bisa tolong lakukan patroli dan penertiban pemaksaan ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0157",
+    "title": "Keluhan belum tertangani",
+    "description": "Pak bu, di area antrean angkutan itu sekelompok orang berkelahi dan mengintimidasi penumpang. Bisa tolong amankan area dan tertibkan pelaku ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Keluhan belum tertangani\nPak bu, di area antrean angkutan itu sekelompok orang berkelahi dan mengintimidasi penumpang. Bisa tolong amankan area dan tertibkan pelaku ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0158",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pak bu, di ruang terbuka bersama itu orang membawa benda tajam sambil mengancam pengunjung. Bisa tolong lakukan pengamanan dan hentikan ancaman ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPak bu, di ruang terbuka bersama itu orang membawa benda tajam sambil mengancam pengunjung. Bisa tolong lakukan pengamanan dan hentikan ancaman ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0159",
+    "title": "Perlu penanganan petugas",
+    "description": "Pak bu, di akses area rekreasi itu barang pengunjung berulang kali diambil tanpa izin. Bisa tolong tingkatkan pengamanan dan tindaklanjuti pencurian ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Perlu penanganan petugas\nPak bu, di akses area rekreasi itu barang pengunjung berulang kali diambil tanpa izin. Bisa tolong tingkatkan pengamanan dan tindaklanjuti pencurian ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0160",
+    "title": "Laporan situasi setempat",
+    "description": "Pak bu, di jalur pulang kegiatan itu warga diadang dan diancam agar menyerahkan uang. Bisa tolong lakukan patroli perlindungan warga ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Laporan situasi setempat\nPak bu, di jalur pulang kegiatan itu warga diadang dan diancam agar menyerahkan uang. Bisa tolong lakukan patroli perlindungan warga ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0161",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di pintu fasilitas olahraga, pengunjung dipaksa membayar oleh orang yang mengancam. Mhon lakukan patroli dan penertiban pemaksaan, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Permohonan tindak lanjut\nDi pintu fasilitas olahraga, pengunjung dipaksa membayar oleh orang yang mengancam. Mhon lakukan patroli dan penertiban pemaksaan, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0162",
+    "title": "Keluhan belum tertangani",
+    "description": "Di area antrean angkutan, sekelompok orang berkelahi dan mengintimidasi penumpang. Mhon amankan area dan tertibkan pelaku, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Keluhan belum tertangani\nDi area antrean angkutan, sekelompok orang berkelahi dan mengintimidasi penumpang. Mhon amankan area dan tertibkan pelaku, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0163",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di ruang terbuka bersama, orang membawa benda tajam sambil mengancam pengunjung. Mhon lakukan pengamanan dan hentikan ancaman, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi ruang terbuka bersama, orang membawa benda tajam sambil mengancam pengunjung. Mhon lakukan pengamanan dan hentikan ancaman, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0164",
+    "title": "Perlu penanganan petugas",
+    "description": "Di akses area rekreasi, barang pengunjung berulang kali diambil tanpa izin. Mhon tingkatkan pengamanan dan tindaklanjuti pencurian, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Perlu penanganan petugas\nDi akses area rekreasi, barang pengunjung berulang kali diambil tanpa izin. Mhon tingkatkan pengamanan dan tindaklanjuti pencurian, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0165",
+    "title": "Laporan situasi setempat",
+    "description": "Di jalur pulang kegiatan, warga diadang dan diancam agar menyerahkan uang. Mhon lakukan patroli perlindungan warga, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Laporan situasi setempat\nDi jalur pulang kegiatan, warga diadang dan diancam agar menyerahkan uang. Mhon lakukan patroli perlindungan warga, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0166",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di pintu fasilitas olahraga ada kondisi yang saya belum tahu penyebabnya: pengunjung dipaksa membayar oleh orang yang mengancam. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah lakukan patroli dan penertiban pemaksaan.",
+    "complaint_text": "Permohonan tindak lanjut\nDi pintu fasilitas olahraga ada kondisi yang saya belum tahu penyebabnya: pengunjung dipaksa membayar oleh orang yang mengancam. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah lakukan patroli dan penertiban pemaksaan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0167",
+    "title": "Keluhan belum tertangani",
+    "description": "Di area antrean angkutan ada kondisi yang saya belum tahu penyebabnya: sekelompok orang berkelahi dan mengintimidasi penumpang. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah amankan area dan tertibkan pelaku.",
+    "complaint_text": "Keluhan belum tertangani\nDi area antrean angkutan ada kondisi yang saya belum tahu penyebabnya: sekelompok orang berkelahi dan mengintimidasi penumpang. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah amankan area dan tertibkan pelaku."
+  },
+  {
+    "sample_id": "SIPW-SYN-0168",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di ruang terbuka bersama ada kondisi yang saya belum tahu penyebabnya: orang membawa benda tajam sambil mengancam pengunjung. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah lakukan pengamanan dan hentikan ancaman.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi ruang terbuka bersama ada kondisi yang saya belum tahu penyebabnya: orang membawa benda tajam sambil mengancam pengunjung. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah lakukan pengamanan dan hentikan ancaman."
+  },
+  {
+    "sample_id": "SIPW-SYN-0169",
+    "title": "Perlu penanganan petugas",
+    "description": "Di akses area rekreasi ada kondisi yang saya belum tahu penyebabnya: barang pengunjung berulang kali diambil tanpa izin. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah tingkatkan pengamanan dan tindaklanjuti pencurian.",
+    "complaint_text": "Perlu penanganan petugas\nDi akses area rekreasi ada kondisi yang saya belum tahu penyebabnya: barang pengunjung berulang kali diambil tanpa izin. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah tingkatkan pengamanan dan tindaklanjuti pencurian."
+  },
+  {
+    "sample_id": "SIPW-SYN-0170",
+    "title": "Laporan situasi setempat",
+    "description": "Di jalur pulang kegiatan ada kondisi yang saya belum tahu penyebabnya: warga diadang dan diancam agar menyerahkan uang. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah lakukan patroli perlindungan warga.",
+    "complaint_text": "Laporan situasi setempat\nDi jalur pulang kegiatan ada kondisi yang saya belum tahu penyebabnya: warga diadang dan diancam agar menyerahkan uang. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah lakukan patroli perlindungan warga."
+  },
+  {
+    "sample_id": "SIPW-SYN-0171",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di pintu fasilitas olahraga, pengunjung dipaksa membayar oleh orang yang mengancam. Rincian waktu dan titik pastinya belum tersedia. Mohon lakukan patroli dan penertiban pemaksaan.",
+    "complaint_text": "Permohonan tindak lanjut\nDi pintu fasilitas olahraga, pengunjung dipaksa membayar oleh orang yang mengancam. Rincian waktu dan titik pastinya belum tersedia. Mohon lakukan patroli dan penertiban pemaksaan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0172",
+    "title": "Keluhan belum tertangani",
+    "description": "Di area antrean angkutan, sekelompok orang berkelahi dan mengintimidasi penumpang. Rincian waktu dan titik pastinya belum tersedia. Mohon amankan area dan tertibkan pelaku.",
+    "complaint_text": "Keluhan belum tertangani\nDi area antrean angkutan, sekelompok orang berkelahi dan mengintimidasi penumpang. Rincian waktu dan titik pastinya belum tersedia. Mohon amankan area dan tertibkan pelaku."
+  },
+  {
+    "sample_id": "SIPW-SYN-0173",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di ruang terbuka bersama, orang membawa benda tajam sambil mengancam pengunjung. Rincian waktu dan titik pastinya belum tersedia. Mohon lakukan pengamanan dan hentikan ancaman.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi ruang terbuka bersama, orang membawa benda tajam sambil mengancam pengunjung. Rincian waktu dan titik pastinya belum tersedia. Mohon lakukan pengamanan dan hentikan ancaman."
+  },
+  {
+    "sample_id": "SIPW-SYN-0174",
+    "title": "Perlu penanganan petugas",
+    "description": "Di akses area rekreasi, barang pengunjung berulang kali diambil tanpa izin. Rincian waktu dan titik pastinya belum tersedia. Mohon tingkatkan pengamanan dan tindaklanjuti pencurian.",
+    "complaint_text": "Perlu penanganan petugas\nDi akses area rekreasi, barang pengunjung berulang kali diambil tanpa izin. Rincian waktu dan titik pastinya belum tersedia. Mohon tingkatkan pengamanan dan tindaklanjuti pencurian."
+  },
+  {
+    "sample_id": "SIPW-SYN-0175",
+    "title": "Laporan situasi setempat",
+    "description": "Di jalur pulang kegiatan, warga diadang dan diancam agar menyerahkan uang. Rincian waktu dan titik pastinya belum tersedia. Mohon lakukan patroli perlindungan warga.",
+    "complaint_text": "Laporan situasi setempat\nDi jalur pulang kegiatan, warga diadang dan diancam agar menyerahkan uang. Rincian waktu dan titik pastinya belum tersedia. Mohon lakukan patroli perlindungan warga."
+  },
+  {
+    "sample_id": "SIPW-SYN-0176",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di pintu fasilitas olahraga, pengunjung dipaksa membayar oleh orang yang mengancam. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan lakukan patroli dan penertiban pemaksaan sebelum masalah tambahan itu.",
+    "complaint_text": "Permohonan tindak lanjut\nDi pintu fasilitas olahraga, pengunjung dipaksa membayar oleh orang yang mengancam. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan lakukan patroli dan penertiban pemaksaan sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0177",
+    "title": "Keluhan belum tertangani",
+    "description": "Di area antrean angkutan, sekelompok orang berkelahi dan mengintimidasi penumpang. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan amankan area dan tertibkan pelaku sebelum masalah tambahan itu.",
+    "complaint_text": "Keluhan belum tertangani\nDi area antrean angkutan, sekelompok orang berkelahi dan mengintimidasi penumpang. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan amankan area dan tertibkan pelaku sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0178",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di ruang terbuka bersama, orang membawa benda tajam sambil mengancam pengunjung. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan lakukan pengamanan dan hentikan ancaman sebelum masalah tambahan itu.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi ruang terbuka bersama, orang membawa benda tajam sambil mengancam pengunjung. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan lakukan pengamanan dan hentikan ancaman sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0179",
+    "title": "Perlu penanganan petugas",
+    "description": "Di akses area rekreasi, barang pengunjung berulang kali diambil tanpa izin. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan tingkatkan pengamanan dan tindaklanjuti pencurian sebelum masalah tambahan itu.",
+    "complaint_text": "Perlu penanganan petugas\nDi akses area rekreasi, barang pengunjung berulang kali diambil tanpa izin. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan tingkatkan pengamanan dan tindaklanjuti pencurian sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0180",
+    "title": "Laporan situasi setempat",
+    "description": "Di jalur pulang kegiatan, warga diadang dan diancam agar menyerahkan uang. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan lakukan patroli perlindungan warga sebelum masalah tambahan itu.",
+    "complaint_text": "Laporan situasi setempat\nDi jalur pulang kegiatan, warga diadang dan diancam agar menyerahkan uang. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan lakukan patroli perlindungan warga sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0181",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pada layanan pemeriksaan ibu hamil, jadwal pemeriksaan dibatalkan tanpa informasi pengganti. Permintaan penanganan adalah pulihkan pelayanan dan umumkan jadwal pengganti. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Permohonan tindak lanjut\nPada layanan pemeriksaan ibu hamil, jadwal pemeriksaan dibatalkan tanpa informasi pengganti. Permintaan penanganan adalah pulihkan pelayanan dan umumkan jadwal pengganti. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0182",
+    "title": "Keluhan belum tertangani",
+    "description": "Pada unit pengambilan obat klinik publik, antrean pasien dipulangkan tanpa penjelasan pelayanan. Permintaan penanganan adalah evaluasi pelayanan obat pasien. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Keluhan belum tertangani\nPada unit pengambilan obat klinik publik, antrean pasien dipulangkan tanpa penjelasan pelayanan. Permintaan penanganan adalah evaluasi pelayanan obat pasien. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0183",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pada ruang tindakan puskesmas, peralatan tindakan tidak tersedia ketika pasien membutuhkan. Permintaan penanganan adalah lengkapi peralatan pelayanan pasien. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPada ruang tindakan puskesmas, peralatan tindakan tidak tersedia ketika pasien membutuhkan. Permintaan penanganan adalah lengkapi peralatan pelayanan pasien. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0184",
+    "title": "Perlu penanganan petugas",
+    "description": "Pada layanan ambulans fasilitas publik, permintaan penjemputan pasien tidak ditanggapi petugas. Permintaan penanganan adalah perbaiki respons layanan ambulans. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Perlu penanganan petugas\nPada layanan ambulans fasilitas publik, permintaan penjemputan pasien tidak ditanggapi petugas. Permintaan penanganan adalah perbaiki respons layanan ambulans. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0185",
+    "title": "Laporan situasi setempat",
+    "description": "Pada ruang pemeriksaan klinik publik, pasien tidak mendapatkan penjelasan hasil pemeriksaan. Permintaan penanganan adalah evaluasi komunikasi pelayanan medis. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Laporan situasi setempat\nPada ruang pemeriksaan klinik publik, pasien tidak mendapatkan penjelasan hasil pemeriksaan. Permintaan penanganan adalah evaluasi komunikasi pelayanan medis. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0186",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pak bu, di layanan pemeriksaan ibu hamil itu jadwal pemeriksaan dibatalkan tanpa informasi pengganti. Bisa tolong pulihkan pelayanan dan umumkan jadwal pengganti ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Permohonan tindak lanjut\nPak bu, di layanan pemeriksaan ibu hamil itu jadwal pemeriksaan dibatalkan tanpa informasi pengganti. Bisa tolong pulihkan pelayanan dan umumkan jadwal pengganti ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0187",
+    "title": "Keluhan belum tertangani",
+    "description": "Pak bu, di unit pengambilan obat klinik publik itu antrean pasien dipulangkan tanpa penjelasan pelayanan. Bisa tolong evaluasi pelayanan obat pasien ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Keluhan belum tertangani\nPak bu, di unit pengambilan obat klinik publik itu antrean pasien dipulangkan tanpa penjelasan pelayanan. Bisa tolong evaluasi pelayanan obat pasien ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0188",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pak bu, di ruang tindakan puskesmas itu peralatan tindakan tidak tersedia ketika pasien membutuhkan. Bisa tolong lengkapi peralatan pelayanan pasien ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPak bu, di ruang tindakan puskesmas itu peralatan tindakan tidak tersedia ketika pasien membutuhkan. Bisa tolong lengkapi peralatan pelayanan pasien ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0189",
+    "title": "Perlu penanganan petugas",
+    "description": "Pak bu, di layanan ambulans fasilitas publik itu permintaan penjemputan pasien tidak ditanggapi petugas. Bisa tolong perbaiki respons layanan ambulans ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Perlu penanganan petugas\nPak bu, di layanan ambulans fasilitas publik itu permintaan penjemputan pasien tidak ditanggapi petugas. Bisa tolong perbaiki respons layanan ambulans ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0190",
+    "title": "Laporan situasi setempat",
+    "description": "Pak bu, di ruang pemeriksaan klinik publik itu pasien tidak mendapatkan penjelasan hasil pemeriksaan. Bisa tolong evaluasi komunikasi pelayanan medis ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Laporan situasi setempat\nPak bu, di ruang pemeriksaan klinik publik itu pasien tidak mendapatkan penjelasan hasil pemeriksaan. Bisa tolong evaluasi komunikasi pelayanan medis ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0191",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di layanan pemeriksaan ibu hamil, jadwal pemeriksaan dibatalkan tanpa informasi pengganti. Mhon pulihkan pelayanan dan umumkan jadwal pengganti, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Permohonan tindak lanjut\nDi layanan pemeriksaan ibu hamil, jadwal pemeriksaan dibatalkan tanpa informasi pengganti. Mhon pulihkan pelayanan dan umumkan jadwal pengganti, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0192",
+    "title": "Keluhan belum tertangani",
+    "description": "Di unit pengambilan obat klinik publik, antrean pasien dipulangkan tanpa penjelasan pelayanan. Mhon evaluasi pelayanan obat pasien, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Keluhan belum tertangani\nDi unit pengambilan obat klinik publik, antrean pasien dipulangkan tanpa penjelasan pelayanan. Mhon evaluasi pelayanan obat pasien, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0193",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di ruang tindakan puskesmas, peralatan tindakan tidak tersedia ketika pasien membutuhkan. Mhon lengkapi peralatan pelayanan pasien, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi ruang tindakan puskesmas, peralatan tindakan tidak tersedia ketika pasien membutuhkan. Mhon lengkapi peralatan pelayanan pasien, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0194",
+    "title": "Perlu penanganan petugas",
+    "description": "Di layanan ambulans fasilitas publik, permintaan penjemputan pasien tidak ditanggapi petugas. Mhon perbaiki respons layanan ambulans, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Perlu penanganan petugas\nDi layanan ambulans fasilitas publik, permintaan penjemputan pasien tidak ditanggapi petugas. Mhon perbaiki respons layanan ambulans, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0195",
+    "title": "Laporan situasi setempat",
+    "description": "Di ruang pemeriksaan klinik publik, pasien tidak mendapatkan penjelasan hasil pemeriksaan. Mhon evaluasi komunikasi pelayanan medis, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Laporan situasi setempat\nDi ruang pemeriksaan klinik publik, pasien tidak mendapatkan penjelasan hasil pemeriksaan. Mhon evaluasi komunikasi pelayanan medis, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0196",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di layanan pemeriksaan ibu hamil ada kondisi yang saya belum tahu penyebabnya: jadwal pemeriksaan dibatalkan tanpa informasi pengganti. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah pulihkan pelayanan dan umumkan jadwal pengganti.",
+    "complaint_text": "Permohonan tindak lanjut\nDi layanan pemeriksaan ibu hamil ada kondisi yang saya belum tahu penyebabnya: jadwal pemeriksaan dibatalkan tanpa informasi pengganti. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah pulihkan pelayanan dan umumkan jadwal pengganti."
+  },
+  {
+    "sample_id": "SIPW-SYN-0197",
+    "title": "Keluhan belum tertangani",
+    "description": "Di unit pengambilan obat klinik publik ada kondisi yang saya belum tahu penyebabnya: antrean pasien dipulangkan tanpa penjelasan pelayanan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah evaluasi pelayanan obat pasien.",
+    "complaint_text": "Keluhan belum tertangani\nDi unit pengambilan obat klinik publik ada kondisi yang saya belum tahu penyebabnya: antrean pasien dipulangkan tanpa penjelasan pelayanan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah evaluasi pelayanan obat pasien."
+  },
+  {
+    "sample_id": "SIPW-SYN-0198",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di ruang tindakan puskesmas ada kondisi yang saya belum tahu penyebabnya: peralatan tindakan tidak tersedia ketika pasien membutuhkan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah lengkapi peralatan pelayanan pasien.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi ruang tindakan puskesmas ada kondisi yang saya belum tahu penyebabnya: peralatan tindakan tidak tersedia ketika pasien membutuhkan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah lengkapi peralatan pelayanan pasien."
+  },
+  {
+    "sample_id": "SIPW-SYN-0199",
+    "title": "Perlu penanganan petugas",
+    "description": "Di layanan ambulans fasilitas publik ada kondisi yang saya belum tahu penyebabnya: permintaan penjemputan pasien tidak ditanggapi petugas. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah perbaiki respons layanan ambulans.",
+    "complaint_text": "Perlu penanganan petugas\nDi layanan ambulans fasilitas publik ada kondisi yang saya belum tahu penyebabnya: permintaan penjemputan pasien tidak ditanggapi petugas. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah perbaiki respons layanan ambulans."
+  },
+  {
+    "sample_id": "SIPW-SYN-0200",
+    "title": "Laporan situasi setempat",
+    "description": "Di ruang pemeriksaan klinik publik ada kondisi yang saya belum tahu penyebabnya: pasien tidak mendapatkan penjelasan hasil pemeriksaan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah evaluasi komunikasi pelayanan medis.",
+    "complaint_text": "Laporan situasi setempat\nDi ruang pemeriksaan klinik publik ada kondisi yang saya belum tahu penyebabnya: pasien tidak mendapatkan penjelasan hasil pemeriksaan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah evaluasi komunikasi pelayanan medis."
+  },
+  {
+    "sample_id": "SIPW-SYN-0201",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di layanan pemeriksaan ibu hamil, jadwal pemeriksaan dibatalkan tanpa informasi pengganti. Rincian waktu dan titik pastinya belum tersedia. Mohon pulihkan pelayanan dan umumkan jadwal pengganti.",
+    "complaint_text": "Permohonan tindak lanjut\nDi layanan pemeriksaan ibu hamil, jadwal pemeriksaan dibatalkan tanpa informasi pengganti. Rincian waktu dan titik pastinya belum tersedia. Mohon pulihkan pelayanan dan umumkan jadwal pengganti."
+  },
+  {
+    "sample_id": "SIPW-SYN-0202",
+    "title": "Keluhan belum tertangani",
+    "description": "Di unit pengambilan obat klinik publik, antrean pasien dipulangkan tanpa penjelasan pelayanan. Rincian waktu dan titik pastinya belum tersedia. Mohon evaluasi pelayanan obat pasien.",
+    "complaint_text": "Keluhan belum tertangani\nDi unit pengambilan obat klinik publik, antrean pasien dipulangkan tanpa penjelasan pelayanan. Rincian waktu dan titik pastinya belum tersedia. Mohon evaluasi pelayanan obat pasien."
+  },
+  {
+    "sample_id": "SIPW-SYN-0203",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di ruang tindakan puskesmas, peralatan tindakan tidak tersedia ketika pasien membutuhkan. Rincian waktu dan titik pastinya belum tersedia. Mohon lengkapi peralatan pelayanan pasien.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi ruang tindakan puskesmas, peralatan tindakan tidak tersedia ketika pasien membutuhkan. Rincian waktu dan titik pastinya belum tersedia. Mohon lengkapi peralatan pelayanan pasien."
+  },
+  {
+    "sample_id": "SIPW-SYN-0204",
+    "title": "Perlu penanganan petugas",
+    "description": "Di layanan ambulans fasilitas publik, permintaan penjemputan pasien tidak ditanggapi petugas. Rincian waktu dan titik pastinya belum tersedia. Mohon perbaiki respons layanan ambulans.",
+    "complaint_text": "Perlu penanganan petugas\nDi layanan ambulans fasilitas publik, permintaan penjemputan pasien tidak ditanggapi petugas. Rincian waktu dan titik pastinya belum tersedia. Mohon perbaiki respons layanan ambulans."
+  },
+  {
+    "sample_id": "SIPW-SYN-0205",
+    "title": "Laporan situasi setempat",
+    "description": "Di ruang pemeriksaan klinik publik, pasien tidak mendapatkan penjelasan hasil pemeriksaan. Rincian waktu dan titik pastinya belum tersedia. Mohon evaluasi komunikasi pelayanan medis.",
+    "complaint_text": "Laporan situasi setempat\nDi ruang pemeriksaan klinik publik, pasien tidak mendapatkan penjelasan hasil pemeriksaan. Rincian waktu dan titik pastinya belum tersedia. Mohon evaluasi komunikasi pelayanan medis."
+  },
+  {
+    "sample_id": "SIPW-SYN-0206",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di layanan pemeriksaan ibu hamil, jadwal pemeriksaan dibatalkan tanpa informasi pengganti. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan pulihkan pelayanan dan umumkan jadwal pengganti sebelum masalah tambahan itu.",
+    "complaint_text": "Permohonan tindak lanjut\nDi layanan pemeriksaan ibu hamil, jadwal pemeriksaan dibatalkan tanpa informasi pengganti. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan pulihkan pelayanan dan umumkan jadwal pengganti sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0207",
+    "title": "Keluhan belum tertangani",
+    "description": "Di unit pengambilan obat klinik publik, antrean pasien dipulangkan tanpa penjelasan pelayanan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan evaluasi pelayanan obat pasien sebelum masalah tambahan itu.",
+    "complaint_text": "Keluhan belum tertangani\nDi unit pengambilan obat klinik publik, antrean pasien dipulangkan tanpa penjelasan pelayanan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan evaluasi pelayanan obat pasien sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0208",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di ruang tindakan puskesmas, peralatan tindakan tidak tersedia ketika pasien membutuhkan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan lengkapi peralatan pelayanan pasien sebelum masalah tambahan itu.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi ruang tindakan puskesmas, peralatan tindakan tidak tersedia ketika pasien membutuhkan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan lengkapi peralatan pelayanan pasien sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0209",
+    "title": "Perlu penanganan petugas",
+    "description": "Di layanan ambulans fasilitas publik, permintaan penjemputan pasien tidak ditanggapi petugas. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan perbaiki respons layanan ambulans sebelum masalah tambahan itu.",
+    "complaint_text": "Perlu penanganan petugas\nDi layanan ambulans fasilitas publik, permintaan penjemputan pasien tidak ditanggapi petugas. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan perbaiki respons layanan ambulans sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0210",
+    "title": "Laporan situasi setempat",
+    "description": "Di ruang pemeriksaan klinik publik, pasien tidak mendapatkan penjelasan hasil pemeriksaan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan evaluasi komunikasi pelayanan medis sebelum masalah tambahan itu.",
+    "complaint_text": "Laporan situasi setempat\nDi ruang pemeriksaan klinik publik, pasien tidak mendapatkan penjelasan hasil pemeriksaan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan evaluasi komunikasi pelayanan medis sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0211",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pada perpustakaan sekolah, bahan bacaan pelajaran tidak dapat diakses saat jam belajar. Permintaan penanganan adalah pulihkan akses sarana belajar. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Permohonan tindak lanjut\nPada perpustakaan sekolah, bahan bacaan pelajaran tidak dapat diakses saat jam belajar. Permintaan penanganan adalah pulihkan akses sarana belajar. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0212",
+    "title": "Keluhan belum tertangani",
+    "description": "Pada ruang praktik sekolah, meja praktik tidak stabil sehingga latihan dihentikan. Permintaan penanganan adalah perbaiki sarana praktik belajar. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Keluhan belum tertangani\nPada ruang praktik sekolah, meja praktik tidak stabil sehingga latihan dihentikan. Permintaan penanganan adalah perbaiki sarana praktik belajar. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0213",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pada gedung kelas, plafon ruang belajar terkelupas dan jatuh ke meja murid. Permintaan penanganan adalah amankan dan perbaiki bangunan kelas. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPada gedung kelas, plafon ruang belajar terkelupas dan jatuh ke meja murid. Permintaan penanganan adalah amankan dan perbaiki bangunan kelas. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0214",
+    "title": "Perlu penanganan petugas",
+    "description": "Pada layanan pembelajaran sekolah, kelas pengganti tidak disediakan saat jadwal pengajar kosong. Permintaan penanganan adalah pulihkan layanan belajar sesuai jadwal. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Perlu penanganan petugas\nPada layanan pembelajaran sekolah, kelas pengganti tidak disediakan saat jadwal pengajar kosong. Permintaan penanganan adalah pulihkan layanan belajar sesuai jadwal. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0215",
+    "title": "Laporan situasi setempat",
+    "description": "Pada ruang ujian sekolah, pintu ruang belajar macet sehingga peserta sulit masuk. Permintaan penanganan adalah perbaiki akses ruang pembelajaran. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Laporan situasi setempat\nPada ruang ujian sekolah, pintu ruang belajar macet sehingga peserta sulit masuk. Permintaan penanganan adalah perbaiki akses ruang pembelajaran. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0216",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pak bu, di perpustakaan sekolah itu bahan bacaan pelajaran tidak dapat diakses saat jam belajar. Bisa tolong pulihkan akses sarana belajar ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Permohonan tindak lanjut\nPak bu, di perpustakaan sekolah itu bahan bacaan pelajaran tidak dapat diakses saat jam belajar. Bisa tolong pulihkan akses sarana belajar ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0217",
+    "title": "Keluhan belum tertangani",
+    "description": "Pak bu, di ruang praktik sekolah itu meja praktik tidak stabil sehingga latihan dihentikan. Bisa tolong perbaiki sarana praktik belajar ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Keluhan belum tertangani\nPak bu, di ruang praktik sekolah itu meja praktik tidak stabil sehingga latihan dihentikan. Bisa tolong perbaiki sarana praktik belajar ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0218",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pak bu, di gedung kelas itu plafon ruang belajar terkelupas dan jatuh ke meja murid. Bisa tolong amankan dan perbaiki bangunan kelas ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPak bu, di gedung kelas itu plafon ruang belajar terkelupas dan jatuh ke meja murid. Bisa tolong amankan dan perbaiki bangunan kelas ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0219",
+    "title": "Perlu penanganan petugas",
+    "description": "Pak bu, di layanan pembelajaran sekolah itu kelas pengganti tidak disediakan saat jadwal pengajar kosong. Bisa tolong pulihkan layanan belajar sesuai jadwal ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Perlu penanganan petugas\nPak bu, di layanan pembelajaran sekolah itu kelas pengganti tidak disediakan saat jadwal pengajar kosong. Bisa tolong pulihkan layanan belajar sesuai jadwal ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0220",
+    "title": "Laporan situasi setempat",
+    "description": "Pak bu, di ruang ujian sekolah itu pintu ruang belajar macet sehingga peserta sulit masuk. Bisa tolong perbaiki akses ruang pembelajaran ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Laporan situasi setempat\nPak bu, di ruang ujian sekolah itu pintu ruang belajar macet sehingga peserta sulit masuk. Bisa tolong perbaiki akses ruang pembelajaran ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0221",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di perpustakaan sekolah, bahan bacaan pelajaran tidak dapat diakses saat jam belajar. Mhon pulihkan akses sarana belajar, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Permohonan tindak lanjut\nDi perpustakaan sekolah, bahan bacaan pelajaran tidak dapat diakses saat jam belajar. Mhon pulihkan akses sarana belajar, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0222",
+    "title": "Keluhan belum tertangani",
+    "description": "Di ruang praktik sekolah, meja praktik tidak stabil sehingga latihan dihentikan. Mhon perbaiki sarana praktik belajar, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Keluhan belum tertangani\nDi ruang praktik sekolah, meja praktik tidak stabil sehingga latihan dihentikan. Mhon perbaiki sarana praktik belajar, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0223",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di gedung kelas, plafon ruang belajar terkelupas dan jatuh ke meja murid. Mhon amankan dan perbaiki bangunan kelas, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi gedung kelas, plafon ruang belajar terkelupas dan jatuh ke meja murid. Mhon amankan dan perbaiki bangunan kelas, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0224",
+    "title": "Perlu penanganan petugas",
+    "description": "Di layanan pembelajaran sekolah, kelas pengganti tidak disediakan saat jadwal pengajar kosong. Mhon pulihkan layanan belajar sesuai jadwal, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Perlu penanganan petugas\nDi layanan pembelajaran sekolah, kelas pengganti tidak disediakan saat jadwal pengajar kosong. Mhon pulihkan layanan belajar sesuai jadwal, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0225",
+    "title": "Laporan situasi setempat",
+    "description": "Di ruang ujian sekolah, pintu ruang belajar macet sehingga peserta sulit masuk. Mhon perbaiki akses ruang pembelajaran, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Laporan situasi setempat\nDi ruang ujian sekolah, pintu ruang belajar macet sehingga peserta sulit masuk. Mhon perbaiki akses ruang pembelajaran, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0226",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di perpustakaan sekolah ada kondisi yang saya belum tahu penyebabnya: bahan bacaan pelajaran tidak dapat diakses saat jam belajar. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah pulihkan akses sarana belajar.",
+    "complaint_text": "Permohonan tindak lanjut\nDi perpustakaan sekolah ada kondisi yang saya belum tahu penyebabnya: bahan bacaan pelajaran tidak dapat diakses saat jam belajar. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah pulihkan akses sarana belajar."
+  },
+  {
+    "sample_id": "SIPW-SYN-0227",
+    "title": "Keluhan belum tertangani",
+    "description": "Di ruang praktik sekolah ada kondisi yang saya belum tahu penyebabnya: meja praktik tidak stabil sehingga latihan dihentikan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah perbaiki sarana praktik belajar.",
+    "complaint_text": "Keluhan belum tertangani\nDi ruang praktik sekolah ada kondisi yang saya belum tahu penyebabnya: meja praktik tidak stabil sehingga latihan dihentikan. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah perbaiki sarana praktik belajar."
+  },
+  {
+    "sample_id": "SIPW-SYN-0228",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di gedung kelas ada kondisi yang saya belum tahu penyebabnya: plafon ruang belajar terkelupas dan jatuh ke meja murid. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah amankan dan perbaiki bangunan kelas.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi gedung kelas ada kondisi yang saya belum tahu penyebabnya: plafon ruang belajar terkelupas dan jatuh ke meja murid. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah amankan dan perbaiki bangunan kelas."
+  },
+  {
+    "sample_id": "SIPW-SYN-0229",
+    "title": "Perlu penanganan petugas",
+    "description": "Di layanan pembelajaran sekolah ada kondisi yang saya belum tahu penyebabnya: kelas pengganti tidak disediakan saat jadwal pengajar kosong. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah pulihkan layanan belajar sesuai jadwal.",
+    "complaint_text": "Perlu penanganan petugas\nDi layanan pembelajaran sekolah ada kondisi yang saya belum tahu penyebabnya: kelas pengganti tidak disediakan saat jadwal pengajar kosong. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah pulihkan layanan belajar sesuai jadwal."
+  },
+  {
+    "sample_id": "SIPW-SYN-0230",
+    "title": "Laporan situasi setempat",
+    "description": "Di ruang ujian sekolah ada kondisi yang saya belum tahu penyebabnya: pintu ruang belajar macet sehingga peserta sulit masuk. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah perbaiki akses ruang pembelajaran.",
+    "complaint_text": "Laporan situasi setempat\nDi ruang ujian sekolah ada kondisi yang saya belum tahu penyebabnya: pintu ruang belajar macet sehingga peserta sulit masuk. Saya tidak bisa menilai bagian lain, tetapi yang diminta adalah perbaiki akses ruang pembelajaran."
+  },
+  {
+    "sample_id": "SIPW-SYN-0231",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di perpustakaan sekolah, bahan bacaan pelajaran tidak dapat diakses saat jam belajar. Rincian waktu dan titik pastinya belum tersedia. Mohon pulihkan akses sarana belajar.",
+    "complaint_text": "Permohonan tindak lanjut\nDi perpustakaan sekolah, bahan bacaan pelajaran tidak dapat diakses saat jam belajar. Rincian waktu dan titik pastinya belum tersedia. Mohon pulihkan akses sarana belajar."
+  },
+  {
+    "sample_id": "SIPW-SYN-0232",
+    "title": "Keluhan belum tertangani",
+    "description": "Di ruang praktik sekolah, meja praktik tidak stabil sehingga latihan dihentikan. Rincian waktu dan titik pastinya belum tersedia. Mohon perbaiki sarana praktik belajar.",
+    "complaint_text": "Keluhan belum tertangani\nDi ruang praktik sekolah, meja praktik tidak stabil sehingga latihan dihentikan. Rincian waktu dan titik pastinya belum tersedia. Mohon perbaiki sarana praktik belajar."
+  },
+  {
+    "sample_id": "SIPW-SYN-0233",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di gedung kelas, plafon ruang belajar terkelupas dan jatuh ke meja murid. Rincian waktu dan titik pastinya belum tersedia. Mohon amankan dan perbaiki bangunan kelas.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi gedung kelas, plafon ruang belajar terkelupas dan jatuh ke meja murid. Rincian waktu dan titik pastinya belum tersedia. Mohon amankan dan perbaiki bangunan kelas."
+  },
+  {
+    "sample_id": "SIPW-SYN-0234",
+    "title": "Perlu penanganan petugas",
+    "description": "Di layanan pembelajaran sekolah, kelas pengganti tidak disediakan saat jadwal pengajar kosong. Rincian waktu dan titik pastinya belum tersedia. Mohon pulihkan layanan belajar sesuai jadwal.",
+    "complaint_text": "Perlu penanganan petugas\nDi layanan pembelajaran sekolah, kelas pengganti tidak disediakan saat jadwal pengajar kosong. Rincian waktu dan titik pastinya belum tersedia. Mohon pulihkan layanan belajar sesuai jadwal."
+  },
+  {
+    "sample_id": "SIPW-SYN-0235",
+    "title": "Laporan situasi setempat",
+    "description": "Di ruang ujian sekolah, pintu ruang belajar macet sehingga peserta sulit masuk. Rincian waktu dan titik pastinya belum tersedia. Mohon perbaiki akses ruang pembelajaran.",
+    "complaint_text": "Laporan situasi setempat\nDi ruang ujian sekolah, pintu ruang belajar macet sehingga peserta sulit masuk. Rincian waktu dan titik pastinya belum tersedia. Mohon perbaiki akses ruang pembelajaran."
+  },
+  {
+    "sample_id": "SIPW-SYN-0236",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di perpustakaan sekolah, bahan bacaan pelajaran tidak dapat diakses saat jam belajar. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan pulihkan akses sarana belajar sebelum masalah tambahan itu.",
+    "complaint_text": "Permohonan tindak lanjut\nDi perpustakaan sekolah, bahan bacaan pelajaran tidak dapat diakses saat jam belajar. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan pulihkan akses sarana belajar sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0237",
+    "title": "Keluhan belum tertangani",
+    "description": "Di ruang praktik sekolah, meja praktik tidak stabil sehingga latihan dihentikan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan perbaiki sarana praktik belajar sebelum masalah tambahan itu.",
+    "complaint_text": "Keluhan belum tertangani\nDi ruang praktik sekolah, meja praktik tidak stabil sehingga latihan dihentikan. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan perbaiki sarana praktik belajar sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0238",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di gedung kelas, plafon ruang belajar terkelupas dan jatuh ke meja murid. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan amankan dan perbaiki bangunan kelas sebelum masalah tambahan itu.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi gedung kelas, plafon ruang belajar terkelupas dan jatuh ke meja murid. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan amankan dan perbaiki bangunan kelas sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0239",
+    "title": "Perlu penanganan petugas",
+    "description": "Di layanan pembelajaran sekolah, kelas pengganti tidak disediakan saat jadwal pengajar kosong. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan pulihkan layanan belajar sesuai jadwal sebelum masalah tambahan itu.",
+    "complaint_text": "Perlu penanganan petugas\nDi layanan pembelajaran sekolah, kelas pengganti tidak disediakan saat jadwal pengajar kosong. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan pulihkan layanan belajar sesuai jadwal sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0240",
+    "title": "Laporan situasi setempat",
+    "description": "Di ruang ujian sekolah, pintu ruang belajar macet sehingga peserta sulit masuk. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan perbaiki akses ruang pembelajaran sebelum masalah tambahan itu.",
+    "complaint_text": "Laporan situasi setempat\nDi ruang ujian sekolah, pintu ruang belajar macet sehingga peserta sulit masuk. Selain itu satu lampu taman juga redup. Keluhan utama saya tetap yang pertama; mohon utamakan perbaiki akses ruang pembelajaran sebelum masalah tambahan itu."
+  },
+  {
+    "sample_id": "SIPW-SYN-0241",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pada loket legalisasi umum, alur penyerahan berkas berbeda dengan panduan tertulis. Permintaan penanganan adalah seragamkan prosedur administrasi. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Permohonan tindak lanjut\nPada loket legalisasi umum, alur penyerahan berkas berbeda dengan panduan tertulis. Permintaan penanganan adalah seragamkan prosedur administrasi. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0242",
+    "title": "Keluhan belum tertangani",
+    "description": "Pada layanan penerbitan surat umum, status permohonan administrasi tidak diberi penjelasan. Permintaan penanganan adalah jelaskan alur dan status permohonan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Keluhan belum tertangani\nPada layanan penerbitan surat umum, status permohonan administrasi tidak diberi penjelasan. Permintaan penanganan adalah jelaskan alur dan status permohonan. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0243",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pada papan informasi balai, jam pelayanan administrasi tidak tercantum. Permintaan penanganan adalah publikasikan informasi administrasi. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPada papan informasi balai, jam pelayanan administrasi tidak tercantum. Permintaan penanganan adalah publikasikan informasi administrasi. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0244",
+    "title": "Perlu penanganan petugas",
+    "description": "Pada loket antrean administrasi, nomor antrean dilewati tanpa penjelasan prosedur. Permintaan penanganan adalah perbaiki prosedur antrean administrasi. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Perlu penanganan petugas\nPada loket antrean administrasi, nomor antrean dilewati tanpa penjelasan prosedur. Permintaan penanganan adalah perbaiki prosedur antrean administrasi. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0245",
+    "title": "Laporan situasi setempat",
+    "description": "Pada meja penerimaan berkas, formulir administrasi diminta berulang tanpa petunjuk. Permintaan penanganan adalah jelaskan persyaratan berkas administrasi. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai.",
+    "complaint_text": "Laporan situasi setempat\nPada meja penerimaan berkas, formulir administrasi diminta berulang tanpa petunjuk. Permintaan penanganan adalah jelaskan persyaratan berkas administrasi. Kondisi ini perlu ditindaklanjuti oleh petugas yang sesuai."
+  },
+  {
+    "sample_id": "SIPW-SYN-0246",
+    "title": "Permohonan tindak lanjut",
+    "description": "Pak bu, di loket legalisasi umum itu alur penyerahan berkas berbeda dengan panduan tertulis. Bisa tolong seragamkan prosedur administrasi ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Permohonan tindak lanjut\nPak bu, di loket legalisasi umum itu alur penyerahan berkas berbeda dengan panduan tertulis. Bisa tolong seragamkan prosedur administrasi ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0247",
+    "title": "Keluhan belum tertangani",
+    "description": "Pak bu, di layanan penerbitan surat umum itu status permohonan administrasi tidak diberi penjelasan. Bisa tolong jelaskan alur dan status permohonan ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Keluhan belum tertangani\nPak bu, di layanan penerbitan surat umum itu status permohonan administrasi tidak diberi penjelasan. Bisa tolong jelaskan alur dan status permohonan ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0248",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Pak bu, di papan informasi balai itu jam pelayanan administrasi tidak tercantum. Bisa tolong publikasikan informasi administrasi ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nPak bu, di papan informasi balai itu jam pelayanan administrasi tidak tercantum. Bisa tolong publikasikan informasi administrasi ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0249",
+    "title": "Perlu penanganan petugas",
+    "description": "Pak bu, di loket antrean administrasi itu nomor antrean dilewati tanpa penjelasan prosedur. Bisa tolong perbaiki prosedur antrean administrasi ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Perlu penanganan petugas\nPak bu, di loket antrean administrasi itu nomor antrean dilewati tanpa penjelasan prosedur. Bisa tolong perbaiki prosedur antrean administrasi ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0250",
+    "title": "Laporan situasi setempat",
+    "description": "Pak bu, di meja penerimaan berkas itu formulir administrasi diminta berulang tanpa petunjuk. Bisa tolong jelaskan persyaratan berkas administrasi ya? Kami bingung harus nunggu sampai kapan, makasih.",
+    "complaint_text": "Laporan situasi setempat\nPak bu, di meja penerimaan berkas itu formulir administrasi diminta berulang tanpa petunjuk. Bisa tolong jelaskan persyaratan berkas administrasi ya? Kami bingung harus nunggu sampai kapan, makasih."
+  },
+  {
+    "sample_id": "SIPW-SYN-0251",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di loket legalisasi umum, alur penyerahan berkas berbeda dengan panduan tertulis. Mhon seragamkan prosedur administrasi, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Permohonan tindak lanjut\nDi loket legalisasi umum, alur penyerahan berkas berbeda dengan panduan tertulis. Mhon seragamkan prosedur administrasi, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0252",
+    "title": "Keluhan belum tertangani",
+    "description": "Di layanan penerbitan surat umum, status permohonan administrasi tidak diberi penjelasan. Mhon jelaskan alur dan status permohonan, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Keluhan belum tertangani\nDi layanan penerbitan surat umum, status permohonan administrasi tidak diberi penjelasan. Mhon jelaskan alur dan status permohonan, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0253",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di papan informasi balai, jam pelayanan administrasi tidak tercantum. Mhon publikasikan informasi administrasi, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi papan informasi balai, jam pelayanan administrasi tidak tercantum. Mhon publikasikan informasi administrasi, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0254",
+    "title": "Perlu penanganan petugas",
+    "description": "Di loket antrean administrasi, nomor antrean dilewati tanpa penjelasan prosedur. Mhon perbaiki prosedur antrean administrasi, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Perlu penanganan petugas\nDi loket antrean administrasi, nomor antrean dilewati tanpa penjelasan prosedur. Mhon perbaiki prosedur antrean administrasi, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0255",
+    "title": "Laporan situasi setempat",
+    "description": "Di meja penerimaan berkas, formulir administrasi diminta berulang tanpa petunjuk. Mhon jelaskan persyaratan berkas administrasi, soalnya blum ada tindak lanjut. Tolong dibntu ya.",
+    "complaint_text": "Laporan situasi setempat\nDi meja penerimaan berkas, formulir administrasi diminta berulang tanpa petunjuk. Mhon jelaskan persyaratan berkas administrasi, soalnya blum ada tindak lanjut. Tolong dibntu ya."
+  },
+  {
+    "sample_id": "SIPW-SYN-0256",
+    "title": "Permohonan tindak lanjut",
+    "description": "Saya ada keluhan di area umum: perubahan yang tidak dapat dijelaskan. Belum bisa menyebut apa yang terjadi. Saya ingin minta informasi cara merinci keluhan.",
+    "complaint_text": "Permohonan tindak lanjut\nSaya ada keluhan di area umum: perubahan yang tidak dapat dijelaskan. Belum bisa menyebut apa yang terjadi. Saya ingin minta informasi cara merinci keluhan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0257",
+    "title": "Keluhan belum tertangani",
+    "description": "Saya ada keluhan di sekitar balai: sesuatu terasa tidak seperti biasa tanpa rincian masalah. Belum bisa menyebut apa yang terjadi. Saya ingin minta panduan menyampaikan rincian.",
+    "complaint_text": "Keluhan belum tertangani\nSaya ada keluhan di sekitar balai: sesuatu terasa tidak seperti biasa tanpa rincian masalah. Belum bisa menyebut apa yang terjadi. Saya ingin minta panduan menyampaikan rincian."
+  },
+  {
+    "sample_id": "SIPW-SYN-0258",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Saya ada keluhan di tempat bersama: laporan menyebut gangguan tanpa objek atau dampak. Belum bisa menyebut apa yang terjadi. Saya ingin minta petunjuk pelaporan yang lebih lengkap.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nSaya ada keluhan di tempat bersama: laporan menyebut gangguan tanpa objek atau dampak. Belum bisa menyebut apa yang terjadi. Saya ingin minta petunjuk pelaporan yang lebih lengkap."
+  },
+  {
+    "sample_id": "SIPW-SYN-0259",
+    "title": "Perlu penanganan petugas",
+    "description": "Saya ada keluhan di kawasan sekitar: ada urusan bermasalah tanpa penjelasan layanan atau kejadian. Belum bisa menyebut apa yang terjadi. Saya ingin minta bantuan memperjelas laporan.",
+    "complaint_text": "Perlu penanganan petugas\nSaya ada keluhan di kawasan sekitar: ada urusan bermasalah tanpa penjelasan layanan atau kejadian. Belum bisa menyebut apa yang terjadi. Saya ingin minta bantuan memperjelas laporan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0260",
+    "title": "Laporan situasi setempat",
+    "description": "Saya ada keluhan di fasilitas bersama: situasi disebut kurang beres tanpa informasi penentu domain. Belum bisa menyebut apa yang terjadi. Saya ingin minta penjelasan informasi yang harus dilengkapi.",
+    "complaint_text": "Laporan situasi setempat\nSaya ada keluhan di fasilitas bersama: situasi disebut kurang beres tanpa informasi penentu domain. Belum bisa menyebut apa yang terjadi. Saya ingin minta penjelasan informasi yang harus dilengkapi."
+  },
+  {
+    "sample_id": "SIPW-SYN-0261",
+    "title": "Permohonan tindak lanjut",
+    "description": "Di area umum, perubahan yang tidak dapat dijelaskan. Rincian waktu dan titik pastinya belum tersedia. Mohon minta informasi cara merinci keluhan.",
+    "complaint_text": "Permohonan tindak lanjut\nDi area umum, perubahan yang tidak dapat dijelaskan. Rincian waktu dan titik pastinya belum tersedia. Mohon minta informasi cara merinci keluhan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0262",
+    "title": "Keluhan belum tertangani",
+    "description": "Di sekitar balai, sesuatu terasa tidak seperti biasa tanpa rincian masalah. Rincian waktu dan titik pastinya belum tersedia. Mohon minta panduan menyampaikan rincian.",
+    "complaint_text": "Keluhan belum tertangani\nDi sekitar balai, sesuatu terasa tidak seperti biasa tanpa rincian masalah. Rincian waktu dan titik pastinya belum tersedia. Mohon minta panduan menyampaikan rincian."
+  },
+  {
+    "sample_id": "SIPW-SYN-0263",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Di tempat bersama, laporan menyebut gangguan tanpa objek atau dampak. Rincian waktu dan titik pastinya belum tersedia. Mohon minta petunjuk pelaporan yang lebih lengkap.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nDi tempat bersama, laporan menyebut gangguan tanpa objek atau dampak. Rincian waktu dan titik pastinya belum tersedia. Mohon minta petunjuk pelaporan yang lebih lengkap."
+  },
+  {
+    "sample_id": "SIPW-SYN-0264",
+    "title": "Perlu penanganan petugas",
+    "description": "Di kawasan sekitar, ada urusan bermasalah tanpa penjelasan layanan atau kejadian. Rincian waktu dan titik pastinya belum tersedia. Mohon minta bantuan memperjelas laporan.",
+    "complaint_text": "Perlu penanganan petugas\nDi kawasan sekitar, ada urusan bermasalah tanpa penjelasan layanan atau kejadian. Rincian waktu dan titik pastinya belum tersedia. Mohon minta bantuan memperjelas laporan."
+  },
+  {
+    "sample_id": "SIPW-SYN-0265",
+    "title": "Laporan situasi setempat",
+    "description": "Di fasilitas bersama, situasi disebut kurang beres tanpa informasi penentu domain. Rincian waktu dan titik pastinya belum tersedia. Mohon minta penjelasan informasi yang harus dilengkapi.",
+    "complaint_text": "Laporan situasi setempat\nDi fasilitas bersama, situasi disebut kurang beres tanpa informasi penentu domain. Rincian waktu dan titik pastinya belum tersedia. Mohon minta penjelasan informasi yang harus dilengkapi."
+  },
+  {
+    "sample_id": "SIPW-SYN-0266",
+    "title": "Permohonan tindak lanjut",
+    "description": "Ini urusan langganan hiburan pribadi, bukan pelayanan pemerintah: akun permainan pribadi terkunci. Saya ingin minta pemulihan akun pada perusahaan swasta.",
+    "complaint_text": "Permohonan tindak lanjut\nIni urusan langganan hiburan pribadi, bukan pelayanan pemerintah: akun permainan pribadi terkunci. Saya ingin minta pemulihan akun pada perusahaan swasta."
+  },
+  {
+    "sample_id": "SIPW-SYN-0267",
+    "title": "Keluhan belum tertangani",
+    "description": "Ini urusan transaksi daring pribadi, bukan pelayanan pemerintah: kode diskon toko swasta tidak berlaku. Saya ingin minta penggantian kupon penjual.",
+    "complaint_text": "Keluhan belum tertangani\nIni urusan transaksi daring pribadi, bukan pelayanan pemerintah: kode diskon toko swasta tidak berlaku. Saya ingin minta penggantian kupon penjual."
+  },
+  {
+    "sample_id": "SIPW-SYN-0268",
+    "title": "Mohon pemeriksaan kondisi",
+    "description": "Ini urusan perangkat pribadi, bukan pelayanan pemerintah: aplikasi berbayar tidak menerima lisensi pribadi. Saya ingin minta dukungan pengembang aplikasi.",
+    "complaint_text": "Mohon pemeriksaan kondisi\nIni urusan perangkat pribadi, bukan pelayanan pemerintah: aplikasi berbayar tidak menerima lisensi pribadi. Saya ingin minta dukungan pengembang aplikasi."
+  },
+  {
+    "sample_id": "SIPW-SYN-0269",
+    "title": "Perlu penanganan petugas",
+    "description": "Ini urusan reservasi pribadi, bukan pelayanan pemerintah: pemesanan hotel swasta dibatalkan. Saya ingin minta pengembalian dana dari penyedia swasta.",
+    "complaint_text": "Perlu penanganan petugas\nIni urusan reservasi pribadi, bukan pelayanan pemerintah: pemesanan hotel swasta dibatalkan. Saya ingin minta pengembalian dana dari penyedia swasta."
+  },
+  {
+    "sample_id": "SIPW-SYN-0270",
+    "title": "Laporan situasi setempat",
+    "description": "Ini urusan koleksi pribadi, bukan pelayanan pemerintah: akses konten berbayar milik penerbit swasta terhenti. Saya ingin minta pengaktifan akses ke penerbit.",
+    "complaint_text": "Laporan situasi setempat\nIni urusan koleksi pribadi, bukan pelayanan pemerintah: akses konten berbayar milik penerbit swasta terhenti. Saya ingin minta pengaktifan akses ke penerbit."
+  }
+]

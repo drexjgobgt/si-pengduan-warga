@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0180",
+  "target_category": "keamanan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:53:56.509Z",
+  "duration_ms": 6108.618599999987,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"keamanan\",\n  \"secondaryCategories\": [\"listrik\"],\n  \"suggestedDepartment\": \"SATPOLPP\",\n  \"suggestedPriority\": \"darurat\",\n  \"reason\": \"Warga diadang dan diancam untuk menyerahkan uang, sehingga terdapat ancaman langsung terhadap keselamatan jiwa dan perlu patroli segera. Lampu taman yang redup merupakan keluhan tambahan yang kurang prioritas.\",\n  \"confidence\": 96,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "keamanan",
+    "secondaryCategories": [
+      "listrik"
+    ],
+    "suggestedDepartment": "SATPOLPP",
+    "suggestedPriority": "darurat",
+    "reason": "Warga diadang dan diancam untuk menyerahkan uang, sehingga terdapat ancaman langsung terhadap keselamatan jiwa dan perlu patroli segera. Lampu taman yang redup merupakan keluhan tambahan yang kurang prioritas.",
+    "confidence": 96,
+    "needsHumanReview": false
+  },
+  "predicted_category": "keamanan",
+  "usage": {
+    "prompt_tokens": 902,
+    "completion_tokens": 98,
+    "total_tokens": 1000,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

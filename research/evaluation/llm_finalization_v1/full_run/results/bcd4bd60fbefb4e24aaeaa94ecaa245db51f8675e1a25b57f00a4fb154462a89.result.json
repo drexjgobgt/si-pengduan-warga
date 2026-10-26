@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0185",
+  "target_category": "kesehatan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:54:28.528Z",
+  "duration_ms": 3077.0098,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"kesehatan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DINKES\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan berkaitan dengan kurangnya komunikasi dan penjelasan hasil pemeriksaan pasien di ruang pemeriksaan klinik publik. Evaluasi pelayanan medis perlu dilakukan oleh Dinas Kesehatan.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "kesehatan",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DINKES",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan berkaitan dengan kurangnya komunikasi dan penjelasan hasil pemeriksaan pasien di ruang pemeriksaan klinik publik. Evaluasi pelayanan medis perlu dilakukan oleh Dinas Kesehatan.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "kesehatan",
+  "usage": {
+    "prompt_tokens": 889,
+    "completion_tokens": 86,
+    "total_tokens": 975,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

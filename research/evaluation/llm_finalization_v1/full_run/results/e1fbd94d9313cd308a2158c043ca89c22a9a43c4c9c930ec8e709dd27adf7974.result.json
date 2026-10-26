@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0060",
+  "target_category": "jalan_rusak",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:20:11.110Z",
+  "duration_ms": 3585.419899999979,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"jalan_rusak\",\n  \"secondaryCategories\": [\"listrik\"],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan utama adalah lapisan penambalan jalan yang terlepas dan menyebabkan lintasan bergelombang, sehingga perlu perbaikan permukaan jalan. Lampu taman yang redup merupakan masalah tambahan yang dapat ditangani Dishub.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "jalan_rusak",
+    "secondaryCategories": [
+      "listrik"
+    ],
+    "suggestedDepartment": "PUPR",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan utama adalah lapisan penambalan jalan yang terlepas dan menyebabkan lintasan bergelombang, sehingga perlu perbaikan permukaan jalan. Lampu taman yang redup merupakan masalah tambahan yang dapat ditangani Dishub.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "jalan_rusak",
+  "usage": {
+    "prompt_tokens": 904,
+    "completion_tokens": 100,
+    "total_tokens": 1004,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

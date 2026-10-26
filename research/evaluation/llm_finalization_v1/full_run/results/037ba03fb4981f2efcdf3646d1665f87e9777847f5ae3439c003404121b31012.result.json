@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0003",
+  "target_category": "sampah",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:13:46.747Z",
+  "duration_ms": 2576.7221,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"sampah\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DLH\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Limbah padat di kontainer pasar ikan meluber dan perlu dikosongkan serta ditangani oleh petugas pengelola sampah.\",\n  \"confidence\": 96,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "sampah",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DLH",
+    "suggestedPriority": "normal",
+    "reason": "Limbah padat di kontainer pasar ikan meluber dan perlu dikosongkan serta ditangani oleh petugas pengelola sampah.",
+    "confidence": 96,
+    "needsHumanReview": false
+  },
+  "predicted_category": "sampah",
+  "usage": {
+    "prompt_tokens": 891,
+    "completion_tokens": 80,
+    "total_tokens": 971,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-26T06:31:38.723Z",
+  "sample_id": "SIPW-CAND-0007",
+  "model": "minimax-m3.1-flash-free",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "request_status": "success",
+  "latency_ms": 3754.6376000000005,
+  "raw_content": "{\n  \"category\": \"kesehatan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DINKES\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan berkaitan dengan layanan imunisasi yang tidak dilayani meskipun petugas telah dijadwalkan hadir. Masalah ini mengganggu pelayanan kesehatan masyarakat dan perlu ditindaklanjuti oleh Dinas Kesehatan.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "raw_category": "kesehatan",
+  "final_category": "kesehatan",
+  "ground_truth_category": "kesehatan",
+  "label_validation_status": "provisional",
+  "output_valid": true,
+  "usage": {
+    "prompt_tokens": 963,
+    "completion_tokens": 90,
+    "total_tokens": 1053
+  },
+  "error_type": null,
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "source": "synthetic dev smoke; no DB; one request only"
+}

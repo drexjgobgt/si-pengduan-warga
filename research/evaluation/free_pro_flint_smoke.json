@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-10-26T06:28:31.543Z",
+  "sample_id": "SIPW-CAND-0001",
+  "model": "flint-v1.0-free",
+  "returned_model": "recursive/flint-v1.0:free",
+  "http_status": 200,
+  "request_status": "needs_manual_review",
+  "latency_ms": 6969.565500000001,
+  "raw_content": null,
+  "raw_category": null,
+  "final_category": "lainnya",
+  "ground_truth_category": "sampah",
+  "label_validation_status": "provisional",
+  "output_valid": false,
+  "usage": {
+    "prompt_tokens": 943,
+    "completion_tokens": 500,
+    "total_tokens": 1443,
+    "cost": 0
+  },
+  "error_type": null,
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "source": "synthetic dev smoke; no DB; one request only"
+}

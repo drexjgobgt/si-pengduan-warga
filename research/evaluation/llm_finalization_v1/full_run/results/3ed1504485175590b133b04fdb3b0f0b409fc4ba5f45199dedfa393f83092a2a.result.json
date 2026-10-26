@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0016",
+  "target_category": "sampah",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:14:54.742Z",
+  "duration_ms": 4221.233599999992,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"sampah\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DLH\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Laporan berkaitan dengan sampah makanan tercecer di wadah pilah serta permintaan jadwal pembersihan dan pengangkutan. Penanganan berada pada tanggung jawab Dinas Lingkungan Hidup.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "sampah",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DLH",
+    "suggestedPriority": "normal",
+    "reason": "Laporan berkaitan dengan sampah makanan tercecer di wadah pilah serta permintaan jadwal pembersihan dan pengangkutan. Penanganan berada pada tanggung jawab Dinas Lingkungan Hidup.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "sampah",
+  "usage": {
+    "prompt_tokens": 898,
+    "completion_tokens": 86,
+    "total_tokens": 984,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

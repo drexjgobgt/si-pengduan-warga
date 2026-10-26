@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0206",
+  "target_category": "kesehatan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:56:59.652Z",
+  "duration_ms": 7006.781699999992,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"kesehatan\",\n  \"secondaryCategories\": [\"listrik\"],\n  \"suggestedDepartment\": \"DINKES\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan utama adalah pembatalan jadwal pemeriksaan ibu hamil tanpa informasi pengganti, sehingga mengganggu pelayanan kesehatan maternal. Lampu taman yang redup merupakan masalah tambahan yang kurang mendesak.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "kesehatan",
+    "secondaryCategories": [
+      "listrik"
+    ],
+    "suggestedDepartment": "DINKES",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan utama adalah pembatalan jadwal pemeriksaan ibu hamil tanpa informasi pengganti, sehingga mengganggu pelayanan kesehatan maternal. Lampu taman yang redup merupakan masalah tambahan yang kurang mendesak.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "kesehatan",
+  "usage": {
+    "prompt_tokens": 905,
+    "completion_tokens": 94,
+    "total_tokens": 999,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

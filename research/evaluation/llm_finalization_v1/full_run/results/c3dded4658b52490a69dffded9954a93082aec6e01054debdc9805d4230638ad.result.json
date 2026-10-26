@@ -1,0 +1,26 @@
+{
+  "sample_id": "SIPW-SYN-0001",
+  "target_category": "sampah",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:11:07.708Z",
+  "duration_ms": 3348.7969000000003,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"sampah\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DLH\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Laporan berkaitan dengan sampah makanan tercecer di wadah pilah yang memerlukan jadwal pembersihan dan pengangkutan oleh petugas pengelola lingkungan.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "sampah",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DLH",
+    "suggestedPriority": "normal",
+    "reason": "Laporan berkaitan dengan sampah makanan tercecer di wadah pilah yang memerlukan jadwal pembersihan dan pengangkutan oleh petugas pengelola lingkungan.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "sampah",
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

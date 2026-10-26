@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0179",
+  "target_category": "keamanan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:53:46.535Z",
+  "duration_ms": 3142.448300000018,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"keamanan\",\n  \"secondaryCategories\": [\"listrik\"],\n  \"suggestedDepartment\": \"SATPOLPP\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Keluhan utama adalah barang pengunjungTaken tanpa izin di area rekreasi, sehingga memerlukan peningkatan pengawasan dan tindak lanjut pencurian. Lampu taman yang redup merupakan masalah tambahan yang dapat ditangani Dishub.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "keamanan",
+    "secondaryCategories": [
+      "listrik"
+    ],
+    "suggestedDepartment": "SATPOLPP",
+    "suggestedPriority": "tinggi",
+    "reason": "Keluhan utama adalah barang pengunjungTaken tanpa izin di area rekreasi, sehingga memerlukan peningkatan pengawasan dan tindak lanjut pencurian. Lampu taman yang redup merupakan masalah tambahan yang dapat ditangani Dishub.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "keamanan",
+  "usage": {
+    "prompt_tokens": 906,
+    "completion_tokens": 102,
+    "total_tokens": 1008,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

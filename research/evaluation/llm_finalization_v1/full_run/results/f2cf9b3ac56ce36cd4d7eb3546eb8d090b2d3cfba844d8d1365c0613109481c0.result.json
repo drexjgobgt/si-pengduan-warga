@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0105",
+  "target_category": "listrik",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:25:22.406Z",
+  "duration_ms": 3081.277000000002,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"listrik\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DISHUB\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Seluruh titik penerangan terowongan pejalan kaki mati akibat gangguan sambungan sehingga mengurangi keselamatan dan penerangan di fasilitas umum. Perbaikan diperlukan segera untuk mencegah risiko bagi pengguna jalan.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "listrik",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DISHUB",
+    "suggestedPriority": "tinggi",
+    "reason": "Seluruh titik penerangan terowongan pejalan kaki mati akibat gangguan sambungan sehingga mengurangi keselamatan dan penerangan di fasilitas umum. Perbaikan diperlukan segera untuk mencegah risiko bagi pengguna jalan.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "listrik",
+  "usage": {
+    "prompt_tokens": 898,
+    "completion_tokens": 95,
+    "total_tokens": 993,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

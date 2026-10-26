@@ -1,0 +1,36 @@
+{
+  "audited_at": "2026-10-26T08:35:49.378Z",
+  "algorithm": "SHA-256 raw file bytes, no newline normalization",
+  "artifacts": [
+    {
+      "path": "research/evaluation/synthetic_final_v1/synthetic_scenario_registry.json",
+      "expected_sha256": "e663226792e23eef1c5e277a066aeb5dae35e554c2c379befd5ae1df0babfa03",
+      "actual_sha256": "e663226792e23eef1c5e277a066aeb5dae35e554c2c379befd5ae1df0babfa03",
+      "status": "PASS"
+    },
+    {
+      "path": "research/evaluation/synthetic_final_v1/synthetic_dataset.json",
+      "expected_sha256": "98a2d730f8272969d2576e6385a0b36b9453d8ba2e85e87dc7ca86611bb63e3e",
+      "actual_sha256": "98a2d730f8272969d2576e6385a0b36b9453d8ba2e85e87dc7ca86611bb63e3e",
+      "status": "PASS"
+    },
+    {
+      "path": "research/evaluation/synthetic_final_v1/dataset_manifest.json",
+      "expected_sha256": "6e5c0fcd1a9bcfa3eeb239f8d4f73648a0291c121c420cecc63d8d858b4dd343",
+      "actual_sha256": "6e5c0fcd1a9bcfa3eeb239f8d4f73648a0291c121c420cecc63d8d858b4dd343",
+      "status": "PASS"
+    }
+  ],
+  "internal_references": {
+    "registry_in_manifest": true,
+    "dataset_in_manifest": true,
+    "qa_in_manifest": true,
+    "registry_in_receipt": true,
+    "baseline_dataset": true,
+    "baseline_registry": true
+  },
+  "source_fingerprints": {
+    "backend/services/classificationService.js": "b63a17a0f6854f94a96e14d2291ce2925de9dd473c97a89531975a89c981c4b1",
+    "backend/config/kiosApi.js": "ff5f19f2dbef471b3a710b11163967be7c20f4158a1cc90498830415b561f129"
+  }
+}

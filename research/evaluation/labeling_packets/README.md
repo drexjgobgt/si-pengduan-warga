@@ -1,0 +1,3 @@
+# Paket pelabelan manusia
+
+Dua template JSON untuk dua penilai yang benar-benar berbeda. Status belum diisi, bukan bukti penilaian. Jangan saling melihat label atau membuka file prediksi/label AI sebelum menyerahkan keputusan. Gunakan labeling_guide.md. Department gold substantive harus berdasarkan teks/kewenangan SIPW; jangan otomatis menyalin mapping tanpa mencatat asal. Catat alasan, uncertainty dan label sekunder bila layak. Simpan jawaban sebagai file baru; jangan overwrite template atau dataset asal. Penilai dapat memakai pseudonim, jangan masukkan PII di artefak publik. Setelah selesai perlu agreement dan adjudication; belum ada perhitungan kappa.

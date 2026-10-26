@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0027",
+  "target_category": "sampah",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:15:47.860Z",
+  "duration_ms": 4055.6329000000114,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"sampah\",\n  \"secondaryCategories\": [\"listrik\"],\n  \"suggestedDepartment\": \"DLH\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan utama berupa perabot bekas yang dibiarkan di area penampungan sehingga mengganggu pengelolaan dan kebersihan lingkungan. Lampu taman redup merupakan masalah tambahan yang lebih rendah prioritas.\",\n  \"confidence\": 88,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "sampah",
+    "secondaryCategories": [
+      "listrik"
+    ],
+    "suggestedDepartment": "DLH",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan utama berupa perabot bekas yang dibiarkan di area penampungan sehingga mengganggu pengelolaan dan kebersihan lingkungan. Lampu taman redup merupakan masalah tambahan yang lebih rendah prioritas.",
+    "confidence": 88,
+    "needsHumanReview": false
+  },
+  "predicted_category": "sampah",
+  "usage": {
+    "prompt_tokens": 906,
+    "completion_tokens": 94,
+    "total_tokens": 1000,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

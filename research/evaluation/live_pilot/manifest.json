@@ -1,0 +1,23 @@
+{
+  "dataset_sha256": "83e10dbb0c1ad260e64404bcf519bc68ca7949cec3c0a33b41c3387f0be32c52",
+  "service_sha256": "b63a17a0f6854f94a96e14d2291ce2925de9dd473c97a89531975a89c981c4b1",
+  "provider_sha256": "0b12b7188c85cb6736073b027ae26550079ce232e83baf4b949d5dae5c5b95e1",
+  "harness_sha256": "fad16463369299bbd141e52ad3fbe63c606a6a2a099d36427bdf11040e05b48d",
+  "validator_sha256": "cc024eb176bd0616facf1e15bad1df5de916794d08cd5d380ed76212c5123cf2",
+  "model": "deepseek-v4-flash-free",
+  "max_tokens": 500,
+  "timeout_ms": 15000,
+  "temperature": 0.1,
+  "max_requests": 18,
+  "retries": 0,
+  "interval_ms": 3000,
+  "hard_deadline_ms": 20000,
+  "catalog": "production defaults; pool=null",
+  "money_budget_idr": 0,
+  "billing_basis": "user screenshot Free-Pro 0x Rp0 matching previous smoke; future debit not observable via API",
+  "quota_remaining": "unavailable; stop on 429",
+  "label_status": "AI provisional; not independently validated",
+  "config_hash": "4b8290c79c8b68e95c234652e4e7063f9f69efe3ff9276b94762825a1675f6ae",
+  "created_at": "2026-10-26T05:32:04.552Z",
+  "evidence_kind": "ACTUAL_LLM_SYNTHETIC_PROVISIONAL_PILOT"
+}

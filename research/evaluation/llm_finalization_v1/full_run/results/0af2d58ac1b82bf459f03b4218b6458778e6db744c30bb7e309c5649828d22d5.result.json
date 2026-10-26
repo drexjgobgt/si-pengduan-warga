@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0085",
+  "target_category": "banjir",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:23:02.975Z",
+  "duration_ms": 3790.688699999999,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"banjir\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Permukaan air naik akibat sungai kecil melimpas dan mengganggu akses di dekat terminal. Karena titik dan waktu kejadian belum jelas, perlu verifikasi lapangan sebelum tindakan.\",\n  \"confidence\": 88,\n  \"needsHumanReview\": true\n}",
+  "parsed_output": {
+    "category": "banjir",
+    "secondaryCategories": [],
+    "suggestedDepartment": "PUPR",
+    "suggestedPriority": "tinggi",
+    "reason": "Permukaan air naik akibat sungai kecil melimpas dan mengganggu akses di dekat terminal. Karena titik dan waktu kejadian belum jelas, perlu verifikasi lapangan sebelum tindakan.",
+    "confidence": 88,
+    "needsHumanReview": true
+  },
+  "predicted_category": "banjir",
+  "usage": {
+    "prompt_tokens": 893,
+    "completion_tokens": 89,
+    "total_tokens": 982,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

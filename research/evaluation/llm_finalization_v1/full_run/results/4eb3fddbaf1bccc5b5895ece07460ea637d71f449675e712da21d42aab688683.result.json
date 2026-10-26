@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0242",
+  "target_category": "lainnya",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T11:01:08.411Z",
+  "duration_ms": 2685.0562999999383,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"lainnya\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"KELURAHAN\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan berkaitan dengan proses dan status administrasi surat umum yang belum memperoleh penjelasan, sehingga perlu penindaklanjuti melalui sekretariat kelurahan.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "lainnya",
+    "secondaryCategories": [],
+    "suggestedDepartment": "KELURAHAN",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan berkaitan dengan proses dan status administrasi surat umum yang belum memperoleh penjelasan, sehingga perlu penindaklanjuti melalui sekretariat kelurahan.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "lainnya",
+  "usage": {
+    "prompt_tokens": 894,
+    "completion_tokens": 84,
+    "total_tokens": 978,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

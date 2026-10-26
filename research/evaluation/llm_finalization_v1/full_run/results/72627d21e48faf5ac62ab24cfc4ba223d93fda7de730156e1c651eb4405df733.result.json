@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0270",
+  "target_category": "lainnya",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T11:04:25.092Z",
+  "duration_ms": 3171.2519999999786,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"lainnya\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"KELURAHAN\",\n  \"suggestedPriority\": \"rendah\",\n  \"reason\": \"Laporan berkaitan dengan akses konten berbayar milik penerbit swasta dan bukan pelayanan pemerintah, sehingga tidak termasuk kategori infrastruktural atau layanan publik yang telah ditentukan.\",\n  \"confidence\": 96,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "lainnya",
+    "secondaryCategories": [],
+    "suggestedDepartment": "KELURAHAN",
+    "suggestedPriority": "rendah",
+    "reason": "Laporan berkaitan dengan akses konten berbayar milik penerbit swasta dan bukan pelayanan pemerintah, sehingga tidak termasuk kategori infrastruktural atau layanan publik yang telah ditentukan.",
+    "confidence": 96,
+    "needsHumanReview": false
+  },
+  "predicted_category": "lainnya",
+  "usage": {
+    "prompt_tokens": 887,
+    "completion_tokens": 91,
+    "total_tokens": 978,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

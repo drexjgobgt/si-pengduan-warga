@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0088",
+  "target_category": "banjir",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:23:23.517Z",
+  "duration_ms": 3308.827400000009,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"banjir\",\n  \"secondaryCategories\": [\"listrik\"],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Keluhan utama adalah genangan air hujan akibat lubang pembuangan tidak berfungsi di balai bersama, sehingga mengganggu fasilitas umum. Lampu taman yang redup merupakan masalah tambahan dan menjadi prioritas kedua.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "banjir",
+    "secondaryCategories": [
+      "listrik"
+    ],
+    "suggestedDepartment": "PUPR",
+    "suggestedPriority": "tinggi",
+    "reason": "Keluhan utama adalah genangan air hujan akibat lubang pembuangan tidak berfungsi di balai bersama, sehingga mengganggu fasilitas umum. Lampu taman yang redup merupakan masalah tambahan dan menjadi prioritas kedua.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "banjir",
+  "usage": {
+    "prompt_tokens": 907,
+    "completion_tokens": 99,
+    "total_tokens": 1006,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

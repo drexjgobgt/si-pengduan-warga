@@ -1,0 +1,67 @@
+{
+  "decision": "NOT READY",
+  "live_allowed": false,
+  "decision_is_api_authorization": false,
+  "blockers": [
+    {
+      "id": "B01",
+      "status": "NOT VERIFIED",
+      "scope": "external",
+      "finding": "Actual model identity/version, alias stability and provider behavior for next run unavailable offline",
+      "required": "Document provider identity/version or alias limitations, verify returned ID and drift stop rule before approved live"
+    },
+    {
+      "id": "B02",
+      "status": "NOT VERIFIED",
+      "scope": "external",
+      "finding": "Effective Free-Pro key-group pricing, extra fees, account quota/RPM and hard Rp0 billing protection have no current account evidence",
+      "required": "Obtain sanitized current pricing/account quota and provider-side no-spend control; if no enforceable Rp0 control, keep live blocked"
+    },
+    {
+      "id": "B03",
+      "status": "FAIL",
+      "scope": "implementation",
+      "finding": "Free-only branch in kiosApi.js:112–122 does not reject paid models and does not cap monetary charges",
+      "required": "Do not rely on FREE_ONLY flag; approve independent fail-closed evaluation guards and proven provider no-spend restriction; no production edits authorized"
+    },
+    {
+      "id": "B04",
+      "status": "NOT VERIFIED",
+      "scope": "harness",
+      "finding": "No audited synthetic_final_v1 live runner implementing 270 cap, raw capture, spacing, hard deadline, stop, checkpoint/resume and no replay was found",
+      "required": "Create separate runner only after authorization and validate offline with fixture/failure/counter/resume tests; inspect effective config without revealing secrets"
+    },
+    {
+      "id": "B05",
+      "status": "NOT VERIFIED",
+      "scope": "protocol",
+      "finding": "Frozen short protocol does not fully specify strict JSON validity vs parser recovery, raw label canonicalization, failure/validity denominators or per-field fallback classification",
+      "required": "Approve separate versioned metrics annex before live, preserving frozen protocol; unit-test formulas and edge cases"
+    },
+    {
+      "id": "B06",
+      "status": "NOT VERIFIED",
+      "scope": "quota_schedule",
+      "finding": "Default local counter 200/day shared with chat; 270 POST scheduling and provider quota are unverified",
+      "required": "Approve rate/day schedule consistent with real quota; never restart to evade limit; distinguish local rejected attempts from sent POST"
+    },
+    {
+      "id": "B07",
+      "status": "NOT VERIFIED",
+      "scope": "design",
+      "finding": "55 families, deterministic text templates and construction-only semantic QA; ambiguity label may conflict with production prompt ambiguous=>lainnya",
+      "required": "Explicitly accept synthetic-design limitations or prepare new dataset/protocol version before model predictions; never mutate frozen v1"
+    },
+    {
+      "id": "B08",
+      "status": "NOT VERIFIED",
+      "scope": "authorization",
+      "finding": "User permits this audit only; final live execution approval is absent",
+      "required": "Explicit approval for exact run manifest, max 270 POST/no retry/Rp0 after substantive blockers closed"
+    }
+  ],
+  "api_calls_this_audit": 0,
+  "database_access_this_audit": 0,
+  "production_changes": 0,
+  "push_performed": false
+}

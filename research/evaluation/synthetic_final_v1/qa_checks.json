@@ -1,0 +1,3242 @@
+[
+  {
+    "sample_id": "SIPW-SYN-0001",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0002",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0003",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0004",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0005",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0006",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0007",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0008",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0009",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0.022727272727272728
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0010",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0011",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0012",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0013",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0014",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0.025
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0015",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0016",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0017",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0018",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0019",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0.020833333333333332
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0020",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0021",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0022",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0023",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0024",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0.02564102564102564
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0025",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0026",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0027",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0028",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0029",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0.02
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0030",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0031",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0032",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0033",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0034",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0035",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0036",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0037",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0038",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0039",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0040",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0041",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0042",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0043",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0044",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0045",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0046",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0047",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0048",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0049",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0050",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0051",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0052",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0053",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0054",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0055",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0056",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0057",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0058",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0059",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0060",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0061",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0062",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0063",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0064",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0065",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0066",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0067",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0068",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0069",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0070",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0071",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0072",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0073",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0074",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0075",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0076",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0077",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0078",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0079",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0080",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0081",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0082",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0083",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0084",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0085",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0086",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0087",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0088",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0089",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0090",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0091",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0092",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0093",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0094",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0095",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0096",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0097",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0098",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0099",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0100",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0101",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0102",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0103",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0104",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0105",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0106",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0107",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0108",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0109",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0110",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0111",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0112",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0113",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0114",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0115",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0116",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0117",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0118",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0119",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0120",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0121",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0122",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0123",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0124",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0125",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0126",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0127",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0128",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0129",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0130",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0131",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0132",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0133",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0134",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0135",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0136",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0137",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0138",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0139",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0140",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0141",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0142",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0143",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0144",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0145",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0146",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0147",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0148",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0149",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0150",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0151",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-EVAL-CAND-0016",
+      "jaccard": 0.022727272727272728
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0152",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0153",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0154",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0155",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0156",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-EVAL-CAND-0016",
+      "jaccard": 0.021739130434782608
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0157",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0158",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0159",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0160",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0161",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-EVAL-CAND-0016",
+      "jaccard": 0.023809523809523808
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0162",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0163",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0164",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0165",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0166",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-EVAL-CAND-0016",
+      "jaccard": 0.02
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0167",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0168",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0169",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0170",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0171",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-EVAL-CAND-0016",
+      "jaccard": 0.024390243902439025
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0172",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0173",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0174",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0175",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0176",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-EVAL-CAND-0016",
+      "jaccard": 0.019230769230769232
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0177",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0178",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0179",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0180",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0181",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0182",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0183",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0184",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0185",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0186",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0187",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0188",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0189",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0190",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0191",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0192",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0193",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0194",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0195",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0196",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0197",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0198",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0199",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0200",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0201",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0202",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0025",
+      "jaccard": 0.02040816326530612
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0203",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0204",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0205",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0206",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0207",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0208",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0209",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0210",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0211",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0212",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0213",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0214",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0215",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0216",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0217",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0218",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0219",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0220",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0221",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0222",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0223",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0224",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0225",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0226",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0227",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0228",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0229",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0230",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0231",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0232",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0233",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0234",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0235",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0236",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0237",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0238",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0239",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0240",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0241",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0242",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0243",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0244",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0245",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0246",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0247",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0248",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0249",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0250",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0251",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0252",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0253",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0254",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0255",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0256",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0015",
+      "jaccard": 0.02564102564102564
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0257",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0258",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0259",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0260",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0261",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0015",
+      "jaccard": 0.027777777777777776
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0262",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0263",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0264",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0265",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0266",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0267",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0268",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0269",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  },
+  {
+    "sample_id": "SIPW-SYN-0270",
+    "status": "eligible",
+    "issues": [],
+    "core_fact_check": "object/event/action exact-preserved",
+    "nearest_prior": {
+      "id": "SIPW-CAND-0001",
+      "jaccard": 0
+    },
+    "literal_category_word_present": false,
+    "semantic_review": "construction-based only; no independent human validation"
+  }
+]

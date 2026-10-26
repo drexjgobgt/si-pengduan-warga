@@ -1,0 +1,279 @@
+{
+  "dataset_sha256": "83e10dbb0c1ad260e64404bcf519bc68ca7949cec3c0a33b41c3387f0be32c52",
+  "role": "rater_A",
+  "purpose": "Independent human labeling without AI provisional labels/predictions",
+  "completed": false,
+  "rater_identity_pseudonym": null,
+  "rows": [
+    {
+      "sample_id": "SIPW-CAND-0001",
+      "title": "Pengangkutan limbah rumah tangga terhenti",
+      "description": "Kantong limbah rumah tangga di tempat pengumpulan belum dijemput selama empat hari. Mohon layanan pengangkutannya dipulihkan.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0002",
+      "title": "Permukaan jalur kendaraan terkelupas",
+      "description": "Lapisan aspal di tikungan mengelupas dan membentuk cekungan yang membuat sepeda motor oleng. Mohon penambalan permukaan.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0003",
+      "title": "Air hujan masuk ke rumah",
+      "description": "Saat hujan saluran di tepi gang meluap hingga air masuk ke teras rumah. Mohon perbaikan aliran drainase.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0004",
+      "title": "Pasokan energi rumah sering terputus",
+      "description": "Aliran listrik pada satu blok permukiman terputus berulang meskipun cuaca cerah. Mohon pemeriksaan jaringan pasokan.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0005",
+      "title": "Air keran berwarna kecokelatan",
+      "description": "Air jaringan perpipaan yang masuk ke rumah berwarna cokelat selama dua hari dan tidak dapat dipakai memasak. Mohon pemeriksaan kualitas pasokan.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0006",
+      "title": "Pemaksaan uang di pintu pasar",
+      "description": "Sekelompok orang meminta uang kepada pengunjung dengan ancaman ketika tidak diberi. Mohon penertiban dan perlindungan pengunjung.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0007",
+      "title": "Antrean layanan imunisasi tidak dilayani",
+      "description": "Petugas layanan imunisasi sudah dijadwalkan hadir tetapi loket tidak dibuka dan orang tua tidak mendapat penjelasan. Mohon perbaikan layanan.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0008",
+      "title": "Atap ruang belajar bocor",
+      "description": "Atap ruang kelas bocor sehingga kegiatan belajar harus dipindahkan setiap hujan. Mohon perbaikan bangunan sekolah.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0009",
+      "title": "Informasi persyaratan surat domisili tidak konsisten",
+      "description": "Daftar persyaratan surat domisili di loket berbeda dengan papan pengumuman. Mohon kejelasan prosedur administrasi.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0010",
+      "title": "Tolong angkut bungkus sisa jualan",
+      "description": "Kak, bekas jualan di bak penampungan udah penuh banget, tiap pagi nambah terus tapi truknya gak datang. Tolong dijemput ya.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0011",
+      "title": "Aspal gang ngelupas parh",
+      "description": "Aspal di gang kami ngelupass dan brlubang, motor sering nyangkut. Mhon ditambal biar bisa dilewati.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0012",
+      "title": "Gang kembali tergenang",
+      "description": "Habis hujan air menggenang di gang dan belum surut. Penyebabnya belum tahu.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0013",
+      "title": "Sekampung gelap lagi",
+      "description": "Dari sore aliran listrik di rumah-rumah sini mati nyala terus, bukan cuma rumahku. Bisa dicek gak?",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0014",
+      "title": "Aliran pdam kecill bgt",
+      "description": "Air pdam mngalir kecil skali, bak susah penuh walau keran udah dibuka lama. Mohon prbaikan pasokannya.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0015",
+      "title": "Ada yang mengancam pengunjung",
+      "description": "Seseorang mengancam pengunjung di area umum tadi. Identitas orangnya belum diketahui, mohon patroli.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0016",
+      "title": "Loket berobat tutup sebelum waktunya",
+      "description": "Saya mau periksa di puskesmas tapi loketnya udah tutup padahal jam layanan belum selesai. Tolong dibenerin jadwalnya dong.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0017",
+      "title": "Kursi murid byk patah",
+      "description": "Di skolah kursi blajar banyak yg patah, murid harus gantian duduk. Mohon diganti supaya blajar nyaman.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0018",
+      "title": "Mohon diperiksa keadaan di dekat balai",
+      "description": "Ada masalah di dekat balai, keadaannya tidak seperti biasanya. Saya belum bisa menjelaskan apa yang rusak atau layanan yang terganggu.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0019",
+      "title": "Utamakan pengangkutan timbunan di bak",
+      "description": "Bak penampungan penuh dan tidak diangkut; dekat situ juga ada lampu redup. Permintaan utama saya adalah pengangkutan isi bak terlebih dahulu.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0020",
+      "title": "Guncangan saat melewati sambungan",
+      "description": "Setiap kendaraan melewati sambungan permukaan jembatan terasa hentakan kuat. Saya tidak tahu bagian bawahnya, mohon pemeriksaan permukaan lintasan.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0021",
+      "title": "Selokan meluapp tiap ujan",
+      "description": "Slokan di gang meluapp tiap ujan, air masuk halaman. Mohon benerin alirannya biar gak trgenang lagi.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0022",
+      "title": "Periksa kabel yang menggantung rendah",
+      "description": "Kabel aliran listrik menggantung rendah di atas jalur pejalan kaki; di sekitarnya ada kantong sampah. Utamakan pengamanan kabel tersebut.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0023",
+      "title": "Air dari jaringan berbau",
+      "description": "Air yang keluar dari sambungan layanan perpipaan berbau tidak biasa. Belum tahu asal baunya, mohon pemeriksaan mutu air yang dipasok.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0024",
+      "title": "Pengunjung dipalak di gerbng",
+      "description": "Ada org malak pengnjung sambil ngancam di gerbng area umum. Mohon penrtiban supaya pengunjung aman.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0025",
+      "title": "Pulihkan layanan pemeriksaan pasien",
+      "description": "Ruang tunggu klinik juga memiliki kursi patah, tetapi keluhan utama adalah pasien ditolak diperiksa tanpa alasan saat jam pelayanan. Mohon evaluasi pelayanan pasien.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0026",
+      "title": "Ruang kelas tidak dapat dipakai",
+      "description": "Salah satu ruang kelas dinyatakan tidak bisa digunakan sehingga kegiatan belajar bergantian. Rincian kerusakan belum saya ketahui.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    },
+    {
+      "sample_id": "SIPW-CAND-0027",
+      "title": "Pesanan toko daring belum tiba",
+      "description": "Barang pesanan saya di toko daring belum dikirim oleh penjual swasta. Saya ingin pengembalian uang pembelian.",
+      "category_label": null,
+      "department_label": null,
+      "secondary_categories": null,
+      "uncertain": null,
+      "rationale": null
+    }
+  ]
+}

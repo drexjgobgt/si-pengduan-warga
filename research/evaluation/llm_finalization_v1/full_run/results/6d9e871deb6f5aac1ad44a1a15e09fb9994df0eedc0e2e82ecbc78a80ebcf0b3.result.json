@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0036",
+  "target_category": "jalan_rusak",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:16:20.019Z",
+  "duration_ms": 3675.516099999979,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"jalan_rusak\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Permukaan jalur sepeda pecah dan membentuk undakan sehingga mengganggu pengguna. Perbaikan jalan dan jalur perlu ditangani oleh Dinas Pekerjaan Umum & Tata Air.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "jalan_rusak",
+    "secondaryCategories": [],
+    "suggestedDepartment": "PUPR",
+    "suggestedPriority": "normal",
+    "reason": "Permukaan jalur sepeda pecah dan membentuk undakan sehingga mengganggu pengguna. Perbaikan jalan dan jalur perlu ditangani oleh Dinas Pekerjaan Umum & Tata Air.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "jalan_rusak",
+  "usage": {
+    "prompt_tokens": 897,
+    "completion_tokens": 86,
+    "total_tokens": 983,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

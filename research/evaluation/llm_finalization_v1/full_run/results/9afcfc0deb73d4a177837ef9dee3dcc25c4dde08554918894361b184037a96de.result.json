@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0203",
+  "target_category": "kesehatan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:56:34.638Z",
+  "duration_ms": 3016.2206000000006,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"kesehatan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DINKES\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Kekurangan peralatan tindakan di ruang tindakan puskesmas dapat menghambat pelayanan pasien dan berisiko mengganggu keselamatan penanganan medis. Lokasi dan waktu kejadian belum teridentifikasi sehingga perlu verifikasi lebih lanjut.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": true\n}",
+  "parsed_output": {
+    "category": "kesehatan",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DINKES",
+    "suggestedPriority": "tinggi",
+    "reason": "Kekurangan peralatan tindakan di ruang tindakan puskesmas dapat menghambat pelayanan pasien dan berisiko mengganggu keselamatan penanganan medis. Lokasi dan waktu kejadian belum teridentifikasi sehingga perlu verifikasi lebih lanjut.",
+    "confidence": 92,
+    "needsHumanReview": true
+  },
+  "predicted_category": "kesehatan",
+  "usage": {
+    "prompt_tokens": 889,
+    "completion_tokens": 94,
+    "total_tokens": 983,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

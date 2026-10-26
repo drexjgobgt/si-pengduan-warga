@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0223",
+  "target_category": "pendidikan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:58:56.677Z",
+  "duration_ms": 4124.1164999999455,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"pendidikan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DISDIK\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Plafon ruang belajar yang terkelupas dan jatuh ke meja murid merupakan kondisi bangunan sekolah yang berbahaya bagi keselamatan siswa serta memerlukan perbaikan segera.\",\n  \"confidence\": 97,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "pendidikan",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DISDIK",
+    "suggestedPriority": "tinggi",
+    "reason": "Plafon ruang belajar yang terkelupas dan jatuh ke meja murid merupakan kondisi bangunan sekolah yang berbahaya bagi keselamatan siswa serta memerlukan perbaikan segera.",
+    "confidence": 97,
+    "needsHumanReview": false
+  },
+  "predicted_category": "pendidikan",
+  "usage": {
+    "prompt_tokens": 900,
+    "completion_tokens": 87,
+    "total_tokens": 987,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

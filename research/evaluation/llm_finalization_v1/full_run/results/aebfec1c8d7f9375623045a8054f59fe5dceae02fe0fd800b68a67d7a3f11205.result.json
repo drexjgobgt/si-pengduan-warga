@@ -1,0 +1,36 @@
+{
+  "sample_id": "SIPW-SYN-0026",
+  "target_category": "sampah",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:15:43.231Z",
+  "duration_ms": 3431.9136,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"sampah\",\n  \"secondaryCategories\": [\"listrik\"],\n  \"suggestedDepartment\": \"DLH\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan utama adalah kemasan makanan tercecer di wadah pilah yang memerlukan penjadwalan pembersihan dan pengangkutan oleh DLH. Lampu taman yang redup merupakan masalah tambahan yang dapat ditangani DISHUB.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "sampah",
+    "secondaryCategories": [
+      "listrik"
+    ],
+    "suggestedDepartment": "DLH",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan utama adalah kemasan makanan tercecer di wadah pilah yang memerlukan penjadwalan pembersihan dan pengangkutan oleh DLH. Lampu taman yang redup merupakan masalah tambahan yang dapat ditangani DISHUB.",
+    "confidence": 92,
+    "needsHumanReview": false
+  },
+  "predicted_category": "sampah",
+  "usage": {
+    "prompt_tokens": 904,
+    "completion_tokens": 102,
+    "total_tokens": 1006,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

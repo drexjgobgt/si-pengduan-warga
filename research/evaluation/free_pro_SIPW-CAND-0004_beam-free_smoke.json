@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-26T06:29:46.996Z",
+  "sample_id": "SIPW-CAND-0004",
+  "model": "beam-free",
+  "returned_model": "reflection/beam",
+  "http_status": 200,
+  "request_status": "needs_manual_review",
+  "latency_ms": 6117.9763,
+  "raw_content": "{\n  \"category\": \"listrik\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DISHUB\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Laporan mengenai pemadaman listrik berulang pada satu blok permukiman yang memerlukan pemeriksaan jaringan pasokan.\",\n  \"confidence\": 90",
+  "raw_category": null,
+  "final_category": "lainnya",
+  "ground_truth_category": "listrik",
+  "label_validation_status": "provisional",
+  "output_valid": false,
+  "usage": {
+    "prompt_tokens": 1059,
+    "completion_tokens": 500,
+    "total_tokens": 1559
+  },
+  "error_type": null,
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "source": "synthetic dev smoke; no DB; one request only"
+}

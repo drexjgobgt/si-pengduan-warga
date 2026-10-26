@@ -1,0 +1,8 @@
+{
+  "identity": "7507de628953409a74f61e1c0ae295130983301d221cad44fef1a2952f5cc592",
+  "mode": "OFFLINE_FIXTURE_NOT_LLM_EVIDENCE",
+  "cap": 270,
+  "requestMs": 50,
+  "totalMs": 100000,
+  "spacing": 10
+}

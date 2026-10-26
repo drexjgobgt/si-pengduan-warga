@@ -1,0 +1,17 @@
+✔ Strict schema accepts complete valid fixture (0.7337ms)
+✔ Empty object and array rejected by strict schema (0.1191ms)
+✔ Coerced booleans and out-of-range confidence rejected (0.0851ms)
+✔ Malformed JSON records failure instead of inventing raw prediction (0.6443ms)
+✔ Markdown extraction explicitly distinguished (0.1718ms)
+✔ Live execution blocked before credentials/network (0.3743ms)
+✔ Unknown option rejected (0.1189ms)
+✔ Empty dataset rejected (0.1972ms)
+✔ Actual production classifier works with mock, not external fetch (18.7934ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 101.3588

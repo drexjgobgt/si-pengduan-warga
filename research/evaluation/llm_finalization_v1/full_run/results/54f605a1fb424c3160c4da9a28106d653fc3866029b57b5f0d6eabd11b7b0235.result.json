@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0162",
+  "target_category": "keamanan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:51:37.555Z",
+  "duration_ms": 3563.3680999999924,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"keamanan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"SATPOLPP\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Terjadi perkelahian dan intimidasi terhadap penumpang di area antrean angkutan, sehingga mengganggu keamanan dan ketertiban umum. Perlu penanganan segera oleh aparat keamanan.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "keamanan",
+    "secondaryCategories": [],
+    "suggestedDepartment": "SATPOLPP",
+    "suggestedPriority": "tinggi",
+    "reason": "Terjadi perkelahian dan intimidasi terhadap penumpang di area antrean angkutan, sehingga mengganggu keamanan dan ketertiban umum. Perlu penanganan segera oleh aparat keamanan.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "keamanan",
+  "usage": {
+    "prompt_tokens": 902,
+    "completion_tokens": 89,
+    "total_tokens": 991,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

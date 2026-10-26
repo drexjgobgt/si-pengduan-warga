@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "synthetic_scenario_registry.json",
+      "before_sha256": "e663226792e23eef1c5e277a066aeb5dae35e554c2c379befd5ae1df0babfa03",
+      "after_sha256": "e663226792e23eef1c5e277a066aeb5dae35e554c2c379befd5ae1df0babfa03",
+      "unchanged": true
+    },
+    {
+      "path": "synthetic_dataset.json",
+      "before_sha256": "98a2d730f8272969d2576e6385a0b36b9453d8ba2e85e87dc7ca86611bb63e3e",
+      "after_sha256": "98a2d730f8272969d2576e6385a0b36b9453d8ba2e85e87dc7ca86611bb63e3e",
+      "unchanged": true
+    },
+    {
+      "path": "dataset_manifest.json",
+      "before_sha256": "6e5c0fcd1a9bcfa3eeb239f8d4f73648a0291c121c420cecc63d8d858b4dd343",
+      "after_sha256": "6e5c0fcd1a9bcfa3eeb239f8d4f73648a0291c121c420cecc63d8d858b4dd343",
+      "unchanged": true
+    },
+    {
+      "path": "frozen_experiment_protocol.md",
+      "before_sha256": "d55256a706ee063b2b628a8ba6c3742e9a6c97cbc78867af30b5e3da094d8d4f",
+      "after_sha256": "d55256a706ee063b2b628a8ba6c3742e9a6c97cbc78867af30b5e3da094d8d4f",
+      "unchanged": true
+    },
+    {
+      "path": "registry_freeze_receipt.json",
+      "before_sha256": "7a8f80c9caadbbf3c5d135c3cc1682aed97daf5bf821c0367186b62e2444bc06",
+      "after_sha256": "7a8f80c9caadbbf3c5d135c3cc1682aed97daf5bf821c0367186b62e2444bc06",
+      "unchanged": true
+    },
+    {
+      "path": "qa_checks.json",
+      "before_sha256": "320623e74966a9b4409e0d1bf491ee8bb1e8c4cf0f42a86f086b71dfe835dc29",
+      "after_sha256": "320623e74966a9b4409e0d1bf491ee8bb1e8c4cf0f42a86f086b71dfe835dc29",
+      "unchanged": true
+    },
+    {
+      "path": "keyword_baseline/predictions.json",
+      "before_sha256": "e47f0760e4ea5c02d24cc800ee36d7cee1cbc09549c3fb0d2f3e8d0ccbebc9b9",
+      "after_sha256": "e47f0760e4ea5c02d24cc800ee36d7cee1cbc09549c3fb0d2f3e8d0ccbebc9b9",
+      "unchanged": true
+    },
+    {
+      "path": "keyword_baseline/manifest.json",
+      "before_sha256": "268b2ff7f39e87775f4ef1f7038e82a336ad46388d4cc8be5cb97d8e2f13abd4",
+      "after_sha256": "268b2ff7f39e87775f4ef1f7038e82a336ad46388d4cc8be5cb97d8e2f13abd4",
+      "unchanged": true
+    }
+  ]
+}

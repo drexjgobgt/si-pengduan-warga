@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0227",
+  "target_category": "pendidikan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:59:24.498Z",
+  "duration_ms": 3896.045000000042,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"pendidikan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DISDIK\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan berkaitan dengan sarana praktik belajar di sekolah yang tidak stabil sehingga latihan dihentikan. Kondisi ini mengganggu kegiatan pembelajaran dan memerlukan perbaikan.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "pendidikan",
+    "secondaryCategories": [],
+    "suggestedDepartment": "DISDIK",
+    "suggestedPriority": "normal",
+    "reason": "Keluhan berkaitan dengan sarana praktik belajar di sekolah yang tidak stabil sehingga latihan dihentikan. Kondisi ini mengganggu kegiatan pembelajaran dan memerlukan perbaikan.",
+    "confidence": 95,
+    "needsHumanReview": false
+  },
+  "predicted_category": "pendidikan",
+  "usage": {
+    "prompt_tokens": 897,
+    "completion_tokens": 83,
+    "total_tokens": 980,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}

@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-26T06:29:35.647Z",
+  "sample_id": "SIPW-CAND-0003",
+  "model": "beam-free",
+  "returned_model": "reflection/beam",
+  "http_status": 200,
+  "request_status": "success",
+  "latency_ms": 4208.4025,
+  "raw_content": "{\n  \"category\": \"banjir\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Saluran drainase di tepi gang meluap saat hujan sehingga air masuk ke teras rumah, memerlukan perbaikan aliran drainase.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "raw_category": "banjir",
+  "final_category": "banjir",
+  "ground_truth_category": "banjir",
+  "label_validation_status": "provisional",
+  "output_valid": true,
+  "usage": {
+    "prompt_tokens": 1052,
+    "completion_tokens": 292,
+    "total_tokens": 1344
+  },
+  "error_type": null,
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "source": "synthetic dev smoke; no DB; one request only"
+}

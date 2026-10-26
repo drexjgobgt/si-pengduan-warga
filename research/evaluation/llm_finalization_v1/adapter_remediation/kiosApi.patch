@@ -1,0 +1,32 @@
+--- backend/config/kiosApi.js
++++ backend/config/kiosApi.js (Remediated Security Version)
+@@ -7,6 +7,10 @@
+  */
+ 
++const ALLOWED_FREE_MODELS = Object.freeze([
++  'minimax-m3.1-flash-free'
++]);
++
+ const KIOSAPI_CONFIG = {
+   get apiKey() {
+     return process.env.KIOSAPI_API_KEY || "";
+@@ -112,11 +116,14 @@
+   // Enforce Free-Only check if enabled
+   if (KIOSAPI_CONFIG.freeOnly) {
+     const targetModel = (model || "").toLowerCase();
+-    // In KiosAPI / OpenRouter ecosystems, free models usually contain ':free' or 'free' in ID
+-    // If strict free-only is enabled and model doesn't specify free, warn or verify
+-    const isFreeDesignated = targetModel.includes("free");
+-    if (!isFreeDesignated && !process.env.KIOSAPI_ALLOW_UNVERIFIED_MODELS) {
+-      // If user specifically provided a model without ':free' but set freeOnly=true,
+-      // allow if user explicitly configured it, but log a sanitized warning.
++    const isExplicitlyAllowed = ALLOWED_FREE_MODELS.includes(targetModel);
++    if (!isExplicitlyAllowed && !process.env.KIOSAPI_ALLOW_UNVERIFIED_MODELS) {
++      const error = new Error(
++        `Model '${targetModel}' tidak termasuk dalam allowlist model gratis yang diizinkan. Permintaan dibatalkan demi keamanan biaya.`
++      );
++      error.code = "PAID_OR_UNAUTHORIZED_MODEL_BLOCKED";
++      error.isSecurityBlock = true;
++      throw error;
+     }
+   }

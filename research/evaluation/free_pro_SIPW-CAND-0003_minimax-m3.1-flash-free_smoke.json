@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-26T06:31:01.088Z",
+  "sample_id": "SIPW-CAND-0003",
+  "model": "minimax-m3.1-flash-free",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "request_status": "success",
+  "latency_ms": 2906.3242,
+  "raw_content": "{\n  \"category\": \"banjir\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Saluran drainase meluap saat hujan sehingga air masuk ke rumah, yang menunjukkan gangguan saluran air di lingkungan tersebut. Perbaikan drainase diperlukan untuk mencegah genangan dan kerusakan rumah.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "raw_category": "banjir",
+  "final_category": "banjir",
+  "ground_truth_category": "banjir",
+  "label_validation_status": "provisional",
+  "output_valid": true,
+  "usage": {
+    "prompt_tokens": 957,
+    "completion_tokens": 94,
+    "total_tokens": 1051
+  },
+  "error_type": null,
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "source": "synthetic dev smoke; no DB; one request only"
+}

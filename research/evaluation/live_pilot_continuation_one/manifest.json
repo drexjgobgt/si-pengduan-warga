@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-10-26T05:35:43.069Z",
+  "evidence_kind": "ACTUAL_LLM_SYNTHETIC_PROVISIONAL_PILOT",
+  "dataset_sha256": "83e10dbb0c1ad260e64404bcf519bc68ca7949cec3c0a33b41c3387f0be32c52",
+  "harness_sha256": "6e0d9c57a4fd9297d43e2130f5fb418a5b3c5b59b830044d87fdc7c5d5f08c99",
+  "service_sha256": "b63a17a0f6854f94a96e14d2291ce2925de9dd473c97a89531975a89c981c4b1",
+  "provider_sha256": "0b12b7188c85cb6736073b027ae26550079ce232e83baf4b949d5dae5c5b95e1",
+  "prior_checkpoint_sha256": "f00e344431b99fc55ecf94721abd58644468229db5883deeda1e2ceb46434496",
+  "sample_id": "SIPW-CAND-0011",
+  "max_requests": 1,
+  "retries": 0,
+  "money_budget_idr": 0,
+  "configured_model": "deepseek-v4-flash-free",
+  "timeout_ms": 15000,
+  "hard_deadline_ms": 20000,
+  "max_tokens": 500,
+  "temperature": 0.1,
+  "catalog": "production defaults pool=null",
+  "authorization": "User continue after explicit proposal for one next-sample attempt; catalog screenshot input/output/cache Rp0",
+  "quota_remaining": null,
+  "account_debit_observable": false,
+  "config_hash": "f253281f4b3b9ad57690d02c0341224e9adfc0414a2017d808e53e8f4f8998b5"
+}

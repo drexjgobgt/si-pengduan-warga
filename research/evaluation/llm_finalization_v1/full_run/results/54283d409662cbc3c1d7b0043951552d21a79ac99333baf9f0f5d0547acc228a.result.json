@@ -1,0 +1,34 @@
+{
+  "sample_id": "SIPW-SYN-0163",
+  "target_category": "keamanan",
+  "attempted": true,
+  "dispatched_at": "2026-10-26T10:51:47.365Z",
+  "duration_ms": 6368.799700000003,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "http_status": 200,
+  "transport_error": null,
+  "parse_error": null,
+  "schema_valid": true,
+  "is_pure_json": true,
+  "raw_text": "{\n  \"category\": \"keamanan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"SATPOLPP\",\n  \"suggestedPriority\": \"darurat\",\n  \"reason\": \"Laporan mengenai orang yang membawa benda tajam dan mengancam pengunjung menunjukkan ancaman langsung terhadap keselamatan jiwa yang memerlukan penanganan segera.\",\n  \"confidence\": 96,\n  \"needsHumanReview\": false\n}",
+  "parsed_output": {
+    "category": "keamanan",
+    "secondaryCategories": [],
+    "suggestedDepartment": "SATPOLPP",
+    "suggestedPriority": "darurat",
+    "reason": "Laporan mengenai orang yang membawa benda tajam dan mengancam pengunjung menunjukkan ancaman langsung terhadap keselamatan jiwa yang memerlukan penanganan segera.",
+    "confidence": 96,
+    "needsHumanReview": false
+  },
+  "predicted_category": "keamanan",
+  "usage": {
+    "prompt_tokens": 894,
+    "completion_tokens": 79,
+    "total_tokens": 973,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    }
+  },
+  "status": "COMPLETED",
+  "is_semantic_match": true
+}
