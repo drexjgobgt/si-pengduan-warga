@@ -13,10 +13,10 @@ const KIOSAPI_CONFIG = {
     return (process.env.KIOSAPI_BASE_URL || "https://kiosapi.com/v1").replace(/\/+$/, "");
   },
   get classificationModel() {
-    return process.env.KIOSAPI_CLASSIFICATION_MODEL || "deepseek-v4-flash-free";
+    return process.env.KIOSAPI_CLASSIFICATION_MODEL || "minimax-m3.1-flash-free";
   },
   get chatModel() {
-    return process.env.KIOSAPI_CHAT_MODEL || "deepseek-v4-flash-free";
+    return process.env.KIOSAPI_CHAT_MODEL || "minimax-m3.1-flash-free";
   },
   get freeOnly() {
     return (process.env.KIOSAPI_FREE_ONLY || "true").toLowerCase() === "true";

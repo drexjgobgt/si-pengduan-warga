@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black" alt="React" />
   <img src="https://img.shields.io/badge/PostgreSQL-14+-4169E1?logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/TailwindCSS-v3-38B2AC?logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/AI_Engine-Kios_API_(DeepSeek)-6366F1?logo=openai&logoColor=white" alt="AI Engine" />
+  <img src="https://img.shields.io/badge/AI_Engine-Kios_API_(MiniMax)-6366F1?logo=openai&logoColor=white" alt="AI Engine" />
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License" />
 </p>
 
@@ -46,7 +46,7 @@ Dioptimalkan untuk layar ponsel (320px–430px) tanpa pergeseran horizontal (*ze
 ## Fitur Utama
 
 ### Kecerdasan Buatan & Chatbot Warga (AI Features)
-- **Klasifikasi Pengaduan Berbasis Real LLM**: Menggunakan model `deepseek-v4-flash-free` via Kios API untuk membaca konteks bahasa Indonesia sehari-hari, mendeteksi tingkat keparahan, merekomendasikan kategori resmi, dan mengarahkan ke dinas penanggung jawab.
+- **Klasifikasi Pengaduan Berbasis Real LLM**: Menggunakan model default `minimax-m3.1-flash-free` via Kios API untuk membaca konteks bahasa Indonesia sehari-hari, mendeteksi tingkat keparahan, merekomendasikan kategori resmi, dan mengarahkan ke dinas penanggung jawab.
 - **Asisten Virtual Warga Interaktif (Chatbot)**:
   - *FAQ Publik Terbuka*: Siapapun (termasuk pengunjung belum login) dapat menanyakan panduan pelaporan, penjelasan 9 kategori, arti status, dan estimasi waktu penanganan SLA.
   - *Pelacakan Laporan Pribadi Terverifikasi*: Khusus warga yang telah login (JWT), asisten dapat melacak laporan pengaduan pribadi secara langsung dan aman tanpa membocorkan data warga lain.
@@ -87,7 +87,7 @@ Dioptimalkan untuk layar ponsel (320px–430px) tanpa pergeseran horizontal (*ze
 
 ### Backend & AI Engine
 - **Node.js** & **Express.js** (REST API)
-- **Kios API (OpenAI-Compatible Gateway)**: Terhubung ke model `deepseek-v4-flash-free`
+- **Kios API (OpenAI-Compatible Gateway)**: Default klasifikasi dan chatbot menggunakan `minimax-m3.1-flash-free` (Free-Pro)
 - **PostgreSQL** (Database relasional dengan agregasi SQL kontinu `generate_series`)
 - **JSON Web Token (JWT)** & **Bcrypt** (Autentikasi dan otorisasi role)
 - **Multer** & **Cloudinary** (Manajemen berkas dan foto lampiran)
@@ -201,13 +201,13 @@ SIPW menggunakan **Kios API** gateway API kompatibel dengan spesifikasi OpenAI s
 
 ### 3. Kebijakan "Gratis Saja" (*Free-Only Policy*)
 SIPW dirancang untuk beroperasi tanpa biaya API tak terkendali:
-- `KIOSAPI_FREE_ONLY=true` (wajib aktif): Mencegah fallback otomatis ke model berbayar.
-- Model default terverifikasi aktif: **`deepseek-v4-flash-free`** (tier gratis / Free-Pro distributor).
-- Model alternatif yang didukung: `meta-llama/llama-3.2-3b-instruct:free`, `google/gemini-2.0-flash-exp:free`, `qwen/qwen-2.5-7b-instruct:free`.
+- `KIOSAPI_FREE_ONLY=true` menandai kebijakan operasional, tetapi **belum memblokir** override model non-gratis pada adapter. Pastikan key berada di grup Free-Pro dan periksa harga model di dashboard sebelum dipakai; tidak ada fallback otomatis lintas model.
+- Model default: **`minimax-m3.1-flash-free`** (terdaftar dalam grup Free-Pro saat pemeriksaan 26 Oktober 2026). Pilot sembilan teks development sintetis menghasilkan sembilan respons JSON valid dengan label provisional yang cocok; ini bukan bukti akurasi ilmiah, dan ketersediaan serta biaya harus diperiksa ulang.
+- Model alternatif perlu diverifikasi ulang pada katalog Free-Pro sebelum digunakan; nama berakhiran `-free` tidak menjamin biaya akun Rp0.
 - Pembatasan kuota request harian lokal (`KIOSAPI_DAILY_REQUEST_LIMIT=200`).
-- Pembatasan panjang input (maks 500 karakter per pesan) dan batas token respon.
+- Pembatasan panjang pesan chatbot (maks 500 karakter) dan batas token respon; batas 500 karakter chatbot tidak berlaku pada teks klasifikasi pengaduan.
 - Rate limiting 25 request/menit per alamat IP pada endpoint `/api/chat`.
-- Kredensial rahasia (`KIOSAPI_API_KEY`) hanya disimpan di lingkungan backend `.env` dan **tidak pernah dikirim ke frontend, respons API, atau log**.
+- Simpan `KIOSAPI_API_KEY` hanya di lingkungan backend `.env` yang tidak dikomit; hindari mencatat header atau pesan error provider yang mungkin mengandung rahasia.
 
 ### 4. Daftar Environment Variable Kios API (Backend)
 Tambahkan ke file `backend/.env`:
@@ -221,11 +221,11 @@ KIOSAPI_BASE_URL=https://kiosapi.com/v1
 # Atau:
 # KIOSAPI_BASE_URL=https://api.kiosapi.id/v1
 
-# Model untuk klasifikasi laporan (terverifikasi 100% aktif & gratis)
-KIOSAPI_CLASSIFICATION_MODEL=deepseek-v4-flash-free
+# Model untuk klasifikasi laporan (hasil pilot sintetis terbatas; cek harga/kuota akun kembali)
+KIOSAPI_CLASSIFICATION_MODEL=minimax-m3.1-flash-free
 
 # Model untuk chatbot interaktif warga
-KIOSAPI_CHAT_MODEL=deepseek-v4-flash-free
+KIOSAPI_CHAT_MODEL=minimax-m3.1-flash-free
 
 # Kebijakan gratis saja (true / false)
 KIOSAPI_FREE_ONLY=true
