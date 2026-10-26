@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0025",
+  "ground_truth_category": "lainnya",
+  "ground_truth_department": "KELURAHAN",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "out_of_scope",
+  "raw_predicted_category": "lainnya",
+  "final_predicted_category": "lainnya",
+  "raw_suggested_department": "SATPOLPP",
+  "final_suggested_department": "SATPOLPP",
+  "routing_department_simulated": "KELURAHAN",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "rendah",
+  "raw_confidence": 92,
+  "confidence": 92,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 3452.401500000007,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "23b883a775036a551aca91dc85df77e7a6a89be14f2cd3e82e0362d2498edd35",
+  "timestamp": "2026-10-26T07:02:22.729Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"lainnya\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"SATPOLPP\",\n  \"suggestedPriority\": \"rendah\",\n  \"reason\": \"Laporan berkaitan dengan sengketa garansi dan pengembalian uang dalam transaksi daring swasta, sehingga tidak termasuk kategori layanan publik spesifik. Perkara ini dapat ditangani melalui mekanisme perlindungan konsumen, bukan prioritas layanan dasar.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 957,
+    "completion_tokens": 99,
+    "total_tokens": 1056
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

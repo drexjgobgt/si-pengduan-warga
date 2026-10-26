@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0022",
+  "ground_truth_category": "pendidikan",
+  "ground_truth_department": "DISDIK",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "normal",
+  "raw_predicted_category": "pendidikan",
+  "final_predicted_category": "pendidikan",
+  "raw_suggested_department": "DISDIK",
+  "final_suggested_department": "DISDIK",
+  "routing_department_simulated": "DISDIK",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "normal",
+  "raw_confidence": 98,
+  "confidence": 98,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 3264.1169999999984,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "7d9b3d0678a52e37b9082f3cff30aa8226b553bb63872bab5ea4e80c3d177ffa",
+  "timestamp": "2026-10-26T07:01:52.515Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"pendidikan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DISDIK\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Permukaan papan tulis yang rusak di beberapa kelas mengganggu kegiatan belajar mengajar dan memerlukan penggantian perlengkapan belajar.\",\n  \"confidence\": 98,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 955,
+    "completion_tokens": 77,
+    "total_tokens": 1032
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

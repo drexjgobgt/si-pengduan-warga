@@ -1,0 +1,48 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0009",
+  "ground_truth_category": "banjir",
+  "ground_truth_department": "PUPR",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "multicategory",
+  "raw_predicted_category": "banjir",
+  "final_predicted_category": "banjir",
+  "raw_suggested_department": "PUPR",
+  "final_suggested_department": "PUPR",
+  "routing_department_simulated": "PUPR",
+  "routing_persisted": false,
+  "secondary_categories": [
+    "listrik"
+  ],
+  "suggested_priority": "tinggi",
+  "raw_confidence": 92,
+  "confidence": 92,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 2762.097700000013,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "ae9f93ccca9cde2539acfcaa8e5911b69a290ef8fa6cba054dd755a10d30e76c",
+  "timestamp": "2026-10-26T06:59:41.879Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"banjir\",\n  \"secondaryCategories\": [\"listrik\"],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Luapan drainase menyebabkan halaman sekolah tergenang dan mengganggu aktivitas belajar. Redupnya lampu teras merupakan masalah tambahan yang tidak utama.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 964,
+    "completion_tokens": 88,
+    "total_tokens": 1052
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0010",
+  "ground_truth_category": "listrik",
+  "ground_truth_department": "DISHUB",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "normal",
+  "raw_predicted_category": "listrik",
+  "final_predicted_category": "listrik",
+  "raw_suggested_department": "DISHUB",
+  "final_suggested_department": "DISHUB",
+  "routing_department_simulated": "DISHUB",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "tinggi",
+  "raw_confidence": 95,
+  "confidence": 95,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 3266.6140000000014,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "cacc83046dc13007f98a096d9d47b0cf83a582c03fe6b55c1287acd042c273f7",
+  "timestamp": "2026-10-26T06:59:52.402Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"listrik\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DISHUB\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Lampu penerangan penyeberangan pejalan kaki padam sehingga mengurangi keselamatan pengguna jalan saat malam. Pemeriksaan jaringan dan penggantian komponen perlu segera dilakukan.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 964,
+    "completion_tokens": 90,
+    "total_tokens": 1054
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

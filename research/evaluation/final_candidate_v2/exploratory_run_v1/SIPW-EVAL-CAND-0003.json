@@ -1,0 +1,48 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0003",
+  "ground_truth_category": "sampah",
+  "ground_truth_department": "DLH",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "multicategory",
+  "raw_predicted_category": "sampah",
+  "final_predicted_category": "sampah",
+  "raw_suggested_department": "DLH",
+  "final_suggested_department": "DLH",
+  "routing_department_simulated": "DLH",
+  "routing_persisted": false,
+  "secondary_categories": [
+    "banjir"
+  ],
+  "suggested_priority": "normal",
+  "raw_confidence": 92,
+  "confidence": 92,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 3859.828999999998,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "c8f9a094954696b4c7212cf4c90c675c2e98ad51ef7ca5a9aeed9d41e1618473",
+  "timestamp": "2026-10-26T06:58:42.899Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"sampah\",\n  \"secondaryCategories\": [\"banjir\"],\n  \"suggestedDepartment\": \"DLH\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Laporan berfokus pada sisa sampah pasar yang tidak diangkut, dengan tambahan keluhan saluran air mampet. Prioritas normal karena mengganggu kebersihan lingkungan dan drainase, tetapi belum menunjukkan bahaya bencana langsung.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 964,
+    "completion_tokens": 99,
+    "total_tokens": 1063
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

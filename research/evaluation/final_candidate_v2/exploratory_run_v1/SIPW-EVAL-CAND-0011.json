@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0011",
+  "ground_truth_category": "listrik",
+  "ground_truth_department": "DISHUB",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "typo",
+  "raw_predicted_category": "listrik",
+  "final_predicted_category": "listrik",
+  "raw_suggested_department": "DISHUB",
+  "final_suggested_department": "DISHUB",
+  "routing_department_simulated": "DISHUB",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "darurat",
+  "raw_confidence": 92,
+  "confidence": 92,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 3592.4988999999914,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "d97914f910a4933f67614673c3a447ef3200d086d20120af6c37c7e94c901e83",
+  "timestamp": "2026-10-26T07:00:02.737Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"listrik\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DISHUB\",\n  \"suggestedPriority\": \"darurat\",\n  \"reason\": \"Kabel di dekat tiang jalan memancarkan percikan saat hujan, sehingga berpotensi menimbulkan sengatan listrik atau kebakaran. Instalasi perlu diamankan dan diperiksa segera.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 965,
+    "completion_tokens": 91,
+    "total_tokens": 1056
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

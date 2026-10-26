@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0017",
+  "ground_truth_category": "keamanan",
+  "ground_truth_department": "SATPOLPP",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "typo",
+  "raw_predicted_category": "keamanan",
+  "final_predicted_category": "keamanan",
+  "raw_suggested_department": "SATPOLPP",
+  "final_suggested_department": "SATPOLPP",
+  "routing_department_simulated": "SATPOLPP",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "normal",
+  "raw_confidence": 95,
+  "confidence": 95,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 3980.969700000016,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "6b635ac8094d4e96c7e2c0ea356049c62140861bcfeb90128779204af0950b9c",
+  "timestamp": "2026-10-26T07:01:03.201Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"keamanan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"SATPOLPP\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Laporan alleges practice of illegal toll collection (pungli) by people at the entrance road, including threats if the citizen refuses to pay. This falls under enforcement of public order and illegal levies.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 964,
+    "completion_tokens": 97,
+    "total_tokens": 1061
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

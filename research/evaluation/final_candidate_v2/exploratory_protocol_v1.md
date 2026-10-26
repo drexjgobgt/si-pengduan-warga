@@ -1,0 +1,24 @@
+# Protokol usulan: studi eksploratori MiniMax dengan label AI provisional
+
+**Status: disetujui pengguna untuk maksimum 27 POST, tanpa retry, biaya Rp0; eksekusi belum dilakukan saat protokol dibekukan.** Tidak boleh disebut evaluasi final dengan ground truth independen. Dataset dibuat AI, dua file completed diisi dua AI berbeda menurut pengguna, dan tidak ada bukti blinding dari label pembuat maupun prediksi. Label departemen `mapping` hanya menguji kesesuaian terhadap pemetaan internal SIPW, bukan kewenangan instansi secara substantif. Kesepakatan utama 27/27 antar-AI tidak memvalidasi kebenaran label. Konflik kategori sekunder sampel `SIPW-EVAL-CAND-0009` tetap tidak diputuskan; jangan hitung metrik secondaryCategories tanpa adjudikasi atau analisis sensitivitas tersendiri.
+
+## Sampel dan hipotesis terbatas
+
+- Sumber: `dataset.candidate.json` (27 pengaduan **sintetis**, tiga per kategori, label provisional). Hash dataset `7d380e03ee535e9f340b678f8c82d0c32aecb6edf757171d781e031319c32bc7`; hash jawaban A/B dan status verifikasi tercatat di `label_validation_2026-10-26.md`.
+- Gunakan 27 teks tepat seperti sumber, tanpa menghapus sampel sulit. Tidak menyebutnya holdout independen sempurna: penulis mengetahui prompt/hasil pilot, dan jawaban AI berpotensi dipengaruhi taksonomi yang sama.
+- Outcome utama eksploratori: kesesuaian kategori terhadap label provisional yang disepakati A/B, **bukan accuracy against validated ground truth**. Nilai makro-F1, precision/recall dan confusion matrix adalah diagnostik pada sampel sintetis saja, dengan seluruh 27 sampel sebagai denominator; laporkan pula coverage dan subset HTTP sukses secara terpisah. Nilai baseline keyword historis dihitung pada 27 teks yang sama tanpa tuning; tidak mengklaim keunggulan LLM bila kesetaraan label/bias belum ditangani.
+- Hasil departemen dibagi raw model, hasil normalizer, dan mapping routing simulasi; referensi departemen adalah mapping internal. Priority dan kategori sekunder hanya dilaporkan deskriptif, bukan accuracy, sampai ada label acuan sah/adjudikasi.
+
+## Konfigurasi dan gate sebelum eksekusi
+
+1. **Disetujui eksplisit pada percakapan berikutnya:** tepat **27 sampel × 1 request = maksimum 27 POST** ke model `minimax-m3.1-flash-free`, **0 retry**, concurrency 1, spacing antar-start minimal 10 detik, **biaya maksimum Rp0**. Request setelah 27 tidak diizinkan, termasuk ulangan kegagalan; bila perlu retry, ajukan protokol/anggaran baru. Persetujuan pilot pemilihan model terdahulu tidak berlaku. Tidak ada request chatbot dalam cakupan studi.
+2. Sebelum request pertama, pastikan model masih terdaftar pada katalog Kios API dan `Free-Pro` memiliki multiplier 0 serta model tersebut eligible. Grup key Free-Pro didasarkan pada konfirmasi pengguna; API katalog tidak mengungkap sisa kuota atau tagihan akun. Jika muncul 402, 401/403, 429, perubahan harga/grup/model, atau indikasi debit uang, berhenti tanpa beralih ke tier/model lain. Tanpa bukti sisa kuota, laporkan ketidakpastian; jangan mengklaim kuota terverifikasi.
+3. Bekukan hash dataset dan label A/B, commit dan prompt system+user yang efektif, urutan katalog, model ID yang diminta/dikembalikan, temperature 0.1, max_tokens 500, JSON mode, timeout produksi 15 detik, serta deadline harness. Tidak mengubah prompt/label setelah melihat kesalahan. `pool=null` memakai katalog default produksi; ini menguji service klasifikasi, **bukan** persistensi DB/routing controller yang sesungguhnya.
+4. Harness di `research/evaluation/` harus lolos dry-run offline, mendukung output direktori baru, checkpoint eksklusif dan fail-closed pada pending/ketidakpastian agar tidak menduplikasi request. Per sampel rekam raw text/parsed dan normalized terpisah, kode HTTP/error, latency penuh, fallback, confidence/review, timestamp, versi prompt serta ID model. Jangan menyimpan header/kunci/error body provider yang mungkin sensitif; teks hanya sintetis. Semua kegagalan dan sampel yang tidak terproses tetap dalam denominator.
+5. Artefak hasil eksploratori disimpan dalam subdirektori versi baru, bukan file `predictions.csv`/`results_summary.json` akar yang dikhususkan untuk hasil final. Screenshot hanya bila benar-benar ditangkap dari eksekusi, tanpa rahasia/PII; jangan membuat mockup bukti. Publikasi dataset, prompt, atau log perlu pemeriksaan privasi dan keamanan sebelum Git staging.
+
+## Batas pelaporan
+
+Gunakan istilah **"tingkat kecocokan terhadap label AI provisional pada pengaduan sintetis"**, bukan akurasi klasifikasi warga. Dua AI berbeda bukan dua anotator manusia independen. Tidak ada klaim generalisasi, calibration, prioritas benar, departemen benar secara institusional, atau keunggulan atas baseline tanpa desain pembanding dan validasi manusia. Jika studi berjalan, tulis kegagalan apa adanya; laporan ilmiah final tetap menunggu label manusia dan eksperimen tervalidasi.
+
+**Belum ada POST, prediksi baru, metrik studi ini, atau screenshot studi ini.**

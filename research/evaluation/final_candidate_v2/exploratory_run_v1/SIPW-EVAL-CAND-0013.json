@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0013",
+  "ground_truth_category": "air_bersih",
+  "ground_truth_department": "PUPR",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "normal",
+  "raw_predicted_category": "air_bersih",
+  "final_predicted_category": "air_bersih",
+  "raw_suggested_department": "KELURAHAN",
+  "final_suggested_department": "KELURAHAN",
+  "routing_department_simulated": "PUPR",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "normal",
+  "raw_confidence": 95,
+  "confidence": 95,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 4954.980299999996,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "1471338540a399454a7565a3e6845bcd23a6d2f11cb6fc5b1bc4780e4f1b3664",
+  "timestamp": "2026-10-26T07:00:24.123Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"air_bersih\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"KELURAHAN\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Distribusi air pada keran umum berhenti sehingga mengganggu kebutuhan harian warga. Masalah ini memerlukan pemeriksaan dan penanganan oleh pihak pengelola air atau kelurahan terkait.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 956,
+    "completion_tokens": 89,
+    "total_tokens": 1045
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

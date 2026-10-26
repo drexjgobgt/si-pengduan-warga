@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0002",
+  "ground_truth_category": "sampah",
+  "ground_truth_department": "DLH",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "informal",
+  "raw_predicted_category": "sampah",
+  "final_predicted_category": "sampah",
+  "raw_suggested_department": "DLH",
+  "final_suggested_department": "DLH",
+  "routing_department_simulated": "DLH",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "normal",
+  "raw_confidence": 96,
+  "confidence": 96,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 2564.9062999999987,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "9a8249e5a69ceddce3d06af3e6b3c456a5daabe46d2f2a468439793fa04696e6",
+  "timestamp": "2026-10-26T06:58:31.590Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"sampah\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DLH\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Tumpukan sampah dan sisa makanan di dekat taman belum diangkut selama beberapa hari sehingga mengganggu kebersihan lingkungan.\",\n  \"confidence\": 96,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 964,
+    "completion_tokens": 77,
+    "total_tokens": 1041
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

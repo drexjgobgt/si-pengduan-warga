@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0020",
+  "ground_truth_category": "kesehatan",
+  "ground_truth_department": "DINKES",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "informal",
+  "raw_predicted_category": "kesehatan",
+  "final_predicted_category": "kesehatan",
+  "raw_suggested_department": "DINKES",
+  "final_suggested_department": "DINKES",
+  "routing_department_simulated": "DINKES",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "normal",
+  "raw_confidence": 92,
+  "confidence": 92,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 3306.9696000000113,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "4ce2b70c31f6f5df174e35546bc5ac0d419b400177d1b865ec9e2dd316158ee1",
+  "timestamp": "2026-10-26T07:01:32.547Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"kesehatan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DINKES\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan berkaitan dengan layanan loket di fasilitas kesehatan yang tutup sesuai jadwal tanpa keterangan. Men Improvements layanan dan informasi operasional perlu dilakukan oleh Dinas Kesehatan.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 964,
+    "completion_tokens": 86,
+    "total_tokens": 1050
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

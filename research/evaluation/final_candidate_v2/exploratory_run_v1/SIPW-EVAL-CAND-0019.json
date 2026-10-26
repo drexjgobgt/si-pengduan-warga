@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0019",
+  "ground_truth_category": "kesehatan",
+  "ground_truth_department": "DINKES",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "normal",
+  "raw_predicted_category": "kesehatan",
+  "final_predicted_category": "kesehatan",
+  "raw_suggested_department": "DINKES",
+  "final_suggested_department": "DINKES",
+  "routing_department_simulated": "DINKES",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "normal",
+  "raw_confidence": 95,
+  "confidence": 95,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 4508.529800000018,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "d0127acd20bdce97517bcc34cad20371de98f0bc99dc810d70a7f5c1a708a19b",
+  "timestamp": "2026-10-26T07:01:23.739Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"kesehatan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DINKES\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Peralatan timbang dan alat ukur posyandu yang tidak berfungsi mengganggu layanan pemeriksaan kesehatan. Penggantian peralatan diperlukan agar kegiatan posyandu dapat berjalan.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 962,
+    "completion_tokens": 89,
+    "total_tokens": 1051
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

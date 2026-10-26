@@ -1,0 +1,272 @@
+[
+  {
+    "sample_id": "SIPW-EVAL-CAND-0001",
+    "ground_truth_category": "sampah",
+    "predicted_category": "sampah",
+    "ground_truth_department": "DLH",
+    "department_from_mapping": "DLH",
+    "latency_ms": 1.7945999999999884,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0002",
+    "ground_truth_category": "sampah",
+    "predicted_category": "lainnya",
+    "ground_truth_department": "DLH",
+    "department_from_mapping": "KELURAHAN",
+    "latency_ms": 0.14610000000000412,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0003",
+    "ground_truth_category": "sampah",
+    "predicted_category": "sampah",
+    "ground_truth_department": "DLH",
+    "department_from_mapping": "DLH",
+    "latency_ms": 0.13509999999999422,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0004",
+    "ground_truth_category": "jalan_rusak",
+    "predicted_category": "jalan_rusak",
+    "ground_truth_department": "PUPR",
+    "department_from_mapping": "PUPR",
+    "latency_ms": 0.0905999999999949,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0005",
+    "ground_truth_category": "jalan_rusak",
+    "predicted_category": "jalan_rusak",
+    "ground_truth_department": "PUPR",
+    "department_from_mapping": "PUPR",
+    "latency_ms": 0.08599999999999852,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0006",
+    "ground_truth_category": "jalan_rusak",
+    "predicted_category": "lainnya",
+    "ground_truth_department": "PUPR",
+    "department_from_mapping": "KELURAHAN",
+    "latency_ms": 0.07339999999999236,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0007",
+    "ground_truth_category": "banjir",
+    "predicted_category": "banjir",
+    "ground_truth_department": "PUPR",
+    "department_from_mapping": "PUPR",
+    "latency_ms": 0.07110000000000127,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0008",
+    "ground_truth_category": "banjir",
+    "predicted_category": "banjir",
+    "ground_truth_department": "PUPR",
+    "department_from_mapping": "PUPR",
+    "latency_ms": 0.11090000000000089,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0009",
+    "ground_truth_category": "banjir",
+    "predicted_category": "banjir",
+    "ground_truth_department": "PUPR",
+    "department_from_mapping": "PUPR",
+    "latency_ms": 0.0764999999999958,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0010",
+    "ground_truth_category": "listrik",
+    "predicted_category": "listrik",
+    "ground_truth_department": "DISHUB",
+    "department_from_mapping": "DISHUB",
+    "latency_ms": 0.07319999999999993,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0011",
+    "ground_truth_category": "listrik",
+    "predicted_category": "jalan_rusak",
+    "ground_truth_department": "DISHUB",
+    "department_from_mapping": "PUPR",
+    "latency_ms": 0.07289999999998997,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0012",
+    "ground_truth_category": "listrik",
+    "predicted_category": "listrik",
+    "ground_truth_department": "DISHUB",
+    "department_from_mapping": "DISHUB",
+    "latency_ms": 0.08720000000000994,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0013",
+    "ground_truth_category": "air_bersih",
+    "predicted_category": "air_bersih",
+    "ground_truth_department": "PUPR",
+    "department_from_mapping": "PUPR",
+    "latency_ms": 0.48579999999999757,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0014",
+    "ground_truth_category": "air_bersih",
+    "predicted_category": "air_bersih",
+    "ground_truth_department": "PUPR",
+    "department_from_mapping": "PUPR",
+    "latency_ms": 0.07659999999999911,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0015",
+    "ground_truth_category": "air_bersih",
+    "predicted_category": "air_bersih",
+    "ground_truth_department": "PUPR",
+    "department_from_mapping": "PUPR",
+    "latency_ms": 0.06730000000000302,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0016",
+    "ground_truth_category": "keamanan",
+    "predicted_category": "lainnya",
+    "ground_truth_department": "SATPOLPP",
+    "department_from_mapping": "KELURAHAN",
+    "latency_ms": 0.0636999999999972,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0017",
+    "ground_truth_category": "keamanan",
+    "predicted_category": "lainnya",
+    "ground_truth_department": "SATPOLPP",
+    "department_from_mapping": "KELURAHAN",
+    "latency_ms": 0.0625,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0018",
+    "ground_truth_category": "keamanan",
+    "predicted_category": "keamanan",
+    "ground_truth_department": "SATPOLPP",
+    "department_from_mapping": "SATPOLPP",
+    "latency_ms": 0.06339999999998724,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0019",
+    "ground_truth_category": "kesehatan",
+    "predicted_category": "kesehatan",
+    "ground_truth_department": "DINKES",
+    "department_from_mapping": "DINKES",
+    "latency_ms": 0.06740000000000634,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0020",
+    "ground_truth_category": "kesehatan",
+    "predicted_category": "kesehatan",
+    "ground_truth_department": "DINKES",
+    "department_from_mapping": "DINKES",
+    "latency_ms": 0.08440000000000225,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0021",
+    "ground_truth_category": "kesehatan",
+    "predicted_category": "kesehatan",
+    "ground_truth_department": "DINKES",
+    "department_from_mapping": "DINKES",
+    "latency_ms": 0.0788999999999902,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0022",
+    "ground_truth_category": "pendidikan",
+    "predicted_category": "pendidikan",
+    "ground_truth_department": "DISDIK",
+    "department_from_mapping": "DISDIK",
+    "latency_ms": 0.06560000000000343,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0023",
+    "ground_truth_category": "pendidikan",
+    "predicted_category": "banjir",
+    "ground_truth_department": "DISDIK",
+    "department_from_mapping": "PUPR",
+    "latency_ms": 0.06090000000000373,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0024",
+    "ground_truth_category": "pendidikan",
+    "predicted_category": "pendidikan",
+    "ground_truth_department": "DISDIK",
+    "department_from_mapping": "DISDIK",
+    "latency_ms": 0.06620000000000914,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0025",
+    "ground_truth_category": "lainnya",
+    "predicted_category": "lainnya",
+    "ground_truth_department": "KELURAHAN",
+    "department_from_mapping": "KELURAHAN",
+    "latency_ms": 0.061800000000005184,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0026",
+    "ground_truth_category": "lainnya",
+    "predicted_category": "lainnya",
+    "ground_truth_department": "KELURAHAN",
+    "department_from_mapping": "KELURAHAN",
+    "latency_ms": 0.06239999999999668,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  },
+  {
+    "sample_id": "SIPW-EVAL-CAND-0027",
+    "ground_truth_category": "lainnya",
+    "predicted_category": "lainnya",
+    "ground_truth_department": "KELURAHAN",
+    "department_from_mapping": "KELURAHAN",
+    "latency_ms": 0.06289999999999907,
+    "label_status": "AI_PROVISIONAL_NOT_HUMAN",
+    "model_id": "keyword-v1.0"
+  }
+]

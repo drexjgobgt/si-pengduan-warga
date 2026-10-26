@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0026",
+  "ground_truth_category": "lainnya",
+  "ground_truth_department": "KELURAHAN",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "ambiguous",
+  "raw_predicted_category": "lainnya",
+  "final_predicted_category": "lainnya",
+  "raw_suggested_department": "KELURAHAN",
+  "final_suggested_department": "KELURAHAN",
+  "routing_department_simulated": "KELURAHAN",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "rendah",
+  "raw_confidence": 35,
+  "confidence": 35,
+  "needs_human_review": true,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 2806.0616000000155,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "355c2ae104f49745107d380a96245688b6417a5566b4abc35272982557c8a6f1",
+  "timestamp": "2026-10-26T07:02:32.089Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"lainnya\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"KELURAHAN\",\n  \"suggestedPriority\": \"rendah\",\n  \"reason\": \"Laporan tidak menyebutkan jenis masalah, lokasi, atau layanan yang terganggu secara spesifik sehingga belum dapat dikategorikan lebih lanjut dan memerlukan verifikasi lapangan.\",\n  \"confidence\": 35,\n  \"needsHumanReview\": true\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 960,
+    "completion_tokens": 87,
+    "total_tokens": 1047
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

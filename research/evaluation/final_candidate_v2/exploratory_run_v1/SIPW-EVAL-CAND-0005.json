@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0005",
+  "ground_truth_category": "jalan_rusak",
+  "ground_truth_department": "PUPR",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "typo",
+  "raw_predicted_category": "jalan_rusak",
+  "final_predicted_category": "jalan_rusak",
+  "raw_suggested_department": "PUPR",
+  "final_suggested_department": "PUPR",
+  "routing_department_simulated": "PUPR",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "normal",
+  "raw_confidence": 95,
+  "confidence": 95,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 3559.5242,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "f8cfe5a7373bec3ed34efc53cb4cb595f08a8fb7b3a5fa18512e09c732fa0784",
+  "timestamp": "2026-10-26T06:59:02.624Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"jalan_rusak\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Trotoar retak dan amblas sehingga memaksa pejalan kaki turun ke badan jalan. Perbaikan diperlukan untuk menjaga keamanan dan akses pedestrian.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 963,
+    "completion_tokens": 86,
+    "total_tokens": 1049
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

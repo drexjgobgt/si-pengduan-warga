@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0027",
+  "ground_truth_category": "lainnya",
+  "ground_truth_department": "KELURAHAN",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "normal",
+  "raw_predicted_category": "lainnya",
+  "final_predicted_category": "lainnya",
+  "raw_suggested_department": "KELURAHAN",
+  "final_suggested_department": "KELURAHAN",
+  "routing_department_simulated": "KELURAHAN",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "rendah",
+  "raw_confidence": 92,
+  "confidence": 92,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 3417.3459999999905,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "cc49a5880a9e46b81ea8e0e42644383d249c23748b2528442cad5bbafbd8a85f",
+  "timestamp": "2026-10-26T07:02:42.706Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"lainnya\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"KELURAHAN\",\n  \"suggestedPriority\": \"rendah\",\n  \"reason\": \"Keluhan merupakan masalah administrasi pelayanan umum berupa perbedaan formulir antar loket, tanpa threaten keselamatan atau fasilitas vital. Penyeragaman formulir dapat ditangani melalui.secretariat kelurahan atau instansi pelayanan terkait.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 963,
+    "completion_tokens": 98,
+    "total_tokens": 1061
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

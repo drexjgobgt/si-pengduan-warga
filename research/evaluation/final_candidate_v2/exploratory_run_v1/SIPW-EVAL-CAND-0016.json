@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0016",
+  "ground_truth_category": "keamanan",
+  "ground_truth_department": "SATPOLPP",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "normal",
+  "raw_predicted_category": "keamanan",
+  "final_predicted_category": "keamanan",
+  "raw_suggested_department": "SATPOLPP",
+  "final_suggested_department": "SATPOLPP",
+  "routing_department_simulated": "SATPOLPP",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "tinggi",
+  "raw_confidence": 95,
+  "confidence": 95,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 4740.3243000000075,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "ba61b1a8db8088c5ba6494b756b89dd193337ee70bb741dbfd2f4966087aeaf6",
+  "timestamp": "2026-10-26T07:00:53.938Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"keamanan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"SATPOLPP\",\n  \"suggestedPriority\": \"tinggi\",\n  \"reason\": \"Laporan menunjukkan adanya pemerasan atau pungli di akses terminal yang menimbulkan rasa takut dan meminta penertiban serta patroli oleh aparat keamanan.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 957,
+    "completion_tokens": 85,
+    "total_tokens": 1042
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

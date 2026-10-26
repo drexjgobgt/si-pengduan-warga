@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0006",
+  "ground_truth_category": "jalan_rusak",
+  "ground_truth_department": "PUPR",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "ambiguous",
+  "raw_predicted_category": "jalan_rusak",
+  "final_predicted_category": "jalan_rusak",
+  "raw_suggested_department": "PUPR",
+  "final_suggested_department": "PUPR",
+  "routing_department_simulated": "PUPR",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "normal",
+  "raw_confidence": 95,
+  "confidence": 95,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 3656.7929000000004,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "c83626e58e759b2c89bebda32442592c7e7cb0f176e0a73372cf706798076ee3",
+  "timestamp": "2026-10-26T06:59:12.739Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"jalan_rusak\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Laporan menunjukkan kerusakan permukaan jalur kendaraan berupa garis pecah yang menyebabkan kendaraan terasa menghentak. Masalah ini memerlukan pemeriksaan dan perbaikan jalan oleh Dinas Pekerjaan Umum & Tata Air.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 964,
+    "completion_tokens": 89,
+    "total_tokens": 1053
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

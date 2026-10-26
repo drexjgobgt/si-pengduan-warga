@@ -1,0 +1,48 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0021",
+  "ground_truth_category": "kesehatan",
+  "ground_truth_department": "DINKES",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "multicategory",
+  "raw_predicted_category": "kesehatan",
+  "final_predicted_category": "kesehatan",
+  "raw_suggested_department": "DINKES",
+  "final_suggested_department": "DINKES",
+  "routing_department_simulated": "DINKES",
+  "routing_persisted": false,
+  "secondary_categories": [
+    "listrik"
+  ],
+  "suggested_priority": "normal",
+  "raw_confidence": 95,
+  "confidence": 95,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 5865.382199999993,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "1462e2a91e1529634fa01100df06c54ccda94d713f706753749e6b72ad927d14",
+  "timestamp": "2026-10-26T07:01:45.112Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"kesehatan\",\n  \"secondaryCategories\": [\"listrik\"],\n  \"suggestedDepartment\": \"DINKES\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Keluhan utama adalah ketersediaan obat di puskesmas yang tidak sesuai jadwal sehingga mengganggu pelayanan pasien. Kipas ruang tunggu yang mati merupakan masalah tambahan yang tidak mengubah fokus pengaduan.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 960,
+    "completion_tokens": 95,
+    "total_tokens": 1055
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

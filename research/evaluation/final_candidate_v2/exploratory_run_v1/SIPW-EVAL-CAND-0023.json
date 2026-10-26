@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0023",
+  "ground_truth_category": "pendidikan",
+  "ground_truth_department": "DISDIK",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "typo",
+  "raw_predicted_category": "pendidikan",
+  "final_predicted_category": "pendidikan",
+  "raw_suggested_department": "DISDIK",
+  "final_suggested_department": "DISDIK",
+  "routing_department_simulated": "DISDIK",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "normal",
+  "raw_confidence": 96,
+  "confidence": 96,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 3247.7186999999976,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "b9079866b3f7103240c35ba9019459e7e1c48dd28f3aa9a65a2a96088fc6bc84",
+  "timestamp": "2026-10-26T07:02:02.516Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"pendidikan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"DISDIK\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Jendela ruang kelas rusak sehingga tidak dapat ditutup dan buku pelajaran terkena air. Perbaikan diperlukan untuk menjaga sarana belajar mengajar.\",\n  \"confidence\": 96,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 959,
+    "completion_tokens": 81,
+    "total_tokens": 1040
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

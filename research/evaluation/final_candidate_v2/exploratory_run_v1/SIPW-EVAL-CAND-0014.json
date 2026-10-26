@@ -1,0 +1,48 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0014",
+  "ground_truth_category": "air_bersih",
+  "ground_truth_department": "PUPR",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "informal",
+  "raw_predicted_category": "air_bersih",
+  "final_predicted_category": "air_bersih",
+  "raw_suggested_department": "DINKES",
+  "final_suggested_department": "DINKES",
+  "routing_department_simulated": "PUPR",
+  "routing_persisted": false,
+  "secondary_categories": [
+    "kesehatan"
+  ],
+  "suggested_priority": "normal",
+  "raw_confidence": 92,
+  "confidence": 92,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 2834.7508999999845,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "1f1e882c3e759a82d63c740750b3bef2cd1d8427baed769bf7abe4302f257f3a",
+  "timestamp": "2026-10-26T07:00:32.012Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"air_bersih\",\n  \"secondaryCategories\": [\"kesehatan\"],\n  \"suggestedDepartment\": \"DINKES\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Air ledeng di lingkungan warga memiliki bau abnormal sehingga tidak layak digunakan. Perlu pemeriksaan kualitas air dan investigation sumber bau oleh pihak berwenang.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 959,
+    "completion_tokens": 89,
+    "total_tokens": 1048
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

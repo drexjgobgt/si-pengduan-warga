@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0007",
+  "ground_truth_category": "banjir",
+  "ground_truth_department": "PUPR",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "normal",
+  "raw_predicted_category": "banjir",
+  "final_predicted_category": "banjir",
+  "raw_suggested_department": "PUPR",
+  "final_suggested_department": "PUPR",
+  "routing_department_simulated": "PUPR",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "normal",
+  "raw_confidence": 95,
+  "confidence": 95,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 3102.821299999996,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "85c7ec0f200433c9700dfbf261cc1a9468c3b1aaa70e8efa4595822755b20842",
+  "timestamp": "2026-10-26T06:59:22.202Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"banjir\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"PUPR\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Genangan air hujan akibat saluran air meluap menutup akses menuju halte. Normalisasi drainase diperlukan untuk mencegah gangguan akses.\",\n  \"confidence\": 95,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 958,
+    "completion_tokens": 83,
+    "total_tokens": 1041
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

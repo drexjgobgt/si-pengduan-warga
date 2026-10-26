@@ -1,0 +1,46 @@
+{
+  "sample_id": "SIPW-EVAL-CAND-0018",
+  "ground_truth_category": "keamanan",
+  "ground_truth_department": "SATPOLPP",
+  "label_validation_status": "AI_PROVISIONAL",
+  "sample_type": "incomplete",
+  "raw_predicted_category": "keamanan",
+  "final_predicted_category": "keamanan",
+  "raw_suggested_department": "SATPOLPP",
+  "final_suggested_department": "SATPOLPP",
+  "routing_department_simulated": "SATPOLPP",
+  "routing_persisted": false,
+  "secondary_categories": [],
+  "suggested_priority": "normal",
+  "raw_confidence": 92,
+  "confidence": 92,
+  "needs_human_review": false,
+  "fallback_applied": false,
+  "fallback_reasons": [],
+  "output_valid": true,
+  "latency_ms": 2771.925099999993,
+  "request_status": "success",
+  "error_type": null,
+  "model_id": "minimaxai/minimax-m3.1-flash",
+  "model_id_source": "provider_returned",
+  "prompt_version": "05e1be6dfd46b761a98096aa7eaf4ee89d5ed31140c9bb03b795f19c58bf2bab",
+  "timestamp": "2026-10-26T07:01:12.000Z",
+  "account_charge_idr": null,
+  "account_charge_verified": false,
+  "http_status": 200,
+  "raw_content": "{\n  \"category\": \"keamanan\",\n  \"secondaryCategories\": [],\n  \"suggestedDepartment\": \"SATPOLPP\",\n  \"suggestedPriority\": \"normal\",\n  \"reason\": \"Laporan berkaitan dengan keributan yang mengganggu ketertiban di fasilitas umum dan meminta pemantauan keamanan. Tidak terdapat informasi bahaya langsung terhadap jiwa yang menunjukkan prioritas darurat.\",\n  \"confidence\": 92,\n  \"needsHumanReview\": false\n}",
+  "returned_model": "minimaxai/minimax-m3.1-flash",
+  "usage": {
+    "prompt_tokens": 956,
+    "completion_tokens": 87,
+    "total_tokens": 1043
+  },
+  "request_model": "minimax-m3.1-flash-free",
+  "request_params": {
+    "temperature": 0.1,
+    "max_tokens": 500,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}
